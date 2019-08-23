@@ -3468,10 +3468,6 @@ body.search-is-visible {
     margin-bottom: 3.2rem;
 }
 
-.related__item:first-of-type {
-    padding-left: 4rem;
-}
-
 .related__link {
     display: block;
     position: relative;
@@ -3507,6 +3503,15 @@ body.search-is-visible {
  * blog styles and blog components
  * ------------------------------------------------------------------- */
 
+@media screen and (min-width:800px) {
+    .related__item:first-of-type {
+        padding-left: 4rem;
+    }
+    .related__link>p {
+        font-size: 2em;
+    }
+}
+
 @media screen and (max-width:800px) {
     .entry__header-meta {
         font-size: 1.7rem;
@@ -3540,6 +3545,12 @@ body.search-is-visible {
     }
     .related__item {
         padding-left: 2rem;
+    }
+    .related__link p {
+        font-size: 1.2em;
+    }
+    .related__item blockquote {
+        height: 9em;
     }
 }
 
