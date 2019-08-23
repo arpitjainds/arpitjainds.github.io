@@ -63,15 +63,53 @@
                     </a>
                 </div>
 
-                <div class="header__search">
+                <div class="header__search"><br><br><br><br>
 
-                    <form role="search" method="get" class="header__search-form" action="#">
-                        <label>
-                            <span class="hide-content">Search for:</span>
-                            <input type="search" class="header__search-field" placeholder="Type Keywords" value="" name="s" title="Search for:" autocomplete="off">
-                        </label>
-                        <input type="submit" class="header__search-submit" value="Search">
-                    </form>
+                    <blockquote style="border:none;">
+                        <span style="font-size:3.5em;line-height: 140%">
+                                <strong class="underlined underlined-thin">Share my Portfolio.
+                        </strong>
+                        </span>
+                        <br><br>
+                        <span style="color:#a3a3a3; font-size:2em; line-height: 1;">Or if you want to talk about something interesting, drop me a mail <a target="_blank" href="mailto:arpit.jain@iiitdmj.ac.in">here.</a></span>
+                    </blockquote><br><br>
+
+
+                    <!-- Branded Twitter button -->
+                    <a class="share-btn share-btn-branded share-btn-twitter" href="https://twitter.com/share?url=https%3A%2F%2Farpitjainds.github.io%2Ffindme&text=Arpit Jain Portfolio&via=arpitjainds" title="Share on Twitter">
+                        <span class="share-btn-icon"></span>
+                        <span class="share-btn-text">Twitter</span>
+                    </a>
+
+                    <!-- Branded Facebook button -->
+                    <a class="share-btn share-btn-branded share-btn-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Farpitjainds.github.io%2Ffindme" title="Share on Facebook">
+                        <span class="share-btn-icon"></span>
+                        <span class="share-btn-text">Facebook</span>
+                    </a>
+
+                    <!-- Branded Reddit button -->
+                    <a class="share-btn share-btn-branded share-btn-reddit" href="http://www.reddit.com/submit?url=https%3A%2F%2Farpitjainds.github.io%2Ffindme" title="Share on Reddit+">
+                        <span class="share-btn-icon"></span>
+                        <span class="share-btn-text">Reddit</span>
+                    </a>
+
+                    <!-- Branded Tumblr button -->
+                    <a class="share-btn share-btn-branded share-btn-tumblr" href="https://www.tumblr.com/share/link?url=https%3A%2F%2Farpitjainds.github.io%2Ffindme" title="Share on Tumblr">
+                        <span class="share-btn-icon"></span>
+                        <span class="share-btn-text">Tumblr</span>
+                    </a>
+
+                    <!-- Branded LinkedIn button -->
+                    <a class="share-btn share-btn-branded share-btn-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Farpitjainds.github.io%2Ffindme" title="Share on LinkedIn">
+                        <span class="share-btn-icon"></span>
+                        <span class="share-btn-text">LinkedIn</span>
+                    </a>
+
+                    <!-- Branded Pinterest button -->
+                    <a class="share-btn share-btn-branded share-btn-pinterest" href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Farpitjainds.github.io%2Ffindme" title="Share on Pinterest">
+                        <span class="share-btn-icon"></span>
+                        <span class="share-btn-text">Pinterest</span>
+                    </a>
 
                     <a href="#0" title="Close Search" class="header__search-close">Close</a>
 
@@ -89,16 +127,7 @@
 
                 <ul class="header__nav">
                     <li><a class="noborder" href="index.html" title="">About</a></li>
-                    <li class="has-children">
-                        <a href="#0" class="noborder" title="">Projects</a>
-                        <ul class="sub-menu">
-                            <li><a href="./projects/ai.html">AI</a></li>
-                            <li><a href="./projects/dataresearch.html">Data Research</a></li>
-                            <li><a href="./projects/hci.html">HCI</a></li>
-                            <li><a href="./projects/webapps.html">Web Apps</a></li>
-                            <li><a href="./projects/social.html">Social</a></li>
-                        </ul>
-                    </li>
+                    <li><a class="noborder" href="projects/projects.html" title="">Projects</a></li>
                     <li class="current"><a class="noborder" href="Research.html" title="">Research</a></li>
                     <li class="has-children">
                         <a href="#0" class="noborder" title="">Experiences</a>
@@ -124,6 +153,7 @@
                     </li>
                 </ul>
                 <!-- end header__nav -->
+                <img src="./images/old/slid1.png" alt="" style="left:46px;bottom:90px;position:absolute;width:70%">
 
                 <ul class="header__social">
                     <li class="ss-facebook">
@@ -174,6 +204,9 @@
             <div class="topbar">
                 <div class="scroll-line"></div>
             </div>
+            <div class="bottombar">
+                <div class="scroll-line-bottom"></div>
+            </div>
 
             <main class="row content__page">
 
@@ -181,7 +214,7 @@
 
                     <div class="media-wrap entry__media">
                         <div class="entry__post-thumb">
-                            <img src="images/old/slid1.jpg" alt="">
+                            <img src="images/old/slid1.png" alt="">
                         </div>
                     </div>
 
@@ -189,11 +222,13 @@
                         <h1 class="display-1 entry__title">
                             Research.
                         </h1>
-                        <ul class="entry__header-meta">
-                            <li class="author"><a href="#interests">1. Interests</a></li>
-                            <li class="date"><a href="#presentresearch">2. Present Research</a></li>
-                            <li class="cat-links"><a href="#researchexperience">3. Research Experiences</a></li>
-                        </ul>
+                        <p class="entry__tags" style="margin-top:0px;">
+                            <span class="entry__tag-list">
+                                    <a href="#interests">Interests</a>
+                                    <a href="#presentresearch">Present Research</a>
+                                    <a href="#researchexperience">Research Experiences</a>
+                                </span>
+                        </p>
                     </div>
                     <!-- end entry__header -->
 
@@ -201,7 +236,7 @@
 
                         <br><br>
                         <h3 id="interests" class="midlinehead">Interests</h3>
-                        <div style="padding:20px">
+                        <div>
                             <p style="font-size: 16px;line-height: 1.4;color: #525050;">
                                 My areas of interest are Data Science, Information Extraction/Visualization and Machine Learning. I have a keen interest for Information Visualization and Interface Design. My Research and Projects have a special place for UX Design at the core. I believe
                                 Data and Design altogether can produce pretty valuable outcomes and meaningful representations. I have been relied upon as a person responsible for providing data-driven, action-oriented solutions to challenging data-driven
@@ -214,7 +249,7 @@
                         <br><br>
                         <h3 id="presentresearch" class="midlinehead">Present Projects</h3>
 
-                        <div style="padding:20px;" class="author-carousel owl-carousel owl-theme">
+                        <div class="author-carousel owl-carousel owl-theme">
                             <!-- <div class="col-md-4"> -->
                             <div class="slide">
                                 <h5>Visualization of predicted Depth using Monocular vision</h5>
@@ -288,12 +323,110 @@
                             </div>
                             <!-- </div> -->
 
+                            <!-- <div class="col-md-4"> -->
+                            <div class="slide">
+                                <h5>Non-tangible Eye-based image interaction</h5>
+                                <hr>
+                                <p style="padding-left:10px">We aim to determine a new non-tangible (Non-touch based) way for the user to interact with interfaces.
+                                </p>
+                                <div class="slide-before">
+                                    <div class="row">
+                                        <div class="bottomsection">
+                                            <h2>STATUS</h2>
+                                            <p>Ideation Phase</p>
+                                            <h2>TAGS</h2>
+                                            <p class="entry__tags" style="margin-top:0px;">
+                                                <span class="entry__tag-list">
+                                                                        <a href="#0">HCI</a>
+                                                                        <a href="#0">Non-Tangible Interface</a>
+                                                                        <a href="#0">Human Factors</a>
+                                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- </div> -->
+
+                            <!-- <div class="col-md-4"> -->
+                            <div class="slide">
+                                <h5>The Psychological viewpoint of robotic interaction of children within classrooms.</h5>
+                                <hr>
+                                <p style="padding-left:10px">We aim to determine the aspects of robotic interaction within classrooms from a psychological standpoint.
+                                </p>
+                                <div class="slide-before">
+                                    <div class="row">
+                                        <div class="bottomsection">
+                                            <h2>STATUS</h2>
+                                            <p>Ideation Phase</p>
+                                            <h2>TAGS</h2>
+                                            <p class="entry__tags" style="margin-top:0px;">
+                                                <span class="entry__tag-list">
+                                                                                    <a href="#0">Human Behavior</a>
+                                                                                    <a href="#0">Social Robots</a>
+                                                                                    <a href="#0">Psychology</a>
+                                                                            </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- </div> -->
+                            <div class="slide">
+                                <h5>Making student onboarding more swift.</h5>
+                                <hr>
+                                <p style="padding-left:10px">We aim to determine a novel methodology utilizing the use of a robotic proxy for making student onboarding easier for any new joining student.
+                                </p>
+                                <div class="slide-before">
+                                    <div class="row">
+                                        <div class="bottomsection">
+                                            <h2>STATUS</h2>
+                                            <p>Ideation Phase</p>
+                                            <h2>TAGS</h2>
+                                            <p class="entry__tags" style="margin-top:0px;">
+                                                <span class="entry__tag-list">
+                                                                                        <a href="#0">Classrooms</a>
+                                                                                        <a href="#0">Social Robots</a>
+                                                                                        <a href="#0">Student Onboarding</a>
+                                                                                </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- </div> -->
+
+                            <div class="slide">
+                                <h5>Does gender affect how a person perceives and draws (sketches) any image?
+                                </h5>
+                                <hr>
+                                <p style="padding-left:10px">Basic idea is to determine how a person generally perceives a written description of something and regenerates it in the form of a simple sketch
+                                </p>
+                                <div class="slide-before">
+                                    <div class="row">
+                                        <div class="bottomsection">
+                                            <h2>STATUS</h2>
+                                            <p>Ideation Phase</p>
+                                            <h2>TAGS</h2>
+                                            <p class="entry__tags" style="margin-top:0px;">
+                                                <span class="entry__tag-list">
+                                                                                            <a href="#0">Sketching</a>
+                                                                                            <a href="#0">Gender Study</a>
+                                                                                            <a href="#0">Creative Arts</a>
+                                                                                    </span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- </div> -->
+
                         </div>
 
                         <br><br>
                         <h3 id="researchexperience" class="midlinehead">Research Experience</h3>
 
-                        <figure style="padding:20px;" class="tabBlock">
+                        <figure class="tabBlock">
                             <ul class="tabBlock-tabs">
                                 <li class="tabBlock-tab is-active">NTU</li>
                                 <li class="tabBlock-tab">DTU</li>
@@ -508,46 +641,23 @@
                     </div><br>
                     <!-- end entry content -->
 
+                    <img src="./images/old/slid1.png" alt="">
+
                     <div class="entry__pagenav">
                         <div class="entry__nav">
                             <div class="entry__prev">
-                                <a href="#0" rel="prev">
-                                    <span>Previous</span> Social Projects
+                                <a href="./projects/projects.html" rel="prev">
+                                    <span>Previous</span> Projects
                                 </a>
                             </div>
                             <div class="entry__next">
-                                <a href="#0" rel="next">
+                                <a href="./Experience/professionalexperience.html" rel="next">
                                     <span>Next</span> Professional Experience
                                 </a>
                             </div>
                         </div>
                     </div>
                     <!-- end entry__pagenav -->
-
-                    <div class="entry__related">
-                        <h3 class="h2">Related</h3>
-
-                        <ul class="related">
-                            <li class="related__item">
-                                <a href="research.html" class="related__link">
-                                    <img src="images/old/2.jpg" alt="">
-                                </a>
-                                <h5 class="related__post-title">Research.</h5>
-                            </li>
-                            <li class="related__item">
-                                <a href="./Education/formaleducation.html" class="related__link">
-                                    <img src="images/old/4.jpg" alt="">
-                                </a>
-                                <h5 class="related__post-title">Education.</h5>
-                            </li>
-                            <li class="related__item">
-                                <a href="https://medium.com/@arpitjainds" class="related__link">
-                                    <img src="images/old/3.jpg" alt="">
-                                </a>
-                                <h5 class="related__post-title">My Medium Blog.</h5>
-                            </li>
-                        </ul>
-                    </div>
 
                 </article>
                 <!-- end column large-full entry-->
@@ -561,14 +671,14 @@
         <!-- footer
         ================================================== -->
         <footer class="s-footer">
-            <div class="row">
+            <!-- <div class="row">
                 <div class="column large-full footer__content">
                     <div class="footer__copyright">
                         <span>© Copyright - All Rights Reserved</span>
                         <span>Design by <a href="">Arpit Jain</a></span>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <div class="go-top">
                 <a class="smoothscroll" title="Back to Top" href="#top"></a>
@@ -597,6 +707,7 @@
             var scrolled = (wintop / (docheight - winheight)) * 100;
 
             $('.scroll-line').css('width', (scrolled + '%'));
+            $('.scroll-line-bottom').css('width', (scrolled + '%'));
         });
     </script>
 
@@ -608,7 +719,7 @@
             dots: false,
             margin: 0,
             autoplay: true,
-            autoplayTimeout: 200
+            autoplayTimeout: 10
         });
     </script>
 
