@@ -220,7 +220,7 @@
                     <aside class="pull-quote">
                         <blockquote>
                             <span style="font-size:3.5em;line-height: 140%">
-                                <strong>I build <mark class="underlined underlined--thick green">intelligent interactions.</mark>
+                                <strong>I build <a style="border:0px;" class="nobeforeafter" href="https://arpitjainds.github.io/IntelligentInteractions/IntelligentInteractions.html"><mark class="underlined underlined--thick green">intelligent interactions.</mark></a>
                                 </strong>
                             </span>
                             <br><br>
@@ -229,6 +229,18 @@
                     </aside>
 
                     <style>
+                        .nobeforeafter::after {
+                            display: none;
+                        }
+                        
+                        .nobeforeafter::before {
+                            display: none;
+                        }
+                        
+                        .nobeforeafter {
+                            padding: 0px;
+                        }
+                        
                         .parentimagediv {
                             position: relative;
                             width: 100%;
