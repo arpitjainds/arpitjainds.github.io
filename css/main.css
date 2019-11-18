@@ -2966,6 +2966,7 @@ body.search-is-visible {
         height: 78px;
         margin-bottom: 0px;
         background: #eea2af;
+        z-index: 10000;
         width: 0%;
     }
     .header__top {
