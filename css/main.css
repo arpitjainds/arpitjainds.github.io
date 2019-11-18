@@ -1569,12 +1569,6 @@ input::-moz-focus-inner {
     background-color: #827217;
 }
 
-@media screen and (max-width:400px) {
-    .sidebaralertbox {
-        display: none;
-    }
-}
-
 
 /* -------------------------------------------------------------------
  * ## pagination 
@@ -3886,7 +3880,7 @@ body.search-is-visible {
     counter-increment: h3 1;
     content: "0" counter(h3) ".";
     margin-right: 10px;
-    font-weight: bold;
+    font-weight: 900;
     color: #d3d3d3;
     position: relative;
     display: none;
@@ -3912,7 +3906,7 @@ body.search-is-visible {
     white-space: nowrap;
     color: #c3c3c3;
     font-size: 20px;
-    font-weight: bold;
+    font-weight: 900;
     margin: 10px 0px 40px;
 }
 
