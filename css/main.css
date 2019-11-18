@@ -3130,6 +3130,24 @@ body.search-is-visible {
     }
 }
 
+@media screen and (max-width:800px) {
+    #smallspacecoverimage {
+        display: none;
+    }
+    #longspacecoverimage {
+        display: inherit;
+    }
+}
+
+@media screen and (min-width:801px) {
+    #longspacecoverimage {
+        display: none;
+    }
+    #smallspacecoverimage {
+        display: inherit;
+    }
+}
+
 
 /* ===================================================================
  * # site content & footer 
