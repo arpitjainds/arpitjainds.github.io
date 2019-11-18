@@ -3087,7 +3087,10 @@ body.search-is-visible {
         font-size: 18px;
     }
     .header__nav>li>a {
-        line-height: 6.8rem;
+        line-height: 4.6rem;
+        font-weight: 900;
+        font-family: "Bold";
+        letter-spacing: -2px;
     }
     .header__nav li.has-children>a::after {
         top: 30px;
