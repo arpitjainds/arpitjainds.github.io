@@ -4376,39 +4376,6 @@ body.search-is-visible {
     }
 }
 
-.fadebottomwhite {
-    position: relative;
-    bottom: 4.6em;
-    height: 4.5em;
-    background: -webkit-linear-gradient( rgba(255, 255, 255, 0) 0%, #f6f7f8 100%);
-    background-image: -moz-linear-gradient( rgba(255, 255, 255, 0) 0%, #f6f7f8 100%);
-    background-image: -o-linear-gradient( rgba(255, 255, 255, 0) 0%, #f6f7f8 100%);
-    background-image: linear-gradient( rgba(255, 255, 255, 0) 0%, #f6f7f8 100%);
-    background-image: -ms-linear-gradient( rgba(255, 255, 255, 0) 0%, #f6f7f8 100%);
-}
-
-.projectslide {
-    position: relative;
-    text-align: left;
-    background: #faf0f0;
-    padding: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.projectslide h5 {
-    margin: 0px;
-    font-size: 25px;
-    padding-left: 10px;
-    padding-top: 10px;
-}
-
-.projectslide p {
-    font-size: 16px;
-    line-height: 1.4;
-    color: #525050;
-}
-
 
 /*Share buttons*/
 
@@ -5011,6 +4978,3 @@ body.search-is-visible {
 .marker-outline .timeline-item:hover .timeline-marker:before {
     background: #FF6B6B;
 }
-
-
-/*# sourceMappingURL=main.css.map */
