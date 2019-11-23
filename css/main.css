@@ -125,7 +125,7 @@ body {
     font-size: 1.35rem;
     font-style: normal;
     font-weight: normal;
-    line-height: 1.789;
+    line-height: 1.25;
     color: #000000;
     margin: 0;
     padding: 0;
@@ -370,8 +370,11 @@ small {
 
 blockquote {
     margin: 4rem 0;
-    padding: 4rem 4rem;
-    border-left: 4px solid black;
+    padding: 4rem;
+    border-left: 1px solid black;
+    border-right: 1px solid #d3d3d3;
+    border-bottom: 1px solid #d3d3d3;
+    border-top: 1px solid #d3d3d3;
     position: relative;
 }
 
@@ -407,6 +410,8 @@ blockquote cite {
     font-family: "Regular", "IBM Plex Sans", sans-serif;
     font-size: 1.2rem;
     font-style: normal;
+    position: absolute;
+    bottom: 10px;
     line-height: 1.2;
 }
 
@@ -1262,8 +1267,8 @@ input::-moz-focus-inner {
 }
 
 .pull-quote blockquote {
-    background-color: #efefef;
-    border: none;
+    background-color: #f6f7f8;
+    border: 1px solid #d3d3d3;
     margin: 0;
     padding-top: 9.6rem;
     position: relative;
@@ -3897,25 +3902,15 @@ body.search-is-visible {
 
 /*heading with line after*/
 
-.midlinehead::before {
-    counter-increment: h3 1;
-    content: "0" counter(h3) ".";
-    margin-right: 10px;
-    font-weight: 900;
-    color: #d3d3d3;
-    position: relative;
-    display: none;
-}
-
 .midlinehead::after {
     content: "";
-    display: block;
-    height: 0.8px;
+    display: flex;
+    height: 1px;
     width: 100%;
     background-color: #d3d3d3;
     position: relative;
     top: 0px;
-    margin-left: 20px;
+    margin-left: 15px;
 }
 
 .midlinehead {
@@ -3924,17 +3919,13 @@ body.search-is-visible {
     -webkit-box-align: center;
     align-items: center;
     width: 100%;
+    text-transform: uppercase;
     white-space: nowrap;
-    color: #c3c3c3;
-    font-size: 20px;
-    font-weight: 900;
+    color: #1a1a1a;
+    font-size: 12px;
+    letter-spacing: 2.5px;
+    font-weight: 100;
     margin: 10px 0px 40px;
-}
-
-*,
- ::before,
- ::after {
-    box-sizing: inherit;
 }
 
 
@@ -3949,21 +3940,22 @@ body.search-is-visible {
 .slide {
     position: relative;
     text-align: left;
-    border: 2px solid #f5989d;
+    border: 1px solid #d3d3d3;
     padding: 10px;
     margin-top: 20px;
 }
 
 .slide h5 {
     margin: 0px;
-    font-size: 25px;
+    font-size: 20px;
+    font-weight: 900;
     padding-left: 10px;
     padding-top: 10px;
 }
 
 .slide p {
     font-size: 16px;
-    line-height: 1.4;
+    line-height: 1.25;
     color: #525050;
 }
 
@@ -3971,6 +3963,7 @@ body.search-is-visible {
     margin: 10px 0px;
     text-transform: uppercase;
     font-size: 12px;
+    letter-spacing: 2.5px;
     color: #d66c64;
     font-weight: 700;
 }
@@ -4201,11 +4194,11 @@ body.search-is-visible {
     right: -2px;
     width: 7em;
     height: 200px;
-    background: -webkit-linear-gradient(to right, rgba(240, 221, 221, 0) 0%, rgba(240, 221, 221, 1) 100%);
-    background-image: -moz-linear-gradient(to right, rgba(240, 221, 221, 0) 0%, rgba(240, 221, 221, 1) 100%);
-    background-image: -o-linear-gradient(to right, rgba(240, 221, 221, 0) 0%, rgba(240, 221, 221, 1) 100%);
-    background-image: linear-gradient(to right, rgba(240, 221, 221, 0) 0%, rgba(240, 221, 221, 1) 100%);
-    background-image: -ms-linear-gradient(to right, rgba(240, 221, 221, 0) 0%, rgba(240, 221, 221, 1) 100%);
+    background: -webkit-linear-gradient(to right, rgba(240, 221, 221, 0) 0%, #f6f7f8 100%);
+    background-image: -moz-linear-gradient(to right, rgba(240, 221, 221, 0) 0%, #f6f7f8 100%);
+    background-image: -o-linear-gradient(to right, rgba(240, 221, 221, 0) 0%, #f6f7f8 100%);
+    background-image: linear-gradient(to right, rgba(240, 221, 221, 0) 0%, #f6f7f8 100%);
+    background-image: -ms-linear-gradient(to right, rgba(240, 221, 221, 0) 0%, #f6f7f8 100%);
 }
 
 
@@ -4752,11 +4745,17 @@ body.search-is-visible {
 
 .timeline-info {
     font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 3px;
+    letter-spacing: 2.5px;
     margin: 0 0 .5em 0;
+    text-align: right;
     text-transform: uppercase;
     white-space: nowrap;
+}
+
+@media screen and (max-width:768px) {
+    .timeline-info {
+        text-align: left;
+    }
 }
 
 
@@ -4785,7 +4784,7 @@ body.search-is-visible {
 
 .timeline-marker:after {
     content: "";
-    width: 3px;
+    width: 1.5px;
     background: #CCD5DB;
     display: block;
     position: absolute;
@@ -4800,7 +4799,7 @@ body.search-is-visible {
 
 .timeline-item:not(.period):hover .timeline-marker:before {
     background: transparent;
-    border: 3px solid #eea2a2;
+    border: 1px solid #eea2a2;
 }
 
 
@@ -4835,8 +4834,8 @@ body.search-is-visible {
     top: 0;
     bottom: 30px;
     position: absolute;
-    border-top: 3px solid #CCD5DB;
-    border-bottom: 3px solid #CCD5DB;
+    border-top: 1px solid #CCD5DB;
+    border-bottom: 1px solid #CCD5DB;
 }
 
 .period .timeline-marker:after {
