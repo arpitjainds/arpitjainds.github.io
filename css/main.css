@@ -2414,7 +2414,7 @@ input::-moz-focus-inner {
 }
 
 .header__logo img {
-    width: 100%;
+    width: 80%;
     margin: 0;
 }
 
@@ -3004,8 +3004,6 @@ body.search-is-visible {
     }
     .header__logo .site-logo {
         display: none;
-        width: 120px;
-        height: 29px;
     }
     .header__logo .site-logo-text {
         display: inline-block;
