@@ -2376,7 +2376,7 @@ input::-moz-focus-inner {
 }
 
 .scroll-line {
-    height: 18px;
+    height: 10px;
     margin-bottom: 0px;
     background: #eea2a2;
     width: 0%;
@@ -2393,7 +2393,7 @@ input::-moz-focus-inner {
 }
 
 .scroll-line-bottom {
-    height: 18px;
+    height: 10px;
     margin-bottom: 0px;
     background: #33998a;
     width: 0%;
