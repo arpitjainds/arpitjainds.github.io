@@ -2471,9 +2471,10 @@ input::-moz-focus-inner {
 .header__nav li a {
     display: block;
     font-family: "Regular";
-    font-size: 1.55em;
-    color: rgba(0, 0, 0, 0.5);
-    line-height: 3rem;
+    font-size: 2.2em;
+    color: rgba(0, 0, 0, 0.15);
+    line-height: 3.4rem;
+    font-weight: 700;
 }
 
 .header__nav li.has-children {
@@ -2517,7 +2518,7 @@ input::-moz-focus-inner {
 
 .header__nav li.current>a {
     color: rgba(0, 0, 0, 0.95);
-    font-weight: 600;
+    font-weight: 900;
 }
 
 .header__nav li ul {
@@ -3099,13 +3100,13 @@ body.search-is-visible {
 
 @media screen and (max-width:800px) {
     .header__nav {
-        font-size: 18px;
+        font-size: 22px;
     }
     .header__nav>li>a {
-        line-height: 4.6rem;
+        line-height: 4.5rem;
         font-weight: 900;
-        font-family: "Bold";
-        letter-spacing: -2px;
+        font-family: "Regular";
+        letter-spacing: -0.5px;
     }
     .header__nav li.has-children>a::after {
         top: 30px;
@@ -3482,10 +3483,10 @@ body.search-is-visible {
 
 .entry__nav a {
     font-family: "Regular", "Heebo", sans-serif;
-    font-weight: 500;
-    font-size: 3rem;
+    font-weight: 900;
+    font-size: 4rem;
     line-height: 1.333;
-    color: #000000;
+    color: rgba(0, 0, 0, 0.9);
 }
 
 .entry__nav a:hover span,
@@ -3702,8 +3703,8 @@ body.search-is-visible {
 
 .comment__info .comment__author {
     font-family: "Regular", "Heebo", sans-serif;
-    font-weight: 500;
-    font-size: 1.9rem;
+    font-weight: 900;
+    font-size: 2rem;
     line-height: 1.684;
     font-style: normal;
     color: #000000;
