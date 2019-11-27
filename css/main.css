@@ -407,7 +407,7 @@ blockquote p {
 blockquote cite {
     display: block;
     font-family: "Regular", "IBM Plex Sans", sans-serif;
-    font-size: 1.2rem;
+    /* font-size: 1.2rem; */
     font-style: normal;
     position: absolute;
     bottom: 10px;
