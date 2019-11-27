@@ -175,7 +175,6 @@ a {
     border-bottom: 1px dashed #33c79d;
     display: inline-block;
     position: relative;
-    padding: 0 .2em;
     transition: all 250ms;
 }
 
