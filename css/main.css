@@ -2360,6 +2360,10 @@ input::-moz-focus-inner {
     background: rgba(0, 0, 0, 0);
 }
 
+#projectpagetopbar {
+    display: none;
+}
+
 .scroll-line {
     height: 10px;
     margin-bottom: 0px;
@@ -2384,6 +2388,21 @@ input::-moz-focus-inner {
     width: 0%;
 }
 
+.verticalbar {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    height: 100%;
+    background: rgba(0, 0, 0, 0);
+}
+
+.scroll-line-vertical {
+    width: 10px;
+    margin-left: 0px;
+    background: #33998a;
+    height: 0%;
+}
+
 
 /* -------------------------------------------------------------------
  * ## header logo
@@ -2405,6 +2424,19 @@ input::-moz-focus-inner {
 
 .header__logo .site-logo-text {
     display: none;
+}
+
+.header__logo img {
+    transition: all 80ms ease-in-out;
+}
+
+.header__logo img:hover {
+    -moz-transform: scale(1.075);
+    -webkit-transform: scale(1.075);
+    -o-transform: scale(1.075);
+    transform: scale(1.075);
+    -ms-transform: scale(1.075);
+    transition: all 80ms ease-in-out;
 }
 
 
@@ -2963,6 +2995,9 @@ body.search-is-visible {
         z-index: 99;
         width: 100%;
         background: rgba(0, 0, 0, 1);
+    }
+    #projectpagetopbar {
+        display: block;
     }
     .scroll-line {
         height: 78px;
