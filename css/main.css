@@ -2374,7 +2374,7 @@ input::-moz-focus-inner {
 .scroll-line {
     height: 10px;
     margin-bottom: 0px;
-    background: #eea2a2;
+    background: rgb(64, 106, 146);
     width: 0%;
 }
 
@@ -3009,7 +3009,8 @@ body.search-is-visible {
     .scroll-line {
         height: 78px;
         margin-bottom: 0px;
-        background: #eea2af;
+        background: rgb(64, 106, 146);
+        ;
         z-index: 10000;
         width: 0%;
     }
@@ -4807,7 +4808,8 @@ body.search-is-visible {
 }
 
 .timeline-marker:before {
-    background: #eea2a2;
+    background: rgb(64, 106, 146);
+    ;
     border: 3px solid transparent;
     content: "";
     display: block;
@@ -4836,7 +4838,8 @@ body.search-is-visible {
 
 .timeline-item:not(.period):hover .timeline-marker:before {
     background: transparent;
-    border: 2px solid #eea2a2;
+    border: 2px solid rgb(64, 106, 146);
+    ;
 }
 
 
@@ -5008,9 +5011,11 @@ body.search-is-visible {
 
 .marker-outline .timeline-marker:before {
     background: transparent;
-    border-color: #FF6B6B;
+    border-color: rgb(64, 106, 146);
+    ;
 }
 
 .marker-outline .timeline-item:hover .timeline-marker:before {
-    background: #FF6B6B;
+    background: rgb(64, 106, 146);
+    ;
 }
