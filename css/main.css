@@ -3568,6 +3568,7 @@ body.search-is-visible {
 .related__link {
     display: block;
     position: relative;
+    transition: all 140ms;
     border: none;
 }
 
@@ -3578,7 +3579,7 @@ body.search-is-visible {
 .related__link::before {
     content: "";
     display: block;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(255, 255, 255, 0);
     opacity: 0;
     visibility: hidden;
     position: absolute;
@@ -3591,7 +3592,9 @@ body.search-is-visible {
 
 .related__link:hover::before {
     opacity: 1;
+    background: rgba(64, 106, 146, 0.05);
     visibility: visible;
+    transition: all 140ms;
 }
 
 
