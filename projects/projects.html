@@ -255,6 +255,56 @@
                                             letter-spacing: -1px;
                                             min-height: 200px;
                                         }
+                                        
+                                        input[type=radio] {
+                                            display: none;
+                                        }
+                                        
+                                        .a-container {
+                                            width: 100%;
+                                        }
+                                        
+                                        .a-container label {
+                                            display: block;
+                                            position: relative;
+                                            cursor: pointer;
+                                            font-size: 18px;
+                                            font-weight: bold;
+                                            padding: 10px 20px;
+                                            border-bottom: 1px dashed #ddd;
+                                            -webkit-transition: all .2s ease;
+                                            -moz-transition: all .2s ease;
+                                            -ms-transition: all .2s ease;
+                                            -o-transition: all .2s ease;
+                                            transition: all .2s ease;
+                                        }
+                                        
+                                        .a-container label:after {
+                                            content: "";
+                                            width: 0;
+                                            height: 0;
+                                            border-top: 8px solid #aaa;
+                                            border-right: 6px solid transparent;
+                                            border-bottom: 8px solid transparent;
+                                            border-left: 6px solid transparent;
+                                            position: absolute;
+                                            right: 10px;
+                                            top: 16px;
+                                        }
+                                        
+                                        .a-container input:checked+label {
+                                            color: #0F9E5E;
+                                            border-bottom: 4px solid #0F9E5E;
+                                        }
+                                        
+                                        .a-content {
+                                            padding: 0 20px 20px;
+                                            display: none;
+                                        }
+                                        
+                                        .a-container input:checked~.a-content {
+                                            display: block;
+                                        }
                                     </style>
 
                                     <div class="row" style="margin-bottom:30px;margin-top:60px">
@@ -291,34 +341,41 @@
                                         </div>
                                     </div>
 
-                                    <div class="row">
-                                        <table>
-                                            <thead>
-                                                <tr>
-                                                    <th style="font-size:1.2em; letter-spacing: 2px;text-transform:uppercase;color:rgba(0,0,0,0.25);padding-bottom:10px;">Other Projects</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td style="padding-top:5px;padding-bottom:5px;padding-right:5px;">
-                                                        <span style="font-weight:800"><a target="_blank" href="https://github.com/arpitjainds/News-Article-Summarization/blob/master/DL.pdf">News Article Summarization</a></span><br>Textual Summarization
-                                                        of NEWS Articles using Abstractive Methods and sequence to sequence network.
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td style="padding-top:5px;padding-bottom:5px;padding-right:5px;">
-                                                        <span style="font-weight:800"><a target="_blank" href="#">Dsense</a></span><br>Pre-disaster tracking of Human Resource. Qualified for the global Round of <a href="https://developer.ibm.com/callforcode/">IBM Call For Code Initiative.</a>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td style="padding-top:5px;padding-bottom:5px;padding-right:5px;">
-                                                        <span style="font-weight:800"><a target="_blank" href="https://drive.google.com/file/d/1Fq3FoSy9zYj2ziiqjwJjdXv1cFC3JGsD/view?usp=sharing">Entity Linking</a></span><br>Working on using RNNs to perform
-                                                        Entity Linking on video subtitles for Enhancing E-Learning experience.
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
+
+                                    <ul style="list-style:none;margin:0px" class="a-container">
+                                        <!-- item01 -->
+                                        <li class="a-items">
+                                            <input type="radio" name="ac" id="a1" />
+                                            <label class="hvr-underline-reveal" for="a1"><span style="font-size:0.8em; letter-spacing: 2px;text-transform:uppercase;color:rgba(0,0,0,0.30);padding-bottom:10px;">• Other Projects • </span>
+                                            </label>
+                                            <div class="a-content">
+                                                <div class="row">
+                                                    <table>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="padding-top:5px;padding-bottom:5px;padding-right:5px;padding-left:20px;">
+                                                                    <span style="font-weight:800"><a target="_blank" href="https://github.com/arpitjainds/News-Article-Summarization/blob/master/DL.pdf">News Article Summarization</a></span><br>Textual Summarization
+                                                                    of NEWS Articles using Abstractive Methods and sequence to sequence network.
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="padding-top:5px;padding-bottom:5px;padding-right:5px;padding-left:20px;">
+                                                                    <span style="font-weight:800"><a target="_blank" href="#">Dsense</a></span><br>Pre-disaster tracking of Human Resource. Qualified for the global Round of <a href="https://developer.ibm.com/callforcode/">IBM Call For Code Initiative.</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="padding-top:5px;padding-bottom:5px;padding-right:5px;padding-left:20px;">
+                                                                    <span style="font-weight:800"><a target="_blank" href="https://drive.google.com/file/d/1Fq3FoSy9zYj2ziiqjwJjdXv1cFC3JGsD/view?usp=sharing">Entity Linking</a></span><br>Working on using
+                                                                    RNNs to perform Entity Linking on video subtitles for Enhancing E-Learning experience.
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                    </ul>
 
                                 </div>
 
@@ -420,34 +477,42 @@
                                         </div>
                                     </div>
 
-                                    <div class="row">
-                                        <table>
-                                            <thead>
-                                                <tr>
-                                                    <th style="font-size:1.2em; letter-spacing: 2px;text-transform:uppercase;color:rgba(0,0,0,0.25);padding-bottom:10px;">Other Projects</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td style="padding-top:5px;padding-bottom:5px;padding-right:5px;">
-                                                        <span style="font-weight:800"><a target="_blank" href="https://github.com/arpitjainds/Fragments">Fragments: 3D Platformer Game</a></span><br>A 3D Platformer game in which the character can move on
-                                                        colored tiles governed by optical illusions and camera perspective.
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td style="padding-top:5px;padding-bottom:5px;padding-right:5px;">
-                                                        <span style="font-weight:800"><a target="_blank" href="https://arpitjainds.github.io/battleboat-AI/index.html">Battleboat.AI</a></span><br>AI that can beat Human at the game of Battle Ship.
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td style="padding-top:5px;padding-bottom:5px;padding-right:5px;">
-                                                        <span style="font-weight:800"><a target="_blank" href="https://github.com/arpitjainds/Florence-Chatbot/blob/master/Documentation%20and%20Report/Project%20Report%20Florence%20Chatbot.pdf">Florence.AI</a></span><br>A
-                                                        Chatbot to study Human Machine Interaction at Local Shops.
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
+                                    <ul style="list-style:none;margin:0px" class="a-container">
+                                        <!-- item01 -->
+                                        <li class="a-items">
+                                            <input type="radio" name="ac" id="a2" />
+                                            <label class="hvr-underline-reveal" for="a2"><span style="font-size:0.8em; letter-spacing: 2px;text-transform:uppercase;color:rgba(0,0,0,0.30);padding-bottom:10px;">• Other Projects • </span>
+                                            </label>
+                                            <div class="a-content">
+                                                <div class="row">
+                                                    <table>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="padding-top:5px;padding-bottom:5px;padding-right:5px;padding-left:20px;">
+                                                                    <span style="font-weight:800"><a target="_blank" href="https://github.com/arpitjainds/Fragments">Fragments: 3D Platformer Game</a></span><br>A 3D Platformer game in which the character
+                                                                    can move on colored tiles governed by optical illusions and camera perspective.
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="padding-top:5px;padding-bottom:5px;padding-right:5px;padding-left:20px;">
+                                                                    <span style="font-weight:800"><a target="_blank" href="https://arpitjainds.github.io/battleboat-AI/index.html">Battleboat.AI</a></span><br>AI that can beat Human at the game of Battle
+                                                                    Ship.
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="padding-top:5px;padding-bottom:5px;padding-right:5px;padding-left:20px;">
+                                                                    <span style="font-weight:800"><a target="_blank" href="https://github.com/arpitjainds/Florence-Chatbot/blob/master/Documentation%20and%20Report/Project%20Report%20Florence%20Chatbot.pdf">Florence.AI</a></span><br>A
+                                                                    Chatbot to study Human Machine Interaction at Local Shops.
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+
                             </section>
 
                             <section id="soc" style="padding-top:100px">
