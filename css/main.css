@@ -3594,6 +3594,7 @@ body.search-is-visible {
     opacity: 1;
     background: rgba(64, 106, 146, 0.05);
     visibility: visible;
+    border: 0px;
     transition: all 140ms;
 }
 
