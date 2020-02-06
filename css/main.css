@@ -61,6 +61,7 @@
  *
  * ------------------------------------------------------------------- */
 
+@import url("hover.css");
 @font-face {
     font-family: 'Regular';
     src: url("../Fonts/Sans-Regular.ttf");
