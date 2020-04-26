@@ -19,17 +19,18 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.css">
 
     <!-- script
     ================================================== -->
-    <script src="js/modernizr.js"></script>
+    <script src="./js/modernizr.js"></script>
 
     <!-- favicons
     ================================================== -->
     <link rel="apple-touch-icon" sizes="180x180" href="./images/old/AJ Small.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/old/AJ Small.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./images/old/AJ Small.png">
-    <link rel="manifest" href="site.webmanifest">
+    <link rel="manifest" href="./site.webmanifest">
 
 </head>
 
@@ -54,10 +55,7 @@
             <div class="header__top">
                 <div class="header__logo">
                     <a class="site-logo-text" href="./index.html">
-                        <img src="images/smallaj.png" alt="Homepage">
-                    </a>
-                    <a class="site-logo" href="./index.html">
-                        <img src="images/logo 6.png" alt="Homepage">
+                        <img src="./images/smallaj.png" alt="Homepage">
                     </a>
                 </div>
 
@@ -124,12 +122,12 @@
             <nav class="header__nav-wrap">
 
                 <ul class="header__nav">
-                    <li class="current"><a class="noborder" href="index.html" title="">About</a></li>
-                    <li><a class="noborder" href="projects/projects.html" title="">Work</a></li>
+                    <li class="current"><a class="noborder" href="./index.html" title="">Work</a></li>
+                    <li><a class="noborder" href="./about.html" title="">About</a></li>
                     <li class="has-children">
                         <a href="#0" class="noborder" title="">Formal</a>
                         <ul class="sub-menu">
-                            <li><a href="Research.html" title="">Research</a></li>
+                            <li><a href="./Research.html" title="">Research</a></li>
                             <li><a href="./Experience/professionalexperience.html" title="">Experience</a></li>
                             <li><a href="./Education/formaleducation.html" title="">Education</a></li>
                         </ul>
@@ -147,7 +145,6 @@
                 <!-- end header__nav -->
 
                 <ul class="header__social">
-
                     <li class="ss-facebook">
                         <a class="noborder" href="https://facebook.com/ArpitJainDS" target="_blank">
                             <span class="screen-reader-text">Facebook</span>
@@ -202,102 +199,480 @@
 
             <main class="row content__page">
 
-
-                <section class="column large-full entry format-standard">
-
-                    <strong>
-                            <p style="font-size :6.5em;line-height: 95%;padding-top:20px">
-                            Hi, I am Arpit.<br>
-                            </p>
-                    </strong>
-                    <br>
-                    <aside class="pull-quote hvr-overline-from-left" style="padding:0px">
-                        <blockquote>
-                            <span style="font-size:2.5em;line-height:80%; letter-spacing:-1px;">
-                                <span class="underlined underlined--thin" style="color:#444444">I conduct Research, develop Software and design <a style="border:0px;" class="nobeforeafter" href="https://arpitjainds.github.io/IntelligentInteractions/IntelligentInteractions.html"><span class="underlined underlined--thick green">Intelligent Interactions.</span></a>
-                            Say hello <a href="mailto:arpit.jain@iiitdmj.ac.in" class="nobeforeafter noborder"><span class="underlined underlined--thick green">here</span></a> or see my
-                            <a href="./CV_.pdf" class="nobeforeafter noborder" target="_blank"><span class="underlined underlined--thick green">CV.</span></a>
-                            </span>
-                            </span>
-                        </blockquote>
-                    </aside>
-
-                    <style>
-                        .nobeforeafter::after {
-                            display: none;
-                        }
-                        
-                        .nobeforeafter::before {
-                            display: none;
-                        }
-                        
-                        .nobeforeafter {
-                            padding: 0px;
-                        }
-                        
-                        .parentimagediv {
-                            position: relative;
-                            width: 100%;
-                        }
-                    </style>
-
-                    <div class="parentimagediv">
-
-                        <img id="longspacecoverimage" src="images/old/space3.jpg" width=100%>
-                        <img id="smallspacecoverimage" src="images/old/space 5.jpg" width=100%>
-
-                    </div>
+                <article class="column large-full entry format-standard">
 
                     <div class="spacer"></div>
 
-
-                    <h3 class="midlinehead">Go to</h3>
-
-                    <ul class="related">
-                        <li class="related__item">
-                            <span onclick="window.location.href = './projects/projects.html';" style="cursor:pointer" class="related__link">
-                                    <blockquote style="padding:10px;margin:0px;border:1px solid #d3d3d3;">
-                                        <p style="line-height:1.3;overflow:hidden; font-weight: 900;color:#444444">
-                                            <span class="underlined underlined--thin">Projects.</span>
-                            </p>
-                            <cite class="nobefore">My Creative Space.</cite>
+                    <div class="row">
+                        <strong>
+                                <p style="font-size :7em;line-height: 95%;padding-top:20px">
+                                Hi, I am Arpit.<br>
+                                </p>
+                        </strong>
+                        <br>
+                        <aside class="pull-quote hvr-overline-from-left" style="padding:0px">
+                            <blockquote>
+                                <span style="font-size:2em;line-height:80%; letter-spacing:-1px;">
+                                <span class="underlined underlined--thin" style="color:#444444">
+                                    Currently working as a developer at IBM Labs, Bengaluru, India. <br>
+                                    I conduct Research, develop Software and design 
+                                    <a style="border:0px;" class="nobeforeafter" href="https://arpitjainds.github.io/IntelligentInteractions/IntelligentInteractions.html">
+                                        Intelligent Interactions.
+                                    </a>
+                                    <br><br>                              
+                                Say hello <a href="mailto:arpit.jain@iiitdmj.ac.in" class="nobeforeafter noborder">here.</a>
+                                </span>
+                                </span>
                             </blockquote>
-                            </span>
-                        </li>
-                        <li class="related__item">
-                            <span onclick="window.location.href = 'Education/formaleducation.html';" style="cursor:pointer" class="related__link">
-                    <blockquote style="padding:10px;margin:0px; border:1px solid #d3d3d3;">
-                        <p style="line-height:1.3;overflow:hidden; font-weight: 900;color:#444444">
-                            <span class="underlined underlined--thin">Education.</span>
-                            </p>
-                            <cite class="nobefore">Formal Studies.</cite>
-                            </blockquote>
-                            </span>
-                        </li>
-                        <li class="related__item">
-                            <span onclick="window.location.href = 'Research.html';" style="cursor:pointer" class="related__link">
-                    <blockquote style="padding:10px;margin:0px; border:1px solid #d3d3d3;">
-                        <p style=" line-height:1.3;overflow:hidden; font-weight: 900;color:#444444">
-                            <span class="underlined underlined--thin"> Research.</span>
-                            </p>
-                            <cite class="nobefore"> I Explore stuff here. </cite>
-                            </blockquote>
-                            </span>
-                        </li>
-                    </ul>
+                        </aside>
+                    </div>
 
-                </section>
+                    <style>
+                        h1 svg {
+                            width: 44px;
+                            display: block;
+                            margin: 10px auto;
+                        }
+                        
+                        h1 svg .arrow {
+                            -webkit-animation: scroll .35s ease-in alternate infinite;
+                            animation: scroll .35s ease-in alternate infinite;
+                        }
+                        
+                        @-webkit-keyframes scroll {
+                            0% {
+                                -webkit-transform: translateY(0);
+                                transform: translateY(0);
+                            }
+                            100% {
+                                -webkit-transform: translateY(10px);
+                                transform: translateY(10px);
+                            }
+                        }
+                        
+                        @keyframes scroll {
+                            0% {
+                                -webkit-transform: translateY(0);
+                                transform: translateY(0);
+                            }
+                            100% {
+                                -webkit-transform: translateY(10px);
+                                transform: translateY(10px);
+                            }
+                        }
+                    </style>
+
+                    <div class="row">
+                        <a href="#selectedwork">
+                            <h1>
+                                <svg version="1.1" id="svg-arrow-down" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 22 35" style="enable-background:new 0 0 22 35;" xml:space="preserve">
+                              <polygon class="arrow" style="fill:#000000;" points="20.58,11.584 12.004,20.158 12.004,0 9.996,0 9.996,20.158 1.42,11.584 0,13.004 11,24
+                                              22,13.004 "></polygon>
+                            </svg></h1>
+                        </a>
+                    </div>
+
+                    <div class="spacer"></div>
+                    <div id="selectedwork">
+                        <p><br><br></p>
+                    </div>
+
+                    <div class="row">
+                        <div class="large-8 medium-12 tab-12 mobile-12">
+                            <strong>
+                                        <p style="font-size:4em;line-height: 95%;padding-top:25px">
+                                        Selected Work.<br>
+                                        </p>
+                            </strong>
+                            <p class="entry__tags" style="margin-top:0px;">
+                                <span class="entry__tag-list">
+                                        <a href="#ai">Artificial Intelligence</a>
+                                        <a href="#dr">Data Research</a>
+                                        <a href="#hci">HCI</a>
+                                        <a href="#soc">Social</a>
+                                    </span>
+                            </p>
+                        </div>
+                        <div class="large-4 medium-12 tab-12 mobile-12">
+                            <div class="alert-box alert-box--info" style="margin-top:10px;font-weight:100;line-height: 1.2;">
+                                <p style="padding:0px;margin-bottom:20px;margin-top:20px;">Some projects do not have direct links as they may be behind account walls or were intended for internal use only. If you'd like to see any further code samples or demos please contact me.</p>
+                                <i class="fa fa-times alert-box__close" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="entry__content">
+                        <br><br>
+
+                        <div id="page-sections">
+                            <section id="ai" style="padding-top:40px">
+
+                                <style>
+                                    .tile {
+                                        padding: 15px;
+                                        margin: 0px;
+                                        border: 2px solid rgb(64, 106, 146);
+                                        transition: all 140ms;
+                                    }
+                                    
+                                    .tile:hover {
+                                        border: 2px solid rgba(64, 106, 146, 0.05);
+                                        background: rgba(64, 106, 146, 0.05);
+                                        transition: all 140ms;
+                                    }
+                                    
+                                    .tileheading {
+                                        line-height: 1;
+                                        overflow: hidden;
+                                        color: rgb(64, 106, 146);
+                                        font-weight: 900;
+                                        font-size: 3em;
+                                        letter-spacing: -1px;
+                                        min-height: 200px;
+                                    }
+                                    
+                                    input[type=radio] {
+                                        display: none;
+                                    }
+                                    
+                                    .a-container {
+                                        width: 100%;
+                                    }
+                                    
+                                    .a-container label {
+                                        display: block;
+                                        position: relative;
+                                        cursor: pointer;
+                                        font-size: 18px;
+                                        font-weight: bold;
+                                        padding: 10px 20px;
+                                        border-bottom: 1px dashed #ddd;
+                                        -webkit-transition: all .2s ease;
+                                        -moz-transition: all .2s ease;
+                                        -ms-transition: all .2s ease;
+                                        -o-transition: all .2s ease;
+                                        transition: all .2s ease;
+                                    }
+                                    
+                                    .a-container label:after {
+                                        content: "";
+                                        width: 0;
+                                        height: 0;
+                                        border-top: 8px solid #aaa;
+                                        border-right: 6px solid transparent;
+                                        border-bottom: 8px solid transparent;
+                                        border-left: 6px solid transparent;
+                                        position: absolute;
+                                        right: 10px;
+                                        top: 16px;
+                                    }
+                                    
+                                    .a-container input:checked+label {
+                                        color: #0F9E5E;
+                                        border-bottom: 4px solid #0F9E5E;
+                                    }
+                                    
+                                    .a-content {
+                                        padding: 0 20px 20px;
+                                        display: none;
+                                    }
+                                    
+                                    .a-container input:checked~.a-content {
+                                        display: block;
+                                    }
+                                </style>
+
+                                <h3 class="midlinehead">Artificial Intelligence</h3>
+                                <div class="section-inner">
+
+
+                                    <div class="row" style="margin-bottom:30px;margin-top:60px">
+                                        <div class="large-4 medium-4 tab-6 mob-12" style="padding:5px;">
+                                            <a class="nobefore noborder" style="display:block" href="./projects/AI/AVL Tree Tutor.html">
+                                                <blockquote class="tile">
+                                                    <p class="tileheading">
+                                                        AVL Tree Tutor.
+                                                    </p>
+                                                    <cite class="nobefore" style="color:rgb(64, 106, 146)">Interactive AVL-Tree Intelligent Tutoring System for teaching the insertion algorithm for the AVL trees.</cite>
+                                                </blockquote>
+                                            </a>
+                                        </div>
+                                        <div class="large-4 medium-4 tab-6 mob-12" style="padding:5px;">
+                                            <a class="nobefore noborder" style="display:block" href="./projects/AI/Intellistudy.html">
+                                                <blockquote class="tile">
+                                                    <p class="tileheading">
+                                                        Intellistudy
+                                                    </p>
+                                                    <cite class="nobefore" style="color:rgb(64, 106, 146)">E-Learning Platform that bagged Top-50 position out of 1 lakh participants in Finale of Smart India Hackathon 2018 </cite>
+                                                </blockquote>
+                                            </a>
+
+                                        </div>
+                                        <div class="large-4 medium-4 tab-6 mob-12" style="padding:5px;">
+                                            <a class="nobefore noborder" style="display:block" href="./projects/AI/Tenacity.AI.html">
+                                                <blockquote class="tile">
+                                                    <p class="tileheading">
+                                                        Tenacity.AI
+                                                    </p>
+                                                    <cite class="nobefore" style="color:rgb(64, 106, 146)">Empowering Education Content Creators. Achieved 2nd place in IBM Machine Learning Hackathon.</cite>
+                                                </blockquote>
+                                            </a>
+                                        </div>
+                                    </div>
+
+
+                                    <ul style="list-style:none;margin:0px" class="a-container">
+                                        <!-- item01 -->
+                                        <li class="a-items">
+                                            <input type="radio" name="ac" id="a1" />
+                                            <label class="hvr-underline-reveal" for="a1"><span style="font-size:0.8em; letter-spacing: 2px;text-transform:uppercase;color:rgba(0,0,0,0.30);padding-bottom:10px;">• Other Projects • </span>
+                                            </label>
+                                            <div class="a-content">
+                                                <div class="row">
+                                                    <table>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="padding-top:5px;padding-bottom:5px;padding-right:5px;padding-left:20px;">
+                                                                    <span style="font-weight:800"><a target="_blank" href="https://github.com/arpitjainds/News-Article-Summarization/blob/master/DL.pdf">News Article Summarization</a></span><br>Textual Summarization
+                                                                    of NEWS Articles using Abstractive Methods and sequence to sequence network.
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="padding-top:5px;padding-bottom:5px;padding-right:5px;padding-left:20px;">
+                                                                    <span style="font-weight:800"><a target="_blank" href="#">Dsense</a></span><br>Pre-disaster tracking of Human Resource. Qualified for the global Round of <a href="https://developer.ibm.com/callforcode/">IBM Call For Code Initiative.</a>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="padding-top:5px;padding-bottom:5px;padding-right:5px;padding-left:20px;">
+                                                                    <span style="font-weight:800"><a target="_blank" href="https://drive.google.com/file/d/1Fq3FoSy9zYj2ziiqjwJjdXv1cFC3JGsD/view?usp=sharing">Entity Linking</a></span><br>Working on using
+                                                                    RNNs to perform Entity Linking on video subtitles for Enhancing E-Learning experience.
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+
+                            </section>
+
+                            <section id="dr" style="padding-top:100px">
+                                <h3 class="midlinehead">Data Research</h3>
+                                <div class="section-inner">
+
+                                    <div class="row" style="margin-bottom:30px;margin-top:60px">
+                                        <div class="large-4 medium-4 tab-6 mob-12" style="padding:5px;">
+                                            <a class="nobefore noborder" style="display:block" href="./projects/Data/Predicting Student Performance.html">
+                                                <blockquote class="tile">
+                                                    <p class="tileheading">
+                                                        Predicting Student Performance.
+                                                    </p>
+                                                    <cite class="nobefore" style="color:rgb(64, 106, 146)">Using of Education Data Mining to predict the performance of student in secondary classrooms.</cite>
+                                                </blockquote>
+                                            </a>
+                                        </div>
+                                        <div class="large-4 medium-4 tab-6 mob-12" style="padding:5px;">
+                                            <a class="nobefore noborder" style="display:block" href="./projects/Data/DGrafica.html">
+                                                <blockquote class="tile">
+                                                    <p class="tileheading">
+                                                        D-Grafica.
+                                                    </p>
+                                                    <cite class="nobefore" style="color:rgb(64, 106, 146)">A Data-Chart Classification, Extraction, Reconstruction and Summarization program.</cite>
+                                                </blockquote>
+                                            </a>
+
+                                        </div>
+                                        <div class="large-4 medium-4 tab-6 mob-12" style="padding:5px;">
+                                            <a class="nobefore noborder" style="display:block" href="./projects/Data/Rainfall Vsualization.html">
+                                                <blockquote class="tile">
+                                                    <p class="tileheading">
+                                                        Rainfall Visualization India
+                                                    </p>
+                                                    <cite class="nobefore" style="color:rgb(64, 106, 146)">How has the Average Rainfall
+                                                        Rate in India (considering monthly analysis) varied over the last century?</cite>
+                                                </blockquote>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <!-- <div class="row">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th style="font-size:1.2em; letter-spacing: 2px;text-transform:uppercase;color:rgba(0,0,0,0.25);padding-bottom:10px;">Other Projects</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td style="padding-top:5px;padding-bottom:5px;padding-right:5px;">
+                                                        <span style="font-weight:800"><a target="_blank" href="https://github.com/arpitjainds/Analysis-of-Average-Rainfall-of-India">Average Rainfall-Analysis of India</a></span><br>How has the Average Rainfall
+                                                        Rate in India (considering monthly analysis) varied over the last century?
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div> -->
+                            </section>
+
+                            <section id="hci" style="padding-top:100px">
+                                <h3 class="midlinehead">Human Computer Interaction</h3>
+                                <div class="section-inner">
+
+                                    <div class="row" style="margin-bottom:30px;margin-top:60px">
+                                        <div class="large-4 medium-4 tab-6 mob-12" style="padding:5px;">
+                                            <a class="nobefore noborder" style="display:block" href="./projects/HCI/MOOC Feedback Visualization.html">
+                                                <blockquote class="tile">
+                                                    <p class="tileheading">
+                                                        MOOC Feedback Visualization.
+                                                    </p>
+                                                    <cite class="nobefore" style="color:rgb(64, 106, 146)">Improving the feedback mechanism of MOOC content in order for iterative course improvement.</cite>
+                                                </blockquote>
+                                            </a>
+                                        </div>
+                                        <div class="large-4 medium-4 tab-6 mob-12" style="padding:5px;">
+                                            <a class="nobefore noborder" style="display:block" href="./projects/HCI/Zenbo Class.html">
+                                                <blockquote class="tile">
+                                                    <p class="tileheading">
+                                                        Zenbo Class.
+                                                    </p>
+                                                    <cite class="nobefore" style="color:rgb(64, 106, 146)">The aim of this project was development of a smart classroom application for Asus Zenbo Robot.</cite>
+                                                </blockquote>
+                                            </a>
+
+                                        </div>
+                                        <div class="large-4 medium-4 tab-6 mob-12" style="padding:5px;">
+                                            <a class="nobefore noborder" style="display:block" href="./projects/HCI/Gazinteract.html">
+                                                <blockquote class="tile">
+                                                    <p class="tileheading">
+                                                        Gazinteract.
+                                                    </p>
+                                                    <cite class="nobefore" style="color:rgb(64, 106, 146)">The aim of this project was to determine a non-tangible eye-gaze based screen interaction. </cite>
+                                                </blockquote>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                                    <ul style="list-style:none;margin:0px" class="a-container">
+                                        <!-- item01 -->
+                                        <li class="a-items">
+                                            <input type="radio" name="ac" id="a2" />
+                                            <label class="hvr-underline-reveal" for="a2"><span style="font-size:0.8em; letter-spacing: 2px;text-transform:uppercase;color:rgba(0,0,0,0.30);padding-bottom:10px;">• Other Projects • </span>
+                                            </label>
+                                            <div class="a-content">
+                                                <div class="row">
+                                                    <table>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="padding-top:5px;padding-bottom:5px;padding-right:5px;padding-left:20px;">
+                                                                    <span style="font-weight:800"><a target="_blank" href="https://github.com/arpitjainds/Fragments">Fragments: 3D Platformer Game</a></span><br>A 3D Platformer game in which the character
+                                                                    can move on colored tiles governed by optical illusions and camera perspective.
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="padding-top:5px;padding-bottom:5px;padding-right:5px;padding-left:20px;">
+                                                                    <span style="font-weight:800"><a target="_blank" href="https://arpitjainds.github.io/battleboat-AI/index.html">Battleboat.AI</a></span><br>AI that can beat Human at the game of Battle
+                                                                    Ship.
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td style="padding-top:5px;padding-bottom:5px;padding-right:5px;padding-left:20px;">
+                                                                    <span style="font-weight:800"><a target="_blank" href="https://github.com/arpitjainds/Florence-Chatbot/blob/master/Documentation%20and%20Report/Project%20Report%20Florence%20Chatbot.pdf">Florence.AI</a></span><br>A
+                                                                    Chatbot to study Human Machine Interaction at Local Shops.
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </li>
+
+                                    </ul>
+
+                            </section>
+
+                            <section id="soc" style="padding-top:100px">
+                                <h3 class="midlinehead">Social</h3>
+                                <div class="section-inner">
+
+                                    <div class="row" style="margin-bottom:30px;margin-top:60px">
+                                        <div class="large-4 medium-4 tab-6 mob-12" style="padding:5px;">
+                                            <a class="nobefore noborder" style="display:block" href="./projects/Social/Transit Healthy.html">
+                                                <blockquote class="tile">
+                                                    <p class="tileheading">
+                                                        Transit Healthy.
+                                                    </p>
+                                                    <cite class="nobefore" style="color:rgb(64, 106, 146)">A smart and Healthy City-Transit system. Introducing a brand new way to travel around the modern smart cities.</cite>
+                                                </blockquote>
+                                            </a>
+                                        </div>
+                                        <div class="large-4 medium-4 tab-6 mob-12" style="padding:5px;">
+                                            <a class="nobefore noborder" style="display:block" href="./projects/Social/EQ.html">
+                                                <blockquote class="tile">
+                                                    <p class="tileheading">
+                                                        Emotional Intelligence.
+                                                    </p>
+                                                    <cite class="nobefore" style="color:rgb(64, 106, 146)">Studying the Roles of Males and Females in making an Emotionally Intelligent Corporate Workforce in the Modern Age.</cite>
+                                                </blockquote>
+                                            </a>
+
+                                        </div>
+                                        <div class="large-4 medium-4 tab-6 mob-12" style="padding:5px;">
+                                            <a class="nobefore noborder" style="display:block" href="./projects/Social/MARS.html">
+                                                <blockquote class="tile">
+                                                    <p class="tileheading">
+                                                        Modern Approach to Road Servicing.
+                                                    </p>
+                                                    <cite class="nobefore" style="color:rgb(64, 106, 146)">An Endeavor to design and construct a prototype of a portable road repair machine called MARS. </cite>
+                                                </blockquote>
+                                            </a>
+                                        </div>
+                                    </div>
+
+                            </section>
+
+
+                            </div>
+
+                            </div>
+                            <div class="spacer"></div>
+                            <!-- end entry content -->
+
+                            <img src="./images/old/slid1.png" alt="">
+
+
+                            <div class="entry__pagenav">
+                                <div class="entry__nav">
+                                    <div class="entry__prev">
+                                        <a href="./about.html" rel="prev">
+                                            <span>Who Am I?</span> About
+                                        </a>
+                                    </div>
+                                    <div class="entry__next">
+                                        <a href="./Research.html" rel="next">
+                                            <span>Next</span> Research
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end entry__pagenav -->
+
+                </article>
+                <!-- end column large-full entry-->
 
             </main>
 
-        </div>
-        <!-- end s-content -->
+            </div>
+            <!-- end s-content -->
 
 
-        <!-- footer
+            <!-- footer
         ================================================== -->
-        <footer class="s-footer">
-            <!-- <div class="row">
+            <footer class="s-footer">
+                <!-- <div class="row">
                 <div class="column large-full footer__content">
                     <div class="footer__copyright">
                         <span>© Copyright - All Rights Reserved</span>
@@ -305,61 +680,54 @@
                     </div>
                 </div>
             </div> -->
-            <div style="margin:0px;padding:0px; width:100%">
-                <hr>
+                <div style="margin:0px;padding:0px; width:100%">
+                    <hr>
+                    <p style="text-align: center;color:#d3d3d3; line-height: 1.25;">Last Updated : <span style="font-weight:900;color:#d3d3d3">Oct 30, 2019</span> <br>Copyright <span style="font-weight:900;color:#d3d3d3">@arpitjainds</span></p>
+                </div>
 
-                <p style="text-align: center;color:#d3d3d3; line-height: 1.25;">Last Updated : <span style="font-weight:900;color:#d3d3d3">Oct 30, 2019</span> <br>Copyright <span style="font-weight:900;color:#d3d3d3">@arpitjainds</span></p>
+                <div class="go-top">
+                    <a class="smoothscroll" title="Back to Top" href="#top"></a>
+                </div>
+            </footer>
+
             </div>
-
-            <div class="go-top">
-                <a class="smoothscroll" title="Back to Top" href="#top"></a>
-            </div>
-        </footer>
-
-    </div>
-    <!-- end s-wrap -->
+            <!-- end s-wrap -->
 
 
-    <!-- Java Script
+            <!-- Java Script
     ================================================== -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+            <script src="js/jquery-3.2.1.min.js"></script>
+            <script src="js/plugins.js"></script>
+            <script src="js/main.js"></script>
 
-    <script>
-        //capture scroll any percentage
-        $(window).scroll(function() {
-            var wintop = $(window).scrollTop(),
-                docheight =
+            <script>
+                //capture scroll any percentage
+                $(window).scroll(function() {
+                    var wintop = $(window).scrollTop(),
+                        docheight =
 
-                $(document).height(),
-                winheight = $(window).height();
-            var scrolled = (wintop / (docheight - winheight)) * 100;
+                        $(document).height(),
+                        winheight = $(window).height();
+                    var scrolled = (wintop / (docheight - winheight)) * 100;
 
-            $('.scroll-line').css('width', (scrolled + '%'));
-            $('.scroll-line-bottom').css('width', (scrolled + '%'));
-        });
-    </script>
+                    $('.scroll-line').css('width', (scrolled + '%'));
+                    $('.scroll-line-bottom').css('width', (scrolled + '%'));
+                });
+            </script>
 
-    <script>
-        (function() {
-
-            var shareButtons = document.querySelectorAll(".share-btn");
-
-            if (shareButtons) {
-                [].forEach.call(shareButtons, function(button) {
-                    button.addEventListener("click", function(event) {
-                        var width = 650,
-                            height = 450;
-
-                        event.preventDefault();
-
-                        window.open(this.href, 'Share Dialog', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,width=' + width + ',height=' + height + ',top=' + (screen.height / 2 - height / 2) + ',left=' + (screen.width / 2 - width / 2));
+            <script>
+                $(window).scroll(function(e) {
+                    frames = 17;
+                    step = ($("body").height() - $(window).height()) / frames;
+                    scrollStep = parseInt($(window).scrollTop() / step);
+                    maskPosition = 100 / frames * scrollStep;
+                    $("#cover").css({
+                        "mask-position": maskPosition + "% 50%",
+                        "-webkit-mask-position": maskPosition + "% 50%"
                     });
                 });
-            }
-
-        })();
-    </script>
+            </script>
 
 </body>
+
+</html>
