@@ -113,7 +113,7 @@
                 <!-- end header__search -->
 
                 <!-- toggles -->
-                <a href="#0" class="header__search-trigger noborder"></a>
+                <a href="#0" id="sharebar" style="opacity:0" class="header__search-trigger noborder"></a>
                 <a href="#0" class="header__menu-toggle noborder"><span>Menu</span></a>
 
             </div>
@@ -121,10 +121,10 @@
 
             <nav class="header__nav-wrap">
 
-                <ul class="header__nav">
-                    <li class="current"><a class="noborder" href="./index.html" title="">Work</a></li>
-                    <li><a class="noborder" href="./about.html" title="">About</a></li>
-                    <li class="has-children">
+                <ul class="header__nav" id="headnav">
+                    <li class="current" style="opacity:0"><a class="noborder" href="./index.html" title="">Work</a></li>
+                    <li style="opacity:0"><a class="noborder" href="./about.html" title="">About</a></li>
+                    <li class="has-children" style="opacity:0">
                         <a href="#0" class="noborder" title="">Formal</a>
                         <ul class="sub-menu">
                             <li><a href="./Research.html" title="">Research</a></li>
@@ -132,7 +132,7 @@
                             <li><a href="./Education/formaleducation.html" title="">Education</a></li>
                         </ul>
                     </li>
-                    <li class="has-children">
+                    <li class="has-children" style="opacity:0">
                         <a href="#0" class="noborder" title="">Other</a>
                         <ul class="sub-menu">
                             <li><a target="_blank" href="./CV_.pdf">CV</a></li>
@@ -144,7 +144,7 @@
                 </ul>
                 <!-- end header__nav -->
 
-                <ul class="header__social">
+                <ul class="header__social" id="headsocial" style="opacity:0">
                     <li class="ss-facebook">
                         <a class="noborder" href="https://facebook.com/ArpitJainDS" target="_blank">
                             <span class="screen-reader-text">Facebook</span>
@@ -204,13 +204,13 @@
                     <div class="spacer"></div>
 
                     <div class="row">
-                        <strong>
+                        <strong id="iamarpit" style="opacity:0"> 
                                 <p style="font-size :7em;line-height: 95%;padding-top:20px">
                                 Hi, I am Arpit.<br>
                                 </p>
                         </strong>
                         <br>
-                        <aside class="pull-quote hvr-overline-from-left" style="padding:0px">
+                        <aside id="subtextmain" class="pull-quote hvr-overline-from-left" style="padding:0px;opacity:0">
                             <blockquote>
                                 <span style="font-size:2em;line-height:80%; letter-spacing:-1px;">
                                 <span class="underlined underlined--thin" style="color:#444444">
@@ -262,7 +262,7 @@
                         }
                     </style>
 
-                    <div class="row">
+                    <div class="row" id="selectedworkdownarrow" style="opacity:0">
                         <a href="#selectedwork">
                             <h1>
                                 <svg version="1.1" id="svg-arrow-down" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 22 35" style="enable-background:new 0 0 22 35;" xml:space="preserve">
@@ -725,6 +725,38 @@
                         "mask-position": maskPosition + "% 50%",
                         "-webkit-mask-position": maskPosition + "% 50%"
                     });
+                });
+            </script>
+
+            <script>
+                $(document).ready(function() {
+                    $('#iamarpit').delay(1100).animate({
+                        opacity: 1
+                    }, 500);
+                    $('#subtextmain').delay(1300).animate({
+                        opacity: 1
+                    }, 500);
+                    $('#selectedworkdownarrow').delay(1500).animate({
+                        opacity: 1
+                    }, 500);
+                    $('#headnav > li:first').delay(1700).animate({
+                        opacity: 1
+                    }, 500);
+                    $('#headnav li:eq(1)').delay(1900).animate({
+                        opacity: 1
+                    }, 500);
+                    $('#headnav li:eq(2)').delay(2100).animate({
+                        opacity: 1
+                    }, 500);
+                    $('#headnav > li:last').delay(2300).animate({
+                        opacity: 1
+                    }, 500);
+                    $('#headsocial').delay(2500).animate({
+                        opacity: 1
+                    }, 500);
+                    $('#sharebar').delay(2500).animate({
+                        opacity: 1
+                    }, 500);
                 });
             </script>
 
