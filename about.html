@@ -56,7 +56,7 @@
                     <a class="site-logo-text" href="./index.html">
                         <img src="images/smallaj.png" alt="Homepage">
                     </a>
-                    <a class="site-logo" href="./index.html">
+                    <a class="site-logo" style="opacity: 0;" href="./index.html">
                         <img style="width:40%;padding-left:10px" src="images/logo 8.png" alt="Homepage">
                     </a>
                 </div>
@@ -115,7 +115,7 @@
                 <!-- end header__search -->
 
                 <!-- toggles -->
-                <a href="#0" class="header__search-trigger noborder"></a>
+                <a href="#0" id="sharebar" style="opacity: 0;" class="header__search-trigger noborder"></a>
                 <a href="#0" class="header__menu-toggle noborder"><span>Menu</span></a>
 
             </div>
@@ -123,10 +123,10 @@
 
             <nav class="header__nav-wrap">
 
-                <ul class="header__nav">
-                    <li><a class="noborder" href="index.html" title="">Work</a></li>
-                    <li class="current"><a class="noborder" href="about.html" title="">About</a></li>
-                    <li class="has-children">
+                <ul class="header__nav" id="headnav">
+                    <li style="opacity: 0;"><a class="noborder" href="index.html" title="">Work</a></li>
+                    <li style="opacity: 0;" class="current"><a class="noborder" href="about.html" title="">About</a></li>
+                    <li style="opacity: 0;" class="has-children">
                         <a href="#0" class="noborder" title="">Formal</a>
                         <ul class="sub-menu">
                             <li><a href="Research.html" title="">Research</a></li>
@@ -134,7 +134,7 @@
                             <li><a href="./Education/formaleducation.html" title="">Education</a></li>
                         </ul>
                     </li>
-                    <li class="has-children">
+                    <li style="opacity: 0;" class="has-children">
                         <a href="#0" class="noborder" title="">Other</a>
                         <ul class="sub-menu">
                             <li><a target="_blank" href="./CV_.pdf">CV</a></li>
@@ -146,7 +146,7 @@
                 </ul>
                 <!-- end header__nav -->
 
-                <ul class="header__social">
+                <ul class="header__social" id="headsocial" style="opacity: 0;">
 
                     <li class="ss-facebook">
                         <a class="noborder" href="https://facebook.com/ArpitJainDS" target="_blank">
@@ -225,26 +225,40 @@
 
                     <div class="row" style="padding-left:20px">
                         <div class="large-9 medium-9 tab-full mobile-full">
-                            <img src="./images/namaste.png" width=80%/><br><br> <br>
-                            <div>
-                                <p><br><br><br></p>
+
+                            <div class="parentimagediv" style="opacity: 0;">
+
+                                <img id="longspacecoverimage" src="images/old/space3.jpg">
+                                <img id="smallspacecoverimage" src="images/old/space 5.jpg" width=80% style="border-right:1px solid #d3d3d3">
+
                             </div>
-                            <aside class="pull-quote hvr-overline-from-left" style="padding:0px">
-                                <blockquote>
-                                    <span style="font-size:2em;line-height:80%; letter-spacing:-1px;">
-                                <span class="underlined underlined--thin" style="color:#444444">My name is Arpit and I am currently working as a developer at IBM Labs, Bengaluru, India. <br><br>I conduct Research, develop Software and design <a style="border:0px;" class="nobeforeafter" href="https://arpitjainds.github.io/IntelligentInteractions/IntelligentInteractions.html"><span class="underlined underlined--thick green">Intelligent Interactions.</span></a>
-                                    <br><br>Say hello <a href="mailto:arpit.jain@iiitdmj.ac.in" class="nobeforeafter noborder"><span class="underlined underlined--thick green">here</span></a> or see my
-                                    <a href="./CV_.pdf" class="nobeforeafter noborder" target="_blank"><span class="underlined underlined--thick green">CV.</span></a>
-                                    </span>
-                                    </span>
+                            <img id="namaste" src="./images/namaste.png" width=80% style="opacity: 0;" /><br><br>
+                            <div>
+                                <p>
+                                    <br><br></p>
+                            </div>
+                            <aside id="info" class="pull-quote hvr-overline-from-left" style="padding:0px;opacity:0">
+                                <blockquote style="border:1px dotted #e3e3e3">
+                                    <p style="font-size:1.2em;line-height:125%; letter-spacing:-0.35px;text-align:justify;color:#444444">
+
+                                        My name is Arpit and I am currently working as a developer at IBM Labs, Bengaluru, India. I recently graduated from IIIT, Jabalpur, India majoring in Computer Science & Engineering.
+
+                                        <br><br>I am a multi-disciplinary researcher, developer & designer. I am constantly pondering over creative ideas to bloom the quality of Education via cognitive User-Experience and Intelligent Interactions. I employ
+                                        Data Science, Information Extraction/Visualization, Crowdsourcing and Machine Learning for my research and I believe Data and Design altogether can render pretty valuable outcomes and meaningful representations.
+                                        How AI, Social Computing and Design can fuse together in an effective framework of Project Development?
+                                        <br><br>I am obsessed with lists and I am constanly decluttering stuff. My jokes are funny (mostly, haha!) Currently, I am also working on a side project called
+                                        <a style="border:0px;" class="nobeforeafter" href="https://arpitjainds.github.io/IntelligentInteractions/IntelligentInteractions.html">
+                                                Intelligent Interactions.
+                                        </a> It is basically exploration of a cognitively defined 5-Phase interaction system between 2 entitites (Inanimate or Living). Interested?
+
+                                        <br><br>Say hello <a href="mailto:arpit.jain@iiitdmj.ac.in" class="nobeforeafter noborder">here</a> if you want to collaborate with me in any way or just want to have an engaging conversation over coffee?
+                                        <br><br>This is my <a href="./CV_.pdf" class="nobeforeafter noborder" target="_blank">CV.</a>
+
+                                        <br><br>I was born in Gwalior, India, and raised in Delhi, India. I've lived in India & Taiwan. I speak English & Hindi. And I am stupidly amazed with the fact that how both them connect phonetically.
+
+                                    </p>
                                 </blockquote>
                             </aside>
-                            <div class="parentimagediv">
-
-                                <img id="longspacecoverimage" src="images/old/space3.jpg" width=100%>
-                                <img id="smallspacecoverimage" src="images/old/space 6.jpg" width=100% style="border-right:1px solid #d3d3d3">
-
-                            </div>
                         </div>
                     </div>
 
@@ -359,6 +373,42 @@
             }
 
         })();
+    </script>
+
+    // Delayed Element Loading Animation
+    <script>
+        $(document).ready(function() {
+            $('.parentimagediv').delay(1000).animate({
+                opacity: 1
+            }, 500);
+            $('#namaste').delay(1300).animate({
+                opacity: 1
+            }, 500);
+            $('#info').delay(1500).animate({
+                opacity: 1
+            }, 500);
+            $('.site-logo').delay(1600).animate({
+                opacity: 1
+            }, 500);
+            $('#headnav > li:first').delay(1700).animate({
+                opacity: 1
+            }, 500);
+            $('#headnav li:eq(1)').delay(1900).animate({
+                opacity: 1
+            }, 500);
+            $('#headnav li:eq(2)').delay(2100).animate({
+                opacity: 1
+            }, 500);
+            $('#headnav > li:last').delay(2300).animate({
+                opacity: 1
+            }, 500);
+            $('#headsocial').delay(2500).animate({
+                opacity: 1
+            }, 500);
+            $('#sharebar').delay(2500).animate({
+                opacity: 1
+            }, 500);
+        });
     </script>
 
 </body>
