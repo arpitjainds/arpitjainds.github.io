@@ -140,6 +140,16 @@ body.ss-bg-white {
     background: #ffffff;
 }
 
+.hideonsmalldisplays {
+    display: block;
+}
+
+@media screen and (max-width:1100px) {
+    .hideonsmalldisplays {
+        display: none;
+    }
+}
+
 
 /* ------------------------------------------------------------------- 
  * ## links
