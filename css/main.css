@@ -2580,7 +2580,7 @@ input::-moz-focus-inner {
     font-size: 1.4rem;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: #000;
     transition: all 0.3s;
     position: absolute;
     right: 4rem;
@@ -2589,7 +2589,7 @@ input::-moz-focus-inner {
 
 .header__menu-toggle:hover,
 .header__menu-toggle:focus {
-    color: #ffffff;
+    color: #000;
 }
 
 .header__menu-toggle span {
@@ -2597,7 +2597,7 @@ input::-moz-focus-inner {
     width: 16px;
     height: 2px;
     margin-top: -1px;
-    background-color: #ffffff;
+    background-color: #000;
     transition: all 0.5s;
     font: 0/0 a;
     text-shadow: none;
@@ -2635,7 +2635,7 @@ input::-moz-focus-inner {
 
 .header__menu-toggle.is-clicked span::before,
 .header__menu-toggle.is-clicked span::after {
-    background-color: white;
+    background-color: #000;
 }
 
 .header__menu-toggle.is-clicked span::before {
@@ -3007,7 +3007,8 @@ body.search-is-visible {
         left: 0;
         z-index: 99;
         width: 100%;
-        background: rgba(0, 0, 0, 1);
+        background: #f6f7f8;
+        border-bottom: 1px dotted #d3d3d3;
     }
     #projectpagetopbar {
         display: block;
@@ -3015,9 +3016,8 @@ body.search-is-visible {
     .scroll-line {
         height: 78px;
         margin-bottom: 0px;
-        background: rgb(64, 106, 146);
-        ;
-        z-index: 10000;
+        background: rgb(214, 229, 243);
+        z-index: 99;
         width: 0%;
     }
     .header__top {
@@ -3043,7 +3043,7 @@ body.search-is-visible {
     .header__logo .site-logo-text {
         display: inline-block;
         width: 80px;
-        margin-top: 10px;
+        margin-top: 0px;
         height: 40px;
     }
     .header__nav-wrap {
@@ -3100,8 +3100,6 @@ body.search-is-visible {
     }
     .header__search-trigger {
         background-image: url(../images/icons/birghtness.svg);
-        -webkit-filter: invert(100%);
-        filter: invert(100%);
         transform: scale(1.3);
         height: 20px;
         width: 20px;
