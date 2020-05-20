@@ -61,58 +61,10 @@
                     </a>
                 </div>
 
-                <div class="header__search"><br><br><br><br>
-
-                    <blockquote style="border:none;">
-                        <span style="font-size:3.5em;line-height: 140%">
-                                <strong class="underlined underlined-thin">Share my Portfolio.
-                        </strong>
-                        </span>
-                        <br><br>
-                        <span style="color:#a3a3a3; font-size:2em; line-height: 1;">Or if you want to talk about something interesting, drop me a mail <a target="_blank" href="mailto:arpit.jain@iiitdmj.ac.in">here.</a></span>
-                    </blockquote><br><br>
-
-
-                    <!-- Branded Twitter button -->
-                    <a class="share-btn share-btn-branded share-btn-twitter" href="https://twitter.com/share?url=https%3A%2F%2Farpitjainds.github.io%2Ffindme&text=Arpit Jain Portfolio&via=arpitjainds" title="Share on Twitter">
-                        <span class="share-btn-icon"></span>
-                        <span class="share-btn-text">Twitter</span>
-                    </a>
-
-                    <!-- Branded Facebook button -->
-                    <a class="share-btn share-btn-branded share-btn-facebook" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Farpitjainds.github.io%2Ffindme" title="Share on Facebook">
-                        <span class="share-btn-icon"></span>
-                        <span class="share-btn-text">Facebook</span>
-                    </a>
-
-                    <!-- Branded Reddit button -->
-                    <a class="share-btn share-btn-branded share-btn-reddit" href="http://www.reddit.com/submit?url=https%3A%2F%2Farpitjainds.github.io%2Ffindme" title="Share on Reddit+">
-                        <span class="share-btn-icon"></span>
-                        <span class="share-btn-text">Reddit</span>
-                    </a>
-
-                    <!-- Branded Tumblr button -->
-                    <a class="share-btn share-btn-branded share-btn-tumblr" href="https://www.tumblr.com/share/link?url=https%3A%2F%2Farpitjainds.github.io%2Ffindme" title="Share on Tumblr">
-                        <span class="share-btn-icon"></span>
-                        <span class="share-btn-text">Tumblr</span>
-                    </a>
-
-                    <!-- Branded LinkedIn button -->
-                    <a class="share-btn share-btn-branded share-btn-linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Farpitjainds.github.io%2Ffindme" title="Share on LinkedIn">
-                        <span class="share-btn-icon"></span>
-                        <span class="share-btn-text">LinkedIn</span>
-                    </a>
-
-                    <!-- Branded Pinterest button -->
-                    <a class="share-btn share-btn-branded share-btn-pinterest" href="https://www.pinterest.com/pin/create/button/?url=https%3A%2F%2Farpitjainds.github.io%2Ffindme" title="Share on Pinterest">
-                        <span class="share-btn-icon"></span>
-                        <span class="share-btn-text">Pinterest</span>
-                    </a>
-
+                <div class="header__search">
+                    <header__search></header__search>
                     <a href="#0" title="Close Search" class="header__search-close">Close</a>
-
                 </div>
-                <!-- end header__search -->
 
                 <!-- toggles -->
                 <a href="#0" id="sharebar" style="opacity: 0;" class="header__search-trigger noborder"></a>
@@ -339,6 +291,16 @@
     <script src="js/main.js"></script>
 
     <script>
+        fetch("./ReusableComponents/header__search.html")
+            .then(response => {
+                return response.text()
+            })
+            .then(data => {
+                document.querySelector("header__search").innerHTML = data;
+            });
+    </script>
+
+    <script>
         //capture scroll any percentage
         $(window).scroll(function() {
             var wintop = $(window).scrollTop(),
@@ -411,3 +373,5 @@
     </script>
 
 </body>
+
+</html>
