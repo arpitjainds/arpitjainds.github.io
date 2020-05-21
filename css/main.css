@@ -2672,7 +2672,6 @@ input::-moz-focus-inner {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    border-top: 1px solid #e3e3e3;
     margin-top: 20px;
 }
 
