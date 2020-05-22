@@ -11,7 +11,7 @@
     min-height: 480px;
     width: 100%;
     height: 100%;
-    background: #dbeffd;
+    background: #335C7E;
 }
 
 .ip-header h1 {
@@ -66,13 +66,13 @@
 }
 
 .ip-header .ip-loader svg path.ip-loader-circlebg {
-    stroke: #d1e8f8;
+    stroke: rgb(83, 122, 158);
 }
 
 .ip-header .ip-loader svg path.ip-loader-circle {
     -webkit-transition: stroke-dashoffset 0.2s;
     transition: stroke-dashoffset 0.2s;
-    stroke: rgb(64, 106, 146);
+    stroke: rgb(30, 64, 97);
 }
 
 
