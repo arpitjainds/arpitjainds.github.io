@@ -99,7 +99,7 @@
 
         $WIN.on('load', function() {
 
-            if ($("body").hasClass('demo-1')) {
+            if ($("body").hasClass('preloadercolor')) {
                 initload();
             }
             //force page scroll position to top at page refresh
