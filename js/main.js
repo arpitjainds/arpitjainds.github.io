@@ -6,28 +6,102 @@
 (function($) {
 
     "use strict";
-    
-    var cfg = {
-        scrollDuration : 800, // smoothscroll duration
-        mailChimpURL   : ''   // mailchimp url
-    },
 
-    $WIN = $(window);
+    var support = { animations: Modernizr.cssanimations },
+        container = (document.getElementById('ip-container')) == null ? null : (document.getElementById('ip-container')),
+        header = container == null ? null : (container.querySelector('header.ip-header')) == null ? null : (container.querySelector('header.ip-header')),
+        loader = (document.getElementById('ip-loader-circle')) == null ? null : new PathLoader(document.getElementById('ip-loader-circle')),
+        animEndEventNames = { 'WebkitAnimation': 'webkitAnimationEnd', 'OAnimation': 'oAnimationEnd', 'msAnimation': 'MSAnimationEnd', 'animation': 'animationend' },
+        // animation end event name
+        animEndEventName = animEndEventNames[Modernizr.prefixed('animation')];
+
+    var cfg = {
+            scrollDuration: 800, // smoothscroll duration
+            mailChimpURL: '' // mailchimp url
+        },
+
+        $WIN = $(window);
 
     // Add the User Agent to the <html>
     // will be used for IE10/IE11 detection (Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0; rv:11.0))
     var doc = document.documentElement;
     doc.setAttribute('data-useragent', navigator.userAgent);
 
+    function initload() {
+        var onEndInitialAnimation = function() {
+            if (support.animations) {
+                this.removeEventListener(animEndEventName, onEndInitialAnimation);
+            }
 
-   /* Preloader
-    * -------------------------------------------------- */
+            startLoading();
+        };
+
+        // disable scrolling
+        window.addEventListener('scroll', noscroll);
+
+        // initial animation
+        classie.add(container, 'loading');
+
+        if (support.animations) {
+            container.addEventListener(animEndEventName, onEndInitialAnimation);
+        } else {
+            onEndInitialAnimation();
+        }
+    }
+
+    function startLoading() {
+        // simulate loading something..
+        var simulationFn = function(instance) {
+            var progress = 0,
+                interval = setInterval(function() {
+                    progress = Math.min(progress + Math.random() * 0.1, 1);
+
+                    instance.setProgress(progress);
+
+                    // reached the end
+                    if (progress === 1) {
+                        classie.remove(container, 'loading');
+                        classie.add(container, 'loaded');
+                        clearInterval(interval);
+
+                        var onEndHeaderAnimation = function(ev) {
+                            if (support.animations) {
+                                if (ev.target !== header) return;
+                                this.removeEventListener(animEndEventName, onEndHeaderAnimation);
+                            }
+
+                            classie.add(document.body, 'layout-switch');
+                            window.removeEventListener('scroll', noscroll);
+                        };
+
+                        if (support.animations) {
+                            header.addEventListener(animEndEventName, onEndHeaderAnimation);
+                        } else {
+                            onEndHeaderAnimation();
+                        }
+                    }
+                }, 80);
+        };
+
+        loader.setProgressFn(simulationFn);
+    }
+
+    function noscroll() {
+        window.scrollTo(0, 0);
+    }
+
+
+    /* Preloader
+     * -------------------------------------------------- */
     var ssPreloader = function() {
-        
+
         $("html").addClass('ss-preload');
 
         $WIN.on('load', function() {
 
+            if ($("body").hasClass('demo-1')) {
+                initload();
+            }
             //force page scroll position to top at page refresh
             // $('html, body').animate({ scrollTop: 0 }, 'normal');
 
@@ -35,30 +109,30 @@
             $("#loader").fadeOut("slow", function() {
                 // will fade out the whole DIV that covers the website.
                 $("#preloader").delay(300).fadeOut("slow");
-            }); 
-            
+            });
+
             // for hero content animations 
             $("html").removeClass('ss-preload');
             $("html").addClass('ss-loaded');
-        
+
         });
     };
 
 
-   /* Pretty Print
-    * -------------------------------------------------- */
+    /* Pretty Print
+     * -------------------------------------------------- */
     var ssPrettyPrint = function() {
         $('pre').addClass('prettyprint');
-        $( document ).ready(function() {
+        $(document).ready(function() {
             prettyPrint();
         });
     };
 
-   
-   /* search
-    * ------------------------------------------------------ */
+
+    /* search
+     * ------------------------------------------------------ */
     var ssSearch = function() {
-            
+
         var searchWrap = $('.header__search'),
             searchField = searchWrap.find('.search-field'),
             closeSearch = searchWrap.find('.header__search-close'),
@@ -67,55 +141,55 @@
 
 
         searchTrigger.on('click', function(e) {
-            
+
             e.preventDefault();
             e.stopPropagation();
-        
+
             var $this = $(this);
-        
+
             siteBody.addClass('search-is-visible');
-            setTimeout(function(){
+            setTimeout(function() {
                 searchWrap.find('.search-field').focus();
             }, 100);
-        
+
         });
 
         closeSearch.on('click', function(e) {
 
             var $this = $(this);
-        
-            e.stopPropagation(); 
-        
-            if(siteBody.hasClass('search-is-visible')){
+
+            e.stopPropagation();
+
+            if (siteBody.hasClass('search-is-visible')) {
                 siteBody.removeClass('search-is-visible');
-                setTimeout(function(){
+                setTimeout(function() {
                     searchWrap.find('.search-field').blur();
                 }, 100);
             }
         });
 
-        searchWrap.on('click',  function(e) {
-            if( !$(e.target).is('.search-field') ) {
+        searchWrap.on('click', function(e) {
+            if (!$(e.target).is('.search-field')) {
                 closeSearch.trigger('click');
             }
         });
-            
-        searchField.on('click', function(e){
+
+        searchField.on('click', function(e) {
             e.stopPropagation();
         });
-            
-        searchField.attr({placeholder: 'Type Keywords', autocomplete: 'off'});
+
+        searchField.attr({ placeholder: 'Type Keywords', autocomplete: 'off' });
 
     };
 
 
-   /* menu
-    * ------------------------------------------------------ */
+    /* menu
+     * ------------------------------------------------------ */
     var ssMenu = function() {
 
         var menuToggle = $('.header__menu-toggle'),
             siteBody = $('body');
-    
+
         menuToggle.on('click', function(e) {
             e.preventDefault();
             e.stopPropagation();
@@ -123,8 +197,8 @@
             siteBody.toggleClass('nav-wrap-is-visible');
         });
 
-        $('.header__nav .has-children').children('a').on('click', function (e) {
-            
+        $('.header__nav .has-children').children('a').on('click', function(e) {
+
             e.preventDefault();
 
             $(this).toggleClass('sub-menu-is-open')
@@ -142,10 +216,10 @@
     };
 
 
-   /* masonry
-    * ---------------------------------------------------- */ 
-    var ssMasonryFolio = function () {
-        
+    /* masonry
+     * ---------------------------------------------------- */
+    var ssMasonryFolio = function() {
+
         var containerBricks = $('.masonry');
 
         containerBricks.masonry({
@@ -156,14 +230,14 @@
         });
 
         // layout Masonry after each image loads
-        containerBricks.imagesLoaded().progress( function() {
+        containerBricks.imagesLoaded().progress(function() {
             containerBricks.masonry('layout');
         });
 
     };
 
-   /* animate bricks
-    * ------------------------------------------------------ */
+    /* animate bricks
+     * ------------------------------------------------------ */
     var ssBricksAnimate = function() {
 
         var animateEl = $('.animate-this');
@@ -173,7 +247,7 @@
             setTimeout(function() {
                 animateEl.each(function(ctr) {
                     var el = $(this);
-                    
+
                     setTimeout(function() {
                         el.addClass('animated');
                     }, ctr * 200);
@@ -190,8 +264,8 @@
     };
 
 
-   /* slick slider
-    * ------------------------------------------------------ */
+    /* slick slider
+     * ------------------------------------------------------ */
     var ssSlickSlider = function() {
 
         var $gallery = $('.slider__slides').slick({
@@ -205,28 +279,28 @@
             fade: true,
             cssEase: 'linear'
         });
-        
+
         $('.slider__slide').on('click', function() {
-            $gallery.slick('slickGoTo', parseInt($gallery.slick('slickCurrentSlide'))+1);
+            $gallery.slick('slickGoTo', parseInt($gallery.slick('slickCurrentSlide')) + 1);
         });
 
     };
 
 
-   /* smooth scrolling
-    * ------------------------------------------------------ */
+    /* smooth scrolling
+     * ------------------------------------------------------ */
     var ssSmoothScroll = function() {
-        
-        $('.smoothscroll').on('click', function (e) {
+
+        $('.smoothscroll').on('click', function(e) {
             var target = this.hash,
-            $target    = $(target);
-            
-                e.preventDefault();
-                e.stopPropagation();
+                $target = $(target);
+
+            e.preventDefault();
+            e.stopPropagation();
 
             $('html, body').stop().animate({
                 'scrollTop': $target.offset().top
-            }, cfg.scrollDuration, 'swing').promise().done(function () {
+            }, cfg.scrollDuration, 'swing').promise().done(function() {
 
                 // check if menu is open
                 if ($('body').hasClass('menu-is-open')) {
@@ -240,22 +314,22 @@
     };
 
 
-   /* alert boxes
-    * ------------------------------------------------------ */
+    /* alert boxes
+     * ------------------------------------------------------ */
     var ssAlertBoxes = function() {
 
         $('.alert-box').on('click', '.alert-box__close', function() {
             $(this).parent().fadeOut(500);
-        }); 
+        });
 
     };
 
 
-   /* Back to Top
-    * ------------------------------------------------------ */
+    /* Back to Top
+     * ------------------------------------------------------ */
     var ssBackToTop = function() {
-        
-        var pxShow      = 500,
+
+        var pxShow = 500,
             goTopButton = $(".go-top")
 
         // Show or hide the button
@@ -263,7 +337,7 @@
 
         $(window).on('scroll', function() {
             if ($(window).scrollTop() >= pxShow) {
-                if(!goTopButton.hasClass('link-is-visible')) goTopButton.addClass('link-is-visible')
+                if (!goTopButton.hasClass('link-is-visible')) goTopButton.addClass('link-is-visible')
             } else {
                 goTopButton.removeClass('link-is-visible')
             }
@@ -271,8 +345,8 @@
     };
 
 
-   /* Initialize
-    * ------------------------------------------------------ */
+    /* Initialize
+     * ------------------------------------------------------ */
     (function clInit() {
 
         ssPreloader();
