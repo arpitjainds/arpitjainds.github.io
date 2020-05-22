@@ -1,8 +1,3 @@
-/* ===================================================================
- * TypeRite - Main JS
- *
- * ------------------------------------------------------------------- */
-
 (function($) {
 
     "use strict";
@@ -36,9 +31,6 @@
             startLoading();
         };
 
-        // disable scrolling
-        window.addEventListener('scroll', noscroll);
-
         // initial animation
         classie.add(container, 'loading');
 
@@ -71,7 +63,6 @@
                             }
 
                             classie.add(document.body, 'layout-switch');
-                            window.removeEventListener('scroll', noscroll);
                         };
 
                         if (support.animations) {
@@ -86,14 +77,12 @@
         loader.setProgressFn(simulationFn);
     }
 
-    function noscroll() {
-        window.scrollTo(0, 0);
-    }
-
 
     /* Preloader
      * -------------------------------------------------- */
     var ssPreloader = function() {
+
+        window.scrollTo(0, 0);
 
         $("html").addClass('ss-preload');
 
