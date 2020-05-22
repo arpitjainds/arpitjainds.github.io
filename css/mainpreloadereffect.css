@@ -29,7 +29,9 @@
 }
 
 .ip-logo img {
-    width: 15%
+    width: 16%;
+    left: 42%;
+    position: absolute;
 }
 
 .ip-logo {
@@ -207,6 +209,8 @@
         font-size: 10vw;
     }
     .ip-logo img {
-        width: 50%
+        width: 50%;
+        position: absolute;
+        left: 25%
     }
 }
