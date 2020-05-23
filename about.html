@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
     <!-- script
     ================================================== -->
@@ -149,7 +150,44 @@
                                 <img id="smallspacecoverimage" src="images/old/space 8.jpg" width=60%>
 
                             </div>
+
+
                             <img id="namaste" src="./images/namaste.png" width=80% style="opacity: 0;" />
+
+                            <style>
+                                .btnnamaste {
+                                    cursor: pointer;
+                                    bottom: 50px;
+                                    display: inline-block;
+                                    padding: 5px;
+                                    border: 1px dotted #33998a;
+                                    line-height: 20px;
+                                }
+                                
+                                .btnnamaste:after {
+                                    content: '';
+                                    display: inline-block;
+                                    color: #33998a;
+                                    font-family: 'FontAwesome';
+                                    height: 15px;
+                                    width: 15px;
+                                    margin-left: 3px;
+                                    margin-right: 3px;
+                                }
+                                
+                                .btnnamaste:hover {
+                                    border: 1px dotted #33998a;
+                                }
+                                
+                                .btnnamaste.playing:after {
+                                    content: '';
+                                }
+                            </style>
+                            <audio id="nyan" src="./Sounds/namastepronounciation.mp3" preload="metadata" type="audio/mpeg">
+                                Your browser does not support the audio element.
+                             </audio>
+                            <a class="btnnamaste" id="nyan-btn"></a>
+
                             <div>
                                 <p></p>
                             </div>
@@ -270,6 +308,50 @@
             .then(data => {
                 document.querySelector("header__social").innerHTML = data;
             });
+    </script>
+
+    <script>
+        var nyan = document.getElementById('nyan');
+        var nyanBtn = document.getElementById('nyan-btn');
+
+        function playPause(song) {
+            if (song.paused && song.currentTime >= 0 && !song.ended) {
+                song.play();
+            } else {
+                song.pause();
+            }
+        }
+
+        function reset(btn, song) {
+            if (btn.classList.contains('playing')) {
+                btn.classList.toggle('playing');
+            }
+            song.pause();
+            song.currentTime = 0;
+        }
+
+        function progress(btn, song) {
+            console.log("PROGRESS");
+            setTimeout(function() {
+                var end = song.duration;
+                var current = song.currentTime;
+                var percent = current / (end / 100);
+                //check if song is at the end
+                if (current == end) {
+                    reset(btn, song);
+                }
+                //set inset box shadow
+                btn.style.boxShadow = "inset " + btn.offsetWidth * (percent / 100) + "px 0px 0px 0px rgba(68, 207, 168, 0.658)"
+                    //call function again
+                progress(btn, song);
+            }, 1000);
+        }
+
+        nyanBtn.addEventListener('click', function() {
+            nyanBtn.classList.toggle('playing');
+            playPause(nyan);
+            progress(nyanBtn, nyan);
+        });
     </script>
 
     <script>
