@@ -78,16 +78,19 @@ h1 {
 /*Scrollbar Modification*/
 
 ::-webkit-scrollbar-track {
+    display: none;
     border-radius: 00px;
     background-color: rgba(199, 199, 199, 0);
 }
 
  ::-webkit-scrollbar {
+    display: none;
     width: 6px;
     background-color: rgba(0, 0, 0, 0);
 }
 
  ::-webkit-scrollbar-thumb {
+    display: none;
     border-radius: 0px;
     background-color: rgba(0, 0, 0, 0.8);
 }
