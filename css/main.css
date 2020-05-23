@@ -409,12 +409,6 @@ blockquote p {
     color: #000000;
 }
 
-@media screen and (max-width:500px) {
-    blockquote p {
-        font-size: 2.2rem;
-    }
-}
-
 blockquote cite {
     display: block;
     font-family: "Regular", "IBM Plex Sans", sans-serif;
@@ -434,6 +428,19 @@ blockquote cite a,
 blockquote cite a:visited {
     color: #7e7e7e;
     border: none;
+}
+
+blockquote span {
+    font-size: 2.8rem;
+}
+
+@media screen and (max-width:500px) {
+    blockquote p {
+        font-size: 2.2rem;
+    }
+    blockquote span {
+        font-size: 2.1rem;
+    }
 }
 
 abbr {
