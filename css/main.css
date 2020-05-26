@@ -5029,12 +5029,13 @@ audio:not([controls]) {
     padding: 0 5vw 25vh;
     line-height: 2;
     color: var(--color-text);
+    cursor: none;
 }
 
 .content__text-link {
     position: relative;
     font-weight: bold;
-    cursor: pointer;
+    cursor: none;
 }
 
 a.content__text-link[data-fx="1"]::after,

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Arpit Jain | Intelligent Interactions</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:title" content="Arpit Jain | Intelligent Interactions">
+    <meta property="og:image" content="https://arpitjainds.github.io/assets/img/logo.png">
+    <meta property="og:description" content="Intelligent Interactions by Arpit Jain.">
+    <meta property="og:url" content="https://arpitjainds.github.io/IntelligentInteractions/IntelligentInteractions.html">
+    <meta name="author" content="Arpit Jain">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="Assets/css/main.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./Assets/img/Small.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./Assets/img/Small.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./Assets/img/Small.png">
+</head>
+
+<body>
+
+    <!-- notification for small viewports and landscape oriented smartphones -->
+    <div class="device-notification">
+        <a class="device-notification--logo" href="./index.html">
+            <img src="Assets/img/smallaj.png" width=70px height=50px alt="Arpit">
+            <p></p>
+        </a>
+        <p class="device-notification--message">This Page has so much to show therefore I request you to orient your device to portrait or find a larger screen. You won't be disappointed.</p>
+    </div>
+
+    <div class="perspective effect-rotate-left">
+        <div id="viewport" class="l-viewport">
+            <div class="l-wrapper">
+                <header class="header">
+                    <a class="header--logo" href="../index.html">
+                        <img src="Assets/img/smallaj.png" width=70px height=50px alt="Global">
+                        <p></p>
+                    </a>
+                </header>
+
+                <div class='container'>
+                    <div class='column'>
+                        <div class='til'>
+                            <h1>Intelligent Interactions</h1>
+                            <p style="color:white">A cognitively defined 5-Phase interaction system between 2 entitites (Inanimate or Living). </p>
+                            <p>Tap or Hover on the Circles for information.</p>
+
+                        </div>
+                        <div class='sub'>
+                            <p>IDEA BY</p>
+                            <h3>Arpit Jain</h3>
+                        </div>
+                    </div>
+                    <div class='column align-h'>
+                        <div class='circle-wrapper'>
+                            <a class='circle 1' href='#'>1</a>
+                            <a class='circle 2' href='#'>2</a>
+                            <a class='circle 3' href='#'>3</a>
+                            <a class='circle 4' href='#'>4</a>
+                            <a class='circle 5' href='#'>5</a>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <div id='righttext'>
+                            <div class='contain text1'>
+                                <h2>Skin 1</h2>
+                                <p>Outer Shell</p>
+                                <h4>Approach Barrier</h4>
+                            </div>
+                            <div class='contain text2'>
+                                <h2>Skin 2</h2>
+                                <p>Inner Shell</p>
+                                <h4>Thought Compatibility</h4>
+                            </div>
+                            <div class='contain text3'>
+                                <h2>Skin 3</h2>
+                                <p>Comfort Layer</p>
+                                <h4>Relaxed Existence</h4>
+                            </div>
+                            <div class='contain text4'>
+                                <h2>Skin 4</h2>
+                                <p>Intimate layer</p>
+                                <h4>Dependency / Dopamine Injection</h4>
+                            </div>
+                            <div class='contain text5'>
+                                <h2>Skin 5</h2>
+                                <p>Mind-Soul Connectivity</p>
+                                <h4>Wisdom / Salvation</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id='bottomtext'>
+                    <div class='contain textbottom1'>
+                        <h2>Skin 1</h2>
+                        <p>Outer Shell</p>
+                        <h4>Approach Barrier</h4>
+                    </div>
+                    <div class='contain textbottom2'>
+                        <h2>Skin 2</h2>
+                        <p>Inner Shell</p>
+                        <h4>Thought Compatibility</h4>
+                    </div>
+                    <div class='contain textbottom3'>
+                        <h2>Skin 3</h2>
+                        <p>Comfort Layer</p>
+                        <h4>Relaxed Existence</h4>
+                    </div>
+                    <div class='contain textbottom4'>
+                        <h2>Skin 4</h2>
+                        <p>Intimate layer</p>
+                        <h4>Dependency / Dopamine Injection</h4>
+                    </div>
+                    <div class='contain textbottom5'>
+                        <h2>Skin 5</h2>
+                        <p>Mind-Soul Connectivity</p>
+                        <h4>Wisdom / Salvation</h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.3.48/Tone.js"></script>
+    <script>
+        const nodes = [].slice.call(document.querySelectorAll('.circle'), 0);
+        let synth = new Tone.Synth().toMaster();
+
+        class Circles {
+            constructor(element) {
+                this.el = element;
+                this.el.addEventListener('mouseover', (ev) => this.updateIn(ev));
+                this.el.addEventListener('mouseout', (ev) => this.updateOut(ev));
+            }
+            updateIn(ev) {
+                document.querySelector('.text' + this.el.classList[1]).classList.add('active');
+                document.querySelector('.textbottom' + this.el.classList[1]).classList.add('active');
+                synth.triggerAttackRelease('C4', '8n');
+            }
+            updateOut(ev) {
+                document.querySelector('.text' + this.el.classList[1]).classList.remove('active');
+                document.querySelector('.textbottom' + this.el.classList[1]).classList.remove('active');
+            }
+        }
+
+        nodes.forEach(node => new Circles(node));
+    </script>
+</body>
+
+</html>
