@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/mainpreloadereffect.css" />
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+
 
     <!-- script
     ================================================== -->
@@ -139,12 +141,45 @@
                                         font-size: 6.5rem;
                                     }
                                 }
+                                
+                                .btnnamaste {
+                                    cursor: pointer;
+                                    display: inline-block;
+                                    padding: 5px;
+                                    bottom: 10px;
+                                    border: 1px dotted #33998a;
+                                    line-height: 0px;
+                                }
+                                
+                                .btnnamaste:after {
+                                    content: '';
+                                    display: inline-block;
+                                    color: #33998a;
+                                    font-family: 'FontAwesome';
+                                    font-size: 15px;
+                                    text-align: center;
+                                    height: 10px;
+                                    width: 24px;
+                                }
+                                
+                                .btnnamaste:hover {
+                                    border: 1px dotted #33998a;
+                                }
+                                
+                                .btnnamaste.playing:after {
+                                    content: '';
+                                }
                             </style>
 
                             <div class="row">
                                 <strong id="iamarpit" style="opacity:0"> 
                                         <p style="line-height: 95%;padding-top:20px">
-                                        Hi, I am Arpit.<br>
+                                        Hi, I am <a class="content__text-link nobefore noborder" data-img="images/old/space8.jpg" data-fx="2">Arpit.</a>&nbsp;
+                                        <!-- <audio id="nyan" src="./Sounds/namastepronounciation.mp3" preload="metadata" type="audio/mpeg">
+                                            Your browser does not support the audio element.
+                                         </audio>
+                                        <a class="btnnamaste" id="nyan-btn"></a> -->
+                                        <br>
                                         </p>
                                 </strong>
                                 <br>
@@ -154,11 +189,11 @@
                                         <span class="underlined underlined--thin" style="color:#444444">
                                             Currently working as a developer at IBM Labs, Bengaluru, India. <br>
                                             I conduct Research, develop Software and design 
-                                            <a style="border:0px;" class="nobeforeafter" href="https://arpitjainds.github.io/IntelligentInteractions/IntelligentInteractions.html">
+                                            <a style="border:0px;" href="https://arpitjainds.github.io/IntelligentInteractions/IntelligentInteractions.html">
                                                 Intelligent Interactions.
                                             </a>
                                             <br><br>                              
-                                        Say hello <a href="mailto:arpit.jain@iiitdmj.ac.in" class="nobeforeafter noborder">here.</a>
+                                        Say hello <a href="mailto:arpit.jain@iiitdmj.ac.in" class="noborder">here.</a>
                                         </span>
                                         </span>
                                     </blockquote>
@@ -529,9 +564,17 @@
     ================================================== -->
                 <script src="js/jquery-3.2.1.min.js"></script>
                 <script src="js/plugins.js"></script>
+
+                <!-- Preloader -->
                 <script src="js/classie.js"></script>
                 <script src="js/pathLoader.js"></script>
                 <script src="js/main.js"></script>
+
+                <!-- Image Hover Effects -->
+                <script src="js/charming.min.js"></script>
+                <script src="js/imagesloaded.pkgd.min.js"></script>
+                <script src="js/TweenMax.min.js"></script>
+                <script src="js/hoverImage.js"></script>
 
                 <script>
                     fetch("./ReusableComponents/header__search.html")
@@ -548,6 +591,50 @@
                         .then(data => {
                             document.querySelector("header__social").innerHTML = data;
                         });
+                </script>
+
+                <script>
+                    var nyan = document.getElementById('nyan');
+                    var nyanBtn = document.getElementById('nyan-btn');
+
+                    function playPause(song) {
+                        if (song.paused && song.currentTime >= 0 && !song.ended) {
+                            song.play();
+                        } else {
+                            song.pause();
+                        }
+                    }
+
+                    function reset(btn, song) {
+                        if (btn.classList.contains('playing')) {
+                            btn.classList.toggle('playing');
+                        }
+                        song.pause();
+                        song.currentTime = 0;
+                    }
+
+                    function progress(btn, song) {
+                        console.log("PROGRESS");
+                        setTimeout(function() {
+                            var end = song.duration;
+                            var current = song.currentTime;
+                            var percent = current / (end / 100);
+                            //check if song is at the end
+                            if (current == end) {
+                                reset(btn, song);
+                            }
+                            //set inset box shadow
+                            btn.style.boxShadow = "inset " + btn.offsetWidth * (percent / 100) + "px 0px 0px 0px rgba(68, 207, 168, 0.658)"
+                                //call function again
+                            progress(btn, song);
+                        }, 1000);
+                    }
+
+                    nyanBtn.addEventListener('click', function() {
+                        nyanBtn.classList.toggle('playing');
+                        playPause(nyan);
+                        progress(nyanBtn, nyan);
+                    });
                 </script>
 
                 <script>
