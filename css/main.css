@@ -4094,19 +4094,6 @@ body.search-is-visible {
     display: none;
 }
 
-.faderightprojects {
-    position: absolute;
-    bottom: 0px;
-    right: -2px;
-    width: 7em;
-    height: 200px;
-    background: -webkit-linear-gradient(to right, rgba(240, 221, 221, 0) 0%, #f6f7f8 100%);
-    background-image: -moz-linear-gradient(to right, rgba(240, 221, 221, 0) 0%, #f6f7f8 100%);
-    background-image: -o-linear-gradient(to right, rgba(240, 221, 221, 0) 0%, #f6f7f8 100%);
-    background-image: linear-gradient(to right, rgba(240, 221, 221, 0) 0%, #f6f7f8 100%);
-    background-image: -ms-linear-gradient(to right, rgba(240, 221, 221, 0) 0%, #f6f7f8 100%);
-}
-
 
 /*Project page sections*/
 
