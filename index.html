@@ -535,18 +535,81 @@
                     <!-- footer
                 ================================================== -->
                     <footer class="s-footer">
-                        <!-- <div class="row">
-                        <div class="column large-full footer__content">
-                            <div class="footer__copyright">
-                                <span>© Copyright - All Rights Reserved</span>
-                                <span>Design by <a href="">Arpit Jain</a></span>
+                        <style>
+                            .Custom__footer {
+                                grid-area: footer;
+                                background: #dcece9;
+                            }
+                            
+                            .footer__right {
+                                background: #bde4dd;
+                                padding: 5vw;
+                                color: rgba(0, 0, 0, 0.5);
+                            }
+                            
+                            .footer__right a {
+                                color: inherit;
+                            }
+                            
+                            .footer__right a:hover {
+                                color: var(--color-textlink);
+                                color: rgba(0, 0, 0, 0.75);
+                            }
+                            
+                            .footer__column {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                margin: 1rem 0;
+                            }
+                            
+                            @media screen and (min-width: 60em) {
+                                .Custom__footer {
+                                    display: grid;
+                                    align-items: center;
+                                    grid-template-columns: 20vw 70vw;
+                                    margin-top: 20vh;
+                                }
+                                .footer__right {
+                                    border: none;
+                                    display: grid;
+                                    grid-template-columns: 1fr 1fr 1fr;
+                                    grid-template-rows: 100%;
+                                }
+                                .footer__column {
+                                    margin: 0;
+                                }
+                            }
+                            
+                            @media screen and (max-width: 1100px) {
+                                .Custom__footer {
+                                    display: none;
+                                }
+                            }
+                        </style>
+                        <footer class="Custom__footer">
+                            <div class="footer__left">
+                                <div class="footer__copyright">
+                                    <span>© Copyright • arpitjainds</span>
+                                </div>
                             </div>
-                        </div>
-                    </div> -->
-                        <div style="margin:0px;padding:0px; width:100%">
-                            <hr>
-                            <p style="text-align: center;color:#d3d3d3; line-height: 1.25;">Last Updated : <span style="font-weight:900;color:#d3d3d3">Oct 30, 2019</span> <br>Copyright <span style="font-weight:900;color:#d3d3d3">@arpitjainds</span></p>
-                        </div>
+                            <div class="footer__right hvr-overline-from-left">
+
+                                <div class="footer__column">
+                                    <a href="./Research.html">Research</a>
+                                    <a href="./Experience/professionalexperience.html">Experience</a>
+                                    <a href="./Education/formaleducation.html">Education</a>
+                                </div>
+                                <div class="footer__column">
+                                    <a href="about.html">About</a>
+                                    <a href="CV_.pdf">Curriculum Vitae</a>
+                                    <a href="./Other/Paintings.html">Paintings</a>
+                                </div>
+                                <div class="footer__column">
+                                    <br>
+                                </div>
+                            </div>
+                        </footer>
 
                         <div class="go-top">
                             <a class="smoothscroll" title="Back to Top" href="#top"></a>
