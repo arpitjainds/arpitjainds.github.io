@@ -412,15 +412,20 @@ blockquote p {
 blockquote cite {
     display: block;
     font-family: "Regular", "IBM Plex Sans", sans-serif;
-    /* font-size: 1.2rem; */
+    font-size: 1.4rem;
     font-style: normal;
     position: absolute;
-    bottom: 10px;
+    margin-right: 20px;
+    bottom: 25px;
     line-height: 1.2;
 }
 
 blockquote cite:before {
     content: "\2014 \0020";
+}
+
+blockquote cite:after {
+    content: " ";
 }
 
 blockquote cite,
@@ -3475,18 +3480,19 @@ body.search-is-visible {
     font-weight: 400;
     font-size: 1.3rem;
     line-height: inherit;
-    color: #1a1a1a;
-    border: 1px solid rgba(0, 0, 0, 0.3);
+    color: rgb(64, 106, 146);
+    background: rgb(64, 106, 146, 0.05);
+    border: 0px solid rgba(0, 0, 0, 0.3);
     border-radius: 0px;
     margin-right: 6px;
     margin-bottom: 8px;
-    padding: 1px 12px;
+    padding: 8px 18px;
 }
 
 .entry__tags .entry__tag-list a:hover,
 .entry__tags .entry__tag-list a:focus {
-    background-color: #000000;
-    border-color: #000000;
+    background-color: rgb(64, 106, 146);
+    border-color: rgb(64, 106, 146);
     color: #ffffff;
 }
 
@@ -4919,15 +4925,16 @@ h1 svg .arrow {
   ----------------------------------------------*/
 
 .tile {
-    padding: 15px;
+    padding: 25px;
     margin: 0px;
-    border: 2px solid rgb(64, 106, 146);
+    border: 1px solid #f6f7f8;
+    background: rgba(64, 106, 146, 0.04);
     transition: all 140ms;
 }
 
 .tile:hover {
-    border: 2px solid rgba(64, 106, 146, 0.05);
-    background: rgba(64, 106, 146, 0.05);
+    border: 1px dotted rgb(64, 106, 146);
+    background: rgba(64, 106, 146, 0.1);
     transition: all 140ms;
 }
 
@@ -4936,7 +4943,7 @@ h1 svg .arrow {
     overflow: hidden;
     color: rgb(64, 106, 146);
     font-weight: 900;
-    font-size: 3em;
+    font-size: 2.8em;
     letter-spacing: -1px;
     min-height: 200px;
 }
@@ -5140,4 +5147,60 @@ a.content__text-link[data-fx="14"]:hover::after {
 .hover-reveal__img {
     background-size: cover;
     background-position: 50% 50%;
+}
+
+
+/*----------------------------------------------
+      Custom Footer
+  ----------------------------------------------*/
+
+.Custom__footer {
+    grid-area: footer;
+    background: #dcece9;
+}
+
+.footer__right {
+    background: #bde4dd;
+    padding: 5vw;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.footer__right a {
+    color: inherit;
+}
+
+.footer__right a:hover {
+    color: var(--color-textlink);
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.footer__column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 1rem 0;
+}
+
+@media screen and (min-width: 60em) {
+    .Custom__footer {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 20vw 70vw;
+        margin-top: 20vh;
+    }
+    .footer__right {
+        border: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 100%;
+    }
+    .footer__column {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .Custom__footer {
+        display: none;
+    }
 }
