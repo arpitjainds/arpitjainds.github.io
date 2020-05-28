@@ -19,7 +19,6 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
 
     <!-- script
     ================================================== -->
@@ -109,7 +108,7 @@
         </header>
         <!-- end s-header -->
 
-        <div class="s-content">
+        <div class="s-content content content--blended">
 
             <div class="topbar">
                 <div class="scroll-line"></div>
@@ -123,21 +122,27 @@
 
                 <section class="column large-full entry format-standard">
                     <style>
-                        .nobeforeafter::after {
-                            display: none;
-                        }
-                        
-                        .nobeforeafter::before {
-                            display: none;
-                        }
-                        
-                        .nobeforeafter {
-                            padding: 0px;
-                        }
-                        
                         .parentimagediv {
                             position: relative;
                             width: 100%;
+                        }
+                        
+                        #aboutmetext {
+                            font-size: 2.8em;
+                            line-height: 115%;
+                            letter-spacing: -1px;
+                            color: #cccbcb;
+                            padding: 15px;
+                            font-weight: 900
+                        }
+                        
+                        @media screen and (max-width: 50em) {
+                            #aboutmetext {
+                                font-size: 1.6em;
+                                color: #afadad;
+                                font-weight: 100;
+                                letter-spacing: -0.40px;
+                            }
                         }
                     </style>
 
@@ -151,68 +156,73 @@
 
                             </div>
 
-
-                            <img id="namaste" src="./images/namaste.png" width=80% style="opacity: 0;" />
-
-                            <style>
-                                .btnnamaste {
-                                    cursor: pointer;
-                                    bottom: 50px;
-                                    display: inline-block;
-                                    padding: 5px;
-                                    border: 1px dotted #33998a;
-                                    line-height: 20px;
-                                }
-                                
-                                .btnnamaste:after {
-                                    content: '';
-                                    display: inline-block;
-                                    color: #33998a;
-                                    font-family: 'FontAwesome';
-                                    height: 15px;
-                                    width: 15px;
-                                    margin-left: 3px;
-                                    margin-right: 3px;
-                                }
-                                
-                                .btnnamaste:hover {
-                                    border: 1px dotted #33998a;
-                                }
-                                
-                                .btnnamaste.playing:after {
-                                    content: '';
-                                }
-                            </style>
-                            <audio id="nyan" src="./Sounds/namastepronounciation.mp3" preload="metadata" type="audio/mpeg">
-                                Your browser does not support the audio element.
-                             </audio>
-                            <a class="btnnamaste" id="nyan-btn"></a>
+                            <div data-pop-media="media10" class="pop-media pop-media--circle pop-media--audio" style="background-image: url(images/old/vinyl.svg);"></div>
+                            <span id="trigger-10" class="pop-text" data-pop-media="media10"><img id="namaste" src="./images/namaste.png" width=80% style="opacity: 0;" /></span>
 
                             <div>
-                                <p></p>
+                                <p><br></p>
+                                <p><br></p>
                             </div>
-                            <aside id="info" class="pull-quote hvr-overline-from-left" style="padding:0px;opacity:0">
-                                <blockquote style="border:1px dotted #e3e3e3">
-                                    <p style="font-size:1.15em;line-height:125%; letter-spacing:-0.35px;color:#444444;">
+                            <p id="aboutmetext">
 
-                                        My name is Arpit and I am currently working as a developer at IBM Labs, Bengaluru, India. I recently graduated from IIIT, Jabalpur, India majoring in Computer Science & Engineering.
+                                My name is Arpit and I am currently working as a developer at IBM Labs, Bengaluru, India. I recently graduated as a Bachelor of Technology in Computer Science & Engineering from IIIT, Jabalpur, India.
 
-                                        <br><br>I am a multi-disciplinary researcher, developer & designer. I am constantly pondering over creative ideas to bloom the quality of Education via cognitive User-Experience and Intelligent Interactions. I employ
-                                        Data Science, Information Extraction/Visualization, Crowdsourcing and Machine Learning for my research and I believe Data and Design altogether can render pretty valuable outcomes and meaningful representations.
-                                        How AI, Social Computing and Design can fuse together in an effective framework of Project Development?
-                                        <br><br>I am obsessed with lists and I am constanly decluttering stuff. My jokes are funny (mostly, haha!) Currently, I am also working on a side project called
-                                        <a style="border:0px;" class="nobeforeafter" href="./IntelligentInteractions/IntelligentInteractions.html">
-                                                Intelligent Interactions.
-                                        </a> It is basically exploration of a cognitively defined 5-Phase interaction system between 2 entitites (Inanimate or Living). Interested?
+                                <br><br>I am a multi-disciplinary researcher, developer & designer. I am constantly pondering over creative ideas to bloom the quality of Education via cognitive User-Experience and Intelligent Interactions.
+                                <br><br>I employ Data Science, Information Extraction/Visualization, Crowdsourcing and Machine Learning for my research and I believe Data and Design altogether can render pretty valuable outcomes and meaningful representations.
+                                <br><br>Hey, a question - How AI, Social Computing and Design can fuse together in an effective framework of Project Development?
+                                <br><br>I am obsessed with lists and I am constantly decluttering stuff. My jokes are funny (mostly, i guess!).
+                                <br><br>Currently, I am also working on a side project called <a style="border:0px;" class="" href="./IntelligentInteractions/IntelligentInteractions.html">Intelligent Interactions.</a> It is basically exploration of a
+                                cognitively defined 5-Phase interaction system between 2 entitites (Inanimate or Living). Interested?
 
-                                        <br><br>Say hello <a href="mailto:arpit.jain@iiitdmj.ac.in" class="nobeforeafter noborder">here</a> if you want to collaborate with me in any way or just want to have an engaging conversation over coffee?
-                                        <br><br>This is my <a href="./CV_.pdf" class="nobeforeafter noborder" target="_blank">CV.</a>
+                                <br><br>Say hello <a href="mailto:arpit.jain@iiitdmj.ac.in" class="noborder">here</a> if you want to collaborate with me in any way or just want to have an engaging conversation over coffee?
+                                <br><br>This is my <a href="./CV_.pdf" class=" noborder" target="_blank">CV.</a>
 
-                                        <br><br>I was born in Gwalior, India, and raised in Delhi, India. I've lived in India & Taiwan. I speak English & Hindi. And I am stupidly amazed with the fact that how both them connect phonetically.
+                                <br><br>I was born in <a class="content__text-link noborder" data-img="images/old/giphy.gif" data-fx="2">Gwalior, India,</a> and raised in Delhi, India. I've lived in India & Taiwan. I speak English & Hindi. And I am stupidly
+                                amazed with the fact that how both them connect phonetically.
 
-                                    </p>
-                                </blockquote>
-                            </aside>
+                                <!-- Paragraphs -->
+                                <div style="display: none;">
+                                    <br><br>Much <span id="trigger-1" class="pop-text" data-pop-text-out data-pop-media="media1">glaciated.</span> areas. A <span id="trigger-6" class="pop-text" data-pop-media="media6">southwest</span> corner. Most
+                                    <span id="trigger-9" class="pop-text pop-text--s2" data-pop-media="media9">birders</span>will. With <span id="trigger-8" class="pop-text pop-text--s4" data-pop-media="media8">birds</span> of <span id="trigger-16" class="pop-text pop-text--s4"
+                                        data-pop-media="media16">habitats</span> throughout. One
+                                    <span id="trigger-11" class="pop-text" data-pop-media="media11">alkaline</span> lake. Many
+                                    <span id="trigger-12" class="pop-text pop-text--s1" data-pop-media="media12">birders</span> and <span id="trigger-13" class="pop-text" data-pop-media="media13">habitats</span>, they. This
+                                    <span id="trigger-15" class="pop-text pop-text--s5" data-pop-media="media15">little</span> vegetation.</div>
+
+                            </p>
+
+                            <!-- Media 1 -->
+                            <div data-pop-media="media1" class="pop-media" style="background-image: url(images/old/space8.jpg);">
+                                <div class="pop-media__overlay pop-media__overlay--c1"></div>
+                            </div>
+                            <!-- Media 6 -->
+                            <div data-pop-media="media6" class="pop-media pop-media--slideshow">
+                                <div class="pop-media__slide pop-media__slide--current"><img src="images/old/space8.jpg" alt="A bird" /></div>
+                                <div class="pop-media__slide"><img src="images/old/space3.jpg" alt="Another bird" /></div>
+                                <div class="pop-media__slide"><img src="images/old/space2.jpg" alt="The ultimate bird" /></div>
+                            </div>
+                            <!-- Media 8 -->
+                            <div data-pop-media="media8" class="pop-media pop-media--reveal" style="background-image: url(images/old/space8.jpg);"></div>
+                            <!-- Media 9 -->
+                            <div data-pop-media="media9" class="pop-media pop-media--full" style="background-image: url(images/old/space8.jpg);"></div>
+
+                            <!-- Media 11 -->
+                            <div data-pop-media="media11" class="pop-media pop-media--fulltext">
+                                <div class="pop-media__overlay pop-media__overlay--c4"></div>
+                                <img class="pop-media__image" src="images/old/space8.jpg" alt="Great bird" />
+                                <span class="pop-media__text">alkaline</span>
+                            </div>
+                            <!-- Media 12 -->
+                            <div data-pop-media="media12" class="pop-media pop-media--mask" style="background-image: url(images/old/space8.jpg);"></div>
+                            <!-- Media 13 -->
+                            <div data-pop-media="media13" class="pop-media pop-media--mask pop-media--maskfull" style="background-image: url(images/old/space8.jpg);"></div>
+                            <!-- Media 15 -->
+                            <div data-pop-media="media15" class="pop-media pop-media--shadow" style="background-image: url(images/old/giphy.gif);">
+                                <div class="pop-media__overlay pop-media__overlay--c6"></div>
+                            </div>
+                            <!-- Media 16 -->
+                            <div data-pop-media="media16" class="pop-media pop-media--revealfull" style="background-image: url(images/old/giphy.gif);"></div>
+
                         </div>
                     </div>
 
@@ -223,8 +233,8 @@
                     <ul class="related">
                         <li class="related__item">
                             <span onclick="window.location.href = './index.html';" style="cursor:pointer" class="related__link">
-                                    <blockquote style="padding:10px;margin:0px;border:1px solid #d3d3d3;">
-                                        <p style="line-height:1.3;overflow:hidden; font-weight: 900;color:#444444">
+                                    <blockquote class="tile" style="padding:10px;margin:0px;">
+                                        <p style="overflow:hidden; font-weight: 900;color:#444444">
                                             <span class="underlined underlined--thin">Work.</span>
                             </p>
                             <cite class="nobefore">My Creative Space.</cite>
@@ -233,8 +243,8 @@
                         </li>
                         <li class="related__item">
                             <span onclick="window.location.href = 'Education/formaleducation.html';" style="cursor:pointer" class="related__link">
-                    <blockquote style="padding:10px;margin:0px; border:1px solid #d3d3d3;">
-                        <p style="line-height:1.3;overflow:hidden; font-weight: 900;color:#444444">
+                    <blockquote class="tile" style="padding:10px;margin:0px;">
+                        <p style="overflow:hidden; font-weight: 900;color:#444444">
                             <span class="underlined underlined--thin">Education.</span>
                             </p>
                             <cite class="nobefore">Formal Studies.</cite>
@@ -243,8 +253,8 @@
                         </li>
                         <li class="related__item">
                             <span onclick="window.location.href = 'Research.html';" style="cursor:pointer" class="related__link">
-                    <blockquote style="padding:10px;margin:0px; border:1px solid #d3d3d3;">
-                        <p style=" line-height:1.3;overflow:hidden; font-weight: 900;color:#444444">
+                    <blockquote class="tile" style="padding:10px;margin:0px;">
+                        <p style="overflow:hidden; font-weight: 900;color:#444444">
                             <span class="underlined underlined--thin"> Research.</span>
                             </p>
                             <cite class="nobefore"> I Explore stuff here. </cite>
@@ -267,7 +277,7 @@
                         <span>© Copyright • arpitjainds</span>
                     </div>
                 </div>
-                <div class="footer__right hvr-overline-from-left">
+                <div class="footer__right">
 
                     <div class="footer__column">
                         <a href="./Research.html">Research</a>
@@ -290,11 +300,6 @@
             </div>
         </footer>
 
-        <div class="go-top">
-            <a class="smoothscroll" title="Back to Top" href="#top"></a>
-        </div>
-        </footer>
-
     </div>
     <!-- end s-wrap -->
 
@@ -304,6 +309,14 @@
     <script src="js/jquery-3.2.1.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+
+    <!-- Image Hover Effects -->
+    <script src="js/charming.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/hoverImage.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/mainformediapopup.js"></script>
 
     <script>
         fetch("./ReusableComponents/header__search.html")
@@ -320,50 +333,6 @@
             .then(data => {
                 document.querySelector("header__social").innerHTML = data;
             });
-    </script>
-
-    <script>
-        var nyan = document.getElementById('nyan');
-        var nyanBtn = document.getElementById('nyan-btn');
-
-        function playPause(song) {
-            if (song.paused && song.currentTime >= 0 && !song.ended) {
-                song.play();
-            } else {
-                song.pause();
-            }
-        }
-
-        function reset(btn, song) {
-            if (btn.classList.contains('playing')) {
-                btn.classList.toggle('playing');
-            }
-            song.pause();
-            song.currentTime = 0;
-        }
-
-        function progress(btn, song) {
-            console.log("PROGRESS");
-            setTimeout(function() {
-                var end = song.duration;
-                var current = song.currentTime;
-                var percent = current / (end / 100);
-                //check if song is at the end
-                if (current == end) {
-                    reset(btn, song);
-                }
-                //set inset box shadow
-                btn.style.boxShadow = "inset " + btn.offsetWidth * (percent / 100) + "px 0px 0px 0px rgba(68, 207, 168, 0.658)"
-                    //call function again
-                progress(btn, song);
-            }, 1000);
-        }
-
-        nyanBtn.addEventListener('click', function() {
-            nyanBtn.classList.toggle('playing');
-            playPause(nyan);
-            progress(nyanBtn, nyan);
-        });
     </script>
 
     <script>

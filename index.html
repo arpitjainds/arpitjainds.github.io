@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/mainpreloadereffect.css" />
-    <link rel="stylesheet" href="/css/font-awesome.min.css">
 
 
     <!-- script
@@ -116,7 +115,7 @@
                 </header>
                 <!-- end s-header -->
 
-                <div class="s-content">
+                <div class="s-content content content--blended">
 
                     <div class="topbar">
                         <div class="scroll-line"></div>
@@ -141,44 +140,12 @@
                                         font-size: 6.5rem;
                                     }
                                 }
-                                
-                                .btnnamaste {
-                                    cursor: pointer;
-                                    display: inline-block;
-                                    padding: 5px;
-                                    bottom: 10px;
-                                    border: 1px dotted #33998a;
-                                    line-height: 0px;
-                                }
-                                
-                                .btnnamaste:after {
-                                    content: '';
-                                    display: inline-block;
-                                    color: #33998a;
-                                    font-family: 'FontAwesome';
-                                    font-size: 15px;
-                                    text-align: center;
-                                    height: 10px;
-                                    width: 24px;
-                                }
-                                
-                                .btnnamaste:hover {
-                                    border: 1px dotted #33998a;
-                                }
-                                
-                                .btnnamaste.playing:after {
-                                    content: '';
-                                }
                             </style>
 
                             <div class="row">
                                 <strong id="iamarpit" style="opacity:0"> 
                                         <p style="line-height: 95%;padding-top:20px">
                                         Hi, I am <a class="content__text-link nobefore noborder" data-img="images/old/space8.jpg" data-fx="2">Arpit.</a>&nbsp;
-                                        <!-- <audio id="nyan" src="./Sounds/namastepronounciation.mp3" preload="metadata" type="audio/mpeg">
-                                            Your browser does not support the audio element.
-                                         </audio>
-                                        <a class="btnnamaste" id="nyan-btn"></a> -->
                                         <br>
                                         </p>
                                 </strong>
@@ -199,6 +166,34 @@
                                     </blockquote>
                                 </aside>
                             </div>
+
+                            <div data-pop-media="media1" class="pop-media" style="background-image: url(images/old/space8.jpg);">
+                                <div class="pop-media__overlay pop-media__overlay--c1"></div>
+                            </div>
+                            <div data-pop-media="media6" class="pop-media pop-media--slideshow">
+                                <div class="pop-media__slide pop-media__slide--current"><img src="images/old/space8.jpg" alt="A bird" /></div>
+                                <div class="pop-media__slide"><img src="images/old/space3.jpg" alt="Another bird" /></div>
+                                <div class="pop-media__slide"><img src="images/old/space2.jpg" alt="The ultimate bird" /></div>
+                            </div>
+                            <div data-pop-media="media8" class="pop-media pop-media--reveal" style="background-image: url(images/old/space8.jpg);"></div>
+                            <div data-pop-media="media9" class="pop-media pop-media--full" style="background-image: url(images/old/space8.jpg);"></div>
+                            <div data-pop-media="media10" class="pop-media pop-media--circle pop-media--audio" style="background-image: url(images/old/vinyl.svg);"></div>
+                            <div data-pop-media="media11" class="pop-media pop-media--fulltext">
+                                <div class="pop-media__overlay pop-media__overlay--c4"></div>
+                                <img class="pop-media__image" src="images/old/space8.jpg" alt="Great bird" />
+                                <span class="pop-media__text">alkaline</span>
+                            </div>
+                            <div data-pop-media="media12" class="pop-media pop-media--mask" style="background-image: url(images/old/space8.jpg);"></div>
+                            <div data-pop-media="media13" class="pop-media pop-media--mask pop-media--maskfull" style="background-image: url(images/old/space8.jpg);"></div>
+                            <div data-pop-media="media15" class="pop-media pop-media--shadow" style="background-image: url(images/old/giphy.gif);">
+                                <div class="pop-media__overlay pop-media__overlay--c6"></div>
+                            </div>
+                            <!-- <div data-pop-media="media16" class="pop-media pop-media--revealfull" style="background-image: url(images/old/giphy.gif);"></div>
+                            Much <span id="trigger-1" class="pop-text" data-pop-text-out data-pop-media="media1">glaciated.</span> areas. A <span id="trigger-6" class="pop-text" data-pop-media="media6">southwest</span> corner. Most <span id="trigger-9"
+                                class="pop-text pop-text--s2" data-pop-media="media9">birders</span>will. With <span id="trigger-8" class="pop-text pop-text--s4" data-pop-media="media8">birds</span> of <span id="trigger-16" class="pop-text pop-text--s4" data-pop-media="media16">habitats</span>                            throughout. One
+                            <span id="trigger-11" class="pop-text" data-pop-media="media11">alkaline</span> lake. Many
+                            <span id="trigger-12" class="pop-text pop-text--s1" data-pop-media="media12">birders</span> and <span id="trigger-13" class="pop-text" data-pop-media="media13">habitats</span>, they. This
+                            <span id="trigger-15" class="pop-text pop-text--s5" data-pop-media="media15">little</span> vegetation. -->
 
                             <div class="row" id="selectedworkdownarrow" style="opacity:0">
                                 <a href="#selectedwork">
@@ -541,7 +536,7 @@
                                     <span>© Copyright • arpitjainds</span>
                                 </div>
                             </div>
-                            <div class="footer__right hvr-overline-from-left">
+                            <div class="footer__right">
 
                                 <div class="footer__column">
                                     <a href="./Research.html">Research</a>
@@ -586,6 +581,8 @@
                 <script src="js/imagesloaded.pkgd.min.js"></script>
                 <script src="js/TweenMax.min.js"></script>
                 <script src="js/hoverImage.js"></script>
+                <script src="js/anime.min.js"></script>
+                <script src="js/mainformediapopup.js"></script>
 
                 <script>
                     fetch("./ReusableComponents/header__search.html")
@@ -602,50 +599,6 @@
                         .then(data => {
                             document.querySelector("header__social").innerHTML = data;
                         });
-                </script>
-
-                <script>
-                    var nyan = document.getElementById('nyan');
-                    var nyanBtn = document.getElementById('nyan-btn');
-
-                    function playPause(song) {
-                        if (song.paused && song.currentTime >= 0 && !song.ended) {
-                            song.play();
-                        } else {
-                            song.pause();
-                        }
-                    }
-
-                    function reset(btn, song) {
-                        if (btn.classList.contains('playing')) {
-                            btn.classList.toggle('playing');
-                        }
-                        song.pause();
-                        song.currentTime = 0;
-                    }
-
-                    function progress(btn, song) {
-                        console.log("PROGRESS");
-                        setTimeout(function() {
-                            var end = song.duration;
-                            var current = song.currentTime;
-                            var percent = current / (end / 100);
-                            //check if song is at the end
-                            if (current == end) {
-                                reset(btn, song);
-                            }
-                            //set inset box shadow
-                            btn.style.boxShadow = "inset " + btn.offsetWidth * (percent / 100) + "px 0px 0px 0px rgba(68, 207, 168, 0.658)"
-                                //call function again
-                            progress(btn, song);
-                        }, 1000);
-                    }
-
-                    nyanBtn.addEventListener('click', function() {
-                        nyanBtn.classList.toggle('playing');
-                        playPause(nyan);
-                        progress(nyanBtn, nyan);
-                    });
                 </script>
 
                 <script>
