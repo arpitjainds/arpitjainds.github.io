@@ -234,7 +234,7 @@ h6,
     font-family: "Regular", "Heebo", sans-serif;
     font-weight: 500;
     font-style: normal;
-    color: #000000;
+    color: inherit;
     font-variant-ligatures: common-ligatures;
     text-rendering: optimizeLegibility;
 }
@@ -1300,8 +1300,6 @@ input::-moz-focus-inner {
 }
 
 .pull-quote blockquote {
-    background-color: #f6f7f8;
-    border: 1px solid #d3d3d3;
     margin: 0;
     padding-top: 9.6rem;
     position: relative;
@@ -1309,7 +1307,6 @@ input::-moz-focus-inner {
 }
 
 .pull-quote blockquote:hover {
-    border: 1px solid rgba(64, 106, 146, 0.05);
     background: rgba(64, 106, 146, 0.05);
     transition: all 140ms;
 }
@@ -4012,6 +4009,7 @@ body.search-is-visible {
     margin: 0px;
     font-size: 20px;
     font-weight: 900;
+    color: rgba(64, 106, 146, 0.8);
     padding-left: 10px;
     padding-top: 10px;
 }
@@ -4019,7 +4017,15 @@ body.search-is-visible {
 .slide p {
     font-size: 16px;
     line-height: 1.25;
-    color: #525050;
+    font-weight: inherit;
+    color: inherit;
+}
+
+.slide hr {
+    color: rgba(64, 106, 146, 0.5);
+    background-color: rgb(64, 106, 146, 0.5);
+    border: none;
+    height: 1.25px;
 }
 
 .bottomsection h2 {
