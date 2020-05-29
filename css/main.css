@@ -436,7 +436,23 @@ blockquote cite a:visited {
 }
 
 blockquote span {
-    font-size: 2.6rem;
+    font-size: 4.5rem;
+    color: rgb(64, 106, 146, 0.3);
+    transition: all 400ms;
+}
+
+blockquote a {
+    color: rgb(64, 106, 146, 0.3);
+}
+
+blockquote:hover span {
+    color: rgb(64, 106, 146, 0.5);
+    transition: all 400ms;
+}
+
+blockquote:hover a {
+    color: rgb(64, 106, 146, 0.9);
+    transition: all 400ms;
 }
 
 @media screen and (max-width:500px) {
@@ -444,7 +460,7 @@ blockquote span {
         font-size: 2.2rem;
     }
     blockquote span {
-        font-size: 1.9rem;
+        font-size: 3rem;
     }
 }
 
@@ -507,11 +523,19 @@ dfn[title] {
 
 mark {
     background: #b2ceca86;
-    color: #000000;
+    color: rgba(0, 0, 0, 0.5);
 }
 
 mark.green {
     color: #33998a;
+}
+
+.green {
+    color: #33998a;
+}
+
+.blue {
+    color: rgb(64, 106, 146);
 }
 
 hr {
@@ -3435,7 +3459,6 @@ body.search-is-visible {
  * ------------------------------------------------------------------- */
 
 .entry__tags {
-    margin-top: 6rem;
     font-family: "Regular", "Heebo", sans-serif;
 }
 
@@ -3478,7 +3501,7 @@ body.search-is-visible {
     border: 0px solid rgba(0, 0, 0, 0.3);
     border-radius: 0px;
     margin-right: 6px;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     padding: 8px 18px;
 }
 
