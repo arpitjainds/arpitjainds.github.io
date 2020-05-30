@@ -209,11 +209,48 @@
         });
     }
 
-    function effect1() {
+    function effectCalls(link) {
+        switch (parseInt(link.getAttribute('effect-fx'))) {
+            case 1:
+                effect1(link.getAttribute('id'));
+                break;
+            case 6:
+                effect6(link.getAttribute('id'));
+                break;
+            case 8:
+                effect6(link.getAttribute('id'));
+                break;
+            case 9:
+                effect9(link.getAttribute('id'));
+                break;
+            case 10:
+                effect10(link.getAttribute('id'));
+                break;
+            case 11:
+                effect11(link.getAttribute('id'));
+                break;
+            case 12:
+                effect12(link.getAttribute('id'));
+                break;
+            case 13:
+                effect13(link.getAttribute('id'));
+                break;
+            case 15:
+                effect15(link.getAttribute('id'));
+                break;
+            case 16:
+                effect16(link.getAttribute('id'));
+                break;
+            default:
+                break;
+        }
+    }
+
+    function effect1(id) {
         var isMobile = mobilecheck(),
             evOn = !isMobile ? 'mouseenter' : 'touchstart',
             evOff = !isMobile ? 'mouseleave' : 'touchend';
-        var t1 = new MediaRevealer($('trigger-1'));
+        var t1 = new MediaRevealer($(id));
         t1.el.addEventListener(evOn, function(ev) {
             clearTimeout(triggertimeout);
             triggertimeout = setTimeout(function() {
@@ -227,7 +264,7 @@
         });
     }
 
-    function effect6() {
+    function effect6(id) {
         var isMobile = mobilecheck(),
             evOn = !isMobile ? 'mouseenter' : 'touchstart',
             evOff = !isMobile ? 'mouseleave' : 'touchend';
@@ -259,7 +296,7 @@
         });
     }
 
-    function effect8() {
+    function effect8(id) {
         var isMobile = mobilecheck(),
             evOn = !isMobile ? 'mouseenter' : 'touchstart',
             evOff = !isMobile ? 'mouseleave' : 'touchend';
@@ -279,7 +316,7 @@
         });
     }
 
-    function effect9() {
+    function effect9(id) {
         var isMobile = mobilecheck(),
             evOn = !isMobile ? 'mouseenter' : 'touchstart',
             evOff = !isMobile ? 'mouseleave' : 'touchend';
@@ -299,7 +336,7 @@
         });
     }
 
-    function effect10() {
+    function effect10(id) {
         var isMobile = mobilecheck(),
             evOn = !isMobile ? 'mouseenter' : 'touchstart',
             evOff = !isMobile ? 'mouseleave' : 'touchend';
@@ -328,7 +365,7 @@
         });
     }
 
-    function effect11() {
+    function effect11(id) {
         var isMobile = mobilecheck(),
             evOn = !isMobile ? 'mouseenter' : 'touchstart',
             evOff = !isMobile ? 'mouseleave' : 'touchend';
@@ -346,7 +383,7 @@
         });
     }
 
-    function effect12() {
+    function effect12(id) {
         var isMobile = mobilecheck(),
             evOn = !isMobile ? 'mouseenter' : 'touchstart',
             evOff = !isMobile ? 'mouseleave' : 'touchend';
@@ -366,7 +403,7 @@
         });
     }
 
-    function effect13() {
+    function effect13(id) {
         var isMobile = mobilecheck(),
             evOn = !isMobile ? 'mouseenter' : 'touchstart',
             evOff = !isMobile ? 'mouseleave' : 'touchend';
@@ -388,7 +425,7 @@
         });
     }
 
-    function effect15() {
+    function effect15(id) {
         var isMobile = mobilecheck(),
             evOn = !isMobile ? 'mouseenter' : 'touchstart',
             evOff = !isMobile ? 'mouseleave' : 'touchend';
@@ -406,7 +443,7 @@
         });
     }
 
-    function effect16() {
+    function effect16(id) {
         var isMobile = mobilecheck(),
             evOn = !isMobile ? 'mouseenter' : 'touchstart',
             evOff = !isMobile ? 'mouseleave' : 'touchend';
@@ -428,45 +465,12 @@
         });
     }
 
-    function effectCalls() {
-        /**************************** effect1 ****************************/
-        effect1();
-
-        /**************************** effect6 ****************************/
-        effect6();
-
-        /**************************** effect8 - css mask ****************************/
-        effect8();
-
-        /**************************** effect9 - Fullscreen ****************************/
-        effect9();
-
-        /**************************** effect10 - audio api ****************************/
-        effect10();
-
-        /**************************** effect11 - Fullscreen Text ****************************/
-        effect11();
-
-        /**************************** effect12 - css mask ****************************/
-        effect12();
-
-        /**************************** effect13 - css mask ****************************/
-        effect13();
-
-        /**************************** effect15 ****************************/
-        effect15();
-
-        /**************************** effect16 ****************************/
-        effect16();
-    }
-
     function initEvents() {
         var isMobile = mobilecheck(),
             evOn = !isMobile ? 'mouseenter' : 'touchstart',
             evOff = !isMobile ? 'mouseleave' : 'touchend';
 
-        // [...document.querySelectorAll('[mediapop="true"] > span, span[mediapop="true"]')].forEach(link => new HoverImgFx1(link));
-        effectCalls();
+        [...document.querySelectorAll('[mediapop="true"] > span, span[mediapop="true"]')].forEach(link => effectCalls(link));
 
         var touchStartFix = function() {
             var buffer = context.createBuffer(1, 1, 22050);
