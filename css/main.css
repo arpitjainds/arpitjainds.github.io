@@ -1,10 +1,4 @@
 /* =================================================================== 
- *
- *  Typerite Main Stylesheet
- *  Template Ver. 1.0.0
- *  05-17-2019
- *  ------------------------------------------------------------------
- *
  *  TOC:
  *  # base style overrides
  *      ## links    
@@ -3283,7 +3277,7 @@ body.search-is-visible {
  * ------------------------------------------------------------------- */
 
 .s-footer {
-    padding-top: 4rem;
+    padding-top: 0rem;
     padding-bottom: 0.5rem;
     font-size: 1.6rem;
     line-height: 2.4rem;
@@ -5230,7 +5224,7 @@ a.content__text-link[data-fx="14"]:hover::after {
         display: grid;
         align-items: center;
         grid-template-columns: 20vw 70vw;
-        margin-top: 20vh;
+        margin-top: 5vh;
     }
     .footer__right {
         border: none;
