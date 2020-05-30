@@ -522,12 +522,16 @@ dfn[title] {
 }
 
 mark {
-    background: #b2ceca86;
-    color: rgba(0, 0, 0, 0.5);
+    background: #badfd94b;
+    color: rgba(0, 0, 0, 0.35);
 }
 
 mark.green {
     color: #33998a;
+}
+
+.nobackground {
+    background: none;
 }
 
 .green {
@@ -3959,7 +3963,7 @@ body.search-is-visible {
 }
 
 .underlined--thin {
-    background-image: linear-gradient(to right, #444444 0, #444444 100%);
+    background-image: linear-gradient(to right, inherit 0, inherit 100%);
 }
 
 .underlined--thick {
@@ -3973,7 +3977,7 @@ body.search-is-visible {
 
 .underlined--gradient {
     background-position: 0 -0.1em;
-    background-image: linear-gradient(to right, #fff099 0, rgb(221, 240, 234) 100%);
+    background-image: linear-gradient(to right, #fff099 0, #fff099 20%, rgb(221, 240, 234) 100%);
 }
 
 .underlined--reverse {
