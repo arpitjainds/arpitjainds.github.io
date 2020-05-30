@@ -428,13 +428,7 @@
         });
     }
 
-    function initEvents() {
-        var isMobile = mobilecheck(),
-            evOn = !isMobile ? 'mouseenter' : 'touchstart',
-            evOff = !isMobile ? 'mouseleave' : 'touchend';
-
-        [...document.querySelectorAll('[data-fx="1"] > a, a[data-fx="1"]')].forEach(link => new HoverImgFx1(link));
-
+    function effectCalls() {
         /**************************** effect1 ****************************/
         effect1();
 
@@ -464,6 +458,15 @@
 
         /**************************** effect16 ****************************/
         effect16();
+    }
+
+    function initEvents() {
+        var isMobile = mobilecheck(),
+            evOn = !isMobile ? 'mouseenter' : 'touchstart',
+            evOff = !isMobile ? 'mouseleave' : 'touchend';
+
+        // [...document.querySelectorAll('[mediapop="true"] > span, span[mediapop="true"]')].forEach(link => new HoverImgFx1(link));
+        effectCalls();
 
         var touchStartFix = function() {
             var buffer = context.createBuffer(1, 1, 22050);
