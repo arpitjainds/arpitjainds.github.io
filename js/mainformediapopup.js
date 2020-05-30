@@ -96,62 +96,6 @@
     // getElementById shorthand function.
     function $(id) { return document.getElementById(id); };
 
-    function createShakeFx(mediaEl, contentEl) {
-        var clone1 = mediaEl.cloneNode(true);
-        clone1.classList.add('clone');
-        clone1.querySelector('.pop-media__overlay').style.background = 'rgba(0,255,255,.6)';
-
-        var clone2 = mediaEl.cloneNode(true);
-        clone2.classList.add('clone');
-        clone2.querySelector('.pop-media__overlay').style.background = 'rgba(255,0,255,.6)';
-
-        contentEl.insertBefore(clone1, mediaEl);
-        contentEl.insertBefore(clone2, mediaEl);
-
-        var steps = 4,
-            step = 0,
-            recursiveShakeFn = function(el, direction, step) {
-                step = step || 0;
-                anime({
-                    targets: el,
-                    duration: 50,
-                    easing: 'linear',
-                    translateX: function() {
-                        if (step === 0) {
-                            return direction === 'normal' ? [8, -8] : [-8, 8];
-                        } else if (step === 1) {
-                            return direction === 'normal' ? [-8, -8] : [8, 8];
-                        } else if (step === 2) {
-                            return direction === 'normal' ? [-8, 8] : [8, -8];
-                        } else if (step === 3) {
-                            return direction === 'normal' ? [8, 8] : [-8, -8];
-                        }
-                    },
-                    translateY: function() {
-                        if (step === 0) {
-                            return direction === 'normal' ? [-8, 8] : [8, -8];
-                        } else if (step === 1) {
-                            return direction === 'normal' ? [8, -8] : [-8, 8];
-                        } else if (step === 2) {
-                            return direction === 'normal' ? [-8, 8] : [8, -8];
-                        } else if (step === 3) {
-                            return direction === 'normal' ? [8, -8] : [-8, 8];
-                        }
-                    },
-                    complete: function() {
-                        step = step < steps - 1 ? step + 1 : 0;
-                        recursiveShakeFn(el, direction, step);
-                    }
-                });
-            };
-
-        recursiveShakeFn(clone1, 'normal');
-        recursiveShakeFn(clone2, 'reverse');
-
-        clone1.style.opacity = .5;
-        clone2.style.opacity = .5;
-    }
-
     function Slideshow(el) {
         this.el = el;
         this.slides = this.el.children;
@@ -261,20 +205,14 @@
     function init() {
         // Preload all images.
         imagesLoaded(document.querySelector('.content'), { background: true }, function() {
-            document.body.classList.remove('loading');
             initEvents();
         });
     }
 
-    function initEvents() {
+    function effect1() {
         var isMobile = mobilecheck(),
             evOn = !isMobile ? 'mouseenter' : 'touchstart',
             evOff = !isMobile ? 'mouseleave' : 'touchend';
-
-        /**
-         * Non optimal code For demo purposes only:
-         */
-        /**************************** effect1 ****************************/
         var t1 = new MediaRevealer($('trigger-1'));
         t1.el.addEventListener(evOn, function(ev) {
             clearTimeout(triggertimeout);
@@ -287,8 +225,12 @@
             clearTimeout(triggertimeout);
             t1.resetMedia();
         });
+    }
 
-        /**************************** effect6 ****************************/
+    function effect6() {
+        var isMobile = mobilecheck(),
+            evOn = !isMobile ? 'mouseenter' : 'touchstart',
+            evOff = !isMobile ? 'mouseleave' : 'touchend';
         var t6 = new MediaRevealer($('trigger-6'));
         t6.el.addEventListener(evOn, function(ev) {
             clearTimeout(triggertimeout);
@@ -315,8 +257,12 @@
             t6.slideshow.stop();
             t6.resetMedia();
         });
+    }
 
-        /**************************** effect8 - css mask ****************************/
+    function effect8() {
+        var isMobile = mobilecheck(),
+            evOn = !isMobile ? 'mouseenter' : 'touchstart',
+            evOff = !isMobile ? 'mouseleave' : 'touchend';
         var t8 = new MediaRevealer($('trigger-8'));
         t8.el.addEventListener(evOn, function(ev) {
             clearTimeout(triggertimeout);
@@ -331,8 +277,12 @@
             t8.resetMedia();
             t8.mediaEl.classList.remove('pop-media--show');
         });
+    }
 
-        /**************************** effect9 - Fullscreen ****************************/
+    function effect9() {
+        var isMobile = mobilecheck(),
+            evOn = !isMobile ? 'mouseenter' : 'touchstart',
+            evOff = !isMobile ? 'mouseleave' : 'touchend';
         var t9 = new MediaRevealer($('trigger-9'));
         t9.el.addEventListener(evOn, function(ev) {
             clearTimeout(triggertimeout);
@@ -347,8 +297,12 @@
             clearTimeout(triggertimeout);
             t9.resetMedia();
         });
+    }
 
-        /**************************** effect10 - audio api ****************************/
+    function effect10() {
+        var isMobile = mobilecheck(),
+            evOn = !isMobile ? 'mouseenter' : 'touchstart',
+            evOff = !isMobile ? 'mouseleave' : 'touchend';
         var t10 = new MediaRevealer($('trigger-10'));
         t10.el.addEventListener(evOn, function(ev) {
             clearTimeout(triggertimeout);
@@ -372,8 +326,12 @@
             t10.resetMedia();
             t10.stopAudio();
         });
+    }
 
-        /**************************** effect11 - Fullscreen Text ****************************/
+    function effect11() {
+        var isMobile = mobilecheck(),
+            evOn = !isMobile ? 'mouseenter' : 'touchstart',
+            evOff = !isMobile ? 'mouseleave' : 'touchend';
         var t11 = new MediaRevealer($('trigger-11'));
         t11.el.addEventListener(evOn, function(ev) {
             clearTimeout(triggertimeout);
@@ -386,8 +344,12 @@
             clearTimeout(triggertimeout);
             t11.resetMedia();
         });
+    }
 
-        /**************************** effect12 - css mask ****************************/
+    function effect12() {
+        var isMobile = mobilecheck(),
+            evOn = !isMobile ? 'mouseenter' : 'touchstart',
+            evOff = !isMobile ? 'mouseleave' : 'touchend';
         var t12 = new MediaRevealer($('trigger-12'));
         t12.el.addEventListener(evOn, function(ev) {
             clearTimeout(triggertimeout);
@@ -402,8 +364,12 @@
             t12.resetMedia();
             t12.mediaEl.classList.remove('pop-media--show');
         });
+    }
 
-        /**************************** effect13 - css mask ****************************/
+    function effect13() {
+        var isMobile = mobilecheck(),
+            evOn = !isMobile ? 'mouseenter' : 'touchstart',
+            evOff = !isMobile ? 'mouseleave' : 'touchend';
         var t13 = new MediaRevealer($('trigger-13'));
         t13.el.addEventListener(evOn, function(ev) {
             clearTimeout(triggertimeout);
@@ -420,8 +386,12 @@
             t13.resetMedia();
             t13.mediaEl.classList.remove('pop-media--show');
         });
+    }
 
-        /**************************** effect15 ****************************/
+    function effect15() {
+        var isMobile = mobilecheck(),
+            evOn = !isMobile ? 'mouseenter' : 'touchstart',
+            evOff = !isMobile ? 'mouseleave' : 'touchend';
         var t15 = new MediaRevealer($('trigger-15'));
         t15.el.addEventListener(evOn, function(ev) {
             clearTimeout(triggertimeout);
@@ -434,8 +404,12 @@
             clearTimeout(triggertimeout);
             t15.resetMedia();
         });
+    }
 
-        /**************************** effect16 ****************************/
+    function effect16() {
+        var isMobile = mobilecheck(),
+            evOn = !isMobile ? 'mouseenter' : 'touchstart',
+            evOff = !isMobile ? 'mouseleave' : 'touchend';
         var t16 = new MediaRevealer($('trigger-16'));
         t16.el.addEventListener(evOn, function(ev) {
             clearTimeout(triggertimeout);
@@ -452,6 +426,44 @@
             t16.resetMedia();
             t16.mediaEl.classList.remove('pop-media--show');
         });
+    }
+
+    function initEvents() {
+        var isMobile = mobilecheck(),
+            evOn = !isMobile ? 'mouseenter' : 'touchstart',
+            evOff = !isMobile ? 'mouseleave' : 'touchend';
+
+        [...document.querySelectorAll('[data-fx="1"] > a, a[data-fx="1"]')].forEach(link => new HoverImgFx1(link));
+
+        /**************************** effect1 ****************************/
+        effect1();
+
+        /**************************** effect6 ****************************/
+        effect6();
+
+        /**************************** effect8 - css mask ****************************/
+        effect8();
+
+        /**************************** effect9 - Fullscreen ****************************/
+        effect9();
+
+        /**************************** effect10 - audio api ****************************/
+        effect10();
+
+        /**************************** effect11 - Fullscreen Text ****************************/
+        effect11();
+
+        /**************************** effect12 - css mask ****************************/
+        effect12();
+
+        /**************************** effect13 - css mask ****************************/
+        effect13();
+
+        /**************************** effect15 ****************************/
+        effect15();
+
+        /**************************** effect16 ****************************/
+        effect16();
 
         var touchStartFix = function() {
             var buffer = context.createBuffer(1, 1, 22050);
@@ -470,7 +482,7 @@
     }
 
     // setTimeouts for the mouseenter events.
-    var triggertimeout, triggerdelay = 50;
+    var triggertimeout, triggerdelay = 25;
 
     // Audio related.
     window.AudioContext = window.AudioContext || window.webkitAudioContext;

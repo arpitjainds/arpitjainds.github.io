@@ -2476,18 +2476,4 @@
     [...document.querySelectorAll('[data-fx="22"] > a, a[data-fx="22"]')].forEach(link => new HoverImgFx22(link));
     [...document.querySelectorAll('[data-fx="23"] > a, a[data-fx="23"]')].forEach(link => new HoverImgFx23(link));
 
-    // Demo purspose only: Preload all the images in the page..
-    const contentel = document.querySelector('.content');
-    [...document.querySelectorAll('.block__title, .block__link, .content__text-link')].forEach((el) => {
-        const imgsArr = el.dataset.img.split(',');
-        for (let i = 0, len = imgsArr.length; i <= len - 1; ++i) {
-            const imgel = document.createElement('img');
-            imgel.style.visibility = 'hidden';
-            imgel.style.width = 0;
-            imgel.src = imgsArr[i];
-            imgel.className = 'preload';
-            contentel.appendChild(imgel);
-        }
-    });
-    imagesLoaded(document.querySelectorAll('.preload'), () => document.body.classList.remove('loading'));
 }
