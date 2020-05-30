@@ -501,11 +501,14 @@
                             padding: 12px;
                             max-width: 60px;
                             max-height: 60px;
+                            display: none;
                         }
                         
                         td.tableimagecell>img {
                             max-width: 40px;
                             max-height: 40px;
+                            border-radius: 50%;
+                            padding: 4.5px;
                         }
                         
                         td.tabletitlecell {
@@ -515,10 +518,9 @@
                         
                         td.tabletitlecell>span {
                             font-family: regular;
-                            font-size: 1.25em;
+                            font-size: 0.9em;
                             font-weight: 900;
-                            letter-spacing: 0.25px;
-                            text-transform: uppercase;
+                            letter-spacing: 0px;
                         }
                         
                         td.tabledatecell {
@@ -537,14 +539,14 @@
                         td.tabledescriptioncell {
                             padding: 10px;
                             max-height: 60px;
+                            font-size: 0.9em;
                         }
                         
                         td.tabledescriptioncell>span {
                             font-family: regular;
-                            font-size: 15px;
+                            font-size: 16px;
                             letter-spacing: 0px;
                             line-height: 1.35;
-                            color: #525050;
                         }
                         
                         @media screen and (max-width:700px) {
@@ -560,80 +562,83 @@
                         }
                     </style>
 
-                    <div class="row">
-                        <table>
-                            <tr class="tablerow">
-                                <td class="tableimagecell">
-                                    <img src="../images/old/workex/mozilla.png" style="width:100%;height:100%;margin:0px" alt="">
-                                </td>
-                                <td class="tabletitlecell">
-                                    <span>Mozilla</span>
-                                </td>
-                                <td class="tabledatecell">
-                                    <span>Apr 2019 - Present</span>
-                                </td>
-                                <td class="tabledescriptioncell">
-                                    <span>Technical Writer.</span>
-                                </td>
-                            </tr>
-                            <tr class="tablerow">
-                                <td class="tableimagecell">
-                                    <img src="../images/old/workex/coursera.jpeg" style="width:100%;height:100%;margin:0px" alt="">
-                                </td>
-                                <td class="tabletitlecell">
-                                    <span>Coursera</span>
-                                </td>
-                                <td class="tabledatecell">
-                                    <span>May 2019 - Present</span>
-                                </td>
-                                <td class="tabledescriptioncell">
-                                    <span>Member of Global Translator Community.</span>
-                                </td>
-                            </tr>
-                            <tr class="tablerow">
-                                <td class="tableimagecell">
-                                    <img src="../images/old/workex/spicmacay.png" style="width:100%;height:100%;margin:0px" alt="">
-                                </td>
-                                <td class="tabletitlecell">
-                                    <span>Spic Macay</span>
-                                </td>
-                                <td class="tabledatecell">
-                                    <span>Aug 2017 - Nov 2017</span>
-                                </td>
-                                <td class="tabledescriptioncell">
-                                    <span>Digital coverage of the SPIC MACAY events.</span>
-                                </td>
-                            </tr>
-                            <tr class="tablerow">
-                                <td class="tableimagecell">
-                                    <img src="../images/old/workex/codeburst.png" style="width:100%;height:100%;margin:0px" alt="">
-                                </td>
-                                <td class="tabletitlecell">
-                                    <span>Codeburst.io</span>
-                                </td>
-                                <td class="tabledatecell">
-                                    <span>May 2019 - Present</span>
-                                </td>
-                                <td class="tabledescriptioncell">
-                                    <span>Technical Writer.</span>
-                                </td>
-                            </tr>
-                            <tr class="tablerow">
-                                <td class="tableimagecell">
-                                    <img src="../images/old/workex/aakriti.jpg" style="width:100%;height:100%;margin:0px" alt="">
-                                </td>
-                                <td class="tabletitlecell">
-                                    <span>Aakriti FMC</span>
-                                </td>
-                                <td class="tabledatecell">
-                                    <span>Aug 2016 - May 2017</span>
-                                </td>
-                                <td class="tabledescriptioncell">
-                                    <span>Directed Shortfilms.</span>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
+                    <aside class="pull-quote" style="font-weight: 900;">
+                        <blockquote class="tile" style="padding:45px;font-size: 1.35em;color:rgba(64, 106, 146, 0.45)">
+                            <br><br><br>
+                            <table class="margin:0px;">
+                                <tr class="tablerow">
+                                    <td class="tableimagecell">
+                                        <img src="../images/old/workex/mozilla.png" style="width:100%;height:100%;margin:0px" alt="">
+                                    </td>
+                                    <td class="tabletitlecell">
+                                        <span>Mozilla</span>
+                                    </td>
+                                    <td class="tabledatecell">
+                                        <span>Apr 2019 - Present</span>
+                                    </td>
+                                    <td class="tabledescriptioncell">
+                                        <span>Technical Writer.</span>
+                                    </td>
+                                </tr>
+                                <tr class="tablerow">
+                                    <td class="tableimagecell">
+                                        <img src="../images/old/workex/coursera.png" style="width:100%;height:100%;margin:0px" alt="">
+                                    </td>
+                                    <td class="tabletitlecell">
+                                        <span>Coursera</span>
+                                    </td>
+                                    <td class="tabledatecell">
+                                        <span>May 2019 - Present</span>
+                                    </td>
+                                    <td class="tabledescriptioncell">
+                                        <span>Member of Global Translator Community.</span>
+                                    </td>
+                                </tr>
+                                <tr class="tablerow">
+                                    <td class="tableimagecell">
+                                        <img src="../images/old/workex/spizmacay.png" style="width:100%;height:100%;margin:0px" alt="">
+                                    </td>
+                                    <td class="tabletitlecell">
+                                        <span>Spic Macay</span>
+                                    </td>
+                                    <td class="tabledatecell">
+                                        <span>Aug 2017 - Nov 2017</span>
+                                    </td>
+                                    <td class="tabledescriptioncell">
+                                        <span>Digital coverage of the events.</span>
+                                    </td>
+                                </tr>
+                                <tr class="tablerow">
+                                    <td class="tableimagecell">
+                                        <img src="../images/old/workex/codeburst.png" style="width:100%;height:100%;margin:0px" alt="">
+                                    </td>
+                                    <td class="tabletitlecell">
+                                        <span>Codeburst</span>
+                                    </td>
+                                    <td class="tabledatecell">
+                                        <span>May 2019 - Present</span>
+                                    </td>
+                                    <td class="tabledescriptioncell">
+                                        <span>Technical Writer.</span>
+                                    </td>
+                                </tr>
+                                <tr class="tablerow">
+                                    <td class="tableimagecell">
+                                        <img src="../images/old/workex/aakriti.png" style="width:100%;height:100%;margin:0px" alt="">
+                                    </td>
+                                    <td class="tabletitlecell">
+                                        <span>Aakriti Films</span>
+                                    </td>
+                                    <td class="tabledatecell">
+                                        <span>Aug 2016 - May 2017</span>
+                                    </td>
+                                    <td class="tabledescriptioncell">
+                                        <span>Directed Shortfilms.</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </blockquote>
+                    </aside>
 
                     <div class="spacer"></div>
                     <!-- end entry content -->
