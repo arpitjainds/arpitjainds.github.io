@@ -176,6 +176,12 @@ a:active {
     border: 0px;
 }
 
+@media screen and (max-width:1100px) {
+    .notdisplaymediumscreen {
+        display: none;
+    }
+}
+
 a {
     color: #33998a;
     text-decoration: none;
@@ -451,7 +457,23 @@ blockquote:hover a {
     transition: all 400ms;
 }
 
+blockquote.projecthead p {
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+blockquote.projecthead span {
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
 @media screen and (max-width:500px) {
+    blockquote.projecthead p {
+        font-size: 1.5rem;
+    }
+    blockquote.projecthead span {
+        font-size: 1.5rem;
+    }
     blockquote p {
         font-size: 2.2rem;
     }
@@ -4447,7 +4469,7 @@ body.search-is-visible {
 
 .share-btn.share-btn-branded.share-btn-twitter {
     background: #90bada;
-    border-color: #90bada;
+    border-color: #90bada7a;
 }
 
 .share-btn.share-btn-branded.share-btn-twitter:hover,
