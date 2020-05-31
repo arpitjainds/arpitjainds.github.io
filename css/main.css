@@ -3497,7 +3497,7 @@ body.search-is-visible {
 
 .entry__tags span {
     font-weight: 500;
-    color: #000000;
+    color: inherit;
     padding-right: 56px;
     margin-right: 1.6rem;
     position: relative;
@@ -3530,9 +3530,9 @@ body.search-is-visible {
     font-size: 1.3rem;
     line-height: inherit;
     color: rgb(64, 106, 146);
+    border-radius: 30px;
     background: rgb(64, 106, 146, 0.05);
     border: 0px solid rgba(0, 0, 0, 0.3);
-    border-radius: 0px;
     margin-right: 6px;
     margin-bottom: 6px;
     padding: 8px 18px;
