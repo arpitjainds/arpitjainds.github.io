@@ -55,7 +55,9 @@
  *
  * ------------------------------------------------------------------- */
 
+@import url("base.css");
 @import url("hover.css");
+@import url("aos.css");
 @font-face {
     font-family: 'Regular';
     src: url("../Fonts/Sans-Regular.ttf");
@@ -549,6 +551,12 @@ hr {
 
 .spacer {
     height: 200px;
+}
+
+@media screen and (max-width:1100px) {
+    .spacer {
+        height: 60px;
+    }
 }
 
 

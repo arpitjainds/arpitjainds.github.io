@@ -310,7 +310,7 @@
                         n += i / 2 + e.offsetHeight;
                         break;
                     case "center-center":
-                        n += i / (4 / 1) + e.offsetHeight / (4 / 1);
+                        n += i / 4.5 + e.offsetHeight / 4.5;
                         break;
                     case "top-top":
                         n += i;
