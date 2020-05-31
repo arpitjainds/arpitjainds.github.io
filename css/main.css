@@ -3532,7 +3532,7 @@ body.search-is-visible {
     color: rgb(64, 106, 146);
     border-radius: 30px;
     background: rgb(64, 106, 146, 0.05);
-    border: 0px solid rgba(0, 0, 0, 0.3);
+    border: 1px dotted rgb(64, 106, 146);
     margin-right: 6px;
     margin-bottom: 6px;
     padding: 8px 18px;
@@ -5318,7 +5318,7 @@ a.content__text-link[data-fx="14"]:hover::after {
 
 .pop-media--circle {
     width: 100px;
-    margin-top: 20px;
+    margin-top: 80px;
     position: fixed;
     z-index: 700;
     height: 100px;
