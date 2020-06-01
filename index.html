@@ -589,36 +589,48 @@
                 <!-- Delayed Element Loading Animation -->
                 <script>
                     $(document).ready(function() {
-                        $('#iamarpit').delay(4100).animate({
-                            opacity: 1
-                        }, 500);
-                        $('#subtextmain').delay(4300).animate({
-                            opacity: 1
-                        }, 500);
-                        $('#selectedworkdownarrow').delay(4500).animate({
-                            opacity: 1
-                        }, 500);
-                        $('.site-logo').delay(4600).animate({
-                            opacity: 1
-                        }, 500);
-                        $('#headnav > li:first').delay(4700).animate({
-                            opacity: 1
-                        }, 500);
-                        $('#headnav li:eq(1)').delay(4900).animate({
-                            opacity: 1
-                        }, 500);
-                        $('#headnav li:eq(2)').delay(5100).animate({
-                            opacity: 1
-                        }, 500);
-                        $('#headnav > li:last').delay(5300).animate({
-                            opacity: 1
-                        }, 500);
-                        $('#headsocial').delay(5500).animate({
-                            opacity: 1
-                        }, 500);
-                        $('#sharebar').delay(5500).animate({
-                            opacity: 1
-                        }, 500);
+                        function addClassNameListener(elemId, callback) {
+                            var elem = document.getElementById(elemId);
+                            let intervalId = window.setInterval(function() {
+                                if (elem.classList.contains('loaded')) {
+                                    callback();
+                                    window.clearInterval(intervalId);
+                                }
+                            }, 10);
+                        }
+
+                        addClassNameListener("ip-container", function() {
+                            $('#iamarpit').delay(1100).animate({
+                                opacity: 1
+                            }, 500);
+                            $('#subtextmain').delay(1300).animate({
+                                opacity: 1
+                            }, 500);
+                            $('#selectedworkdownarrow').delay(1500).animate({
+                                opacity: 1
+                            }, 500);
+                            $('.site-logo').delay(1600).animate({
+                                opacity: 1
+                            }, 500);
+                            $('#headnav > li:first').delay(1700).animate({
+                                opacity: 1
+                            }, 500);
+                            $('#headnav li:eq(1)').delay(1900).animate({
+                                opacity: 1
+                            }, 500);
+                            $('#headnav li:eq(2)').delay(2100).animate({
+                                opacity: 1
+                            }, 500);
+                            $('#headnav > li:last').delay(2300).animate({
+                                opacity: 1
+                            }, 500);
+                            $('#headsocial').delay(2500).animate({
+                                opacity: 1
+                            }, 500);
+                            $('#sharebar').delay(2500).animate({
+                                opacity: 1
+                            }, 500);
+                        });
                     });
                 </script>
 
