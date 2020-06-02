@@ -127,12 +127,12 @@
                                                         Paintings.<br>
                                                         </p>
                                             </strong>
-                            <p class="entry__tags" style="margin-top:0px;">
+                            <!-- <p class="entry__tags" style="margin-top:0px;">
                                 <span class="entry__tag-list">
                                                                 <a href="#storytelling">Storytelling</a>
                                                                 <a href="#abstract">Abstract</a>
                                                             </span>
-                            </p>
+                            </p> -->
                         </div>
                         <div class="large-4 medium-12 tab-12 mobile-12">
 
@@ -141,89 +141,215 @@
 
                     <div class="entry__content">
 
-                        <br><br>
-                        <h3 id="storytelling" class="midlinehead">Storytelling</h3>
-                        <div style="padding-left:4%;padding-right:4%">
-                            <div class="row" style="padding:2%">
-                                <div class="large-7 medium-7 tab-7 mob-12">
-                                    <img src="../images/paintings/IMG_0899.JPG ">
-                                </div>
-                                <div class="large-5 medium-5 tab-5 mob-12" style="padding:4%">
-                                    <h1 style="font-weight:bold">World.</h1>
-                                    <p style="line-height: 1.25; text-align: justify;color: #525050;">"This is one of the initial paintings which I painted with oil as medium. The world to me is a place that gives equal amounts of Good and Bad to all its children. Emotions, feelings and all the spiritual entities within
+                        <style>
+                            .demo-1 {
+                                --color-text: #efedeb;
+                                --color-bg: #0e0e0e;
+                                --color-info: #fff;
+                                --color-main-text: #1d1c1c;
+                                --color-scroll-text: #efedeb;
+                                --fontsize-scroll-text: 30vw;
+                            }
+                            
+                            .content__main span {
+                                color: var(--color-main-text);
+                            }
+                            
+                            .hidden {
+                                position: absolute;
+                                overflow: hidden;
+                                width: 0;
+                                height: 0;
+                                pointer-events: none;
+                            }
+                            
+                            .content {
+                                position: relative;
+                                display: block;
+                            }
+                            
+                            .content__section {
+                                position: relative;
+                                text-align: right;
+                                padding: 0 0vmax;
+                            }
+                            
+                            .content__section:first-child {
+                                margin: 0 0 30vh;
+                            }
+                            
+                            .content__section:last-child {
+                                margin: 30vh 0 0;
+                            }
+                            
+                            .content__section:first-child,
+                            .content__section:last-child {
+                                height: calc(100vh - 9.875em);
+                                text-align: left;
+                            }
+                            
+                            .content__link {
+                                display: block;
+                                position: relative;
+                                max-width: 100%;
+                                margin: 10vh 0 30vh auto;
+                            }
+                            
+                            .content__link--nobottom {
+                                margin-bottom: 10vh;
+                            }
+                            
+                            .content__img {
+                                position: relative;
+                                display: block;
+                                max-width: 100%;
+                            }
+                            
+                            .content__main,
+                            .content__text {
+                                color: #fff;
+                                font-size: 6.5em;
+                                letter-spacing: -2px;
+                                font-family: "Bold";
+                                border: 1px dotted #000;
+                                background-color: #000;
+                                margin: 0;
+                                padding: 20px;
+                                line-height: 1;
+                                font-weight: 900;
+                            }
+                            
+                            .content__main,
+                            .content__contact {
+                                position: absolute;
+                                bottom: calc(var(--fontsize-scroll-text) * 1.5 + 6vmax);
+                            }
+                            
+                            .content__main span {
+                                display: block;
+                            }
+                            
+                            .content__text {
+                                position: relative;
+                                bottom: 2vmax;
+                                right: 17.55%;
+                                padding-left: 2vmax;
+                                z-index: 1000;
+                                line-height: 0.8;
+                            }
+                            
+                            .ioapi .content__text {
+                                position: fixed;
+                                opacity: 0;
+                                white-space: pre;
+                            }
+                            
+                            .content__text span {
+                                display: inline-block;
+                            }
+                            
+                            .content__contact {
+                                font-size: calc(var(--fontsize-scroll-text) / 2);
+                                font-family: var(--font-scroll-text);
+                            }
+                            
+                            .content__contact a:last-child {
+                                display: block;
+                            }
+                            
+                            @media screen and (max-width: 50em) {
+                                .content__text,
+                                .ioapi .content__text {
+                                    bottom: 6rem;
+                                }
+                                .content__section:first-child,
+                                .content__section:last-child {
+                                    height: calc(100vh - 13.875em);
+                                }
+                                .content__main,
+                                .content__contact {
+                                    bottom: calc(var(--fontsize-scroll-text) * 1.5 + 15vh);
+                                }
+                                .content__main,
+                                .content__text {
+                                    color: var(--color-scroll-text);
+                                    background-color: #000000;
+                                    color: #fff;
+                                    font-size: 3em;
+                                    padding-left: 25px;
+                                    right: 0;
+                                    bottom: 6rem;
+                                }
+                            }
+                        </style>
+
+                        <div class="content">
+                            <div class="content__section">
+                                <a class="content__link nobefore noborder"><img class="content__img" src="../images/paintings/IMG_0899.JPG" alt="img" />
+                                    <p style="padding:15px 0px 0px 0px;color:#333;font-size: 1.2em;text-align: justify;">This is one of the initial paintings which I painted with oil as medium. The world to me is a place that gives equal amounts of Good and Bad to all its children. Emotions, feelings and all the spiritual entities within
                                         a human being can be described with shades of colors. Tree with all its branches and the greenery, symbolises a human growing from its roots reaching height to get a hold of all the good and bad this world has to
-                                        offer."
+                                        offer.
                                     </p>
-                                </div>
+                                </a>
+                                <h2 class="content__text">World.</h2>
                             </div>
-                            <div class="row" style="padding:2%">
-                                <div class="large-7 medium-7 tab-7 mob-12">
-                                    <img src="../images/paintings/IMG_0944.JPG ">
-                                </div>
-                                <div class="large-5 medium-5 tab-5 mob-12" style="padding:4%">
-                                    <h1 style="font-weight:bold">Time.</h1>
-                                    <p style="line-height: 1.25; text-align: justify;color: #525050;">"Einstein quoted and I say it here - Time is but a Stubborn Illusion. I agree totally. I am the future you lost in the past. I believe continuity persists in Universe. Everything that is being put into the system leads
-                                        to something else totally random and inevitable. Butterfly Effect if you may? Something that you failed to do in the past will lead to a future that you weren't expecting at all."</p>
-                                </div>
+                            <div class="content__section">
+                                <a class="content__link nobefore noborder"><img class="content__img" src="../images/paintings/IMG_0944.JPG" alt="img" />
+                                    <p style="padding:15px 0px 0px 0px;color:#333;font-size: 1.2em;text-align: justify;">Einstein quoted and I say it here - Time is but a Stubborn Illusion. I agree totally. I am the future you lost in the past. I believe continuity persists in Universe. Everything that is being put into the system leads
+                                        to something else totally random and inevitable. Butterfly Effect if you may? Something that you failed to do in the past will lead to a future that you weren't expecting at all.
+                                    </p>
+                                </a>
+                                <h2 class="content__text">Time.</h2>
                             </div>
-                            <div class="row" style="padding:2%">
-                                <div class="large-7 medium-7 tab-7 mob-12">
-                                    <img src="../images/paintings/IMG_0945.JPG ">
-                                </div>
-                                <div class="large-5 medium-5 tab-5 mob-12" style="padding:4%">
-                                    <h1 style="font-weight:bold">Starry Mind.</h1>
-                                    <p style="line-height: 1.25; text-align: justify;color: #525050;">"I remember being told in a Humanities class of Spirituality and Philosophy that Mind and Brain are separate entities. Mind has the ability to persist without any physical form. It bends, twists and moves around as
-                                        its a global entity. 'My Mind rarely sleeps' simply means that even though your brain or body might doze off but mind rarely or never does. It constantly wanders around and travels curiously throught the magnitude
-                                        of the Universe."</p>
-                                </div>
+                            <div class="content__section">
+                                <a class="content__link nobefore noborder"><img class="content__img" src="../images/paintings/IMG_0945.JPG" alt="img" />
+                                    <p style="padding:15px 0px 0px 0px;color:#333;font-size: 1.2em;text-align: justify;">I remember being told in a Humanities class of Spirituality and Philosophy that Mind and Brain are separate entities. Mind has the ability to persist without any physical form. It bends, twists and moves around as its
+                                        a global entity. 'My Mind rarely sleeps' simply means that even though your brain or body might doze off but mind rarely or never does. It constantly wanders around and travels curiously throught the magnitude of
+                                        the Universe."
+                                    </p>
+                                </a>
+                                <h2 class="content__text">Starry Mind.</h2>
                             </div>
+                            <div class="content__section">
+                                <a class="content__link nobefore noborder"><img class="content__img" src="../images/paintings/IMG_0902.JPG" alt="img" />
+                                    <p style="padding:15px 0px 0px 0px;color:#333;font-size: 1.2em;text-align: justify;">Explicit tribal symbols are more or less expressions of the so-called Modern World.
+                                    </p>
+                                </a>
+                                <h2 class="content__text">Tribal.</h2>
+                            </div>
+                            <div class="content__section">
+                                <a class="content__link nobefore noborder"><img class="content__img" src="../images/paintings/IMG_0903.JPG" alt="img" />
+                                    <p style="padding:15px 0px 0px 0px;color:#333;font-size: 1.2em;text-align: justify;">This was supposed to be - Birds, Sun and Water Stream. But due to the red-color of the water stream, it seems more like the elegant Blood-Overflow scene from The Shining.
+                                    </p>
+                                </a>
+                                <h2 class="content__text">Day Dreaming.</h2>
+                            </div>
+
+                            <div class="content__section">
+                                <a class="content__link nobefore noborder"><img class="content__img" src="../images/paintings/IMG_0943.JPG" alt="img" />
+                                    <p style="padding:15px 0px 0px 0px;color:#333;font-size: 1.2em;text-align: justify;">"You don't see a dog? Have a Cat Nap."
+                                    </p>
+                                </a>
+                                <h2 class="content__text">This is a dog.</h2>
+                            </div>
+                            <div class="content__section">
+                                <a class="content__link content__link--nobottom nobefore noborder"><img class="content__img" src="../images/paintings/IMG_0959.JPG" alt="img" />
+                                    <p style="padding:15px 0px 0px 0px;color:#333;font-size: 1.2em;text-align: justify;">"To be realistic, Inclusivity doesn't promise inclusion of all, now does it?"
+                                    </p>
+                                </a>
+                                <h2 class="content__text">Inclusivity.</h2>
+                            </div>
+                            <!-- <div class="content__section">
+                                <h2 class="content__text">Contact</h2>
+                                <div class="content__contact">
+                                    <a href="#">Twitter</a>
+                                    <a href="#">Slack</a>
+                                    <a href="#">hello'at'quincy.com</a>
+                                </div>
+                            </div> -->
                         </div>
-
-
-
-                        <br><br>
-                        <h3 id="abstract" class="midlinehead ">Abstract</h3>
-
-                        <div style="padding-left:4%;padding-right:4%">
-                            <div class="row" style="padding:2%">
-                                <div class="large-7 medium-7 tab-7 mob-12">
-                                    <img src="../images/paintings/IMG_0902.JPG ">
-                                </div>
-                                <div class="large-5 medium-5 tab-5 mob-12" style="padding:4%">
-                                    <h1 style="font-weight:bold">Tribal.</h1>
-                                    <p style="line-height: 1.25; text-align: justify;color: #525050;">Explicit tribal symbols are more or less expressions of the so-called Modern World.</p>
-                                </div>
-                            </div>
-                            <div class="row" style="padding:2%">
-                                <div class="large-7 medium-7 tab-7 mob-12">
-                                    <img src="../images/paintings/IMG_0903.JPG ">
-                                </div>
-                                <div class="large-5 medium-5 tab-5 mob-12" style="padding:4%">
-                                    <h1 style="font-weight:bold">Day Dreaming.</h1>
-                                    <p style="line-height: 1.25; text-align: justify;color: #525050;">This was supposed to be - Birds, Sun and Water Stream. But due to the red-color of the water stream, it seems more like the elegant Blood-Overflow scene from <a href="https://www.google.com/search?q=the+shining&oq=the+shining&aqs=chrome..69i57j0l5.2317j0j1&sourceid=chrome&ie=UTF-8">The Shining.</a>                                        </p>
-                                </div>
-                            </div>
-                            <div class="row" style="padding:2%">
-                                <div class="large-7 medium-7 tab-7 mob-12">
-                                    <img src="../images/paintings/IMG_0943.JPG ">
-                                </div>
-                                <div class="large-5 medium-5 tab-5 mob-12" style="padding:4%">
-                                    <h1 style="font-weight:bold">This is a Dog.</h1>
-                                    <p style="line-height: 1.25; text-align: justify;color: #525050;">"You don't see a dog? Have a Cat Nap."</p>
-                                </div>
-                            </div>
-                            <div class="row" style="padding:2%">
-                                <div class="large-7 medium-7 tab-7 mob-12">
-                                    <img src="../images/paintings/IMG_0959.JPG ">
-                                </div>
-                                <div class="large-5 medium-5 tab-5 mob-12" style="padding:4%">
-                                    <h1 style="font-weight:bold">Inclusivity.</h1>
-                                    <p style="line-height: 1.25; text-align: justify;color: #525050;">"To be realistic, Inclusivity doesn't promise inclusion of all, now does it?"</p>
-                                </div>
-                            </div>
-                        </div>
-
-
+                        <div class="spacer"></div>
+                        <div class="spacer"></div>
 
                     </div>
                     <div class="spacer"></div>
@@ -297,6 +423,10 @@
     <script src="../js/jquery-3.2.1.min.js "></script>
     <script src="../js/plugins.js "></script>
     <script src="../js/main.js "></script>
+
+    <script src="../js/imagesloaded.pkgd.min.js"></script>
+    <script src="../js/charming.min.js"></script>
+    <script src="../js/paintings.js"></script>
 
     <script>
         fetch("../ReusableComponents/header__search.html")
