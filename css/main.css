@@ -411,8 +411,7 @@ blockquote {
 }
 
 blockquote p {
-    font-family: "Regular", "Lora", serif;
-    font-weight: 400;
+    font-family: "Light", "Lora", serif;
     padding: 0;
     font-size: 3rem;
     line-height: 1.833;
@@ -421,7 +420,7 @@ blockquote p {
 
 blockquote cite {
     display: block;
-    font-family: "Regular", "IBM Plex Sans", sans-serif;
+    font-family: "Light", "IBM Plex Sans", sans-serif;
     font-size: 1.4rem;
     font-style: normal;
     position: absolute;
@@ -447,7 +446,7 @@ blockquote cite a:visited {
 
 blockquote span {
     font-size: 4.5rem;
-    color: rgb(64, 106, 146, 0.3);
+    color: rgb(64, 106, 146, 0.5);
     transition: all 400ms;
 }
 
@@ -456,7 +455,7 @@ blockquote a {
 }
 
 blockquote:hover span {
-    color: rgb(64, 106, 146, 0.5);
+    color: rgb(64, 106, 146, 0.8);
     transition: all 400ms;
 }
 
@@ -2164,9 +2163,8 @@ input::-moz-focus-inner {
 
 .format-quote blockquote p,
 .format-link .link-wrap h2 {
-    font-family: "Regular", "Heebo", sans-serif;
+    font-family: "Light", sans-serif;
     font-size: 2.8rem;
-    font-weight: 400;
     line-height: 1.429;
     color: #000000;
     padding: 8rem 0 0 0;
@@ -2177,7 +2175,7 @@ input::-moz-focus-inner {
 .format-quote cite,
 .format-link cite {
     display: block;
-    font-family: "Regular", "IBM Plex Sans", sans-serif;
+    font-family: "Light", "IBM Plex Sans", sans-serif;
     font-size: 1.5rem;
     font-style: normal;
     line-height: 1.6;
@@ -3158,8 +3156,7 @@ body.search-is-visible {
         border-bottom: 1px dotted rgba(255, 255, 255, 0.04);
     }
     .header__nav>li>a {
-        line-height: 7.2rem;
-        font-size: 36px;
+        line-height: 5rem;
         font-weight: 100;
     }
     .header__nav li.has-children>a::after {
@@ -3212,10 +3209,9 @@ body.search-is-visible {
         font-size: 22px;
     }
     .header__nav>li>a {
-        line-height: 4.5rem;
-        font-weight: 900;
-        font-family: "Regular";
-        letter-spacing: -0.5px;
+        line-height: 5.5rem;
+        font-family: "Thin";
+        letter-spacing: 0px;
     }
     .header__nav li.has-children>a::after {
         top: 30px;
@@ -3336,6 +3332,7 @@ body.search-is-visible {
     display: inline-block;
     font-size: 1.2em;
     font-weight: 900;
+    font-family: "Light";
     color: rgba(0, 0, 0, 0.15);
 }
 
@@ -4999,7 +4996,7 @@ h1 svg .arrow {
 
 .tile:hover {
     border: 0px dotted rgb(64, 106, 146);
-    background: rgba(64, 106, 146, 0.1);
+    background: rgba(91, 150, 206, 0.1);
     transition: all 140ms;
 }
 
@@ -5007,10 +5004,10 @@ h1 svg .arrow {
     line-height: 1;
     overflow: hidden;
     color: rgb(64, 106, 146);
-    font-weight: 900;
     font-size: 2.8em;
     letter-spacing: -1px;
     min-height: 200px;
+    font-family: 'Thin';
 }
 
 input[type=radio] {
@@ -5241,6 +5238,7 @@ a.content__text-link[data-fx="14"]:hover::after {
 .footer__right a {
     color: rgba(0, 0, 0, 0.2);
     font-size: 1.6em;
+    font-family: 'Thin';
     line-height: 1.5;
     font-weight: 900;
 }
