@@ -59,45 +59,53 @@
 @import url("hover.css");
 @import url("aos.css");
 @font-face {
+    font-family: 'Thin';
+    src: url("../Fonts/Sans-Thin.ttf");
+}
+
+@font-face {
+    font-family: 'Light';
+    src: url("../Fonts/Sans-Light.ttf");
+}
+
+@font-face {
     font-family: 'Regular';
     src: url("../Fonts/Sans-Regular.ttf");
-    font-weight: 300;
-    font-style: normal
+}
+
+@font-face {
+    font-family: 'Regular Italic';
+    src: url("../Fonts/Sans-RegularItalic.ttf");
 }
 
 @font-face {
     font-family: 'Medium';
     src: url("../Fonts/Sans-Medium.ttf");
-    font-weight: 600;
-    font-style: medium
 }
 
 @font-face {
     font-family: 'Bold';
     src: url("../Fonts/Sans-Bold.ttf");
-    font-weight: 900;
-    font-style: bold
+}
+
+@font-face {
+    font-family: 'Black';
+    src: url("../Fonts/Sans-Black.ttf");
 }
 
 @font-face {
     font-family: 'Italic';
     src: url("../Fonts/Sans-Italic.ttf");
-    font-weight: 300;
-    font-style: italic
 }
 
 @font-face {
     font-family: 'Medium Italic';
     src: url("../Fonts/Sans-MediumItalic.ttf");
-    font-weight: 900;
-    font-style: medium italic
 }
 
 @font-face {
     font-family: 'Bold Italic';
     src: url("../Fonts/Sans-BoldItalic.ttf");
-    font-weight: 900;
-    font-style: bold italic
 }
 
 html {
@@ -772,7 +780,7 @@ form,
     right: 0;
     bottom: 0;
     background: #ffffff;
-    z-index: 500;
+    z-index: 1000;
     height: 100vh;
     width: 100%;
     overflow: hidden;
@@ -2570,7 +2578,7 @@ input::-moz-focus-inner {
 
 .header__nav li a {
     display: block;
-    font-family: "Regular";
+    font-family: "Thin";
     font-size: 2.2em;
     color: rgba(0, 0, 0, 0.15);
     line-height: 3.4rem;
@@ -2618,7 +2626,7 @@ input::-moz-focus-inner {
 
 .header__nav li.current>a {
     color: rgba(0, 0, 0, 0.95);
-    font-weight: 900;
+    font-family: "Regular";
 }
 
 .header__nav li ul {
