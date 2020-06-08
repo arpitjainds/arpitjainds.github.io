@@ -28,7 +28,7 @@
             this.DOM = { el: el };
             this.DOM.reveal = document.createElement('div');
             this.DOM.reveal.className = 'hover-reveal';
-            this.DOM.reveal.innerHTML = `<div class="hover-reveal__inner"><div class="hover-reveal__img" style="background-image:url(${this.DOM.el.dataset.img})"></div></div>`;
+            this.DOM.reveal.innerHTML = `<div class="hover-reveal__inner" style="border-radius:20px;"><div class="hover-reveal__img" style="background-image:url(${this.DOM.el.dataset.img})"></div></div>`;
             this.DOM.el.appendChild(this.DOM.reveal);
             this.DOM.revealInner = this.DOM.reveal.querySelector('.hover-reveal__inner');
             this.DOM.revealInner.style.overflow = 'hidden';
@@ -115,7 +115,7 @@
             this.DOM = { el: el };
             this.DOM.reveal = document.createElement('div');
             this.DOM.reveal.className = 'hover-reveal';
-            this.DOM.reveal.innerHTML = `<div class="hover-reveal__inner"><div class="hover-reveal__img" style="background-image:url(${this.DOM.el.dataset.img})"></div></div>`;
+            this.DOM.reveal.innerHTML = `<div class="hover-reveal__inner" style="border-radius:20px;"><div class="hover-reveal__img" style="background-image:url(${this.DOM.el.dataset.img})"></div></div>`;
             this.DOM.el.appendChild(this.DOM.reveal);
             this.DOM.revealInner = this.DOM.reveal.querySelector('.hover-reveal__inner');
             this.DOM.revealInner.style.overflow = 'hidden';
