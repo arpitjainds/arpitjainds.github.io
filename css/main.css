@@ -59,6 +59,11 @@
 @import url("hover.css");
 @import url("aos.css");
 @font-face {
+    font-family: 'Code';
+    src: url("../Fonts/IBMPlexMono-Thin.ttf");
+}
+
+@font-face {
     font-family: 'Thin';
     src: url("../Fonts/Sans-Thin.ttf");
 }
@@ -508,7 +513,7 @@ kbd,
 samp,
 code,
 pre {
-    font-family: Consolas, "Andale Mono", Courier, "Courier New", monospace;
+    font-family: Code, Consolas, "Andale Mono", Courier, "Courier New", monospace;
 }
 
 pre {
@@ -3829,7 +3834,7 @@ body.search-is-visible {
 }
 
 .comment__info .comment__author {
-    font-family: "Regular", "Heebo", sans-serif;
+    font-family: Thin, "Heebo", sans-serif;
     font-weight: 900;
     font-size: 2rem;
     line-height: 1.684;
