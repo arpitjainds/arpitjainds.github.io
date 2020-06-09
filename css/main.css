@@ -393,7 +393,7 @@ b {
 strong {
     letter-spacing: 0px;
     font-family: Thin, "IBM Plex Sans", sans-serif;
-    font-weight: 900;
+    font-weight: 100;
 }
 
 small {
@@ -433,7 +433,7 @@ blockquote p {
 
 blockquote cite {
     display: block;
-    font-family: "Light", "IBM Plex Sans", sans-serif;
+    font-family: Thin, "IBM Plex Sans", sans-serif;
     font-size: 1.4rem;
     font-style: normal;
     position: absolute;
@@ -1608,6 +1608,7 @@ input::-moz-focus-inner {
 
 .alert-box {
     padding: 2.4rem 4rem 2.4rem 3.2rem;
+    border-radius: 20px;
     position: relative;
     margin-bottom: 3.2rem;
     font-family: Thin, "IBM Plex Sans", sans-serif;
@@ -4496,6 +4497,7 @@ body.search-is-visible {
     .share-btn {
         margin: 10px;
         padding: 30px;
+        border-radius: 20px;
     }
 }
 
@@ -5047,6 +5049,7 @@ h1 svg .arrow {
     padding: 25px;
     margin: 0px;
     border: 0px solid #f6f7f8;
+    border-radius: 20px;
     background: rgba(64, 106, 146, 0.04);
     transition: all 140ms;
 }
@@ -5274,6 +5277,8 @@ a.content__text-link[data-fx="14"]:hover::after {
   ----------------------------------------------*/
 
 .Custom__footer {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
     grid-area: footer;
     background: #dcece9;
     margin-bottom: 5px;
