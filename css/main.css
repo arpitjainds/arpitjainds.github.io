@@ -201,7 +201,7 @@ a:active {
 a {
     color: #33998a;
     text-decoration: none;
-    border-bottom: 1px dashed #33c79d;
+    border-bottom: 1px dotted rgb(64, 106, 146);
     display: inline-block;
     position: relative;
     transition: all 250ms;
@@ -5048,14 +5048,14 @@ h1 svg .arrow {
 .tile {
     padding: 25px;
     margin: 0px;
-    border: 0px solid #f6f7f8;
+    border: 1px solid rgba(64, 106, 146, 0.04);
     border-radius: 20px;
     background: rgba(64, 106, 146, 0.04);
     transition: all 140ms;
 }
 
 .tile:hover {
-    border: 0px dotted rgb(64, 106, 146);
+    border: 1px dotted rgb(64, 106, 146);
     background: rgba(91, 150, 206, 0.1);
     transition: all 140ms;
 }
@@ -5150,7 +5150,6 @@ audio:not([controls]) {
 
 .content__text-link {
     position: relative;
-    font-weight: bold;
     cursor: none;
 }
 
