@@ -5819,3 +5819,22 @@ a.content__text-link[data-fx="14"]:hover::after {
         transform: translate3d(58px, 43px, 0);
     }
 }
+
+
+/*----------------------------------------------
+      Round Border Image
+----------------------------------------------*/
+
+.roundborderimage {
+    border-radius: 20px;
+    transition: all 120ms ease-in-out;
+}
+
+.roundborderimage:hover {
+    -moz-transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transition: all 120ms ease-in-out;
+}
