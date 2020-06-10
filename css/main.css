@@ -2594,7 +2594,7 @@ input::-moz-focus-inner {
     display: block;
     font-family: "Thin";
     font-size: 1.25em;
-    color: rgba(0, 0, 0, 0.15);
+    color: #b0b0b0;
     line-height: 2.25rem;
     text-transform: uppercase;
     font-weight: 900;
@@ -2636,7 +2636,7 @@ input::-moz-focus-inner {
 
 .header__nav li:hover>a,
 .header__nav li:focus>a {
-    color: rgba(0, 0, 0, 0.8);
+    color: rgba(0, 0, 0, 0.9);
 }
 
 .header__nav li:hover li,
@@ -2646,6 +2646,7 @@ input::-moz-focus-inner {
 
 .header__nav li.current>a {
     color: rgba(0, 0, 0, 0.95);
+    text-decoration: line-through;
     font-family: Thin;
 }
 
