@@ -2614,13 +2614,13 @@ input::-moz-focus-inner {
     border-right: 1px solid rgba(0, 0, 0, 0.4);
     content: "";
     display: block;
-    height: 5px;
-    width: 5px;
+    height: 8px;
+    width: 8px;
     margin-top: -4px;
     pointer-events: none;
     position: absolute;
     right: 1.8rem;
-    top: 21px;
+    top: 10px;
     -webkit-transform-origin: 66% 66%;
     -ms-transform-origin: 66% 66%;
     transform-origin: 66% 66%;
@@ -2765,7 +2765,7 @@ input::-moz-focus-inner {
 .header__social header__social {
     background: #f6f8f9;
     z-index: 0;
-    padding-bottom: 10px;
+    padding: 20px 0 25px;
 }
 
 .header__social::before {
@@ -2773,7 +2773,7 @@ input::-moz-focus-inner {
     display: block;
     width: 1px;
     height: calc(100vh - 265px);
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.2);
     position: fixed;
     left: 52px;
     top: auto;
@@ -2822,8 +2822,8 @@ input::-moz-focus-inner {
 }
 
 .header__social a:hover::after {
-    height: 2.4rem;
-    width: 2.4rem;
+    height: 2.2rem;
+    width: 2.2rem;
 }
 
 .header__social span {
@@ -2851,7 +2851,7 @@ input::-moz-focus-inner {
 }
 
 .header__social .ss-behance a::after {
-    background-image: url(../images/icons/social/iconfinder_online_social_media_behance_734392.png);
+    background-image: url(../images/icons/social/iconfinder_BEHANCE_1217158.png);
 }
 
 .header__social .ss-instagram a::after {
@@ -2871,11 +2871,11 @@ input::-moz-focus-inner {
 }
 
 .header__social .ss-github a::after {
-    background-image: url(../images/icons/social/iconfinder_GITHUB_1217178.png);
+    background-image: url(../images/icons/social/298822-512.png);
 }
 
 .header__social .ss-medium a::after {
-    background-image: url(../images/icons/social/iconfinder_social_media_logo_medium_1407936.png);
+    background-image: url(../images/icons/social/3721675-512.png);
 }
 
 
@@ -2903,7 +2903,7 @@ input::-moz-focus-inner {
     display: block;
     width: 1px;
     height: calc(100vh - 200px);
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.2);
     position: fixed;
     right: 48px;
     top: auto;
@@ -5302,7 +5302,6 @@ a.content__text-link[data-fx="14"]:hover::after {
     font-family: 'Thin';
     display: inline-block;
     line-height: 1.6;
-    font-weight: 900;
     border-bottom: none;
 }
 
@@ -5348,7 +5347,6 @@ a.content__text-link[data-fx="14"]:hover::after {
         color: rgba(0, 0, 0, 0.2);
         font-size: 1.6em;
         line-height: 1.5;
-        font-weight: 900;
         text-align: left;
         width: 100%;
     }
