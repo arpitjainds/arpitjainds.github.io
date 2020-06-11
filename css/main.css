@@ -5050,25 +5050,60 @@ h1 svg .arrow {
 .tile {
     padding: 25px;
     margin: 0px;
-    border: 1px solid rgba(64, 106, 146, 0.04);
+    border: 1px solid rgba(64, 106, 146, 0.07);
     border-radius: 20px;
-    background: rgba(64, 106, 146, 0.04);
+    background: rgba(64, 106, 146, 0.07);
     transition: all 140ms;
 }
 
 .tile:hover {
     border: 1px dotted rgb(64, 106, 146);
+    background: rgba(64, 106, 146, 0.12);
+    transition: all 140ms;
+}
+
+.smalltile {
+    padding: 25px;
+    margin: 0px;
+    border: 1px solid rgba(64, 106, 146, 0.03);
+    border-radius: 20px;
+    background: rgba(64, 106, 146, 0.03);
+    transition: all 140ms;
+}
+
+.smalltile:hover {
+    border: 1px dotted rgb(64, 106, 146);
     background: rgba(64, 106, 146, 0.1);
     transition: all 140ms;
 }
 
-.tileheading {
+.tile .tileheading {
     line-height: 1;
     overflow: hidden;
     color: rgb(64, 106, 146);
     font-size: 3.15em;
     letter-spacing: -1px;
     min-height: 200px;
+    font-family: 'Thin';
+}
+
+.smalltile .tileheading {
+    line-height: 1.25;
+    overflow: hidden;
+    color: rgb(64, 106, 146);
+    font-size: 2em;
+    margin-bottom: 15px;
+    letter-spacing: -1px;
+    font-family: 'Thin';
+}
+
+.smalltile .tiledescription {
+    line-height: 1;
+    overflow: hidden;
+    color: rgb(64, 106, 146);
+    font-size: 1em;
+    margin-bottom: 0px;
+    letter-spacing: 0px;
     font-family: 'Thin';
 }
 
@@ -5110,7 +5145,6 @@ input[type=radio] {
 
 .a-container input:checked+label {
     color: #0F9E5E;
-    border-bottom: 4px solid #0F9E5E;
 }
 
 .a-content {
