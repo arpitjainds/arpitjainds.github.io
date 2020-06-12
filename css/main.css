@@ -453,7 +453,7 @@ blockquote cite:after {
 blockquote cite,
 blockquote cite a,
 blockquote cite a:visited {
-    color: #7e7e7e;
+    color: inherit;
     border: none;
 }
 
@@ -2647,6 +2647,7 @@ input::-moz-focus-inner {
 .header__nav li.current>a {
     color: rgba(0, 0, 0, 0.95);
     text-decoration: line-through;
+    cursor: not-allowed;
     font-family: Thin;
 }
 
@@ -3138,6 +3139,7 @@ body.search-is-visible {
     .header__top {
         z-index: 100;
         background: rgba(0, 0, 0, 0);
+        box-shadow: 0px 5px 40px #c8c8c8;
         width: 100%;
         height: 78px;
         position: fixed;
@@ -3425,6 +3427,7 @@ body.search-is-visible {
 .go-top a:visited {
     text-decoration: none;
     border: none;
+    border-radius: 50%;
     display: block;
     height: 6rem;
     width: 6rem;
@@ -3481,8 +3484,8 @@ body.search-is-visible {
         padding-bottom: 8rem;
     }
     .go-top {
-        bottom: 0;
-        right: 0;
+        bottom: 20px;
+        right: 20px;
     }
 }
 
@@ -5050,16 +5053,29 @@ h1 svg .arrow {
 .tile {
     padding: 25px;
     margin: 0px;
-    border: 1px solid rgba(64, 106, 146, 0.07);
+    border: 0px solid rgba(64, 106, 146, 0.07);
     border-radius: 20px;
+    color: rgb(64, 106, 146);
     background: rgba(64, 106, 146, 0.07);
-    transition: all 140ms;
+    background-image: var(--tilebackgroundimagedefault);
+    transition: background-image 300ms;
+    background-position: center center;
+    background-size: cover;
 }
 
 .tile:hover {
-    border: 1px dotted rgb(64, 106, 146);
-    background: rgba(64, 106, 146, 0.12);
-    transition: all 140ms;
+    border: 0px dotted rgb(64, 106, 146);
+    background: rgba(64, 106, 146, 0.125);
+    transition: all 300ms;
+}
+
+.tile.projecttile:hover {
+    border: 0px dotted rgb(64, 106, 146, 0);
+    background-image: var(--tilebackgroundimage);
+    background-size: cover;
+    background-position: center center;
+    color: var(--textcolor);
+    transition: all 300ms;
 }
 
 .smalltile {
@@ -5068,19 +5084,19 @@ h1 svg .arrow {
     border: 1px solid rgba(64, 106, 146, 0.03);
     border-radius: 20px;
     background: rgba(64, 106, 146, 0.03);
-    transition: all 140ms;
+    transition: all 300ms;
 }
 
 .smalltile:hover {
     border: 1px dotted rgb(64, 106, 146);
     background: rgba(64, 106, 146, 0.1);
-    transition: all 140ms;
+    transition: all 300ms;
 }
 
 .tile .tileheading {
     line-height: 1;
     overflow: hidden;
-    color: rgb(64, 106, 146);
+    color: inherit;
     font-size: 3.15em;
     letter-spacing: -1px;
     min-height: 200px;
@@ -5095,6 +5111,7 @@ h1 svg .arrow {
     margin-bottom: 15px;
     letter-spacing: -1px;
     font-family: 'Thin';
+    transition: all 300ms;
 }
 
 .smalltile .tiledescription {
@@ -5105,6 +5122,7 @@ h1 svg .arrow {
     margin-bottom: 0px;
     letter-spacing: 0px;
     font-family: 'Thin';
+    transition: all 300ms;
 }
 
 input[type=radio] {
@@ -5131,16 +5149,22 @@ input[type=radio] {
 }
 
 .a-container label:after {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    border-right: 1px solid rgba(0, 0, 0, 0.4);
     content: "";
-    width: 0;
-    height: 0;
-    border-top: 8px solid #aaa;
-    border-right: 6px solid transparent;
-    border-bottom: 8px solid transparent;
-    border-left: 6px solid transparent;
+    display: block;
+    height: 8px;
+    width: 8px;
+    pointer-events: none;
     position: absolute;
-    right: 10px;
-    top: 16px;
+    right: 1.8rem;
+    bottom: 20px;
+    -webkit-transform-origin: 66% 66%;
+    -ms-transform-origin: 66% 66%;
+    transform-origin: 66% 66%;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition: all 0.5s;
 }
 
 .a-container input:checked+label {
