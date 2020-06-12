@@ -198,10 +198,14 @@
                                         transition: all 120ms ease-in-out;
                                     }
                                     
-                                    .section-inner>.row>p {
-                                        font-size: 1.25em;
-                                        color: #606060;
-                                        text-align: justify;
+                                    .projecttextdefault {
+                                        font-size: 1.2em;
+                                        line-height: 120%;
+                                        letter-spacing: 0px;
+                                        color: #666666;
+                                        padding: 10px;
+                                        font-family: Code;
+                                        font-weight: 900;
                                     }
                                 </style>
 
@@ -209,7 +213,7 @@
                                 <div class="section-inner">
 
                                     <div class="row">
-                                        <p>
+                                        <p class="projecttextdefault">
 
                                             This paper describes our new visual understanding based intelligent-state-feedback approach, for teaching the insertion algorithm for the AVL trees. Our aim is to supplement basic class lectures with an interactive intelligent tutoring system that integrates
                                             our proposed approach for better understanding.
@@ -231,7 +235,7 @@
                                 <div class="section-inner">
 
                                     <div class="row">
-                                        <p style="text-align: justify;">
+                                        <p class="projecttextdefault">
                                             It is more probable that a motivated student is a productive learner. Interesting assignments encourage learning by actively involving students in the material. Active learning for students is very essential in an introductory course on data structures
                                             where students learn the basics of programming [1]. It can be both challenging and hard to learn for any individual student.
                                             <br><br>Many approaches have been tried but not with very successful implementation outcomes. One excellent suggestion was proposed in [2] to use visual programming for teaching the concept of Binary Trees.
@@ -250,7 +254,7 @@
                                 <div class="section-inner">
 
                                     <div class="row">
-                                        <p style="text-align: justify;">
+                                        <p class="projecttextdefault">
                                             We developed a Intelligent Tutoring System was developed using Cognitive Tutor Authoring Tools (CTAT) [9]. CTAT is free for research tool developed by Carnegie Melon University for Easy demonstration and development of Learning tools. This was developed
                                             to significantly reduce the amount of time needed to create a virtual An interactive AVL-Tree Intelligent Tutoring System.
                                             <br><br>AVL-Tree tutor, which we propose, speaking holistically, is a single page web application which consists of two basic parts. First part is a tutorial section specifying main concepts related to insertion
@@ -272,8 +276,8 @@
                                 <div class="section-inner">
 
                                     <div class="row">
-                                        <p style="text-align: justify;">
-                                            <span style="font-size:1.25em; font-weight:900;color:rgba(0,0,0,0.25);text-align:center">Please watch the video in the previous section or checkout the  <a href="https://invis.io/CEU25EU7MQ3#/385367440_Tutor">Invision UI</a> here.</span>
+                                        <p class="projecttextdefault">
+                                            <span>Please watch the video in the previous section or checkout the  <a href="https://invis.io/CEU25EU7MQ3#/385367440_Tutor">Invision UI</a> here.</span>
                                         </p>
                                     </div>
 
@@ -284,7 +288,7 @@
                                 <div class="section-inner">
 
                                     <div class="row">
-                                        <p style="text-align: justify;">
+                                        <p class="projecttextdefault">
 
                                             For future work, we aim to implement our tutor in the running classroom course of data structures and collect data by taking 2 tests of the enrolled students after completing classroom lectures - one before using this tutor and another after using it
                                             for measuring the changes in student scores. The change in the scores of students would be a reflector of the effectiveness of this tutor. Since this tutor would be an addition to the existent classroom teaching
@@ -306,14 +310,14 @@
 
                             </section>
 
-                            <section id="references" style="padding-top:100px">
+                            <section id="references" style="padding-top:100px" class="hideonsmalldisplays">
                                 <aside class="pull-quote" style="padding:0px">
                                     <blockquote class="tile projecthead" style="padding:15px 35px 35px 35px">
                                         <div>
                                             <p><br><br></p>
                                         </div>
-                                        <span class="blue">REFERENCES</span><br><br>
-                                        <span style="font-size:1em;">
+                                        <h3 class="midlinehead">References</h3>
+                                        <span style="font-size:0.8em;font-family:Code;letter-spacing:0px;color:rgb(64,106,146)">
                                             [1] Lawrence, R. (2004). Teaching data structures using competitive games. IEEE Transactions on Education, 47(4), 459-466. <br>[2] Michail, Amir. "Teaching binary tree algorithms through visual programming."
                                             In Proceedings 1996 IEEE Symposium on Visual Languages, pp. 38-45. IEEE, 1996. <br>[3] Malmi, L., & Korhonen, A. (2004, August). Automatic feedback and resubmissions as learning aid. In IEEE International Conference
                                             on Advanced Learning Technologies, 2004. Proceedings. (pp. 186-190). IEEE. <br>[4] Segura, C., Pita, I., del Vado Vírseda, R., Saiz, A. I., & Soler, P. (2008, June). Interactive Learning of Data Structures and
