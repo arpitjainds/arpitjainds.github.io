@@ -2527,6 +2527,10 @@ input::-moz-focus-inner {
  * ## header logo
  * ------------------------------------------------------------------- */
 
+.header__logo {
+    transform: translate(0, 0);
+}
+
 .header__logo a {
     display: block;
     margin: 0;
@@ -2700,6 +2704,7 @@ input::-moz-focus-inner {
     position: absolute;
     right: 4rem;
     top: 18px;
+    transform: translate(0, 0);
 }
 
 .header__menu-toggle:hover,
@@ -2902,7 +2907,7 @@ input::-moz-focus-inner {
  * ------------------------------------------------------------------- */
 
 .header__search-trigger {
-    z-index: 1;
+    z-index: 101;
     display: block;
     color: #000000;
     height: 16px;
@@ -2913,6 +2918,7 @@ input::-moz-focus-inner {
     background-image: url(../images/icons/birghtness.svg);
     position: fixed;
     right: 40px;
+    transform: translate(100px, 0);
     top: 6.4rem;
 }
 
@@ -5089,7 +5095,6 @@ h1 svg .arrow {
     border: 0px dotted rgb(64, 106, 146);
     background: rgba(64, 106, 146, 0.125);
     transition: all 300ms;
-    z-index: 400;
 }
 
 .tile.projecttile:hover {
@@ -5114,7 +5119,6 @@ h1 svg .arrow {
     border: 0px dotted rgb(64, 106, 146);
     background: rgba(64, 106, 146, 0.1);
     transition: all 300ms;
-    z-index: 400;
 }
 
 .tile .tileheading {
