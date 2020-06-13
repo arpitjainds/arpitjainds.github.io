@@ -94,11 +94,13 @@
             <main class="row content__page">
 
                 <article class="column large-full entry format-standard">
-                    <strong><br><br>
-                                        <p style="font-size:5.5em;line-height: 95%;margin-bottom:0px">
-                                        MOOC Feedback.<br>
-                                        </p>
-                            </strong>
+                    <blockquote class="tile projecttile" style="--tilebackgroundimage:url('../projects/HCI/Resources/MOOC Feedback/MOOCFeedbackProjectTile.jpg');
+                    --tilebackgroundimagedefault:url('../projects/HCI/Resources/MOOC Feedback/MOOCFeedbackProjectTile.jpg');
+                    --textcolor:#ffffff;min-height:50vh">
+                        <p class="tileheading" style="color:white; font-family: Regular;font-size:4.5em; bottom:0px;position:absolute;margin-bottom:10px;padding-bottom: 10px;min-height:100px">
+                            MOOC Feedback <br>Visualization.
+                        </p>
+                    </blockquote>
 
                     <div class="large-12 medium-12 tab-12 mobile-12">
                         <aside class="pull-quote">
@@ -151,7 +153,7 @@
                                 <div class="section-inner">
 
                                     <div class="row">
-                                        <p style="text-align: justify;">
+                                        <p class="projecttextdefault">
 
                                             Learner feedback on the ongoing course content is a valuable resource for the Course instructors in the absence of in-person interaction. With the increasing popularity of Massive open online courses (MOOCs), the usage of Video Content in the Online learning
                                             environment serves as a major resource to the course instructors as well as course developers. Video content in a learning environment caters for multiple roles such as a video lecture or student coursework
@@ -189,15 +191,15 @@
                                 <div class="section-inner">
 
                                     <div class="row">
-                                        <p style="text-align: justify;">
+                                        <p class="projecttextdefault">
                                             <img style="mix-blend-mode:multiply;" src="./Resources/MOOC Feedback/GASE Final PDF-page-009.jpg" /> <br><br><br>For devising a Feedback system for the MOOC platforms (See System Flow), we accepted the ideology
                                             proposed by Daradoumis et. al [9]. They proposed a framework which utilizes software agents with the objective to improve management, delivery and evaluation of MOOCs. Analogous to their system flow pipeline,
                                             our approach also follows a three phase procedure for complete function and information flow that allows the learners to provide feedback which the instructors or course developers can use for either iterative
                                             improvement of course or immediate action.
                                             <br>
-
-                                            <h5 style="margin-top: 10px;"><span style="font-weight: 900;">Assessment and Learning</span></h5>
-
+                                        </p>
+                                        <h5 style="margin-top: 10px;"><span style="font-family:code;font-weight: 900;">Assessment and Learning</span></h5>
+                                        <p class="projecttextdefault">
                                             Assessment and Learning is the set of tasks that the learner community of the system is supposed to be carrying out. It basically represents the perspective of the Learner during the learning activity. A typical learner engages in the learning activity
                                             by firstly getting the access to the MOOC platform via successful login and then moving onto the course portal and selecting the course in which he/she is enrolled. The video lectures are typically delivered
                                             through a generic video delivery interface (See Figure 2) after the topic selection.<br><br> The learner can then play the video lecture as through common video playback
@@ -209,17 +211,18 @@
                                             <br><br> Simply said, each user click for the feedback corresponds to a five valued (x, y, time, feedbacktype, feedbackmessage) point in the video lecture. All these feedback points data from a unique learner
                                             can then be combined with the feedback data of the other learners about the same video and stored together for the analysis phase. With this aggregation of learner feedback data points about the video lecture,
                                             a heatmap visualization overlay is created in order to better identify the prioritized feedback action points.<br><br><br>
-                                            <img style="mix-blend-mode:multiply;" src="./Resources/MOOC Feedback/GASE Final PDF-page-012.jpg" />
-
-                                            <h5 style="margin-top: 10px;"><span style="font-weight: 900;">Delivery </span></h5>
+                                        </p>
+                                        <img style="mix-blend-mode:multiply;" src="./Resources/MOOC Feedback/GASE Final PDF-page-012.jpg" />
+                                        <h5 style="margin-top: 10px;"><span style="font-family:code;font-weight: 900;">Delivery </span></h5>
+                                        <p class="projecttextdefault">
                                             Delivery part refers to the process of setting up the environment for the learner to engage in the learning. This part is carried out by the MOOC Platform. The entire responsibility of displaying the video content to the logged-in learner depending upon
                                             the request being made is handled by the MOOC Platform interface. The interface varies from one platform to the other but the general video display environment remains more or less the same and only varies in
                                             the video content depending upon the selected course. Apart from this, the aggregation of the feedback click points collected from the course learners is also carried out in this phase. Using this collection
                                             of data, the MOOC Platform generates and offers an analytics dashboard to the instructor for looking at the feedback in an intuitive manner. Further, this raw dataset can be downloaded by the instructor for
-                                            external analysis.<br><br><br>
+                                            external analysis.<br><br><br></p>
 
-
-                                            <h5 style="margin-top: 10px;"><span style="font-weight: 900;">Analysis and Design</span></h5>
+                                        <h5 style="margin-top: 10px;"><span style="font-family:code;font-weight: 900;">Analysis and Design</span></h5>
+                                        <p class="projecttextdefault">
                                             Analysis and Design part consists of the set of responsibilities and the umbrella of tasks that the Course Instructor or mentor is supposed to be carrying out. This basically represents the perspective of the instructor while working on the system. The
                                             instructor of the course developer firstly designs a new course following the curriculum. Once the course content is completely designed and the course is deployed on the MOOC Platform, learners are allowed
                                             to enroll in the course and assess the video content. The feedback collected would then be shown on the instructor interface as an analytics dashboard with all the statistics. This is where the analytics phase
@@ -235,7 +238,7 @@
                                 <h3 class="midlinehead">System Flow</h3>
                                 <div class="section-inner">
                                     <div class="row">
-                                        <p style="text-align: justify;mix-blend-mode:multiply;">
+                                        <p style="mix-blend-mode:multiply;" class="projecttextdefault">
                                             <br>The proposed pipeline consists of three stages - Analysis and Design, Delivery and Assessment. Corresponding to these stages, the stakeholders of the system namely Instructor, MOOC Platform and the Learner
                                             have their respective roles.<br><br><br>
                                             <img src="./Resources/MOOC Feedback/GASE Final PDF-page-010.jpg" style="width:100%">
@@ -250,7 +253,7 @@
                                 <div class="section-inner">
 
                                     <div class="row">
-                                        <p style="text-align: justify;mix-blend-mode:multiply;">
+                                        <p style="mix-blend-mode:multiply;">
                                             <img src="./Resources/MOOC Feedback/GASE Final PDF-page-011.jpg" />
                                             <img src="./Resources/MOOC Feedback/GASE Final PDF-page-013.jpg" />
                                         </p>
@@ -263,7 +266,7 @@
                                 <div class="section-inner">
 
                                     <div class="row">
-                                        <p style="text-align: justify;">
+                                        <p class="projecttextdefault">
 
                                             We proposed a MOOC Feedback visualization system based on a three stage pipeline consisting of Design & Analysis, Delivery and Assessment. It implements an iterative flow between these three stages. In the present MOOC environment, the growing number
                                             of MOOC participants/learners and corresponding increasing number of courses, make it considerably difficult to maintain the quality of MOOC Video content. In such a situation, course instructors or mentors
@@ -285,7 +288,7 @@
                                             <p><br><br></p>
                                         </div>
                                         <span class="blue">REFERENCES</span><br><br>
-                                        <span style="font-size:1em;">
+                                        <span class="projecttextreferences">
                                             1. Coetzee, Derrick, Armando Fox, Marti A. Hearst, and Björn Hartmann. "Should your MOOC forum use a reputation system?." In Proceedings of the 17th ACM conference on Computer supported cooperative work & social computing, pp. 1176-1187. ACM, 2014.
                                             <br>2. Goldman, Dan B., Chris Gonterman, Brian Curless, David Salesin, and Steven M. Seitz. "Video object annotation, navigation, and composition." In Proceedings of the 21st annual ACM symposium on User interface
                                             software and technology, pp. 3-12. ACM, 2008.
@@ -317,12 +320,9 @@
                             <div class="spacer"></div>
                             <!-- end entry content -->
 
-                            <img src="../../images/old/slid1.png" alt="">
-
-
                             <div class="entry__pagenav">
                                 <div class="entry__nav">
-                                    <div class="entry__prev">
+                                    <div class="entry__prev smalltile">
                                         <a href="../../index.html" rel="prev">
                                             <span>Back</span> Projects
                                         </a>
