@@ -128,16 +128,6 @@
                             transition: all 120ms ease-in-out;
                         }
                         
-                        .parentimagediv img:hover {
-                            z-index: 600;
-                            -moz-transform: scale(1.02);
-                            -webkit-transform: scale(1.02);
-                            -o-transform: scale(1.02);
-                            transform: scale(1.02);
-                            -ms-transform: scale(1.02);
-                            transition: all 120ms ease-in-out;
-                        }
-                        
                         #aboutmetext {
                             font-size: 2.4em;
                             line-height: 115%;
@@ -164,10 +154,10 @@
                     <div class="row" style="padding-left:0px">
                         <div class="large-9 medium-9 tab-full mobile-full">
 
-                            <div class="parentimagediv" style="opacity: 0;">
+                            <div class="parentimagediv" style="opacity:0;margin-bottom:35px;">
 
-                                <img style="border-radius: 20px;" id="longspacecoverimage" src="images/old/space 8.jpg">
-                                <img style="border-radius: 20px;" id="smallspacecoverimage" src="images/old/space 8.jpg" width=50%>
+                                <img style="border-radius: 20px; z-index:600" id="longspacecoverimage" class="roundborderimage" src="images/old/space 8.jpg">
+                                <img style="border-radius: 20px; z-index:600" id="smallspacecoverimage" class="roundborderimage" src="images/old/space 8.jpg" width=50%>
 
                             </div>
                         </div>

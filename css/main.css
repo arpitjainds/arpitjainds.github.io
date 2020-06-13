@@ -1615,6 +1615,7 @@ input::-moz-focus-inner {
     font-weight: 900;
     font-size: 1.5rem;
     line-height: 1.6;
+    transition: all 300ms;
 }
 
 .alert-box__close {
@@ -1669,13 +1670,28 @@ input::-moz-focus-inner {
 }
 
 .alert-box--info {
-    border: 1px dotted #387fb2;
-    color: #387fb2;
+    border: 1px dotted rgb(64, 106, 146);
+    color: rgb(64, 106, 146);
+}
+
+.alert-box--info a {
+    color: rgb(122, 160, 196);
+}
+
+.alert-box--info:hover {
+    border: 1px dotted #f6f7f800;
+    background: rgb(64, 106, 146);
+    color: #f6f7f8;
 }
 
 .alert-box--info .alert-box__close::before,
 .alert-box--info .alert-box__close::after {
-    background-color: #387fb2;
+    background-color: rgb(64, 106, 146);
+}
+
+.alert-box--info:hover .alert-box__close::before,
+.alert-box--info:hover .alert-box__close::after {
+    background-color: #f6f7f8;
 }
 
 .alert-box--notice {
@@ -5073,6 +5089,7 @@ h1 svg .arrow {
     border: 0px dotted rgb(64, 106, 146);
     background: rgba(64, 106, 146, 0.125);
     transition: all 300ms;
+    z-index: 400;
 }
 
 .tile.projecttile:hover {
@@ -5087,16 +5104,17 @@ h1 svg .arrow {
 .smalltile {
     padding: 25px;
     margin: 0px;
-    border: 1px solid rgba(64, 106, 146, 0.03);
+    border: 0px solid rgba(64, 106, 146, 0.03);
     border-radius: 20px;
     background: rgba(64, 106, 146, 0.03);
     transition: all 300ms;
 }
 
 .smalltile:hover {
-    border: 1px dotted rgb(64, 106, 146);
+    border: 0px dotted rgb(64, 106, 146);
     background: rgba(64, 106, 146, 0.1);
     transition: all 300ms;
+    z-index: 400;
 }
 
 .tile .tileheading {
@@ -5891,16 +5909,17 @@ a.content__text-link[data-fx="14"]:hover::after {
 
 .roundborderimage {
     border-radius: 20px;
-    transition: all 120ms ease-in-out;
+    transition: all 150ms ease-in-out;
 }
 
 .roundborderimage:hover {
+    box-shadow: 0px 3px 30px #c8c8c8;
     -moz-transform: scale(1.02);
     -webkit-transform: scale(1.02);
     -o-transform: scale(1.02);
     transform: scale(1.02);
     -ms-transform: scale(1.02);
-    transition: all 120ms ease-in-out;
+    transition: all 150ms ease-in-out;
 }
 
 
