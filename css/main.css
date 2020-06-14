@@ -5991,6 +5991,7 @@ a.content__text-link[data-fx="14"]:hover::after {
 .project.projecthead {
     font-family: Code;
     background: #f6f7f8;
+    margin-top: 1%;
 }
 
 .project.projecthead:hover {
@@ -6028,9 +6029,9 @@ span.projecttext {
     color: white;
     font-family: Code;
     font-size: 5.5em;
-    font-weight: 900;
+    font-weight: 300;
     bottom: 0px;
-    letter-spacing: -5px;
+    letter-spacing: -8px;
     position: absolute;
     margin-bottom: 10px;
     padding-bottom: 10px;
