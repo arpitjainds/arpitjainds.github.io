@@ -148,17 +148,18 @@
         }
         // Audio (Audio API):
         else if (this.mediaEl.classList.contains('pop-media--audio')) {
-            this._createAudio();
+            var soundclip = el.getAttribute('sound-clip');
+            this._createAudio(soundclip);
         }
 
         this.mediaEl.style.width = w ? w : null;
         this.mediaEl.style.height = h ? h : null;
     }
 
-    MediaRevealer.prototype._createAudio = function() {
+    MediaRevealer.prototype._createAudio = function(soundclip) {
         var self = this,
             bufferLoader = null;
-        bufferLoader = new BufferLoader(context, ['Sounds/namastepronounciation.mp3'], function(bufferList) {
+        bufferLoader = new BufferLoader(context, [soundclip], function(bufferList) {
             self.bufferList = bufferList;
         });
         bufferLoader.load();
@@ -268,7 +269,7 @@
         var isMobile = mobilecheck(),
             evOn = !isMobile ? 'mouseenter' : 'touchstart',
             evOff = !isMobile ? 'mouseleave' : 'touchend';
-        var t6 = new MediaRevealer($('trigger-6'));
+        var t6 = new MediaRevealer($(id));
         t6.el.addEventListener(evOn, function(ev) {
             clearTimeout(triggertimeout);
             triggertimeout = setTimeout(function() {
@@ -300,7 +301,7 @@
         var isMobile = mobilecheck(),
             evOn = !isMobile ? 'mouseenter' : 'touchstart',
             evOff = !isMobile ? 'mouseleave' : 'touchend';
-        var t8 = new MediaRevealer($('trigger-8'));
+        var t8 = new MediaRevealer($(id));
         t8.el.addEventListener(evOn, function(ev) {
             clearTimeout(triggertimeout);
             triggertimeout = setTimeout(function() {
@@ -320,7 +321,7 @@
         var isMobile = mobilecheck(),
             evOn = !isMobile ? 'mouseenter' : 'touchstart',
             evOff = !isMobile ? 'mouseleave' : 'touchend';
-        var t9 = new MediaRevealer($('trigger-9'));
+        var t9 = new MediaRevealer($(id));
         t9.el.addEventListener(evOn, function(ev) {
             clearTimeout(triggertimeout);
             triggertimeout = setTimeout(function() {
@@ -340,7 +341,7 @@
         var isMobile = mobilecheck(),
             evOn = !isMobile ? 'mouseenter' : 'touchstart',
             evOff = !isMobile ? 'mouseleave' : 'touchend';
-        var t10 = new MediaRevealer($('trigger-10'));
+        var t10 = new MediaRevealer($(id));
         t10.el.addEventListener(evOn, function(ev) {
             clearTimeout(triggertimeout);
             triggertimeout = setTimeout(function() {
@@ -369,7 +370,7 @@
         var isMobile = mobilecheck(),
             evOn = !isMobile ? 'mouseenter' : 'touchstart',
             evOff = !isMobile ? 'mouseleave' : 'touchend';
-        var t11 = new MediaRevealer($('trigger-11'));
+        var t11 = new MediaRevealer($(id));
         t11.el.addEventListener(evOn, function(ev) {
             clearTimeout(triggertimeout);
             triggertimeout = setTimeout(function() {
@@ -387,7 +388,7 @@
         var isMobile = mobilecheck(),
             evOn = !isMobile ? 'mouseenter' : 'touchstart',
             evOff = !isMobile ? 'mouseleave' : 'touchend';
-        var t12 = new MediaRevealer($('trigger-12'));
+        var t12 = new MediaRevealer($(id));
         t12.el.addEventListener(evOn, function(ev) {
             clearTimeout(triggertimeout);
             triggertimeout = setTimeout(function() {
@@ -407,7 +408,7 @@
         var isMobile = mobilecheck(),
             evOn = !isMobile ? 'mouseenter' : 'touchstart',
             evOff = !isMobile ? 'mouseleave' : 'touchend';
-        var t13 = new MediaRevealer($('trigger-13'));
+        var t13 = new MediaRevealer($(id));
         t13.el.addEventListener(evOn, function(ev) {
             clearTimeout(triggertimeout);
             triggertimeout = setTimeout(function() {
@@ -429,7 +430,7 @@
         var isMobile = mobilecheck(),
             evOn = !isMobile ? 'mouseenter' : 'touchstart',
             evOff = !isMobile ? 'mouseleave' : 'touchend';
-        var t15 = new MediaRevealer($('trigger-15'));
+        var t15 = new MediaRevealer($(id));
         t15.el.addEventListener(evOn, function(ev) {
             clearTimeout(triggertimeout);
             triggertimeout = setTimeout(function() {
@@ -447,7 +448,7 @@
         var isMobile = mobilecheck(),
             evOn = !isMobile ? 'mouseenter' : 'touchstart',
             evOff = !isMobile ? 'mouseleave' : 'touchend';
-        var t16 = new MediaRevealer($('trigger-16'));
+        var t16 = new MediaRevealer($(id));
         t16.el.addEventListener(evOn, function(ev) {
             clearTimeout(triggertimeout);
             triggertimeout = setTimeout(function() {
