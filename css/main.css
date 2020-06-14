@@ -64,6 +64,11 @@
 }
 
 @font-face {
+    font-family: 'CodeLight';
+    src: url("../Fonts/IBMPlexMono-Light.ttf");
+}
+
+@font-face {
     font-family: 'Thin';
     src: url("../Fonts/Sans-Thin.ttf");
 }
@@ -285,7 +290,7 @@ h4,
     .h3,
     h4,
     .h4 {
-        margin-top: 5.6rem;
+        margin-top: 1.2rem;
     }
 }
 
@@ -293,7 +298,7 @@ h5,
 .h5,
 h6,
 .h6 {
-    margin-top: 4.8rem;
+    margin-top: 1.2rem;
     margin-bottom: 1.2rem;
 }
 
@@ -302,7 +307,7 @@ h6,
     .h5,
     h6,
     .h6 {
-        margin-top: 4.4rem;
+        margin-top: 1.2rem;
         margin-bottom: 0.8rem;
     }
 }
@@ -471,7 +476,7 @@ blockquote span {
 }
 
 blockquote a {
-    color: rgb(64, 106, 146, 0.3);
+    color: rgb(64, 106, 146, 0.6);
 }
 
 blockquote:hover span {
@@ -5938,7 +5943,7 @@ a.content__text-link[data-fx="14"]:hover::after {
 ----------------------------------------------*/
 
 .projecttextdefault {
-    font-size: 1.2em;
+    font-size: 1em;
     line-height: 120%;
     letter-spacing: 0px;
     color: #666666;
@@ -5947,8 +5952,97 @@ a.content__text-link[data-fx="14"]:hover::after {
     font-weight: 900;
 }
 
+.projecttextheading {
+    font-size: 1.35em;
+    font-family: Code;
+    padding-bottom: 0px;
+    font-weight: 900;
+}
+
 .projecttextreferences {
     font-family: Code;
     letter-spacing: 0px;
     color: rgb(64, 106, 146)
+}
+
+.projectcontenttile {
+    padding: 2%;
+    border-radius: 20px;
+    margin: 15px 0 15px;
+}
+
+.projectcontenttile .midlinehead {
+    margin-top: 30px;
+    font-family: Code;
+}
+
+.projectcontenttile .section-inner .projectrowcontent {
+    padding: 3%;
+}
+
+.projectrowcontent .row {
+    padding: 2%;
+}
+
+.projectrowcontent .row .column {
+    padding: 1%;
+}
+
+.project.projecthead {
+    font-family: Code;
+    background: #f6f7f8;
+}
+
+.project.projecthead:hover {
+    box-shadow: 0px 3px 30px #c8c8c8;
+    -moz-transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    transition: all 150ms ease-in-out;
+}
+
+.project.projecthead h1,
+.project.projecthead h2,
+.project.projecthead h3,
+.project.projecthead h4,
+.project.projecthead h5,
+.project.projecthead h6,
+.project.projecthead a,
+.project.projecthead p,
+.project.projecthead li {
+    font-family: Code;
+}
+
+.project.projecthead span {
+    font-family: CodeLight;
+}
+
+a.projecttext,
+span.projecttext {
+    font-family: Code;
+}
+
+.project.projecttile .tileheading {
+    color: white;
+    font-family: Code;
+    font-size: 5.5em;
+    font-weight: 900;
+    bottom: 0px;
+    letter-spacing: -5px;
+    position: absolute;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    min-height: 100px
+}
+
+@media screen and (max-width:600px) {
+    .project.projecttile .tileheading {
+        font-size: 3.5em;
+    }
+}
+
+.project.header__nav li a {
+    font-family: Code;
 }
