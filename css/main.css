@@ -2918,7 +2918,6 @@ input::-moz-focus-inner {
     background-image: url(../images/icons/birghtness.svg);
     position: fixed;
     right: 40px;
-    transform: translate(100px, 0);
     top: 6.4rem;
 }
 
