@@ -71,7 +71,7 @@
                             onEndHeaderAnimation();
                         }
                     }
-                }, 80);
+                }, 20);
         };
 
         loader.setProgressFn(simulationFn);
