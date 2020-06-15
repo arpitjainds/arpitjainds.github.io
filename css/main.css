@@ -5985,7 +5985,7 @@ a.content__text-link[data-fx="14"]:hover::after {
 }
 
 .projectrowcontent .row .column {
-    padding: 1%;
+    padding: 2%;
 }
 
 .project.projecthead {
@@ -6018,6 +6018,11 @@ a.content__text-link[data-fx="14"]:hover::after {
 
 .project.projecthead span {
     font-family: CodeLight;
+    margin-top: 10px;
+}
+
+.project.projecthead .project {
+    margin-top: 10px;
 }
 
 a.projecttext,
@@ -6046,4 +6051,20 @@ span.projecttext {
 
 .project.header__nav li a {
     font-family: Code;
+}
+
+@media screen and (min-width:400px) {
+    .tile.projecthead.project .row {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+blockquote.tile.projecthead.project {
+    padding: 10px 35px 10px 35px;
+}
+
+.project .entry__tags .entry__tag-list a {
+    padding: 5px 10px 5px;
+    font-size: 0.65em;
 }
