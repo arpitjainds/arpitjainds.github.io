@@ -84,38 +84,8 @@
 }
 
 @font-face {
-    font-family: 'Regular Italic';
-    src: url("../Fonts/Sans-RegularItalic.ttf");
-}
-
-@font-face {
-    font-family: 'Medium';
-    src: url("../Fonts/Sans-Medium.ttf");
-}
-
-@font-face {
     font-family: 'Bold';
     src: url("../Fonts/Sans-Bold.ttf");
-}
-
-@font-face {
-    font-family: 'Black';
-    src: url("../Fonts/Sans-Black.ttf");
-}
-
-@font-face {
-    font-family: 'Italic';
-    src: url("../Fonts/Sans-Italic.ttf");
-}
-
-@font-face {
-    font-family: 'Medium Italic';
-    src: url("../Fonts/Sans-MediumItalic.ttf");
-}
-
-@font-face {
-    font-family: 'Bold Italic';
-    src: url("../Fonts/Sans-BoldItalic.ttf");
 }
 
 html {
