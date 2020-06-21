@@ -112,26 +112,37 @@
 
                 <article class="column large-full entry format-standard">
 
-                    <div class="row">
-                        <div class="large-8 medium-12 tab-12 mobile-12">
-                            <strong>
-                                                        <p style="font-size:6em;line-height: 95%;padding-top:20px">
-                                                        Paintings.<br>
-                                                        </p>
-                                            </strong>
-                            <!-- <p class="entry__tags" style="margin-top:0px;">
-                                <span class="entry__tag-list">
-                                                                <a href="#storytelling">Storytelling</a>
-                                                                <a href="#abstract">Abstract</a>
-                                                            </span>
-                            </p> -->
-                        </div>
-                        <div class="large-4 medium-12 tab-12 mobile-12">
-
-                        </div>
-                    </div>
-
                     <div class="entry__content">
+
+                        <style>
+                            #intro p {
+                                font-size: 7em;
+                                font-family: Regular;
+                                color: rgba(64, 106, 146, 0.3);
+                                line-height: 94%;
+                                padding-top: 0px;
+                                letter-spacing: -4.8px;
+                            }
+                            
+                            #intro p span#subtextmain {
+                                font-size: 1em;
+                            }
+                            
+                            @media screen and (max-width:500px) {
+                                #intro p {
+                                    font-size: 4.8rem;
+                                    letter-spacing: -1.5px;
+                                }
+                            }
+                        </style>
+
+                        <div class="row">
+                            <strong id="intro">
+                                    <p>
+                                    I painted these artworks a few months back. Some of them are metaphorical while others are just abstracts.<br>
+                                    </p>
+                            </strong>
+                        </div>
 
                         <style>
                             .demo-1 {
@@ -221,7 +232,7 @@
                                 right: 20.25%;
                                 font-family: "Thin";
                                 padding-left: 2vmax;
-                                z-index: 500;
+                                z-index: 1;
                                 line-height: 0.8;
                             }
                             
