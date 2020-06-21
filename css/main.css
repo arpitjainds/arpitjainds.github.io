@@ -3863,8 +3863,6 @@ body.search-is-visible {
     position: relative;
     list-style: none;
     margin: 0;
-    padding: 5%;
-    color: rgb(64, 106, 146);
 }
 
 .comment__avatar {
@@ -3925,7 +3923,6 @@ body.search-is-visible {
     clear: both;
     margin: 1.6rem 0 0 0;
     padding: 0 0 0 0;
-    color: rgb(64, 106, 146, 0.6);
 }
 
 .comment ul.children {
