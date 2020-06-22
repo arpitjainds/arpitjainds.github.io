@@ -29,13 +29,13 @@
 }
 
 .ip-logo img {
-    width: 16%;
-    left: 42%;
+    width: 26%;
+    left: 37%;
     position: absolute;
 }
 
 .ip-logo {
-    top: 10%;
+    top: 0%;
     height: 100%;
     -webkit-transform: translate3d(0, 25%, 0);
     transform: translate3d(0, 25%, 0);
