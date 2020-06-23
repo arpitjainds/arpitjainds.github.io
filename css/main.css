@@ -2594,7 +2594,7 @@ input::-moz-focus-inner {
 
 .header__nav li a {
     display: block;
-    font-family: Light;
+    font-family: Thin;
     font-size: 0.8em;
     color: #b0b0b0;
     line-height: 2.25rem;
@@ -2648,9 +2648,7 @@ input::-moz-focus-inner {
 
 .header__nav li.current>a {
     color: rgba(0, 0, 0, 0.95);
-    text-decoration: line-through;
     cursor: not-allowed;
-    font-family: Light;
 }
 
 .header__nav li ul {
