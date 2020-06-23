@@ -5899,7 +5899,7 @@ a.content__text-link[data-fx="14"]:hover::after {
 }
 
 .roundborderimage:hover {
-    box-shadow: 0px 3px 30px #c8c8c8;
+    box-shadow: 0px 3px 30px #777777;
     -moz-transform: scale(1.02);
     -webkit-transform: scale(1.02);
     -o-transform: scale(1.02);
