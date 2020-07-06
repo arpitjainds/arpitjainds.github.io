@@ -2593,7 +2593,7 @@ input::-moz-focus-inner {
 
 .header__nav li a {
     display: block;
-    font-family: Thin;
+    font-family: Light;
     font-size: 0.8em;
     color: #b0b0b0;
     line-height: 2.25rem;
@@ -2647,6 +2647,7 @@ input::-moz-focus-inner {
 .header__nav li.current>a {
     color: rgba(0, 0, 0, 0.95);
     cursor: not-allowed;
+    font-family: Regular;
 }
 
 .header__nav li ul {
@@ -2912,8 +2913,7 @@ input::-moz-focus-inner {
 
 .header__search-trigger::after {
     content: "Share";
-    font-family: Thin, Regular, sans-serif;
-    font-weight: 500;
+    font-family: Light, sans-serif;
     font-size: 11px;
     line-height: 1.6rem;
     text-transform: uppercase;
