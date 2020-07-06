@@ -3876,8 +3876,7 @@ body.search-is-visible {
 }
 
 .comment__info .comment__author {
-    font-family: Thin, Regular, sans-serif;
-    font-weight: 900;
+    font-family: Bold, Regular, sans-serif;
     font-size: 2rem;
     line-height: 1.684;
     font-style: normal;
