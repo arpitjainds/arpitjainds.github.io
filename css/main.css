@@ -3388,9 +3388,8 @@ body.search-is-visible {
 .footer__copyright span {
     display: inline-block;
     font-size: 1.8em;
-    font-weight: 900;
-    font-family: "Thin";
-    color: rgba(0, 0, 0, 0.15);
+    font-family: Bold;
+    color: #8bc2b7;
 }
 
 .footer__copyright span::after {
