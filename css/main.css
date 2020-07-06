@@ -3137,7 +3137,7 @@ body.search-is-visible {
     .header__top {
         z-index: 100;
         background: rgba(0, 0, 0, 0);
-        box-shadow: 0px 5px 40px #c8c8c8;
+        box-shadow: 0px 5px 40px rgb(64, 106, 146, 0.45);
         width: 100%;
         height: 78px;
         position: fixed;
@@ -4479,11 +4479,10 @@ body.search-is-visible {
 }
 
 .share-btn {
-    font-family: inherit;
-    letter-spacing: 4px;
+    font-family: Bold;
     text-transform: uppercase;
-    font-size: 1.25em;
-    font-weight: 900;
+    letter-spacing: 1px;
+    font-size: 1em;
     color: #111;
     background: #e0e0e0;
     text-decoration: none;
@@ -5893,7 +5892,7 @@ a.content__text-link[data-fx="14"]:hover::after {
 }
 
 .roundborderimage:hover {
-    box-shadow: 0px 3px 30px #777777;
+    box-shadow: 0px 3px 30px rgb(64, 106, 146, 0.45);
     -moz-transform: scale(1.02);
     -webkit-transform: scale(1.02);
     -o-transform: scale(1.02);
@@ -5960,7 +5959,7 @@ a.content__text-link[data-fx="14"]:hover::after {
 }
 
 .project.projecthead:hover {
-    box-shadow: 0px 3px 30px #c8c8c8;
+    box-shadow: 0px 3px 30px rgb(64, 106, 146, 0.45);
     -moz-transform: scale(1.02);
     -webkit-transform: scale(1.02);
     -o-transform: scale(1.02);
