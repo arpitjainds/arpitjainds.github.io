@@ -35,6 +35,74 @@
 
 <body>
 
+    <style>
+        td.tableimagecell {
+            padding: 12px;
+            max-width: 60px;
+            max-height: 60px;
+            display: none;
+        }
+        
+        td.tableimagecell>img {
+            max-width: 40px;
+            max-height: 40px;
+            border-radius: 50%;
+            padding: 4.5px;
+        }
+        
+        td.tabletitlecell {
+            padding: 7.5px;
+            max-height: 60px;
+        }
+        
+        td.tabletitlecell>span {
+            font-family: Bold;
+            font-size: 12px;
+            color: #555555;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+        
+        td.tabledatecell {
+            padding: 7.5px;
+            max-height: 60px;
+        }
+        
+        td.tabledatecell>span {
+            font-family: Light;
+            font-size: 12px;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+        }
+        
+        td.tabledescriptioncell {
+            padding: 7.5px;
+            max-height: 60px;
+            font-size: 0.9em;
+        }
+        
+        td.tabledescriptioncell>span {
+            font-size: 16px;
+            letter-spacing: 0px;
+            font-size: 1.15em;
+            color: #555555;
+            font-family: Regular;
+            line-height: 1;
+        }
+        
+        @media screen and (max-width:700px) {
+            td.tableimagecell {
+                display: none;
+            }
+        }
+        
+        @media screen and (max-width:635px) {
+            td.tabledatecell {
+                display: none;
+            }
+        }
+    </style>
+
     <!-- preloader
     ================================================== -->
     <div id="preloader">
@@ -115,7 +183,7 @@
 
                     <style>
                         #intro p {
-                            font-size: 6.5em;
+                            font-size: 6.1em;
                             font-family: Bold;
                             color: rgba(64, 106, 146, 0.3);
                             line-height: 94%;
@@ -154,15 +222,15 @@
                         <strong id="intro"> 
                                 <p>
                                 This is some formal information about me.<br>
-                                <br>You can read about my <a class="blue" href="#research">Research, </a> <a href="#experience" class="blue">Experience </a> and <a href="#education" class="blue">Education</a> here.
+                                <br>You can read about my <a class="blue" href="#research">Research, </a> <a href="#experience" class="blue">Experience, </a><a href="#education" class="blue">Education,</a> <a href="#certification" class="blue">Certifications</a> and <a href="#volunteer" class="blue">Volunteer Work</a> here.
                                 </p>
                         </strong>
                         <a href="#research" class="noborder">
                             <h1>
-                                <svg version="1.1" id="svg-arrow-down" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 22 35" style="enable-background:new 0 0 22 35;" xml:space="preserve">
-                          <polygon class="arrow" style="fill:rgb(64, 106, 146);" points="20.58,11.584 12.004,20.158 12.004,0 9.996,0 9.996,20.158 1.42,11.584 0,13.004 11,24
-                                          22,13.004 "></polygon>
-                        </svg></h1>
+                                <svg version="1.1" id="svg-arrow-down" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-2 -2 26 40" style="enable-background:new -2 -2 26 35;" xml:space="preserve">
+                                    <polygon class="arrow" style="fill:rgb(64, 106, 146);stroke:rgb(64, 106, 146);" points="20.58,11.584 12.004,20.158 12.004,0 9.996,0 9.996,20.158 1.42,11.584 0,13.004 11,24
+                                                    22,13.004 "></polygon>
+                                  </svg></h1>
                         </a>
                     </div>
 
@@ -741,161 +809,6 @@
                         </div>
                     </div>
 
-                    <div class="spacer "></div>
-
-                    <div class="row ">
-                        <div class="large-12 medium-12 tab-12 mobile-12 ">
-                            <strong>
-                                <p class="headings">
-                                Volunteer <br>Work.<br>
-                                </p>
-                            </strong>
-                        </div>
-                        <div class="large-12 medium-12 tab-12 mobile-12 ">
-                            <style>
-                                td.tableimagecell {
-                                    padding: 12px;
-                                    max-width: 60px;
-                                    max-height: 60px;
-                                    display: none;
-                                }
-                                
-                                td.tableimagecell>img {
-                                    max-width: 40px;
-                                    max-height: 40px;
-                                    border-radius: 50%;
-                                    padding: 4.5px;
-                                }
-                                
-                                td.tabletitlecell {
-                                    padding: 7.5px;
-                                    max-height: 60px;
-                                }
-                                
-                                td.tabletitlecell>span {
-                                    font-family: Bold;
-                                    font-size: 12px;
-                                    color: #555555;
-                                    text-transform: uppercase;
-                                    letter-spacing: 3px;
-                                }
-                                
-                                td.tabledatecell {
-                                    padding: 7.5px;
-                                    max-height: 60px;
-                                }
-                                
-                                td.tabledatecell>span {
-                                    font-family: Light;
-                                    font-size: 12px;
-                                    letter-spacing: 2.5px;
-                                    text-transform: uppercase;
-                                }
-                                
-                                td.tabledescriptioncell {
-                                    padding: 7.5px;
-                                    max-height: 60px;
-                                    font-size: 0.9em;
-                                }
-                                
-                                td.tabledescriptioncell>span {
-                                    font-size: 16px;
-                                    letter-spacing: 0px;
-                                    font-size: 1.15em;
-                                    color: #555555;
-                                    font-family: Regular;
-                                    line-height: 1;
-                                }
-                                
-                                @media screen and (max-width:700px) {
-                                    td.tableimagecell {
-                                        display: none;
-                                    }
-                                }
-                                
-                                @media screen and (max-width:635px) {
-                                    td.tabledatecell {
-                                        display: none;
-                                    }
-                                }
-                            </style>
-
-
-                            <table class="margin:0px; ">
-                                <tr class="tablerow ">
-                                    <td class="tableimagecell ">
-                                        <img src="../images/old/workex/mozilla.png " style="width:100%;height:100%;margin:0px " alt=" ">
-                                    </td>
-                                    <td class="tabletitlecell ">
-                                        <span>Mozilla</span>
-                                    </td>
-                                    <td class="tabledatecell ">
-                                        <span>Apr 2019 - Present</span>
-                                    </td>
-                                    <td class="tabledescriptioncell ">
-                                        <span>Technical Writer.</span>
-                                    </td>
-                                </tr>
-                                <tr class="tablerow ">
-                                    <td class="tableimagecell ">
-                                        <img src="../images/old/workex/coursera.png " style="width:100%;height:100%;margin:0px " alt=" ">
-                                    </td>
-                                    <td class="tabletitlecell ">
-                                        <span>Coursera</span>
-                                    </td>
-                                    <td class="tabledatecell ">
-                                        <span>May 2019 - Present</span>
-                                    </td>
-                                    <td class="tabledescriptioncell ">
-                                        <span>Member of Global Translator Community.</span>
-                                    </td>
-                                </tr>
-                                <tr class="tablerow ">
-                                    <td class="tableimagecell ">
-                                        <img src="../images/old/workex/spizmacay.png " style="width:100%;height:100%;margin:0px " alt=" ">
-                                    </td>
-                                    <td class="tabletitlecell ">
-                                        <span>Spic Macay</span>
-                                    </td>
-                                    <td class="tabledatecell ">
-                                        <span>Aug 2017 - Nov 2017</span>
-                                    </td>
-                                    <td class="tabledescriptioncell ">
-                                        <span>Digital coverage of the events.</span>
-                                    </td>
-                                </tr>
-                                <tr class="tablerow ">
-                                    <td class="tableimagecell ">
-                                        <img src="../images/old/workex/codeburst.png " style="width:100%;height:100%;margin:0px " alt=" ">
-                                    </td>
-                                    <td class="tabletitlecell ">
-                                        <span>Codeburst</span>
-                                    </td>
-                                    <td class="tabledatecell ">
-                                        <span>May 2019 - Present</span>
-                                    </td>
-                                    <td class="tabledescriptioncell ">
-                                        <span>Technical Writer.</span>
-                                    </td>
-                                </tr>
-                                <tr class="tablerow ">
-                                    <td class="tableimagecell ">
-                                        <img src="../images/old/workex/aakriti.png " style="width:100%;height:100%;margin:0px " alt=" ">
-                                    </td>
-                                    <td class="tabletitlecell ">
-                                        <span>Aakriti Films</span>
-                                    </td>
-                                    <td class="tabledatecell ">
-                                        <span>Aug 2016 - May 2017</span>
-                                    </td>
-                                    <td class="tabledescriptioncell ">
-                                        <span>Directed Shortfilms.</span>
-                                    </td>
-                                </tr>
-                            </table>
-                        </div>
-                    </div>
-
                     <div class="spacer" id="education"></div>
                     <div class="row ">
                         <div class="large-12 medium-12 tab-12 mobile-12 ">
@@ -978,7 +891,7 @@
                         </div>
                     </div>
 
-                    <div class="spacer "></div>
+                    <div class="spacer" id="certification"></div>
 
                     <div class="row ">
                         <div class="large-8 medium-6 tab-12 mobile-12 ">
@@ -1061,6 +974,95 @@
                                     </tbody>
                                 </table>
                             </div>
+                        </div>
+                    </div>
+
+                    <div class="spacer" id="volunteer"></div>
+
+                    <div class="row ">
+                        <div class="large-12 medium-12 tab-12 mobile-12 ">
+                            <strong>
+                                <p class="headings">
+                                Volunteer <br>Work.<br>
+                                </p>
+                            </strong>
+                        </div>
+                        <div class="large-12 medium-12 tab-12 mobile-12 ">
+
+
+
+                            <table class="margin:0px; ">
+                                <tr class="tablerow ">
+                                    <td class="tableimagecell ">
+                                        <img src="../images/old/workex/mozilla.png " style="width:100%;height:100%;margin:0px " alt=" ">
+                                    </td>
+                                    <td class="tabletitlecell ">
+                                        <span>Mozilla</span>
+                                    </td>
+                                    <td class="tabledatecell ">
+                                        <span>Apr 2019 - Present</span>
+                                    </td>
+                                    <td class="tabledescriptioncell ">
+                                        <span>Technical Writer.</span>
+                                    </td>
+                                </tr>
+                                <tr class="tablerow ">
+                                    <td class="tableimagecell ">
+                                        <img src="../images/old/workex/coursera.png " style="width:100%;height:100%;margin:0px " alt=" ">
+                                    </td>
+                                    <td class="tabletitlecell ">
+                                        <span>Coursera</span>
+                                    </td>
+                                    <td class="tabledatecell ">
+                                        <span>May 2019 - Present</span>
+                                    </td>
+                                    <td class="tabledescriptioncell ">
+                                        <span>Member of Global Translator Community.</span>
+                                    </td>
+                                </tr>
+                                <tr class="tablerow ">
+                                    <td class="tableimagecell ">
+                                        <img src="../images/old/workex/spizmacay.png " style="width:100%;height:100%;margin:0px " alt=" ">
+                                    </td>
+                                    <td class="tabletitlecell ">
+                                        <span>Spic Macay</span>
+                                    </td>
+                                    <td class="tabledatecell ">
+                                        <span>Aug 2017 - Nov 2017</span>
+                                    </td>
+                                    <td class="tabledescriptioncell ">
+                                        <span>Digital coverage of the events.</span>
+                                    </td>
+                                </tr>
+                                <tr class="tablerow ">
+                                    <td class="tableimagecell ">
+                                        <img src="../images/old/workex/codeburst.png " style="width:100%;height:100%;margin:0px " alt=" ">
+                                    </td>
+                                    <td class="tabletitlecell ">
+                                        <span>Codeburst</span>
+                                    </td>
+                                    <td class="tabledatecell ">
+                                        <span>May 2019 - Present</span>
+                                    </td>
+                                    <td class="tabledescriptioncell ">
+                                        <span>Technical Writer.</span>
+                                    </td>
+                                </tr>
+                                <tr class="tablerow ">
+                                    <td class="tableimagecell ">
+                                        <img src="../images/old/workex/aakriti.png " style="width:100%;height:100%;margin:0px " alt=" ">
+                                    </td>
+                                    <td class="tabletitlecell ">
+                                        <span>Aakriti Films</span>
+                                    </td>
+                                    <td class="tabledatecell ">
+                                        <span>Aug 2016 - May 2017</span>
+                                    </td>
+                                    <td class="tabledescriptioncell ">
+                                        <span>Directed Shortfilms.</span>
+                                    </td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
 
