@@ -415,7 +415,8 @@ blockquote p {
 
 blockquote cite {
     display: block;
-    font-family: Light, Code, sans-serif;
+    font-family: Regular, Code, sans-serif;
+    letter-spacing: 0px;
     font-size: 1.4rem;
     font-style: normal;
     position: absolute;
@@ -3387,8 +3388,9 @@ body.search-is-visible {
 
 .footer__copyright span {
     display: inline-block;
-    font-size: 1.8em;
+    font-size: 1.9em;
     font-family: Bold;
+    letter-spacing: -1px;
     color: #8bc2b7;
 }
 
@@ -3648,8 +3650,7 @@ body.search-is-visible {
 }
 
 .entry__nav a {
-    font-family: Regular, Regular, sans-serif;
-    font-weight: 900;
+    font-family: Bold, Regular, sans-serif;
     border: none;
     font-size: 4rem;
     line-height: 1.333;
@@ -5011,14 +5012,21 @@ body.search-is-visible {
   ----------------------------------------------*/
 
 h1 svg {
-    width: 44px;
+    width: 50px;
     display: block;
     margin: 10px auto;
 }
 
 h1 svg .arrow {
+    stroke-width: 3.5;
     -webkit-animation: scroll .35s ease-in alternate infinite;
     animation: scroll .35s ease-in alternate infinite;
+}
+
+@media screen and (max-width:500px) {
+    h1 svg .arrow {
+        stroke-width: 1.5;
+    }
 }
 
 @-webkit-keyframes scroll {
@@ -5095,9 +5103,7 @@ h1 svg .arrow {
     line-height: 1;
     overflow: hidden;
     color: inherit;
-    font-size: 1.25em;
-    text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: -1px;
     min-height: 150px;
     font-family: Bold;
 }
@@ -5980,7 +5986,7 @@ a.content__text-link[data-fx="14"]:hover::after {
 }
 
 .project.projecthead span {
-    font-family: CodeLight;
+    font-family: Light;
     margin-top: 10px;
 }
 
@@ -5990,16 +5996,15 @@ a.content__text-link[data-fx="14"]:hover::after {
 
 a.projecttext,
 span.projecttext {
-    font-family: Code;
+    font-family: Light;
 }
 
 .project.projecttile .tileheading {
     color: white;
-    font-family: Code;
+    font-family: Bold;
     font-size: 5.5em;
-    font-weight: 300;
     bottom: 0px;
-    letter-spacing: -8px;
+    letter-spacing: -3px;
     position: absolute;
     margin-bottom: 10px;
     padding-bottom: 10px;
@@ -6013,7 +6018,7 @@ span.projecttext {
 }
 
 .project.header__nav li a {
-    font-family: Code;
+    font-family: Light;
 }
 
 @media screen and (min-width:400px) {
