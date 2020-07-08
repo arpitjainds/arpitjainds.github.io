@@ -462,12 +462,10 @@ blockquote:hover a {
 
 blockquote.projecthead p {
     font-size: 1.8rem;
-    font-weight: 900;
 }
 
 blockquote.projecthead span {
     font-size: 1.8rem;
-    font-weight: 900;
 }
 
 @media screen and (max-width:500px) {
@@ -3590,7 +3588,6 @@ body.search-is-visible {
 
 .entry__tags .entry__tag-list a {
     display: inline-block;
-    font-weight: 900;
     font-size: 1.3rem;
     line-height: inherit;
     color: rgb(64, 106, 146);
@@ -5061,7 +5058,7 @@ h1 svg .arrow {
     margin: 0px;
     border: 0px solid rgba(64, 106, 146, 0.07);
     border-radius: 20px;
-    color: rgb(64, 106, 146);
+    color: rgb(64, 106, 146, 0.5);
     background: rgba(64, 106, 146, 0.07);
     background-image: var(--tilebackgroundimagedefault);
     transition: background-image 300ms;
@@ -5912,24 +5909,23 @@ a.content__text-link[data-fx="14"]:hover::after {
 ----------------------------------------------*/
 
 .projecttextdefault {
-    font-size: 1em;
+    font-size: 1.15em;
     line-height: 120%;
     letter-spacing: 0px;
     color: #666666;
     padding: 10px;
-    font-family: Code;
-    font-weight: 900;
+    font-family: Regular;
 }
 
 .projecttextheading {
     font-size: 1.35em;
-    font-family: Code;
+    font-family: Light;
     padding-bottom: 0px;
     font-weight: 900;
 }
 
 .projecttextreferences {
-    font-family: Code;
+    font-family: Light;
     letter-spacing: 0px;
     color: rgb(64, 106, 146)
 }
@@ -5942,7 +5938,7 @@ a.content__text-link[data-fx="14"]:hover::after {
 
 .projectcontenttile .midlinehead {
     margin-top: 30px;
-    font-family: Code;
+    font-family: Regular;
 }
 
 .projectcontenttile .section-inner .projectrowcontent {
@@ -5958,7 +5954,7 @@ a.content__text-link[data-fx="14"]:hover::after {
 }
 
 .project.projecthead {
-    font-family: Code;
+    font-family: Regular;
     background: #f6f7f8;
     margin-top: 1%;
 }
@@ -5982,11 +5978,11 @@ a.content__text-link[data-fx="14"]:hover::after {
 .project.projecthead a,
 .project.projecthead p,
 .project.projecthead li {
-    font-family: Code;
+    font-family: Regular;
 }
 
 .project.projecthead span {
-    font-family: Light;
+    font-family: Bold;
     margin-top: 10px;
 }
 
@@ -5994,15 +5990,21 @@ a.content__text-link[data-fx="14"]:hover::after {
     margin-top: 10px;
 }
 
-a.projecttext,
+a.projecttext {
+    font-family: Bold;
+    color: rgb(64, 106, 146, 0.42);
+    letter-spacing: -1.5px;
+    font-size: 3.5em;
+}
+
 span.projecttext {
-    font-family: Light;
+    font-family: Regular;
 }
 
 .project.projecttile .tileheading {
     color: white;
     font-family: Bold;
-    font-size: 5.5em;
+    font-size: 6em;
     bottom: 0px;
     letter-spacing: -3px;
     position: absolute;
@@ -6014,11 +6016,13 @@ span.projecttext {
 @media screen and (max-width:600px) {
     .project.projecttile .tileheading {
         font-size: 3.5em;
+        bottom: -45px;
     }
 }
 
 .project.header__nav li a {
-    font-family: Light;
+    font-family: Regular;
+    font-size: 1em;
 }
 
 @media screen and (min-width:400px) {
@@ -6030,9 +6034,29 @@ span.projecttext {
 
 blockquote.tile.projecthead.project {
     padding: 10px 35px 10px 35px;
+    font-size: 1.2em;
 }
 
 .project .entry__tags .entry__tag-list a {
     padding: 5px 10px 5px;
-    font-size: 0.65em;
+    font-size: 0.8em;
+}
+
+.ProjectBoldHeadings {
+    font-size: 4em;
+    font-family: Bold;
+    color: rgba(64, 106, 146, 0.3);
+    line-height: 94%;
+    padding-top: 20px;
+    margin-left: -5px;
+    letter-spacing: -4.45px;
+}
+
+@media screen and (max-width:500px) {
+    .ProjectBoldHeadings {
+        font-size: 4rem;
+        padding-bottom: 10px;
+        margin-bottom: 0px;
+        letter-spacing: -2px;
+    }
 }
