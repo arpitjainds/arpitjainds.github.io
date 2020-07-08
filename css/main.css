@@ -5946,11 +5946,11 @@ a.content__text-link[data-fx="14"]:hover::after {
 }
 
 .projectrowcontent .row {
-    padding: 2%;
+    padding: 0.5%;
 }
 
 .projectrowcontent .row .column {
-    padding: 2%;
+    padding: 2.5%;
 }
 
 .project.projecthead {
@@ -6016,7 +6016,7 @@ span.projecttext {
 @media screen and (max-width:600px) {
     .project.projecttile .tileheading {
         font-size: 3.5em;
-        bottom: -45px;
+        bottom: -10px;
     }
 }
 
