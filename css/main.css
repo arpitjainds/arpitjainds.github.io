@@ -70,22 +70,27 @@
 
 @font-face {
     font-family: 'Thin';
-    src: url("../Fonts/Sans-Thin.ttf");
+    src: url("../Fonts/Manrope-ExtraLight.ttf");
 }
 
 @font-face {
     font-family: 'Light';
-    src: url("../Fonts/Sans-Light.ttf");
+    src: url("../Fonts/Manrope-Light.ttf");
 }
 
 @font-face {
     font-family: 'Regular';
-    src: url("../Fonts/Sans-Regular.ttf");
+    src: url("../Fonts/manrope-regular.ttf");
 }
 
 @font-face {
     font-family: 'Bold';
-    src: url("../Fonts/Sans-Bold.ttf");
+    src: url("../Fonts/manrope-bold.ttf");
+}
+
+@font-face {
+    font-family: 'ExtraBold';
+    src: url("../Fonts/manrope-extrabold.ttf");
 }
 
 html {
