@@ -3164,6 +3164,10 @@ body.search-is-visible {
         margin-top: -25px;
         height: 40px;
     }
+    .header__logo .site-logo-text img {
+        width: 70px;
+        margin-top: 25px;
+    }
     .header__nav-wrap {
         z-index: 99;
         opacity: 0;
@@ -5066,8 +5070,32 @@ h1 svg .arrow {
     background: rgba(64, 106, 146, 0.07);
     background-image: var(--tilebackgroundimagedefault);
     transition: background-image 300ms;
+    min-height: 250px;
+    overflow: hidden;
     background-position: center center;
     background-size: cover;
+}
+
+@media (max-width:500px) {
+    .tile.projecttile {
+        background-image: var(--tilebackgroundimage);
+        background-blend-mode: multiply;
+        color: #f6f7f8;
+    }
+    .tile.projecttile .tileheading {
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        background: rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        padding: 10px;
+    }
+    .tile.projecttile cite {
+        background: rgba(0, 0, 0, 0.1);
+        border-radius: 20px;
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        padding: 10px;
+    }
 }
 
 .tile:hover {
@@ -5102,11 +5130,11 @@ h1 svg .arrow {
 
 .tile .tileheading {
     line-height: 1;
+    min-height: 50px;
     overflow: hidden;
-    font-size: 2.25em;
+    font-size: 2em;
     color: inherit;
     letter-spacing: -1px;
-    min-height: 150px;
     font-family: Regular;
 }
 
@@ -6019,7 +6047,7 @@ span.projecttext {
 
 .project.projecttile .tileheading {
     color: white;
-    font-family: Bold;
+    font-family: Regular;
     font-size: 6em;
     bottom: 0px;
     letter-spacing: -3px;
@@ -6031,7 +6059,7 @@ span.projecttext {
 
 @media screen and (max-width:600px) {
     .project.projecttile .tileheading {
-        font-size: 3.5em;
+        font-size: 3em;
         bottom: -10px;
     }
 }
