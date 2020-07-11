@@ -3161,8 +3161,7 @@ body.search-is-visible {
     }
     .header__logo .site-logo-text {
         display: inline-block;
-        width: 80px;
-        margin-top: 0px;
+        margin-top: -25px;
         height: 40px;
     }
     .header__nav-wrap {
