@@ -2507,6 +2507,12 @@ input::-moz-focus-inner {
     height: 0%;
 }
 
+@media(max-width:500px) {
+    .scroll-line-vertical {
+        width: 6px;
+    }
+}
+
 
 /* -------------------------------------------------------------------
  * ## header logo
@@ -5089,6 +5095,8 @@ h1 svg .arrow {
         font-family: Regular;
         -webkit-backdrop-filter: blur(7px);
         padding: 20px;
+        border-top-left-radius: 20px;
+        border-top-right-radius: 20px;
     }
     .tile.projecttile cite {
         backdrop-filter: blur(7px);
@@ -5097,6 +5105,8 @@ h1 svg .arrow {
         bottom: 0px;
         font-size: 1.1em;
         width: 100%;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
     }
 }
 
@@ -6052,17 +6062,19 @@ span.projecttext {
     font-family: Regular;
     font-size: 6em;
     bottom: 0px;
+    width: 100%;
     letter-spacing: -3px;
+    margin: 0px;
+    padding: 20px;
     position: absolute;
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-    min-height: 100px
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 @media screen and (max-width:600px) {
     .project.projecttile .tileheading {
         font-size: 3em;
-        bottom: -10px;
+        letter-spacing: -1px;
     }
 }
 
