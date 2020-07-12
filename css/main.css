@@ -3166,6 +3166,7 @@ body.search-is-visible {
     }
     .header__logo .site-logo-text img {
         width: 70px;
+        margin-left: -5px;
         margin-top: 25px;
     }
     .header__nav-wrap {
@@ -5076,26 +5077,26 @@ h1 svg .arrow {
 
 @media (max-width:500px) {
     .tile {
-        min-height: 450px;
+        min-height: 320px;
+        padding: 0px;
     }
     .tile.projecttile {
         background-image: var(--tilebackgroundimage);
-        background-blend-mode: multiply;
         color: #f6f7f8;
     }
     .tile.projecttile .tileheading {
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        background: rgba(0, 0, 0, 0.1);
-        border-radius: 20px;
-        padding: 14px;
+        backdrop-filter: blur(7px);
+        font-family: Regular;
+        -webkit-backdrop-filter: blur(7px);
+        padding: 20px;
     }
     .tile.projecttile cite {
-        background: rgba(0, 0, 0, 0.1);
-        border-radius: 20px;
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        padding: 14px;
+        backdrop-filter: blur(7px);
+        -webkit-backdrop-filter: blur(7px);
+        padding: 20px;
+        bottom: 0px;
+        font-size: 1.1em;
+        width: 100%;
     }
 }
 
