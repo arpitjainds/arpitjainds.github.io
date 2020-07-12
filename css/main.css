@@ -3458,6 +3458,10 @@ body.search-is-visible {
     background-size: 7px 14px;
 }
 
+.go-top a:hover {
+    box-shadow: 0px 3px 20px rgb(0, 0, 0, 0.45);
+}
+
 .go-top.link-is-visible {
     opacity: 1;
     visibility: visible;
