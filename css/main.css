@@ -3433,6 +3433,9 @@ body.search-is-visible {
     position: fixed;
     bottom: 4rem;
     right: 2rem;
+    font-size: 1.4em;
+    font-family: Regular;
+    z-index: 1;
 }
 
 .go-top a,
@@ -3446,9 +3449,9 @@ body.search-is-visible {
     line-height: 6rem;
     text-align: center;
     text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 1);
     transition: all 0.3s;
-    background-image: url(../images/icons/icon-arrow-up.svg);
+    /* background-image: url(../images/icons/icon-arrow-up.svg); */
     background-color: #000000;
     background-repeat: no-repeat;
     background-position: center center;
