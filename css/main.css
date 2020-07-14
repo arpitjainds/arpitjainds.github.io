@@ -5415,7 +5415,7 @@ a.content__text-link[data-fx="14"]:hover::after {
 .footer__right a {
     color: rgba(0, 0, 0, 0.35);
     font-size: 0.9em;
-    font-family: Light;
+    font-family: Regular;
     display: inline-block;
     line-height: 2;
     letter-spacing: 4px;
