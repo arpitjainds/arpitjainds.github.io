@@ -17,7 +17,7 @@ html {
 }
 
 body {
-    background-color: #3759b2;
+    background-color: #000000;
     color: #fff;
     font-family: Regular, monospace;
     margin: 0;
@@ -36,8 +36,8 @@ body {
 .circle-wrapper {
     border-radius: 50%;
     position: relative;
-    width: 1000px;
-    height: 1000px;
+    width: 800px;
+    height: 800px;
     overflow: hidden;
 }
 
@@ -65,31 +65,31 @@ body {
 }
 
 .circle-wrapper .circle:nth-child(1) {
-    background-color: #2b468b;
+    background-color: #2b468b44;
     width: 68%;
     height: 68%;
 }
 
 .circle-wrapper .circle:nth-child(2) {
-    background-color: #314f9f;
+    background-color: #314f9f44;
     width: 56%;
     height: 56%;
 }
 
 .circle-wrapper .circle:nth-child(3) {
-    background-color: #3759b2;
+    background-color: #3759b244;
     width: 44%;
     height: 44%;
 }
 
 .circle-wrapper .circle:nth-child(4) {
-    background-color: #3f64c4;
+    background-color: #3f64c444;
     width: 32%;
     height: 32%;
 }
 
 .circle-wrapper .circle:nth-child(5) {
-    background-color: #5374ca;
+    background-color: #5374ca44;
     width: 20%;
     height: 20%;
 }
@@ -144,7 +144,7 @@ body {
 
 .til {
     max-width: 30%;
-    margin-top: 100px;
+    margin-top: 210px;
 }
 
 .til h1 {
