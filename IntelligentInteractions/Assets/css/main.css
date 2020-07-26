@@ -1,47 +1,17 @@
 @font-face {
     font-family: 'Regular';
-    src: url("../Fonts/Sans-Regular.ttf");
-    font-weight: 300;
+    src: url("../Fonts/manrope-regular.ttf");
     font-style: normal
 }
 
 @font-face {
-    font-family: 'Medium';
-    src: url("../Fonts/Sans-Medium.ttf");
-    font-weight: 600;
-    font-style: medium
-}
-
-@font-face {
     font-family: 'Bold';
-    src: url("../Fonts/Sans-Bold.ttf");
-    font-weight: 900;
-    font-style: bold
-}
-
-@font-face {
-    font-family: 'Italic';
-    src: url("../Fonts/Sans-Italic.ttf");
-    font-weight: 300;
-    font-style: italic
-}
-
-@font-face {
-    font-family: 'Medium Italic';
-    src: url("../Fonts/Sans-MediumItalic.ttf");
-    font-weight: 900;
-    font-style: medium italic
-}
-
-@font-face {
-    font-family: 'Bold Italic';
-    src: url("../Fonts/Sans-BoldItalic.ttf");
-    font-weight: 900;
-    font-style: bold italic
+    src: url("../Fonts/manrope-bold.ttf");
+    font-style: normal
 }
 
 html {
-    font-family: "Regular", sans-serif;
+    font-family: Regular, sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
 }
@@ -51,6 +21,7 @@ body {
     color: #fff;
     font-family: Regular, monospace;
     margin: 0;
+    overflow: hidden;
 }
 
 .column {
@@ -65,8 +36,8 @@ body {
 .circle-wrapper {
     border-radius: 50%;
     position: relative;
-    width: 400px;
-    height: 400px;
+    width: 1000px;
+    height: 1000px;
     overflow: hidden;
 }
 
@@ -137,7 +108,6 @@ body {
 
 .contain h2 {
     font-size: 24px;
-    font-weight: 900;
 }
 
 .contain h4 {
@@ -174,13 +144,14 @@ body {
 
 .til {
     max-width: 30%;
-    padding-left: 30px;
-    position: absolute;
-    top: 100px;
+    margin-top: 100px;
 }
 
 .til h1 {
-    font-size: 90px;
+    font-size: 100px;
+    font-family: Bold;
+    letter-spacing: -5px;
+    font-weight: normal;
     line-height: 1;
 }
 
@@ -190,13 +161,14 @@ body {
 
 .sub {
     max-width: 220px;
-    padding-left: 30px;
-    position: absolute;
+    position: fixed;
     bottom: 20px;
 }
 
 .sub h3 {
     font-size: 30px;
+    font-family: Bold;
+    letter-spacing: -0.5px;
     line-height: 0;
 }
 
@@ -211,11 +183,8 @@ body {
 
 @media (max-width: 1400px) {
     .til h1 {
-        font-size: 65px;
+        font-size: 70px;
         line-height: 1;
-    }
-    .circle-wrapper {
-        margin-top: 90%;
     }
     .til p {
         line-height: 1;
@@ -231,7 +200,7 @@ body {
         display: none;
     }
     #bottomtext {
-        margin-top: -20%;
+        margin-top: 0%;
         display: block;
         line-height: 1;
     }
@@ -261,7 +230,16 @@ body {
 
 @media (max-width: 600px) {
     .til {
-        max-width: 90%;
+        max-width: 100%;
+        overflow: hidden
+    }
+    .til h1 {
+        font-size: 3em;
+        letter-spacing: -2.5px;
+    }
+    .circle-wrapper {
+        height: 300px;
+        width: 300px;
     }
 }
 
@@ -337,7 +315,6 @@ body {
 .device-notification--logo p {
     margin: 0 0 0 10px;
     font-size: 16px;
-    font-weight: 700;
     text-transform: uppercase
 }
 
@@ -422,7 +399,6 @@ body {
 .header--logo p {
     margin: 0 0 0 10px;
     font-size: 16px;
-    font-weight: 700;
     text-transform: uppercase
 }
 
@@ -479,7 +455,6 @@ body {
     line-height: 30px;
     text-decoration: none;
     color: #fff;
-    font-weight: 700;
     text-transform: uppercase;
     background-color: #ec7777;
     border: none;
@@ -520,8 +495,10 @@ body {
 }
 
 .container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: Grid;
+    width: 100%;
+    overflow: hidden;
+    grid-template-columns: repeat(2, 1fr);
     height: 100%;
 }
 
@@ -628,7 +605,6 @@ body {
     font-family: inherit;
     letter-spacing: 0.04em;
     font-size: 20px;
-    font-weight: 500;
     color: #111;
     background: #e0e0e0;
     text-decoration: none;
