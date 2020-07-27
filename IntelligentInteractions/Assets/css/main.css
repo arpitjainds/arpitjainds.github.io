@@ -164,6 +164,7 @@ body {
     max-width: 220px;
     position: fixed;
     bottom: 20px;
+    z-index: 20;
 }
 
 .sub h3 {
@@ -209,9 +210,9 @@ body {
         max-width: 45%;
     }
     .sub {
-        position: absolute;
+        position: fixed;
         top: 10px;
-        right: 10px;
+        right: 20px;
         text-align: right;
     }
     .sub h3 {
@@ -364,17 +365,19 @@ body {
 }
 
 .header {
-    position: absolute;
+    position: fixed;
+    background-color: #000000;
     top: 0;
     left: 0;
     padding-left: 2rem;
     padding-right: 2rem;
+    padding-bottom: 1rem;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     width: 100%;
-    height: 70px;
+    height: 65px;
     -webkit-box-align: center;
     -webkit-align-items: center;
     -ms-flex-align: center;
