@@ -149,6 +149,7 @@ body {
 
 .til h1 {
     font-size: 100px;
+    margin-top: 5px;
     font-family: Bold;
     letter-spacing: -5px;
     font-weight: normal;
@@ -183,7 +184,7 @@ body {
 
 @media (max-width: 1400px) {
     .til h1 {
-        font-size: 70px;
+        font-size: 100px;
         line-height: 1;
     }
     .til p {
@@ -231,6 +232,7 @@ body {
 @media (max-width: 600px) {
     .til {
         max-width: 100%;
+        margin-top: 140px;
         overflow: hidden
     }
     .til h1 {
