@@ -24,6 +24,12 @@ body {
     overflow: hidden;
 }
 
+sup {
+    font-size: 0.28em;
+    top: 0px;
+    letter-spacing: -2px;
+}
+
 .column {
     display: flex;
     align-items: center;
@@ -161,15 +167,17 @@ body {
 }
 
 .sub {
-    max-width: 220px;
+    max-width: 180px;
     position: fixed;
-    bottom: 20px;
+    bottom: 0px;
+    left: 0px;
+    padding: 30px;
     z-index: 20;
 }
 
 .sub h3 {
-    font-size: 30px;
-    font-family: Bold;
+    font-size: 18px;
+    font-family: Regular;
     letter-spacing: -0.5px;
     line-height: 0;
 }
@@ -189,7 +197,7 @@ body {
         line-height: 1;
     }
     .til p {
-        line-height: 1;
+        line-height: 1.25;
     }
     .til {
         padding-left: 0;
@@ -213,14 +221,16 @@ body {
         position: fixed;
         top: 10px;
         right: 20px;
+        padding: 0px;
+        left: auto;
         text-align: right;
     }
     .sub h3 {
-        font-size: 18px;
+        font-size: 16px;
         line-height: 0px;
     }
     .sub p {
-        font-size: 12px;
+        font-size: 8px;
         margin-bottom: 0px;
         color: #9eb0df;
         line-height: 1;
@@ -525,338 +535,200 @@ body {
 }
 
 
-/*Share buttons*/
+/* Custom CSS */
 
-@font-face {
-    font-family: 'share-buttons';
-    src: url('https://cdn.rawgit.com/sunnysingh/share-buttons/v1.0.0/build/fonts/share-buttons.eot?gpra60');
-    src: url('https://cdn.rawgit.com/sunnysingh/share-buttons/v1.0.0/build/fonts/share-buttons.eot?#iefixgpra60') format('embedded-opentype'), url('https://cdn.rawgit.com/sunnysingh/share-buttons/v1.0.0/build/fonts/share-buttons.woff?gpra60') format('woff'), url('https://cdn.rawgit.com/sunnysingh/share-buttons/v1.0.0/build/fonts/share-buttons.ttf?gpra60') format('truetype'), url('https://cdn.rawgit.com/sunnysingh/share-buttons/v1.0.0/build/fonts/share-buttons.svg?gpra60#share-buttons') format('svg');
+.heading {
+    font-size: 85px;
+    margin-top: 5px;
+    font-family: Bold;
+    letter-spacing: -5px;
     font-weight: normal;
-    font-style: normal;
-}
-
-.share-btn-icon {
-    font-family: 'share-buttons';
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
     line-height: 1;
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }
 
-.share-btn-email .share-btn-icon:before {
-    content: "\e945";
+.description {
+    margin-top: 5px;
+    line-height: 1.25;
+    max-width: 450px;
 }
 
-.share-btn-more .share-btn-icon:before {
-    content: "\ea82";
-}
 
-.share-btn-googleplus .share-btn-icon:before {
-    content: "\ea88";
-}
+/* spacer */
 
-.share-btn-facebook .share-btn-icon:before {
-    content: "\ea8c";
-}
-
-.share-btn-twitter .share-btn-icon:before {
-    content: "\ea91";
-}
-
-.share-btn-github .share-btn-icon:before {
-    content: "\eab4";
-}
-
-.share-btn-tumblr .share-btn-icon:before {
-    content: "\eabb";
-}
-
-.share-btn-reddit .share-btn-icon:before {
-    content: "\eac7";
-}
-
-.share-btn-linkedin .share-btn-icon:before {
-    content: "\eac8";
-}
-
-.share-btn-delicious .share-btn-icon:before {
-    content: "\eacc";
-}
-
-.share-btn-stumbleupon .share-btn-icon:before {
-    content: "\eace";
-}
-
-.share-btn-pinterest .share-btn-icon:before {
-    content: "\ead0";
-}
-
-.share-btn,
-.share-btn * {
-    box-sizing: border-box;
-}
-
-.share-btn,
-.share-btn *,
-.share-btn *:before,
-.share-btn *:after {
-    box-sizing: border-box;
-}
-
-.share-btn {
-    font-family: inherit;
-    letter-spacing: 0.04em;
-    font-size: 20px;
-    color: #111;
-    background: #e0e0e0;
-    text-decoration: none;
-    transition: all 0.2s ease;
-    -webkit-transition: .2s ease-in-out;
-    transition: .2s ease-in-out;
-}
-
-.share-btn {
+.spacer {
+    height: 200px;
     width: 100%;
-    margin: 0px;
-    padding: 20px;
-    -webkit-transition: .2s ease-in-out;
-    transition: .2s ease-in-out;
 }
 
-.share-btn:hover,
-.share-btn:focus {
-    background: #d3d3d3;
-    border-color: #bababa;
-    text-decoration: none;
-    color: #111;
-    -webkit-transition: .2s ease-in-out;
-    transition: .2s ease-in-out;
+.underlinedotted {
+    text-decoration-line: underline;
+    text-decoration-style: dotted;
 }
 
-.share-btn:active {
-    background: #c7c7c7;
-    border-color: #adadad;
-    text-decoration: none;
-    color: #111;
-    -webkit-transition: .2s ease-in-out;
-    transition: .2s ease-in-out;
+@media screen and (max-width:500px) {
+    .spacer {
+        height: 60px;
+    }
+    .heading {
+        font-size: 28px;
+        font-family: Bold;
+        letter-spacing: -1px;
+    }
+    .description {
+        max-width: 100%;
+    }
 }
 
-.share-btn .share-btn-text-sr {
+
+/*----------------------------------------------
+      Hover Image Effect
+  ----------------------------------------------*/
+
+audio,
+canvas,
+video {
+    display: inline-block;
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+
+.content__text-link span {
+    display: inline-block;
+    white-space: pre;
+}
+
+.content__text {
+    color: inherit;
+    cursor: none;
+}
+
+.content__text-link {
+    position: relative;
+    cursor: none;
+}
+
+a.content__text-link[data-fx="2"]:hover {
+    -webkit-text-stroke: 1px #fff;
+    -webkit-text-fill-color: #000000;
+    color: #000000;
+}
+
+a.content__text-link[data-fx="1"]::after,
+a.content__text-link[data-fx="2"]::after {
+    content: '';
+    display: none;
+    z-index: -1;
+    width: 100%;
+    left: 0;
     position: absolute;
-    width: 1px;
+    height: 2px;
+    background: currentColor;
+    transform: scale3d(0, 1, 1);
+    transform-origin: 0% 50%;
+    transition: transform 0.2s cubic-bezier(0.390, 0.575, 0.565, 1.000);
+}
+
+a.content__text-link[data-fx="1"]::after,
+a.content__text-link[data-fx="2"]::after {
+    bottom: 0;
+}
+
+a.content__text-link[data-fx="1"]:hover::after,
+a.content__text-link[data-fx="2"]:hover::after {
+    transform: scale3d(1, 1, 1)
+}
+
+a.content__text-link[data-fx="6"]::after {
+    content: '';
+    z-index: -1;
+    width: 100%;
+    bottom: 0rem;
+    left: 0;
+    position: absolute;
     height: 1px;
-    padding: 0;
-    margin: 0px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
+    background: currentColor;
+    transform: scale3d(0, 1, 1);
+    transform-origin: 100% 50%;
+    transition: transform 0.7s cubic-bezier(0.860, 0.000, 0.070, 1.000);
 }
 
-.share-btn.share-btn-branded {
-    color: #fff;
+a.content__text-link[data-fx="6"]::after {
+    bottom: 0;
 }
 
-.share-btn.share-btn-branded.share-btn-twitter {
-    background: #90bada1a;
-    border-color: #90bada;
+a.content__text-link[data-fx="6"]:hover::after {
+    transform: scale3d(1, 1, 1)
 }
 
-.share-btn.share-btn-branded.share-btn-twitter:hover,
-.share-btn.share-btn-branded.share-btn-twitter:focus {
-    background: #3ea1ec;
-    border-color: #2795e9;
+a.content__text-link[data-fx="14"]::after {
+    content: '';
+    z-index: -1;
+    width: 100%;
+    bottom: 0rem;
+    left: 0;
+    position: absolute;
+    height: 1px;
+    background: currentColor;
+    transform: scale3d(0, 1, 1);
+    transform-origin: 0% 50%;
 }
 
-.share-btn.share-btn-branded.share-btn-twitter:active {
-    background: #2795e9;
-    border-color: #1689e0;
+a.content__text-link[data-fx="14"]::after {
+    bottom: 0;
 }
 
-.share-btn.share-btn-branded.share-btn-facebook {
-    background: #536a9b1a;
-    border-color: #536a9b;
+a.content__text-link[data-fx="14"]:hover::after {
+    animation: loop 0.5s infinite;
 }
 
-.share-btn.share-btn-branded.share-btn-facebook:hover,
-.share-btn.share-btn-branded.share-btn-facebook:focus {
-    background: #344e86;
-    border-color: #2d4373;
+@keyframes loop {
+    0% {
+        transform-origin: 0% 50%;
+        transform: scale3d(0, 1, 1);
+    }
+    50% {
+        transform-origin: 0% 50%;
+        transform: scale3d(1, 1, 1);
+    }
+    51% {
+        transform-origin: 100% 50%;
+    }
+    100% {
+        transform-origin: 100% 50%;
+        transform: scale3d(0, 1, 1);
+    }
 }
 
-.share-btn.share-btn-branded.share-btn-facebook:active {
-    background: #2d4373;
-    border-color: #263961;
+.hover-reveal {
+    position: fixed;
+    width: 500px;
+    height: 400px;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    opacity: 0;
 }
 
-.share-btn.share-btn-branded.share-btn-googleplus {
-    background: #db6353;
-    color: #fff;
-    border-color: #d73925;
+.hover-reveal__inner,
+.hover-reveal__img {
+    width: 100%;
+    height: 100%;
+    position: relative;
 }
 
-.share-btn.share-btn-branded.share-btn-googleplus:hover,
-.share-btn.share-btn-branded.share-btn-googleplus:focus {
-    background: #d73925;
-    border-color: #c23321;
+.hover-reveal__deco {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #181314;
 }
 
-.share-btn.share-btn-branded.share-btn-googleplus:active {
-    background: #c23321;
-    border-color: #ac2d1e;
-}
-
-.share-btn.share-btn-branded.share-btn-email {
-    background: #db63531a;
-    color: #fff;
-    border-color: #d73925;
-}
-
-.share-btn.share-btn-branded.share-btn-email:hover,
-.share-btn.share-btn-branded.share-btn-email:focus {
-    background: #d73925;
-    border-color: #c23321;
-}
-
-.share-btn.share-btn-branded.share-btn-email:active {
-    background: #c23321;
-    border-color: #ac2d1e;
-}
-
-.share-btn.share-btn-branded.share-btn-tumblr {
-    background: #3f4957;
-    color: #fff;
-    border-color: #3f4957;
-}
-
-.share-btn.share-btn-branded.share-btn-tumblr:hover,
-.share-btn.share-btn-branded.share-btn-tumblr:focus {
-    background: #2c3a4c;
-    border-color: #222d3c;
-}
-
-.share-btn.share-btn-branded.share-btn-tumblr:active {
-    background: #222d3c;
-    border-color: #19212b;
-}
-
-.share-btn.share-btn-branded.share-btn-reddit {
-    background: #f88257;
-    color: #fff;
-    border-color: #f88257;
-}
-
-.share-btn.share-btn-branded.share-btn-reddit:hover,
-.share-btn.share-btn-branded.share-btn-reddit:focus {
-    background: #e63e00;
-    border-color: #cc3700;
-}
-
-.share-btn.share-btn-branded.share-btn-reddit:active {
-    background: #cc3700;
-    border-color: #b33000;
-}
-
-.share-btn.share-btn-branded.share-btn-linkedin {
-    background: #4589b11a;
-    color: #fff;
-    border-color: #4589b1;
-}
-
-.share-btn.share-btn-branded.share-btn-linkedin:hover,
-.share-btn.share-btn-branded.share-btn-linkedin:focus {
-    background: #08669c;
-    border-color: #075683;
-}
-
-.share-btn.share-btn-branded.share-btn-linkedin:active {
-    background: #075683;
-    border-color: #05466b;
-}
-
-.share-btn.share-btn-branded.share-btn-delicious {
-    background: #3399ff;
-    color: #fff;
-    border-color: #198cff;
-}
-
-.share-btn.share-btn-branded.share-btn-delicious:hover,
-.share-btn.share-btn-branded.share-btn-delicious:focus {
-    background: #198cff;
-    border-color: #007fff;
-}
-
-.share-btn.share-btn-branded.share-btn-delicious:active {
-    background: #007fff;
-    border-color: #0073e5;
-}
-
-.share-btn.share-btn-branded.share-btn-stumbleupon {
-    background: #e76d52;
-    color: #fff;
-    border-color: #e13b15;
-}
-
-.share-btn.share-btn-branded.share-btn-stumbleupon:hover,
-.share-btn.share-btn-branded.share-btn-stumbleupon:focus {
-    background: #e13b15;
-    border-color: #ca3412;
-}
-
-.share-btn.share-btn-branded.share-btn-stumbleupon:active {
-    background: #ca3412;
-    border-color: #b22e10;
-}
-
-.share-btn.share-btn-branded.share-btn-pinterest {
-    background: #ca5559;
-    color: #fff;
-    border-color: #ca5559;
-}
-
-.share-btn.share-btn-branded.share-btn-pinterest:hover,
-.share-btn.share-btn-branded.share-btn-pinterest:focus {
-    background: #b61d23;
-    border-color: #a01a1f;
-}
-
-.share-btn.share-btn-branded.share-btn-pinterest:active {
-    background: #a01a1f;
-    border-color: #8a161a;
-}
-
-.share-btn.share-btn-inverse {
-    color: #eeeeee;
-    background: #1f1f1f;
-    border-color: #050505;
-}
-
-.share-btn.share-btn-inverse:hover,
-.share-btn.share-btn-inverse:focus {
-    background: #121212;
-    border-color: #000000;
-    color: #eeeeee;
-}
-
-.share-btn.share-btn-inverse:active {
-    background: #050505;
-    border-color: #000000;
-    color: #eeeeee;
-}
-
-.share-btn .share-btn-text {
-    padding-left: 2px;
-}
-
-.share-btn::before {
-    display: none;
-}
-
-.share-btn::after {
-    display: none;
+.hover-reveal__img {
+    background-size: cover;
+    background-position: 50% 50%;
 }
