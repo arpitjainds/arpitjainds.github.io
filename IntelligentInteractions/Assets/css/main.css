@@ -22,6 +22,7 @@ html {
 body {
     background-color: #000000;
     color: #fff;
+    scroll-behavior: smooth;
     font-family: Regular, monospace;
     margin: 0;
     overflow-x: hidden;
@@ -444,6 +445,10 @@ a:hover::after {
     margin-top: 20px;
 }
 
+.header--logo:hover::after {
+    display: none;
+}
+
 .header--logo p {
     margin: 0 0 0 10px;
     font-size: 16px;
@@ -815,4 +820,63 @@ a.content__text-link[data-fx="14"]:hover::after {
 .hover-reveal__img {
     background-size: cover;
     background-position: 50% 50%;
+}
+
+
+/* ------------------------------------------------------------------- 
+ * ## go to top
+ * ------------------------------------------------------------------- */
+
+.go-top {
+    z-index: 5;
+    transition: all 0.8s;
+    position: fixed;
+    bottom: 4rem;
+    right: 4rem;
+    font-size: 1em;
+    font-family: Regular;
+    z-index: 1;
+}
+
+.go-top a,
+.go-top a:visited {
+    text-decoration: none;
+    border: 2px dotted white;
+    display: block;
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    transition: all 0.3s;
+    /* background-image: url(../images/icons/icon-arrow-up.svg); */
+    background-color: #000000;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 7px 14px;
+}
+
+.go-top a:hover::after {
+    display: none;
+}
+
+.go-top a:hover {
+    border: 2px solid #000000;
+    background: white;
+    color: black;
+}
+
+.go-top.link-is-visible {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+@media screen and (max-width:1100px) {
+    .go-top {
+        bottom: 20px;
+        right: 20px;
+    }
 }
