@@ -12,6 +12,9 @@
 
 html {
     font-family: Regular, sans-serif;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
 }
@@ -21,7 +24,8 @@ body {
     color: #fff;
     font-family: Regular, monospace;
     margin: 0;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 sup {
@@ -546,6 +550,15 @@ sup {
     line-height: 1;
 }
 
+.subheading {
+    font-size: 40px;
+    margin-top: 5px;
+    font-family: Bold;
+    letter-spacing: -2px;
+    font-weight: normal;
+    line-height: 1;
+}
+
 .description {
     margin-top: 5px;
     line-height: 1.25;
@@ -574,9 +587,30 @@ sup {
         font-family: Bold;
         letter-spacing: -1px;
     }
+    .subheading {
+        font-size: 22px;
+        font-family: Bold;
+        letter-spacing: -1px;
+    }
     .description {
         max-width: 100%;
     }
+}
+
+.default {
+    color: #ffffff;
+}
+
+.dark {
+    color: #000000;
+}
+
+.midgrey {
+    color: #ffffff22;
+}
+
+.disabled {
+    color: #ffffff22;
 }
 
 
