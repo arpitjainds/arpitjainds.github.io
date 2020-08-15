@@ -34,6 +34,29 @@ sup {
     letter-spacing: -2px;
 }
 
+a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    position: relative;
+}
+
+a::after {
+    content: "";
+    background: white;
+    mix-blend-mode: exclusion;
+    width: calc(100% + 20px);
+    height: 0;
+    position: absolute;
+    bottom: -4px;
+    left: -6px;
+    transition: all 250ms cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+a:hover::after {
+    height: calc(100% + 2px)
+}
+
 .column {
     display: flex;
     align-items: center;
@@ -78,6 +101,10 @@ sup {
     background-color: #2b468b44;
     width: 68%;
     height: 68%;
+}
+
+.circle:hover::after {
+    display: none;
 }
 
 .circle-wrapper .circle:nth-child(2) {
@@ -578,6 +605,26 @@ sup {
     text-decoration-style: dotted;
 }
 
+.slider {
+    font-family: sans-serif;
+    display: flex;
+    overflow-x: scroll;
+    width: 100%;
+}
+
+section {
+    padding: 20px;
+    height: 70vh;
+    min-width: 92.5%;
+    position: relative;
+}
+
+.sectioninner {
+    border: 2px dotted white;
+    padding: 40px;
+    height: 80%;
+}
+
 @media screen and (max-width:500px) {
     .spacer {
         height: 60px;
@@ -594,6 +641,9 @@ sup {
     }
     .description {
         max-width: 100%;
+    }
+    .sectioninner {
+        padding: 20px;
     }
 }
 

@@ -147,8 +147,8 @@
                                 <a class="content__text-link blue" data-img="Assets/img/humanmachine1.gif" data-fx="2"> <span class="underlinedotted">Human · Machine</span></a>
                                 <br> & <a class="content__text-link blue" data-img="Assets/img/machinemachine.gif" data-fx="2"><span class="underlinedotted">Machine · Machine</span></a>
                                 <br> interactions are quite <br>ubiquitous.</h1>
-                            <p class="description">There are uncountable (well, not literally) examples of interactions which occur between any two entities (inanimate or living) every second. Believe it or not, irrespective of the type of entity, the general framework of interaction
-                                and relationship between them fits really well to establish better communications between them.</p>
+                            <p class="description">There are uncountable (well, not literally) examples of interactions which occur between any two entities (inanimate or living) every second. <br><br>Believe it or not, irrespective of the type of entity, the general framework
+                                of interaction and relationship between them fits really well to establish better communications between them.</p>
                             <div class="spacer"></div>
                         </div>
                     </div>
@@ -176,6 +176,68 @@
                                 for relational enhancement which routes the interpersonal development between two people. He proposed a theory famously known as Knapp's relationship model or Knapp's model of interaction stages. <br><br>While this theory
                                 was formalized with humans in mind, but after reading through this pristine work, I realized that this theory could be extended to inanimate objects, particularly machines as well.</p>
                             <div class="spacer"></div>
+                        </div>
+                    </div>
+                    <style>
+
+                    </style>
+                    <div class="row">
+                        <span style="font-size:1.25em;font-family:Bold;">← READ MORE</span>
+                        <div class="slider">
+                            <section>
+                                <div class="sectioninner">
+                                    <div class="spacer"></div>
+                                    <h1 class="subheading">So, what is Knapp's <br>model of interaction?</h1>
+                                    <p class="description">The model basically consists of growing and dividing interaction stages between two entities.<br><br>The stages represent the intensity of the relationship.<br><br>Each stage has several dimensions like dependency,
+                                        investment, compatibility and more which give insights into understanding that stage.</p>
+
+                                </div>
+                            </section>
+                            <section>
+                                <div class="sectioninner">
+                                    <div class="spacer"></div>
+                                    <h1 class="subheading">Stages of Escalation.</h1>
+                                    <p class="description">These are the stages for the escalation or coming together of a new relationship between entities.
+                                        <ol>
+                                            <li> Initiation</li>
+                                            <li> Experimentation</li>
+                                            <li> Intensifying</li>
+                                            <li> Integration</li>
+                                            <li> Bonding</li>
+                                        </ol>
+                                    </p>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="sectioninner">
+                                    <div class="spacer"></div>
+                                    <h1 class="subheading">Stages of Coming Apart.</h1>
+                                    <p class="description">These are the stages for the coming apart of a relationship between entities.
+                                        <ol>
+                                            <li> Differentiating</li>
+                                            <li> Circumscribing</li>
+                                            <li> Stagnation</li>
+                                            <li> Avoidance</li>
+                                            <li> Terminating</li>
+                                        </ol>
+                                    </p>
+                                </div>
+                            </section>
+                            <section>
+                                <div class="sectioninner">
+                                    <div class="spacer"></div>
+                                    <h1 class="heading">Lets dig into<br> each stage <br><a href="#escalation">↓</a></h1>
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                    <div id="escalation" class="row">
+                        <div class="col-xs-12
+                        col-sm-12
+                        col-md-12
+                        col-lg-12">
+
+
                         </div>
                     </div>
                     <div class="row">
@@ -230,6 +292,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.3.48/Tone.js"></script>
+    <script src="./Assets/js/jquery.mousewheel.min.js"></script>
     <script src="./Assets/js/luxy.js" charset="utf-8"></script>
 
     <script charset="utf-8">
@@ -263,6 +326,15 @@
         }
 
         nodes.forEach(node => new Circles(node));
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $('.slider').mousewheel(function(e, delta) {
+                this.scrollLeft -= (delta);
+                e.preventDefault();
+            });
+        });
     </script>
 
     <noscript>
