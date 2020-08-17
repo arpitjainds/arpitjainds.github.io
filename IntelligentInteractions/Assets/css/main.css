@@ -84,7 +84,7 @@ a:hover::after {
     border-radius: 50%;
     text-decoration: none;
     display: flex;
-    border: 2px dotted #fff;
+    background: #ffffff10;
     align-items: center;
     text-align: left;
     font-size: 25px;
@@ -210,7 +210,7 @@ a:hover::after {
 
 .sub p {
     margin-bottom: 0px;
-    color: #9eb0df;
+    color: #ffffff;
 }
 
 #bottomtext {
@@ -526,8 +526,8 @@ a:hover::after {
     }
     .header {
         background-color: #ffffff11;
-        backdrop-filter: blur(18px);
-        -webkit-backdrop-filter: blur(18px);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
     }
 }
 
@@ -868,6 +868,8 @@ a.content__text-link[data-fx="14"]:hover::after {
 .go-top a,
 .go-top a:visited {
     text-decoration: none;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
     display: block;
     height: 3rem;
     width: 3rem;
