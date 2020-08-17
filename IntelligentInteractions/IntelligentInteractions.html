@@ -19,7 +19,12 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./Assets/img/Small.png">
 </head>
 
-<body>
+<body class="demo-2" id="top">
+    <div class="morph-wrap">
+        <svg class="morph" width="1400" height="770" viewBox="0 0 1400 770">
+					<path d="M 262.9,252.2 C 210.1,338.2 212.6,487.6 288.8,553.9 372.2,626.5 511.2,517.8 620.3,536.3 750.6,558.4 860.3,723 987.3,686.5 1089,657.3 1168,534.7 1173,429.2 1178,313.7 1096,189.1 995.1,130.7 852.1,47.07 658.8,78.95 498.1,119.2 410.7,141.1 322.6,154.8 262.9,252.2 Z"/>
+				</svg>
+    </div>
     <!-- notification for small viewports and landscape oriented smartphones -->
     <div class="device-notification">
         <a class="device-notification--logo" href="./index.html">
@@ -28,7 +33,7 @@
         </a>
         <p class="device-notification--message">This Page has so much to show therefore I request you to orient your device to portrait or find a larger screen. You won't be disappointed.</p>
     </div>
-    <div class="perspective effect-rotate-left" id="top">
+    <div class="perspective effect-rotate-left">
         <div id="viewport" class="l-viewport">
             <div class="l-wrapper content">
                 <header class="header">
@@ -43,7 +48,7 @@
                 </div>
 
                 <div id="luxy">
-                    <div class="row">
+                    <div class="row content-wrap">
                         <div class="col-xs-12
                         col-sm-12
                         col-md-12
@@ -58,84 +63,90 @@
                                 <p>→ Tap or Hover on the Circles.</p>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
                         <div class="col-xs-12
                     col-sm-12
                     col-md-6
-                    col-lg-6
-                    col-lg-offset-2
-                    col-md-offset-2">
+                    col-lg-6">
                             <div class='circle-wrapper'>
-                                <a class='circle 1' href='#'>1</a>
-                                <a class='circle 2' href='#'>2</a>
-                                <a class='circle 3' href='#'>3</a>
-                                <a class='circle 4' href='#'>4</a>
-                                <a class='circle 5' href='#'>5</a>
+                                <a class='circle 1' href='#_'>1</a>
+                                <a class='circle 2' href='#_'>2</a>
+                                <a class='circle 3' href='#_'>3</a>
+                                <a class='circle 4' href='#_'>4</a>
+                                <a class='circle 5' href='#_'>5</a>
                             </div>
                         </div>
                         <div class="col-xs-12
                     col-sm-12
-                    col-md-4
-                    col-lg-4">
+                    col-md-6
+                    col-lg-6">
                             <div id='righttext'>
                                 <div class='contain text1'>
-                                    <h2>Skin 1</h2>
-                                    <p>Outer Shell</p>
-                                    <h4>Approach Barrier</h4>
+                                    <p>
+                                        <span class="subheading">Skin 1</span><br><br>
+                                        <span class="description">→ Outer Shell<br>→ Approach Barrier</span>
+                                    </p>
                                 </div>
                                 <div class='contain text2'>
-                                    <h2>Skin 2</h2>
-                                    <p>Inner Shell</p>
-                                    <h4>Compatibility</h4>
+                                    <p>
+                                        <span class="subheading">Skin 2</span><br><br>
+                                        <span class="description">→ Inner Shell<br>→ Compatibility</span>
+                                    </p>
                                 </div>
                                 <div class='contain text3'>
-                                    <h2>Skin 3</h2>
-                                    <p>Comfort Layer</p>
-                                    <h4>Relaxed Existence</h4>
+                                    <p>
+                                        <span class="subheading">Skin 3</span><br><br>
+                                        <span class="description">→ Comfort Layer<br>→ Relaxed Existence</span>
+                                    </p>
                                 </div>
                                 <div class='contain text4'>
-                                    <h2>Skin 4</h2>
-                                    <p>Intimate layer</p>
-                                    <h4>Dependency Injection</h4>
+                                    <p>
+                                        <span class="subheading">Skin 4</span><br><br>
+                                        <span class="description">→ Intimate layer<br>→ Dependency Injection</span>
+                                    </p>
                                 </div>
                                 <div class='contain text5'>
-                                    <h2>Skin 5</h2>
-                                    <p>Mind-Soul Connectivity</p>
-                                    <h4>Wisdom</h4>
+                                    <p>
+                                        <span class="subheading">Skin 5</span><br><br>
+                                        <span class="description">→ Mind-Soul Connectivity<br>→ Wisdom</span>
+                                    </p>
                                 </div>
                             </div>
                             <div id='bottomtext'>
                                 <div class='contain textbottom1'>
-                                    <h2>Skin 1</h2>
-                                    <p>Outer Shell</p>
-                                    <h4>Approach Barrier</h4>
+                                    <p>
+                                        <span class="subheading">Skin 1</span><br><br>
+                                        <span class="description">→ Outer Shell<br>→ Approach Barrier</span>
+                                    </p>
                                 </div>
                                 <div class='contain textbottom2'>
-                                    <h2>Skin 2</h2>
-                                    <p>Inner Shell</p>
-                                    <h4>Compatibility</h4>
+                                    <p>
+                                        <span class="subheading">Skin 2</span><br><br>
+                                        <span class="description">→ Inner Shell<br>→ Compatibility</span>
+                                    </p>
                                 </div>
                                 <div class='contain textbottom3'>
-                                    <h2>Skin 3</h2>
-                                    <p>Comfort Layer</p>
-                                    <h4>Relaxed Existence</h4>
+                                    <p>
+                                        <span class="subheading">Skin 3</span><br><br>
+                                        <span class="description">→ Comfort Layer<br>→ Relaxed Existence</span>
+                                    </p>
                                 </div>
                                 <div class='contain textbottom4'>
-                                    <h2>Skin 4</h2>
-                                    <p>Intimate layer</p>
-                                    <h4>Dependency Injection</h4>
+                                    <p>
+                                        <span class="subheading">Skin 4</span><br><br>
+                                        <span class="description">→ Intimate layer<br>→ Dependency Injection</span>
+                                    </p>
                                 </div>
                                 <div class='contain textbottom5'>
-                                    <h2>Skin 5</h2>
-                                    <p>Mind-Soul Connectivity</p>
-                                    <h4>Wisdom</h4>
+                                    <p>
+                                        <span class="subheading">Skin 5</span><br><br>
+                                        <span class="description">→ Mind-Soul Connectivity<br>→ Wisdom</span>
+                                    </p>
                                 </div>
                                 <div class="spacer"></div>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row content-wrap">
                         <div class="col-xs-12
                         col-sm-12
                         col-md-12
@@ -152,7 +163,7 @@
                             <div class="spacer"></div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row content-wrap">
                         <div class="col-xs-12
                         col-sm-12
                         col-md-12
@@ -163,7 +174,7 @@
                             <div class="spacer"></div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row content-wrap">
                         <div class="col-xs-12
                         col-sm-12
                         col-md-12
@@ -178,60 +189,60 @@
                             <div class="spacer"></div>
                         </div>
                     </div>
-                    <style>
 
-                    </style>
-                    <div class="row">
-                        <span style="font-size:1.25em;font-family:Bold;">← READ MORE</span>
-                        <div class="slider">
-                            <section>
-                                <div class="sectioninner">
-                                    <h1 class="heading">So, what is Knapp's <br>model of interaction?</h1>
-                                    <p class="description">The model basically consists of growing and dividing interaction stages between two entities.<br><br>The stages represent the intensity of the relationship.<br><br>Each stage has several dimensions like dependency,
-                                        investment, compatibility and more which give insights into understanding that stage.</p>
+                    <div class="content-wrap">
+                        <div class="row">
+                            <span style="font-size:1.25em;font-family:Bold;">← READ MORE</span>
+                            <div class="slider">
+                                <section>
+                                    <div class="sectioninner">
+                                        <h1 class="heading">So, what is Knapp's <br>model of interaction?</h1>
+                                        <p class="description">The model basically consists of growing and dividing interaction stages between two entities.<br><br>The stages represent the intensity of the relationship.<br><br>Each stage has several dimensions like dependency,
+                                            investment, compatibility and more which give insights into understanding that stage.</p>
 
-                                </div>
-                            </section>
-                            <section>
-                                <div class="sectioninner">
-                                    <h1 class="heading">Stages of <br>Coming Together.</h1>
-                                    <ol class="subheading" style="line-height:1">
-                                        <li> Initiation</li>
-                                        <li> Experimentation</li>
-                                        <li> Intensifying</li>
-                                        <li> Integration</li>
-                                        <li> Bonding</li>
-                                    </ol>
-                                    </p>
-                                </div>
-                            </section>
-                            <section>
-                                <div class="sectioninner">
-                                    <h1 class="heading">Stages of <br>Coming Apart.</h1>
-                                    <ol class="subheading">
-                                        <li> Differentiating</li>
-                                        <li> Circumscribing</li>
-                                        <li> Stagnation</li>
-                                        <li> Avoidance</li>
-                                        <li> Terminating</li>
-                                    </ol>
-                                    </p>
-                                </div>
-                            </section>
-                            <section>
-                                <div class="sectioninner">
-                                    <h1 class="heading">Lets dig into<br> each stage.</h1>
-                                    <p class="description">If you are on smaller display,
-                                        <br>you will see limited information.</p>
-                                    <h1 class="subheading"><a style="font-size:3em;font-family: Bold;" href="#escalation">↓</a></h1>
-                                </div>
-                            </section>
+                                    </div>
+                                </section>
+                                <section>
+                                    <div class="sectioninner">
+                                        <h1 class="heading">Stages of <br>Coming Together.</h1>
+                                        <ol class="subheading" style="line-height:1">
+                                            <li> Initiation</li>
+                                            <li> Experimentation</li>
+                                            <li> Intensifying</li>
+                                            <li> Integration</li>
+                                            <li> Bonding</li>
+                                        </ol>
+                                        </p>
+                                    </div>
+                                </section>
+                                <section>
+                                    <div class="sectioninner">
+                                        <h1 class="heading">Stages of <br>Coming Apart.</h1>
+                                        <ol class="subheading">
+                                            <li> Differentiating</li>
+                                            <li> Circumscribing</li>
+                                            <li> Stagnation</li>
+                                            <li> Avoidance</li>
+                                            <li> Terminating</li>
+                                        </ol>
+                                        </p>
+                                    </div>
+                                </section>
+                                <section>
+                                    <div class="sectioninner">
+                                        <h1 class="heading">Lets dig into<br> each stage.</h1>
+                                        <p class="description">If you are on smaller display,
+                                            <br>you will see limited information.</p>
+                                        <h1 class="subheading"><a style="font-size:3em;font-family: Bold;" href="#escalation">↓</a></h1>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="spacer"></div>
                         </div>
-                        <div class="spacer"></div>
                     </div>
 
 
-                    <div id="escalation">
+                    <div id="escalation" class="content--related">
                         <div class="spacer"></div>
                         <div class="row">
                             <div class="col-xs-6
@@ -1316,19 +1327,23 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tone/14.3.48/Tone.js"></script>
+    <script src="./Assets/js/anime.min.js"></script>
+    <script src="./Assets/js/scrollMonitor.js"></script>
+    <script src="./Assets/js/morphscrolleffect.js"></script>
     <script src="./Assets/js/jquery.mousewheel.min.js"></script>
     <script src="./Assets/js/luxy.js" charset="utf-8"></script>
     <script src="./Assets/js/mdSkew.js" charset="utf-8"></script>
-
-    <script charset="utf-8">
-        luxy.init();
-    </script>
-
     <!-- Image Hover Effects -->
     <script src="Assets/js/charming.min.js"></script>
     <script src="Assets/js/TweenMax.min.js"></script>
     <script src="Assets/js/hoverImage.js"></script>
 
+    <!-- Lazy Scroll -->
+    <script charset="utf-8">
+        luxy.init();
+    </script>
+
+    <!-- Circles Tone -->
     <script>
         const nodes = [].slice.call(document.querySelectorAll('.circle'), 0);
         let synth = new Tone.Synth().toMaster();
@@ -1342,7 +1357,7 @@
             updateIn(ev) {
                 document.querySelector('.text' + this.el.classList[1]).classList.add('active');
                 document.querySelector('.textbottom' + this.el.classList[1]).classList.add('active');
-                synth.triggerAttackRelease('C4', '8n');
+                synth.triggerAttackRelease('c6', '10n');
             }
             updateOut(ev) {
                 document.querySelector('.text' + this.el.classList[1]).classList.remove('active');
@@ -1353,6 +1368,7 @@
         nodes.forEach(node => new Circles(node));
     </script>
 
+    <!-- Scroll Skew -->
     <script>
         // select your elements
         var myElements = document.querySelectorAll(".row");
@@ -1363,7 +1379,7 @@
             // create the instance
             var mdskew = new mdSkew(myElement, {
                 min: 0,
-                max: 3,
+                max: 2,
                 transition: 'transform .8s cubic-bezier(.215,.61,.355,1)'
             });
 
@@ -1373,6 +1389,7 @@
         });
     </script>
 
+    <!-- Horizontal Scroll -->
     <script>
         $(document).ready(function() {
             $('.slider').mousewheel(function(e, delta) {
@@ -1383,7 +1400,7 @@
     </script>
 
     <noscript>
-        Congrats, You are probably living in the 90s. Now in order to access this site you either need to
+        Congrats Time Traveller, You are probably in the 90s. Now in order to access this site you either need to
         update your browser or enable Javascript from settings. And please don't use Internet explorer.
     </noscript>
 </body>

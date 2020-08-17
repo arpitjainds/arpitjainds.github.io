@@ -84,9 +84,10 @@ a:hover::after {
     border-radius: 50%;
     text-decoration: none;
     display: flex;
+    border: 2px dotted #fff;
     align-items: center;
     text-align: left;
-    font-size: 12px;
+    font-size: 25px;
     padding: 10px;
     position: absolute;
     left: 50%;
@@ -98,40 +99,42 @@ a:hover::after {
 
 .circle-wrapper .circle:hover {
     color: #fff;
+    border: none;
+    background: #ffffff22;
     -webkit-transform: translate(-50%, -50%) scale(1.14);
     transform: translate(-50%, -50%) scale(1.14);
-}
-
-.circle-wrapper .circle:nth-child(1) {
-    background-color: #2b468b44;
-    width: 68%;
-    height: 68%;
 }
 
 .circle:hover::after {
     display: none;
 }
 
+.circle-wrapper .circle:nth-child(1) {
+    /* background-color: #2b468b44; */
+    width: 68%;
+    height: 68%;
+}
+
 .circle-wrapper .circle:nth-child(2) {
-    background-color: #314f9f44;
+    /* background-color: #314f9f44; */
     width: 56%;
     height: 56%;
 }
 
 .circle-wrapper .circle:nth-child(3) {
-    background-color: #3759b244;
+    /* background-color: #3759b244; */
     width: 44%;
     height: 44%;
 }
 
 .circle-wrapper .circle:nth-child(4) {
-    background-color: #3f64c444;
+    /* background-color: #3f64c444; */
     width: 32%;
     height: 32%;
 }
 
 .circle-wrapper .circle:nth-child(5) {
-    background-color: #5374ca44;
+    /* background-color: #5374ca44; */
     width: 20%;
     height: 20%;
 }
@@ -141,19 +144,6 @@ a:hover::after {
     text-align: left;
     padding-right: 30px;
     line-height: 0.5;
-}
-
-.contain p {
-    color: #96ace2;
-    text-transform: uppercase;
-}
-
-.contain h2 {
-    font-size: 24px;
-}
-
-.contain h4 {
-    font-size: 16px;
 }
 
 .text1,
@@ -199,7 +189,7 @@ a:hover::after {
 }
 
 .til p {
-    color: #9eb0df;
+    color: inherit;
 }
 
 .sub {
@@ -296,7 +286,6 @@ a:hover::after {
     position: relative;
     width: 100%;
     height: 100vh;
-    box-shadow: 0 0 45px 5px rgba(0, 0, 0, 0.85);
     overflow-y: scroll
 }
 
@@ -737,8 +726,8 @@ audio:not([controls]) {
 
 a.content__text-link[data-fx="2"]:hover {
     -webkit-text-stroke: 1px #fff;
-    -webkit-text-fill-color: #000000;
-    color: #000000;
+    -webkit-text-fill-color: #00000000;
+    color: #00000000;
 }
 
 a.content__text-link[data-fx="1"]::after,
@@ -938,7 +927,7 @@ label {
     width: 10px;
     height: 5px;
     border: 1px solid #fff;
-    background: #000;
+    background: #00000000;
     margin: 0px;
     position: relative;
     transition: all .3s;
@@ -956,4 +945,62 @@ label {
 
 .rating-system2 input:checked~label {
     background: white;
+}
+
+
+/* Morph Scroll */
+
+
+/* SVG Morph */
+
+.morph-wrap {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+.morph {
+    position: relative;
+    height: 100%;
+    fill: var(--background-color-2);
+    flex: none;
+}
+
+.content-wrap {
+    width: 100%;
+    min-height: 60vh;
+}
+
+
+/* Demo themes */
+
+.demo-2 {
+    --background-color: #1d1b22;
+    --background-color-2: #342560;
+    --background-color-3: #553e9a;
+    --text-color: #fff;
+    --link-color: #f9ed8a;
+    --link-hover-color: #fff;
+}
+
+.demo-3 {
+    --background-color: #56cccf;
+    --background-color-2: #41e0e4;
+    --background-color-3: #1747c0;
+    --text-color: #fff;
+    --link-color: #fff;
+    --link-hover-color: #17b1b5;
+}
+
+.demo-3 .morph {
+    fill: none;
+    stroke-width: 12px;
+    stroke: #22bcc0;
 }
