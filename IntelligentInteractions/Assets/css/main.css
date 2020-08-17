@@ -608,8 +608,7 @@ a:hover::after {
 }
 
 .underlinedotted {
-    text-decoration-line: underline;
-    text-decoration-style: dotted;
+    background: #ffffff22;
 }
 
 .slider {
