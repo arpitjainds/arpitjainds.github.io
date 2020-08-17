@@ -694,6 +694,16 @@ section {
     color: #9eb0df;
 }
 
+.hideonsmalldisplays {
+    display: box;
+}
+
+@media screen and (max-width:800px) {
+    .hideonsmalldisplays {
+        display: none;
+    }
+}
+
 
 /*----------------------------------------------
       Hover Image Effect
