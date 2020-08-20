@@ -616,7 +616,7 @@ a:hover::after {
 }
 
 .slider {
-    font-family: sans-serif;
+    font-family: Regular;
     display: flex;
     overflow-x: scroll;
     width: 100%;
