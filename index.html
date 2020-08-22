@@ -35,6 +35,73 @@
     <link rel="icon" type="image/png" sizes="16x16" href="./images/old/AJ Small.png">
     <link rel="manifest" href="./site.webmanifest">
 
+    <style>
+        td.tableimagecell {
+            padding: 12px;
+            max-width: 60px;
+            max-height: 60px;
+            display: none;
+        }
+        
+        td.tableimagecell>img {
+            max-width: 40px;
+            max-height: 40px;
+            border-radius: 50%;
+            padding: 4.5px;
+        }
+        
+        td.tabletitlecell {
+            padding: 7.5px;
+        }
+        
+        td.tabletitlecell span a {
+            font-family: Bold;
+            font-size: 12px;
+            color: #555555;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+        
+        td.tabledatecell {
+            padding: 7.5px;
+            max-height: 60px;
+        }
+        
+        td.tabledatecell>span {
+            font-family: Light;
+            font-size: 12px;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+        }
+        
+        td.tabledescriptioncell {
+            padding: 7.5px;
+            max-height: 60px;
+            font-size: 0.9em;
+        }
+        
+        td.tabledescriptioncell>span {
+            font-size: 16px;
+            letter-spacing: 0px;
+            font-size: 1.15em;
+            color: #555555;
+            font-family: Regular;
+            line-height: 1;
+        }
+        
+        @media screen and (max-width:700px) {
+            td.tableimagecell {
+                display: none;
+            }
+        }
+        
+        @media screen and (max-width:635px) {
+            td.tabledatecell {
+                display: none;
+            }
+        }
+    </style>
+
 </head>
 
 <body class="preloadercolor">
@@ -267,118 +334,9 @@
                                                         </blockquote>
                                                     </a>
                                                 </div>
-                                                <!-- <div class="large-6 medium-12 tab-12 mob-12" style="padding:5px;">
-                                                    <a class="nobefore noborder" style="display:block;cursor: ne-resize" href="./projects/AI/Tenacity.AI.html" data-aos="fade" data-aos-anchor-placement="center-center" data-aos-duration="450">
-                                                        <blockquote class="tile projecttile roundborderimage" style="--tilebackgroundimage:url('../images/old/projects/TenacityTile.jpg');
-                                                        
-                                                        --textcolor:#ffffff;">
-                                                            <p class="tileheading">
-                                                                Tenacity.AI Application.
-                                                            </p>
-                                                            <cite class="nobefore">Empowering Ed-Tech content <br>2nd place | IBM ML Hackathon '18</cite>
-                                                        </blockquote>
-                                                    </a>
-                                                </div> -->
-                                                <!-- <div class="large-12 medium-12 tab-12 mob-12" style="padding:5px;">
-                                                    <a class="nobefore noborder" style="display:block;cursor: ne-resize" href="./projects/Data/Predicting Student Performance.html" data-aos="fade" data-aos-anchor-placement="center-center" data-aos-duration="450">
-                                                        <blockquote class="tile projecttile roundborderimage" style="--tilebackgroundimage:url('../images/old/projects/StudentPerformanceTile1.jpg');
-                                                        
-                                                        --textcolor:#ffffff;">
-                                                            <p class="tileheading">
-                                                                Predicting Student Performance.
-                                                            </p>
-                                                            <cite class="nobefore">Education Data Mining to predict student classroom performance.</cite>
-                                                        </blockquote>
-                                                    </a>
-                                                </div> -->
-                                                <!-- <div class="large-4 medium-4 tab-6 mob-12" style="padding:5px;">
-                                                    <a class="nobefore noborder" style="display:block;cursor: ne-resize" href="./projects/Data/DGrafica.html" data-aos="fade" data-aos-anchor-placement="center-center" data-aos-duration="450">
-                                                        <blockquote class="tile">
-                                                            <p class="tileheading">
-                                                                D-Grafica.
-                                                            </p>
-                                                            <cite class="nobefore">Classification, Extraction, Reconstruction and Summarization of Data-Charts.</cite>
-                                                        </blockquote>
-                                                    </a>
-                                                </div> -->
-                                                <!-- <div class="large-4 medium-4 tab-6 mob-12" style="padding:5px;">
-                                                    <a class="nobefore noborder" style="display:block;cursor: ne-resize" href="./projects/Data/Rainfall Vsualization.html" data-aos="fade" data-aos-anchor-placement="center-center" data-aos-duration="450">
-                                                        <blockquote class="tile">
-                                                            <p class="tileheading">
-                                                                Indian Rainfall Visualization.
-                                                            </p>
-                                                            <cite class="nobefore">Variation of Average Rainfall
-                                                                Rate in India over the last century.</cite>
-                                                        </blockquote>
-                                                    </a>
-                                                </div> -->
                                             </div>
                                         </div>
                                     </section>
-
-                                    <!-- <section>
-                                        <div class="section-inner">
-                                            <ul style="list-style:none;margin:0px" data-aos="fade" data-aos-anchor-placement="center-center" data-aos-duration="450" class="a-container">
-                                                <li class="a-items">
-                                                    <input type="radio" name="ac" id="a1" />
-                                                    <label for="a1"><span style="font-size:0.8em; letter-spacing: 2px;text-transform:uppercase;color:rgba(0,0,0,0.30);padding-bottom:10px;">• Other Projects • </span>
-                                                    </label>
-                                                    <div class="a-content">
-                                                        <div class="row">
-                                                            <div class="large-7 medium-7 tab-7 mob-12" style="padding:5px;">
-                                                                <a class="nobefore noborder" style="display:block;cursor: ne-resize" href="https://github.com/arpitjainds/Fragments" data-aos="fade" data-aos-anchor-placement="center-center" data-aos-duration="450">
-                                                                    <blockquote class="smalltile">
-                                                                        <p class="tileheading">
-                                                                            Fragments
-                                                                        </p>
-                                                                        <span class="tiledescription">
-                                                                            A 3D Platformer game in which the character can move on colored tiles governed by optical illusions and camera perspective.
-                                                                        </span>
-                                                                    </blockquote>
-                                                                </a>
-                                                            </div>
-                                                            <div class="large-5 medium-5 tab-5 mob-12" style="padding:5px;">
-                                                                <a class="nobefore noborder" style="display:block;cursor: ne-resize" href="https://arpitjainds.github.io/battleboat-AI/index.html" data-aos="fade" data-aos-anchor-placement="center-center" data-aos-duration="450">
-                                                                    <blockquote class="smalltile">
-                                                                        <p class="tileheading">
-                                                                            Battleboat.AI
-                                                                        </p>
-                                                                        <span class="tiledescription">
-                                                                            AI that can beat Human at the game of Battle Ship.
-                                                                        </span>
-                                                                    </blockquote>
-                                                                </a>
-                                                            </div>
-                                                            <div class="large-6 medium-6 tab-6 mob-12" style="padding:5px;">
-                                                                <a class="nobefore noborder" style="display:block;cursor: ne-resize" href="https://github.com/arpitjainds/News-Article-Summarization/blob/master/DL.pdf" data-aos="fade" data-aos-anchor-placement="center-center" data-aos-duration="450">
-                                                                    <blockquote class="smalltile">
-                                                                        <p class="tileheading">
-                                                                            News Article <br>Summarization
-                                                                        </p>
-                                                                        <span class="tiledescription">
-                                                                            Textual Summarization of NEWS Articles using Abstractive Methods and sequence to sequence network.
-                                                                        </span>
-                                                                    </blockquote>
-                                                                </a>
-                                                            </div>
-                                                            <div class="large-6 medium-6 tab-6 mob-12" style="padding:5px;">
-                                                                <a class="nobefore noborder" style="display:block;cursor: ne-resize" href="#" data-aos="fade" data-aos-anchor-placement="center-center" data-aos-duration="450">
-                                                                    <blockquote class="smalltile">
-                                                                        <p class="tileheading">
-                                                                            Dsense
-                                                                        </p>
-                                                                        <span class="tiledescription">
-                                                                            Pre-disaster tracking of Human Resource. Qualified for the global Round of IBM Call For Code Initiative.
-                                                                        </span>
-                                                                    </blockquote>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </section> -->
 
                                     <section style="padding-top:100px">
                                         <div class="row" style="padding-left:2.25%;padding-right: 2.25%;">
@@ -406,29 +364,6 @@
                                                         </blockquote>
                                                     </a>
                                                 </div>
-                                                <div class="large-12 medium-12 tab-12 mob-12" style="padding:5px;">
-                                                    <a class="nobefore noborder" style="display:block;cursor:ne-resize;" href="https://www.behance.net/gallery/61478505/MARS" data-aos="fade" data-aos-anchor-placement="center-center" data-aos-duration="450">
-                                                        <blockquote class="tile projecttile roundborderimage" style="--tilebackgroundimage:url('../images/old/projects/MARSProjectCover2.png');
-                                                        --textcolor:rgba(64,106,164,0.6);">
-                                                            <p class="tileheading">
-                                                                Modern Approach <br>to Road Servicing →
-                                                            </p>
-                                                            <cite class="nobefore">Fabricate a portable road repair <br>machine called MARS.</cite>
-                                                        </blockquote>
-                                                    </a>
-                                                </div>
-                                                <div class="large-12 medium-12 tab-12 mob-12" style="padding:5px;">
-                                                    <a class="nobefore noborder" style="display:block;cursor: ne-resize" href="https://docs.google.com/document/d/17okRjf199dhbFjfC6fXs8OO4JcC7GvUPK05bjTVIXko/edit?usp=sharing" data-aos="fade" data-aos-anchor-placement="center-center" data-aos-duration="450">
-                                                        <blockquote class="tile projecttile roundborderimage" style="--tilebackgroundimage:url('../images/old/projects/EQProjectTile1.png');
-                                                        --textcolor:rgba(64,106,164,0.6);">
-                                                            <p class="tileheading">
-                                                                A Study on EQ →
-                                                            </p>
-                                                            <cite class="nobefore">Studying the Roles of Males and <br>Females in making an Emotionally <br>Intelligent Corporate Workforce.</cite>
-                                                        </blockquote>
-                                                    </a>
-
-                                                </div>
 
                                                 <div class="large-12 medium-12 tab-12 mob-12" style="padding:5px;">
                                                     <a class="nobefore noborder" style="display:block;cursor: ne-resize" href="https://medium.com/@arpitjainds/peace-amidst-the-silence-c7f3e2b720c5" data-aos="fade" data-aos-anchor-placement="center-center" data-aos-duration="450">
@@ -443,8 +378,130 @@
                                                 </div>
                                             </div>
                                     </section>
+
+                                    <section style="padding-top:100px">
+                                        <div class="row" style="padding-left:2.25%;padding-right: 2.25%;">
+                                            <div class="large-8 medium-12 tab-12 mobile-12">
+                                                <strong>
+                                                        <p data-aos="fade" data-aos-anchor-placement="center-center" data-aos-duration="450" class="headings">
+                                                        Work <br>Archive.<br>
+                                                        </p>
+                                            </strong>
+                                            </div>
+                                            <div data-aos="fade" data-aos-anchor-placement="center-center" data-aos-duration="450" class="large-4 medium-12 tab-12 mobile-12">
+                                                <div class="alert-box alert-box--info roundborderimage" style="margin-top:-10px;line-height: 1.2;">
+                                                    <p style="margin-bottom:0px;margin-top:0px;font-family:Regular;">When I begin to realize that some project is not worth the viewer's time, I shift it here. If you'd like to see any further code samples or demos please contact me. </a>
+                                                    </p>
+                                                    <i class="fa fa-times alert-box__close" aria-hidden="true"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="">
+                                            <table class="margin:0px;" data-aos="fade" data-aos-anchor-placement="center-center" data-aos-duration="450">
+                                                <tr class="tablerow">
+                                                    <td class="tableimagecell">
+                                                        <img src="../images/old/workex/mozilla.png " style="width:100%;height:100%;margin:0px" alt="">
+                                                    </td>
+                                                    <td class="tabletitlecell">
+                                                        <span><a class="nobefore noborder" target="_blank" href="https://github.com/arpitjainds/Predicting-Student-Performance/blob/master/Report_%20Educational%20Data%20Mining.pdf">Student Report →</a></span>
+                                                    </td>
+                                                    <td class="tabledatecell">
+                                                        <span>Jan 2019 - Mar 2019</span>
+                                                    </td>
+                                                    <td class="tabledescriptioncell">
+                                                        <span>Education Data Mining to predict student classroom performance.</span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="tablerow ">
+                                                    <td class="tableimagecell">
+                                                        <img src="../images/old/workex/mozilla.png " style="width:100%;height:100%;margin:0px " alt=" ">
+                                                    </td>
+                                                    <td class="tabletitlecell">
+                                                        <span><a class="nobefore noborder" target="_blank" href="https://github.com/arpitjainds/Tenacity.AI">Tenacity.AI →</a></span>
+                                                    </td>
+                                                    <td class="tabledatecell">
+                                                        <span>Apr 2017 - Jan 2018</span>
+                                                    </td>
+                                                    <td class="tabledescriptioncell">
+                                                        <span>Empowering Ed-Tech content, 2nd place | IBM ML Hackathon '18</span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="tablerow ">
+                                                    <td class="tableimagecell">
+                                                        <img src="../images/old/workex/mozilla.png " style="width:100%;height:100%;margin:0px " alt=" ">
+                                                    </td>
+                                                    <td class="tabletitlecell">
+                                                        <span><a class="nobefore noborder" target="_blank" href="https://www.behance.net/gallery/61478505/MARS">MARS →</a></span>
+                                                    </td>
+                                                    <td class="tabledatecell">
+                                                        <span>Apr 2017 - Jan 2018</span>
+                                                    </td>
+                                                    <td class="tabledescriptioncell">
+                                                        <span>Modern Approach to Road Servicing.</span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="tablerow">
+                                                    <td class="tableimagecell">
+                                                        <img src="../images/old/workex/coursera.png " style="width:100%;height:100%;margin:0px " alt=" ">
+                                                    </td>
+                                                    <td class="tabletitlecell">
+                                                        <span><a class="nobefore noborder" target="_blank" href="https://docs.google.com/document/d/17okRjf199dhbFjfC6fXs8OO4JcC7GvUPK05bjTVIXko/edit?usp=sharing">A study on EQ →</a></span>
+                                                    </td>
+                                                    <td class="tabledatecell">
+                                                        <span>Jan 2018 -  Apr 2018</span>
+                                                    </td>
+                                                    <td class="tabledescriptioncell">
+                                                        <span>Gender Study on Emotionally Intelligent Workforce.</span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="tablerow">
+                                                    <td class="tableimagecell">
+                                                        <img src="../images/old/workex/spizmacay.png " style="width:100%;height:100%;margin:0px " alt=" ">
+                                                    </td>
+                                                    <td class="tabletitlecell">
+                                                        <span><a class="nobefore noborder" target="_blank" href="https://arpitjainds.github.io/battleboat-AI/index.html">Battleboat.AI →</a></span>
+                                                    </td>
+                                                    <td class="tabledatecell">
+                                                        <span>Jun 2018 - Sep 2018</span>
+                                                    </td>
+                                                    <td class="tabledescriptioncell">
+                                                        <span>AI that can beat Human at the game of Battle Ship.</span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="tablerow">
+                                                    <td class="tableimagecell">
+                                                        <img src="../images/old/workex/spizmacay.png " style="width:100%;height:100%;margin:0px " alt=" ">
+                                                    </td>
+                                                    <td class="tabletitlecell">
+                                                        <span><a class="nobefore noborder" target="_blank" href="https://github.com/arpitjainds/disastersense/blob/master/dsense.pdf">Dsense.AI →</a></span>
+                                                    </td>
+                                                    <td class="tabledatecell">
+                                                        <span>Jun 2018 - Nov 2018</span>
+                                                    </td>
+                                                    <td class="tabledescriptioncell">
+                                                        <span>Pre-disaster tracking of Human Resource.</span>
+                                                    </td>
+                                                </tr>
+                                                <tr class="tablerow">
+                                                    <td class="tableimagecell">
+                                                        <img src="../images/old/workex/spizmacay.png " style="width:100%;height:100%;margin:0px " alt=" ">
+                                                    </td>
+                                                    <td class="tabletitlecell">
+                                                        <span><a class="nobefore noborder" target="_blank" href="https://github.com/arpitjainds/Fragments">Fragments →</a></span>
+                                                    </td>
+                                                    <td class="tabledatecell">
+                                                        <span>Jun 2017 - Dec 2017</span>
+                                                    </td>
+                                                    <td class="tabledescriptioncell">
+                                                        <span>A 3D Platformer game governed by optical illusions and perspectives.</span>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </section>
                                     </div>
                                 </div>
+
                         </article>
                         <!-- end column large-full entry-->
                     </main>
