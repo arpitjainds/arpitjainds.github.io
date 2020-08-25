@@ -214,7 +214,7 @@
                                     margin: 0px;
                                 }
                                 
-                                #subtextmain {
+                                .subtextmain {
                                     font-size: 5.5em;
                                     font-family: Bold;
                                     color: rgba(64, 106, 146, 0.6);
@@ -264,7 +264,7 @@
                                         font-size: 2.5rem;
                                         letter-spacing: -0.5px;
                                     }
-                                    #subtextmain {
+                                    .subtextmain {
                                         font-size: 4.4em;
                                         letter-spacing: -2.5px;
                                     }
@@ -275,11 +275,13 @@
                                 <!-- <div class="spacer hideonlargedisplays"></div> -->
                                 <strong>
                                 <div class="hideonsmalldisplays"> 
+                                    <span class="subtextmain" style="opacity:0;">“A creator interested in crafting intelligent experiences”.
+                                        <br><br>
+                                    </span>
                                     <p class="iamarpit" style="opacity:0">
                                         Hi, I am <a class="content__text-link blue" data-img="images/old/space8.jpg" data-fx="2">Arpit.</a>
                                     <p>
-                                    <br><br><br><br>
-                                    <span id="subtextmain" style="opacity:0;">A creator interested in crafting intelligent experiences.
+                                    <span class="subtextmain">
                                         <br><br>
                                         <a class="blue" href="mailto:arpit.jain@iiitdmj.ac.in">Say hello.</a>
                                         <br><br>
@@ -288,9 +290,9 @@
                                 </div>
                                 <div class="hideonlargedisplays"> 
                                     <p class="iamarpit">
+                                        “A creator interested in crafting intelligent experiences”.<br><br>
                                         <a class="blue" data-img="images/old/space8.jpg" data-fx="2" style="font-size:2em;letter-spacing:-5px; border:none; line-height:0.86">Hi, I am <br>Arpit.</a>
-                                        <br><br><br>
-                                        A creator interested in crafting intelligent experiences.
+                                        <br>
                                         <br><br><a class="blue" href="mailto:arpit.jain@iiitdmj.ac.in">Say hello.</a>
                                         <br><br>
                                         <a href="#selectedwork" class="noborder blue">↓</a>
@@ -615,7 +617,7 @@
                 $('.iamarpit').delay(1100).animate({
                     opacity: 1
                 }, 500);
-                $('#subtextmain').delay(1300).animate({
+                $('.subtextmain').delay(1300).animate({
                     opacity: 1
                 }, 500);
                 $('#selectedworkdownarrow').delay(1500).animate({
