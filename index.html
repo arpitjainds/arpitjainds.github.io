@@ -190,14 +190,22 @@
                         <article class="column large-full entry format-standard">
 
                             <style>
-                                #iamarpit p {
-                                    font-size: 7.6em;
+                                .iamarpit {
+                                    font-size: 10em;
                                     font-family: Bold;
                                     color: rgba(64, 106, 146, 0.6);
                                     line-height: 94%;
                                     padding-top: 0px;
-                                    letter-spacing: -5px;
+                                    letter-spacing: -8px;
                                     margin: 0px;
+                                }
+                                
+                                #subtextmain {
+                                    font-size: 5.5em;
+                                    font-family: Bold;
+                                    color: rgba(64, 106, 146, 0.6);
+                                    letter-spacing: -5px;
+                                    line-height: 95%;
                                 }
                                 
                                 .headings {
@@ -209,12 +217,28 @@
                                     letter-spacing: -5px;
                                 }
                                 
-                                #iamarpit p span#subtextmain {
-                                    font-size: 1em;
+                                .subheadings {
+                                    font-size: 1.5em;
+                                    font-family: Bold;
+                                    color: rgba(64, 106, 146, 0.9);
+                                    line-height: 100%;
+                                    padding-top: 20px;
+                                    padding-left: 10px;
+                                    margin-bottom: 2.5px;
+                                    letter-spacing: -0.5px;
+                                }
+                                
+                                .paratext {
+                                    font-size: 1.25em;
+                                    font-family: Regular;
+                                    color: rgba(64, 106, 146, 0.65);
+                                    line-height: 100%;
+                                    padding: 10px 30px 20px 10px;
+                                    letter-spacing: -0.5px;
                                 }
                                 
                                 @media screen and (max-width:500px) {
-                                    #iamarpit p {
+                                    .iamarpit {
                                         font-size: 4.4rem;
                                         letter-spacing: -2.5px;
                                     }
@@ -222,35 +246,43 @@
                                         font-size: 7rem;
                                         letter-spacing: -4.25px;
                                     }
+                                    .subheadings {
+                                        font-size: 2.5rem;
+                                        letter-spacing: -0.5px;
+                                    }
+                                    #subtextmain {
+                                        font-size: 4.4em;
+                                        letter-spacing: -2.5px;
+                                    }
                                 }
                             </style>
 
                             <div class="row">
                                 <!-- <div class="spacer hideonlargedisplays"></div> -->
-                                <strong id="iamarpit" class="hideonsmalldisplays" style="opacity:0"> 
+                                <strong>
+                                <div class="hideonsmalldisplays"> 
+                                    <p class="iamarpit" style="opacity:0">
+                                        Hi, I am <a class="content__text-link blue" data-img="images/old/space8.jpg" data-fx="2">Arpit.</a>
                                     <p>
-                                        Hi, I am <a class="content__text-link blue" data-img="images/old/space8.jpg" data-fx="2">Arpit Jain.</a>
-                                    <p>
-                                    <p>
-                                        <span id="subtextmain" style="opacity:0;">Currently in <a class="content__text-link blue" data-img="images/old/bengaluru.gif" data-fx="2">Bengaluru.</a>
-                                            <br><br>
-                                            <a class="blue" href="mailto:arpit.jain@iiitdmj.ac.in">Say hello.</a><br>Here's my <a class="blue" target=”_blank” href="./CV_.pdf">CV.</a>
-                                            <br><br>
-                                            <a href="#selectedwork" class="noborder blue">↓</a>
-                                        </span>
-                                    </p>
-                                </strong>
-                                <strong id="iamarpit" class="hideonlargedisplays"> 
-                                    <p>Hi, I am <br>
-                                        <a class="blue" data-img="images/old/space8.jpg" data-fx="2" style="font-size:2.8em;letter-spacing:-5px; border:none; line-height:0.86">‘Arpit<br>Jain’</a>
+                                    <br><br><br><br>
+                                    <span id="subtextmain" style="opacity:0;">A creator interested in crafting intelligent experiences.
                                         <br><br>
-                                        Currently in <a class="content__text-link blue" data-img="images/old/bengaluru.gif" data-fx="2">Bengaluru.</a>
+                                        <a class="blue" href="mailto:arpit.jain@iiitdmj.ac.in">Say hello.</a>
+                                        <br><br>
+                                        <a href="#selectedwork" class="noborder blue">↓</a>
+                                    </span>
+                                </div>
+                                <div class="hideonlargedisplays"> 
+                                    <p class="iamarpit">
+                                        <a class="blue" data-img="images/old/space8.jpg" data-fx="2" style="font-size:2em;letter-spacing:-5px; border:none; line-height:0.86">Hi, I am <br>Arpit.</a>
+                                        <br><br><br>
+                                        A creator interested in crafting intelligent experiences.
                                         <br><br><a class="blue" href="mailto:arpit.jain@iiitdmj.ac.in">Say hello.</a>
-                                        <br>Here's my <a class="blue" target=”_blank” href="./CV_.pdf">CV.</a>
                                         <br><br>
                                         <a href="#selectedwork" class="noborder blue">↓</a>
                                     </p>
-                                </strong>
+                                </div>
+                            </strong>
                             </div>
 
                             <div class="spacer"></div>
@@ -282,64 +314,86 @@
                                         <div class="section-inner">
 
                                             <div class="row" style="margin-bottom:30px;">
-                                                <div class="large-12 medium-12 tab-12 mob-12" style="padding:5px;">
+                                                <div class="large-6 medium-6 tab-12 mob-12" style="padding:10px;">
                                                     <a class="nobefore noborder" style="display:block;cursor: ne-resize" href="./projects/HCI/MOOC Feedback Visualization.html" data-aos="fade" data-aos-anchor-placement="center-center" data-aos-duration="450">
-                                                        <blockquote class="tile projecttile roundborderimage" style="--tilebackgroundimage:url('../images/old/projects/MOOCFeedbackProjectTile2.png');      
+                                                        <blockquote class="tile projecttile roundborderimage" style="--tilebackgroundimage:url('../images/old/projects/MOOCFeedbackProjectTile1.jpg');      
                                                         --textcolor:rgba(64,106,164,0.6);">
-                                                            <p class="tileheading">
-                                                                MOOC Feedback <br>Visualization →
-                                                            </p>
-                                                            <cite class="nobefore">MOOC quality <br>feedback visualization.</cite>
                                                         </blockquote>
+                                                        <p class="subheadings">
+                                                            MOOC Feedback <br>Visualization →
+                                                        </p>
+                                                        <p class="paratext">Iterative course improvement using systematic student feedback. </p>
                                                     </a>
                                                 </div>
-                                                <div class="large-12 medium-12 tab-12 mob-12" style="padding:5px;">
+                                                <div class="large-6 medium-6 tab-12 mob-12" style="padding:10px;">
                                                     <a class="nobefore noborder" style="display:block;cursor: ne-resize" href="./IntelligentInteractions/IntelligentInteractions.html" data-aos="fade" data-aos-anchor-placement="center-center" data-aos-duration="450">
                                                         <blockquote class="tile projecttile roundborderimage" style="--tilebackgroundimage:url('../images/old/projects/IntelligentInteractionsTile1.png');
                                                         --textcolor:rgba(64,106,164,0.6);">
-                                                            <p class="tileheading">
-                                                                Intelligent <br>Interactions →
-                                                            </p>
-                                                            <cite class="nobefore">A five phase interaction system <br>between two entitites. </cite>
                                                         </blockquote>
+                                                        <p class="subheadings">
+                                                            Intelligent <br>Interactions →
+                                                        </p>
+                                                        <p class="paratext">A five phase interaction system <br>between two entitites. </p>
                                                     </a>
                                                 </div>
-                                                <div class="large-12 medium-12 tab-12 mob-12" style="padding:5px;">
+                                                <div class="large-6 medium-6 tab-12 mob-12" style="padding:10px;">
                                                     <a class="nobefore noborder" style="display:block;cursor: ne-resize" href="./projects/AI/AVL Tree Tutor.html" data-aos="fade" data-aos-anchor-placement="center-center" data-aos-duration="450">
                                                         <blockquote class="tile projecttile roundborderimage" style="--tilebackgroundimage:url('../images/old/projects/AVLTreeTile2.png');
                                                         --textcolor:rgba(64,106,164,0.6);">
-                                                            <p class="tileheading">
-                                                                AVL Tree Tutoring <br>Application →
-                                                            </p>
-                                                            <cite class="nobefore">Tutoring System to teach AVL trees<br>Best Abstract | ACM COMPUTE '19</cite>
                                                         </blockquote>
+                                                        <p class="subheadings">
+                                                            AVL Tree Tutoring <br>Application →
+                                                        </p>
+                                                        <p class="paratext">Tutoring System to teach AVL trees<br>Best Abstract | ACM COMPUTE '19</p>
+
                                                     </a>
                                                 </div>
-                                                <div class="large-12 medium-12 tab-12 mob-12" style="padding:5px;">
+                                                <div class="large-6 medium-6 tab-12 mob-12" style="padding:10px;">
                                                     <a class="nobefore noborder" style="display:block;cursor: ne-resize" href="./projects/AI/Intellistudy.html" data-aos="fade" data-aos-anchor-placement="center-center" data-aos-duration="450">
-                                                        <blockquote class="tile projecttile roundborderimage" style="--tilebackgroundimage:url('../images/old/projects/IntellistudyTile2.png');
-                                                        --textcolor:rgba(64,106,164,0.6);">
-                                                            <p class="tileheading">
-                                                                Intellistudy <br>Platform →
-                                                            </p>
-                                                            <cite class="nobefore">E-Learning Platform <br>Top-50 | Smart India Hackathon '18 </cite>
-                                                        </blockquote>
+                                                        <blockquote class="tile projecttile roundborderimage" style="--tilebackgroundimage:url('../images/old/projects/IntellistudyTile.jpg');
+                                                        --textcolor:rgba(64,106,164,0.6);"></blockquote>
+                                                        <p class="subheadings">
+                                                            Intellistudy <br>Platform →
+                                                        </p>
+                                                        <p class="paratext">E-Learning Platform <br>Top-50 | Smart India Hackathon '18 </p>
                                                     </a>
                                                 </div>
-                                                <div class="large-12 medium-12 tab-12 mob-12" style="padding:5px;">
+
+                                                <h3 data-aos="fade" data-aos-anchor-placement="center-center" data-aos-duration="450" class="midlinehead" style="margin-top:50px;margin-bottom:35px">In progress</h3>
+
+                                                <div class="large-12 medium-12 tab-12 mob-12" style="padding:10px;">
                                                     <a class="nobefore noborder" style="display:block;cursor: ne-resize" href="./projects/HCI/Zenbo Class.html" data-aos="fade" data-aos-anchor-placement="center-center" data-aos-duration="450">
-                                                        <blockquote class="tile projecttile roundborderimage" style="--tilebackgroundimage:url('../images/old/projects/ZenboClassroomTile2.png');
-                                                        --textcolor:rgba(64,106,164,0.6);">
-                                                            <p class="tileheading">
-                                                                Zenbo <br>Class →
-                                                            </p>
-                                                            <cite class="nobefore">Development of a smart classroom <br>application for Asus Zenbo Robot.</cite>
-                                                        </blockquote>
+                                                        <blockquote class="tile projecttile roundborderimage" style="--tilebackgroundimage:url('../images/old/projects/ZenboClassroomTile1.jpg');
+                                                        --textcolor:rgba(64,106,164,0.6);"></blockquote>
+                                                        <p class="subheadings">
+                                                            Zenbo Class →
+                                                        </p>
+                                                        <p class="paratext">Development of a smart classroom <br>application for Asus Zenbo Robot.</p>
                                                     </a>
-
                                                 </div>
 
-                                                <div class="large-12 medium-12 tab-12 mob-12" style="padding:5px;">
+                                                <div class="large-6 medium-6 tab-12 mob-12" style="padding:10px;">
+                                                    <a class="nobefore noborder" style="display:block;cursor: ne-resize" href="./projects/HCI/Gazinteract.html" data-aos="fade" data-aos-anchor-placement="center-center" data-aos-duration="450">
+                                                        <blockquote class="tile projecttile roundborderimage" style="--tilebackgroundimage:url('../images/old/projects/GazinteractTile1.png');
+                                                        --textcolor:rgba(64,106,164,0.6);"></blockquote>
+                                                        <p class="subheadings">
+                                                            Gazinteract →
+                                                        </p>
+                                                        <p class="paratext">Determining a non-tangible eyegaze<br> based screen interaction.</p>
+                                                    </a>
+                                                </div>
+                                                <div class="large-6 medium-6 tab-12 mob-12" style="padding:10px;">
+                                                    <a class="nobefore noborder" style="display:block;cursor: ne-resize" href="./projects/Social/Transit Healthy.html" data-aos="fade" data-aos-anchor-placement="center-center" data-aos-duration="450">
+                                                        <blockquote class="tile projecttile roundborderimage" style="--tilebackgroundimage:url('../images/old/projects/TransitHealthyTile1.jpg');
+                                                        --textcolor:rgba(64,106,164,0.6);"></blockquote>
+                                                        <p class="subheadings">
+                                                            Transit Healthy →
+                                                        </p>
+                                                        <p class="paratext">A Healthy Smart-City Transit system.</p>
+                                                    </a>
+                                                </div>
+
+                                                <!-- <div class="large-12 medium-12 tab-12 mob-12" style="padding:5px;">
                                                     <a class="nobefore noborder" style="display:block;cursor: ne-resize" href="./projects/HCI/Gazinteract.html" data-aos="fade" data-aos-anchor-placement="center-center" data-aos-duration="450">
                                                         <blockquote class="tile projecttile roundborderimage" style="--tilebackgroundimage:url('../images/old/projects/GazinteractTile1.png');
                                                         --textcolor:rgba(64,106,164,0.6);">
@@ -349,50 +403,9 @@
                                                             <cite class="nobefore">Determining a non-tangible eyegaze<br> based screen interaction.</cite>
                                                         </blockquote>
                                                     </a>
-                                                </div>
+                                                </div> -->
                                             </div>
                                         </div>
-                                    </section>
-
-                                    <section style="padding-top:100px">
-                                        <div class="row" style="padding-left:2.25%;padding-right: 2.25%;">
-                                            <div class="large-8 medium-12 tab-12 mobile-12">
-                                                <strong>
-                                                            <p data-aos="fade" data-aos-anchor-placement="center-center" data-aos-duration="450" class="headings">
-                                                            Social <br>Stories.
-                                                            </p>
-                                                </strong>
-                                            </div>
-                                            <div data-aos="fade" data-aos-anchor-placement="center-center" data-aos-duration="450" class="large-4 medium-12 tab-12 mobile-12 hideonsmalldisplays">
-                                            </div>
-                                        </div>
-                                        <div class="section-inner">
-
-                                            <div class="row" style="margin-bottom:30px;margin-top:20px">
-                                                <div class="large-12 medium-12 tab-12 mob-12" style="padding:5px;">
-                                                    <a class="nobefore noborder" style="display:block;cursor: ne-resize" href="./projects/Social/Transit Healthy.html" data-aos="fade" data-aos-anchor-placement="center-center" data-aos-duration="450">
-                                                        <blockquote class="tile projecttile roundborderimage" style="--tilebackgroundimage:url('../images/old/projects/TransitHealthyTile2.png');
-                                                        --textcolor:rgba(64,106,164,0.6);">
-                                                            <p class="tileheading">
-                                                                Transit <br>Healthy →
-                                                            </p>
-                                                            <cite class="nobefore">A Healthy Smart-City <br>Transit system.</cite>
-                                                        </blockquote>
-                                                    </a>
-                                                </div>
-
-                                                <div class="large-12 medium-12 tab-12 mob-12" style="padding:5px;">
-                                                    <a class="nobefore noborder" style="display:block;cursor: ne-resize" href="https://medium.com/@arpitjainds/peace-amidst-the-silence-c7f3e2b720c5" data-aos="fade" data-aos-anchor-placement="center-center" data-aos-duration="450">
-                                                        <blockquote class="tile projecttile roundborderimage" style="--tilebackgroundimage:url('../images/old/projects/PeaceAmidstTheSilenceProjectTile3.png');
-                                                        --textcolor:rgba(64,106,164,0.6);">
-                                                            <p class="tileheading">
-                                                                Peace Amidst <br>the Silence →
-                                                            </p>
-                                                            <cite class="nobefore">Exploring the lifestyle growth <br>of a small town called Tikamgarh <br>in India.</cite>
-                                                        </blockquote>
-                                                    </a>
-                                                </div>
-                                            </div>
                                     </section>
 
                                     <section style="padding-top:100px">
@@ -494,152 +507,152 @@
                                             </table>
                                         </div>
                                     </section>
-                                    </div>
                                 </div>
+                            </div>
 
                         </article>
                         <!-- end column large-full entry-->
                     </main>
-                    </div>
-                    <!-- end s-content -->
+                </div>
+                <!-- end s-content -->
 
-                    <!-- footer
+                <!-- footer
                 ================================================== -->
-                    <footer class="s-footer">
-                        <footer class="Custom__footer">
-                            <div class="footer__left">
-                                <div class="footer__copyright">
-                                    <span>© arpitjainds</span>
-                                </div>
+                <footer class="s-footer">
+                    <footer class="Custom__footer">
+                        <div class="footer__left">
+                            <div class="footer__copyright">
+                                <span>© arpitjainds</span>
                             </div>
-                            <div class="footer__right">
+                        </div>
+                        <div class="footer__right">
 
-                                <div class="footer__column">
-                                    <a href="about.html"> • About</a>
-                                    <a href="./Research.html"> • Formal</a>
-                                </div>
-                                <div class="footer__column">
-                                    <a href="CV_.pdf"> • Curriculum Vitae</a>
-                                    <a href="https://arpitjainds.github.io/art/"> • Art + Photography</a>
-                                </div>
-                                <div class="footer__column">
-                                    <br>
-                                </div>
+                            <div class="footer__column">
+                                <a href="about.html"> • About</a>
+                                <a href="./Research.html"> • Formal</a>
                             </div>
-                        </footer>
-
-                        <div class="go-top">
-                            <a class="smoothscroll nobefore" title="Back to Top" href="#top">↑</a>
+                            <div class="footer__column">
+                                <a href="CV_.pdf"> • Curriculum Vitae</a>
+                                <a href="https://arpitjainds.github.io/art/"> • Art + Photography</a>
+                            </div>
+                            <div class="footer__column">
+                                <br>
+                            </div>
                         </div>
                     </footer>
 
-                </div>
-                <!-- end s-wrap -->
+                    <div class="go-top">
+                        <a class="smoothscroll nobefore" title="Back to Top" href="#top">↑</a>
+                    </div>
+                </footer>
+
             </div>
+            <!-- end s-wrap -->
         </div>
+    </div>
 
 
 
-        <!-- Java Script
+    <!-- Java Script
     ================================================== -->
-        <script src="js/jquery-3.2.1.min.js"></script>
-        <script src="js/plugins.js"></script>
-        <script src="js/aos.js"></script>
-        <script>
-            AOS.init({
-                duration: 0,
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 0,
+        })
+    </script>
+
+    <!-- Preloader -->
+    <script src="js/classie.js"></script>
+    <script src="js/pathLoader.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Image Hover Effects -->
+    <script src="js/charming.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/hoverImage.js"></script>
+
+    <script>
+        fetch("./ReusableComponents/header__search.html")
+            .then(response => {
+                return response.text()
             })
-        </script>
-
-        <!-- Preloader -->
-        <script src="js/classie.js"></script>
-        <script src="js/pathLoader.js"></script>
-        <script src="js/main.js"></script>
-
-        <!-- Image Hover Effects -->
-        <script src="js/charming.min.js"></script>
-        <script src="js/TweenMax.min.js"></script>
-        <script src="js/hoverImage.js"></script>
-
-        <script>
-            fetch("./ReusableComponents/header__search.html")
-                .then(response => {
-                    return response.text()
-                })
-                .then(data => {
-                    document.querySelector("header__search").innerHTML = data;
-                });
-            fetch("./ReusableComponents/header__social.html")
-                .then(response => {
-                    return response.text()
-                })
-                .then(data => {
-                    document.querySelector("header__social").innerHTML = data;
-                });
-        </script>
-
-        <script>
-            //capture scroll any percentage
-            $(window).scroll(function() {
-                var wintop = $(window).scrollTop(),
-                    docheight =
-
-                    $(document).height(),
-                    winheight = $(window).height();
-                var scrolled = (wintop / (docheight - winheight)) * 100;
-
-                $('.scroll-line').css('width', (scrolled + '%'));
-                $('.scroll-line-bottom').css('width', (scrolled + '%'));
+            .then(data => {
+                document.querySelector("header__search").innerHTML = data;
             });
-        </script>
-
-        <!-- Delayed Element Loading Animation -->
-        <script>
-            $(document).ready(function() {
-                function addClassNameListener(elemId, callback) {
-                    var elem = document.getElementById(elemId);
-                    let intervalId = window.setInterval(function() {
-                        if (elem.classList.contains('loaded')) {
-                            callback();
-                            window.clearInterval(intervalId);
-                        }
-                    }, 10);
-                }
-
-                addClassNameListener("ip-container", function() {
-                    $('#iamarpit').delay(1100).animate({
-                        opacity: 1
-                    }, 500);
-                    $('#subtextmain').delay(1300).animate({
-                        opacity: 1
-                    }, 500);
-                    $('#selectedworkdownarrow').delay(1500).animate({
-                        opacity: 1
-                    }, 500);
-                    $('.site-logo').delay(1600).animate({
-                        opacity: 1
-                    }, 500);
-                    $('#headnav > li:first').delay(1700).animate({
-                        opacity: 1
-                    }, 500);
-                    $('#headnav li:eq(1)').delay(1900).animate({
-                        opacity: 1
-                    }, 500);
-                    $('#headnav li:eq(2)').delay(2100).animate({
-                        opacity: 1
-                    }, 500);
-                    $('#headnav > li:last').delay(2300).animate({
-                        opacity: 1
-                    }, 500);
-                    $('#headsocial').delay(2500).animate({
-                        opacity: 1
-                    }, 500);
-                    $('#sharebar').delay(2500).animate({
-                        opacity: 1
-                    }, 500);
-                });
+        fetch("./ReusableComponents/header__social.html")
+            .then(response => {
+                return response.text()
+            })
+            .then(data => {
+                document.querySelector("header__social").innerHTML = data;
             });
-        </script>
+    </script>
+
+    <script>
+        //capture scroll any percentage
+        $(window).scroll(function() {
+            var wintop = $(window).scrollTop(),
+                docheight =
+
+                $(document).height(),
+                winheight = $(window).height();
+            var scrolled = (wintop / (docheight - winheight)) * 100;
+
+            $('.scroll-line').css('width', (scrolled + '%'));
+            $('.scroll-line-bottom').css('width', (scrolled + '%'));
+        });
+    </script>
+
+    <!-- Delayed Element Loading Animation -->
+    <script>
+        $(document).ready(function() {
+            function addClassNameListener(elemId, callback) {
+                var elem = document.getElementById(elemId);
+                let intervalId = window.setInterval(function() {
+                    if (elem.classList.contains('loaded')) {
+                        callback();
+                        window.clearInterval(intervalId);
+                    }
+                }, 10);
+            }
+
+            addClassNameListener("ip-container", function() {
+                $('.iamarpit').delay(1100).animate({
+                    opacity: 1
+                }, 500);
+                $('#subtextmain').delay(1300).animate({
+                    opacity: 1
+                }, 500);
+                $('#selectedworkdownarrow').delay(1500).animate({
+                    opacity: 1
+                }, 500);
+                $('.site-logo').delay(1600).animate({
+                    opacity: 1
+                }, 500);
+                $('#headnav > li:first').delay(1700).animate({
+                    opacity: 1
+                }, 500);
+                $('#headnav li:eq(1)').delay(1900).animate({
+                    opacity: 1
+                }, 500);
+                $('#headnav li:eq(2)').delay(2100).animate({
+                    opacity: 1
+                }, 500);
+                $('#headnav > li:last').delay(2300).animate({
+                    opacity: 1
+                }, 500);
+                $('#headsocial').delay(2500).animate({
+                    opacity: 1
+                }, 500);
+                $('#sharebar').delay(2500).animate({
+                    opacity: 1
+                }, 500);
+            });
+        });
+    </script>
 
 </body>
 

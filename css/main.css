@@ -5092,7 +5092,7 @@ h1 svg .arrow {
 
 @media (max-width:500px) {
     .tile {
-        min-height: 400px;
+        min-height: 250px;
         padding: 0px;
     }
     .tile.projecttile {
