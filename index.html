@@ -58,11 +58,6 @@
             padding-left: 25px;
         }
         
-        tr.tablerow:hover td.tabledescriptioncell {
-            transition-duration: 300ms;
-            padding-left: 25px;
-        }
-        
         tr.tablerow:hover td.tabletitlecell {
             padding-left: 20px;
             transition-duration: 300ms;
@@ -281,7 +276,7 @@
                                     <p class="iamarpit" style="opacity:0">
                                         Hi, I am <a class="content__text-link blue" data-img="images/old/space8.jpg" data-fx="2">Arpit.</a>
                                     <p>
-                                    <span class="subtextmain">
+                                    <span class="subtextmain" id="arrow" style="opacity:0">
                                         <br><br>
                                         <a class="blue" href="mailto:arpit.jain@iiitdmj.ac.in">Say hello.</a>
                                         <br><br>
@@ -620,7 +615,7 @@
                 $('.subtextmain').delay(1300).animate({
                     opacity: 1
                 }, 500);
-                $('#selectedworkdownarrow').delay(1500).animate({
+                $('#arrow').delay(1500).animate({
                     opacity: 1
                 }, 500);
                 $('.site-logo').delay(1600).animate({
