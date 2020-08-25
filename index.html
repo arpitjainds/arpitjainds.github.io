@@ -37,16 +37,30 @@
 
     <style>
         tr.tablerow {
-            color: #555555;
+            color: rgba(64, 106, 146, 0.9);
             background-color: none;
-            height: 60px;
+            height: 80px;
+            border-bottom: 1px solid rgba(64, 106, 146, 0.1);
             transition-duration: 300ms;
         }
         
         tr.tablerow:hover {
             background-color: rgba(64, 106, 146, 0.04);
+            box-shadow: 0px 5px 40px rgb(64, 106, 146, 0.45);
+            border-radius: 20px;
             padding: 10px;
             transition-duration: 300ms;
+            border: none;
+        }
+        
+        tr.tablerow:hover td.tabledatecell {
+            transition-duration: 300ms;
+            padding-left: 25px;
+        }
+        
+        tr.tablerow:hover td.tabledescriptioncell {
+            transition-duration: 300ms;
+            padding-left: 25px;
         }
         
         tr.tablerow:hover td.tabletitlecell {
@@ -56,19 +70,21 @@
         
         tr.tablerow td {
             padding: 7px;
+            border: none;
         }
         
         td.tabledatecell {
-            width: 25%;
-            text-align: right;
+            width: 30%;
         }
         
         td.tabletitlecell span a {
             font-family: Bold;
             font-size: 12px;
             color: inherit;
+            line-height: 2.25;
             text-transform: uppercase;
             letter-spacing: 3px;
+            text-decoration: none;
         }
         
         td.tabledatecell>span {
@@ -76,20 +92,18 @@
             font-size: 12px;
             letter-spacing: 2.5px;
             text-transform: uppercase;
-            text-align: right;
         }
         
         td.tabledescriptioncell {
-            font-size: 0.9em;
-            width: 50%;
+            width: 40%;
         }
         
         td.tabledescriptioncell>span {
-            font-size: 16px;
-            letter-spacing: 0px;
-            font-size: 1.15em;
+            font-size: 1.25em;
             font-family: Regular;
-            line-height: 1;
+            color: rgba(64, 106, 146, 0.65);
+            line-height: 100%;
+            letter-spacing: -0.5px;
         }
         
         @media screen and (max-width:635px) {
@@ -419,7 +433,7 @@
                                             </div>
                                             <div data-aos="fade" data-aos-anchor-placement="center-center" data-aos-duration="450" class="large-4 medium-12 tab-12 mobile-12">
                                                 <div class="alert-box alert-box--info roundborderimage" style="margin-top:-10px;line-height: 1.2;">
-                                                    <p style="margin-bottom:0px;margin-top:0px;font-family:Regular;">When I begin to realize that some project is not worth the viewer's time, I shift it here. If you'd like to see any further code samples or demos please contact me. </a>
+                                                    <p style="margin-bottom:0px;margin-top:0px;font-family:Regular;">When I think that some project is not worth the viewer's time, I shift it here. If you'd like to see any further code samples or demos please contact me. </a>
                                                     </p>
                                                     <i class="fa fa-times alert-box__close" aria-hidden="true"></i>
                                                 </div>
@@ -427,81 +441,59 @@
                                         </div>
                                         <div class="">
                                             <table class="margin:0px;" data-aos="fade" data-aos-anchor-placement="center-center" data-aos-duration="450">
-                                                <tr class="tablerow">
-                                                    <td class="tabletitlecell">
-                                                        <span><a class="nobefore noborder" target="_blank" href="https://github.com/arpitjainds/Predicting-Student-Performance/blob/master/Report_%20Educational%20Data%20Mining.pdf">Student Report →</a></span>
-                                                    </td>
-                                                    <td class="tabledescriptioncell">
-                                                        <span>Education Data Mining to predict student classroom performance.</span>
-                                                    </td>
-                                                    <td class="tabledatecell">
-                                                        <span>Jan 2019 - Mar 2019</span>
-                                                    </td>
-                                                </tr>
                                                 <tr class="tablerow ">
-                                                    <td class="tabletitlecell">
-                                                        <span><a class="nobefore noborder" target="_blank" href="https://github.com/arpitjainds/Tenacity.AI">Tenacity.AI →</a></span>
-                                                    </td>
-                                                    <td class="tabledescriptioncell">
-                                                        <span>Empowering Ed-Tech content. 2nd place IBM ML Hackathon '18</span>
-                                                    </td>
                                                     <td class="tabledatecell">
                                                         <span>Apr 2017 - Jan 2018</span>
                                                     </td>
-                                                </tr>
-                                                <tr class="tablerow ">
                                                     <td class="tabletitlecell">
                                                         <span><a class="nobefore noborder" target="_blank" href="https://www.behance.net/gallery/61478505/MARS">MARS →</a></span>
                                                     </td>
                                                     <td class="tabledescriptioncell">
-                                                        <span>Madoern Approach to Road Servicing.</span>
-                                                    </td>
-                                                    <td class="tabledatecell">
-                                                        <span>Apr 2017 - Jan 2018</span>
+                                                        <span>Modern Approach to Road Servicing.</span>
                                                     </td>
                                                 </tr>
                                                 <tr class="tablerow">
+                                                    <td class="tabledatecell">
+                                                        <span>Jan 2018 -  Apr 2018</span>
+                                                    </td>
                                                     <td class="tabletitlecell">
                                                         <span><a class="nobefore noborder" target="_blank" href="https://docs.google.com/document/d/17okRjf199dhbFjfC6fXs8OO4JcC7GvUPK05bjTVIXko/edit?usp=sharing">A study on EQ →</a></span>
                                                     </td>
                                                     <td class="tabledescriptioncell">
                                                         <span>Gender Study on Emotionally Intelligent Corporate Workforce.</span>
                                                     </td>
-                                                    <td class="tabledatecell">
-                                                        <span>Jan 2018 -  Apr 2018</span>
-                                                    </td>
                                                 </tr>
                                                 <tr class="tablerow">
+                                                    <td class="tabledatecell">
+                                                        <span>Jun 2018 - Sep 2018</span>
+                                                    </td>
                                                     <td class="tabletitlecell">
                                                         <span><a class="nobefore noborder" target="_blank" href="https://arpitjainds.github.io/battleboat-AI/index.html">Battleboat.AI →</a></span>
                                                     </td>
                                                     <td class="tabledescriptioncell">
                                                         <span>AI that can beat Human at the game of Battle Ship.</span>
                                                     </td>
-                                                    <td class="tabledatecell">
-                                                        <span>Jun 2018 - Sep 2018</span>
-                                                    </td>
                                                 </tr>
                                                 <tr class="tablerow">
+                                                    <td class="tabledatecell">
+                                                        <span>Jun 2018 - Nov 2018</span>
+                                                    </td>
                                                     <td class="tabletitlecell">
                                                         <span><a class="nobefore noborder" target="_blank" href="https://github.com/arpitjainds/disastersense/blob/master/dsense.pdf">Dsense.AI →</a></span>
                                                     </td>
                                                     <td class="tabledescriptioncell">
                                                         <span>Pre-disaster tracking of Human Resource.</span>
                                                     </td>
-                                                    <td class="tabledatecell">
-                                                        <span>Jun 2018 - Nov 2018</span>
-                                                    </td>
                                                 </tr>
                                                 <tr class="tablerow">
+                                                    <td class="tabledatecell">
+                                                        <span>Jun 2017 - Dec 2017</span>
+                                                    </td>
                                                     <td class="tabletitlecell">
                                                         <span><a class="nobefore noborder" target="_blank" href="https://github.com/arpitjainds/Fragments">Fragments →</a></span>
                                                     </td>
                                                     <td class="tabledescriptioncell">
                                                         <span>3D Platformer game based on optical illusions and perspectives.</span>
-                                                    </td>
-                                                    <td class="tabledatecell">
-                                                        <span>Jun 2017 - Dec 2017</span>
                                                     </td>
                                                 </tr>
                                             </table>
