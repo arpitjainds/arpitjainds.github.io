@@ -36,6 +36,12 @@
 <body>
 
     <style>
+        tr.tablerow:hover {
+            background-color: rgba(64, 106, 146, 0.04);
+            padding: 10px;
+            transition-duration: 300ms;
+        }
+        
         td.tableimagecell {
             padding: 12px;
             max-width: 60px;
@@ -147,14 +153,8 @@
                     <li><a class="noborder" href="index.html" title="">Work</a></li>
                     <li><a class="noborder" href="about.html" title="">About</a></li>
                     <li class="current"><a class="noborder" href="#0" title="">Formal</a></li>
-                    <li class="has-children">
-                        <a href="#0" class="noborder" title="">Other</a>
-                        <ul class="sub-menu">
-                            <li><a target="_blank" href="./CV_.pdf">CV</a></li>
-                            <li><a target="_blank" href="https://medium.com/@arpitjainds">Medium Blog</a></li>
-                            <li><a href="https://arpitjainds.github.io/art/">Art + Photo</a></li>
-                        </ul>
-                    </li>
+                    <li><a class="noborder" target="_blank" href="https://arpitjainds.github.io/art/" title="">Art →</a></li>
+                    <li><a class="noborder" target="_blank" href="./CV_.pdf" title="">CV →</a></li>
                 </ul>
                 <!-- end header__nav -->
 
@@ -222,7 +222,8 @@
                         <strong id="intro"> 
                                 <p>
                                 Read about my <a class="blue" href="#research">Research, </a> <a href="#experience" class="blue">Experience, </a><a href="#education" class="blue">Education,</a> <a href="#certification" class="blue">Certifications</a> and <a href="#volunteer" class="blue">Volunteer Work</a> here.
-                                <br><br><a href="#research" class="noborder blue">↓</a>
+                                <br>
+                                    <a href="#research" style="font-size:1.5em" class="noborder blue"><br>↓<br><br></a>
                                 </p>
                         </strong>
                         <!-- <a href="#research" class="noborder">
@@ -948,20 +949,12 @@
                                             <td class="tabledatecell "><span>COURSERA</span></td>
                                         </tr>
                                         <tr class="tablerow ">
-                                            <td class="tabletitlecell "><span>BIG DATA/DATA SCIENCE/WATSON CONVERATION FOUNDATIONS</span></td>
+                                            <td class="tabletitlecell "><span>DATA SCIENCE / WATSON CONVERATION FOUNDATIONS</span></td>
                                             <td class="tabledatecell "><span>IBM COGNITIVE CLASS</span></td>
-                                        </tr>
-                                        <tr class="tablerow ">
-                                            <td class="tabletitlecell "><span>MACHINE LEARNING / DEEP LEARNING</span></td>
-                                            <td class="tabledatecell "><span>COURSERA</span></td>
                                         </tr>
                                         <tr class="tablerow ">
                                             <td class="tabletitlecell "><span>IMAGE PROCESSING / COMPUTER VISION</span></td>
                                             <td class="tabledatecell "><span>IIITDM</span></td>
-                                        </tr>
-                                        <tr class="tablerow ">
-                                            <td class="tabletitlecell "><span>BLUEMIX ESSENTIALS / CLOUD APPLICATION DEVELOPMENT</span></td>
-                                            <td class="tabledatecell "><span>IBM COGNITIVE CLASS</span></td>
                                         </tr>
                                         <tr class="tablerow ">
                                             <td class="tabletitlecell "><span>MICROSERVICES</span></td>

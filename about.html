@@ -74,17 +74,19 @@
             <nav class="header__nav-wrap">
 
                 <ul class="header__nav" id="headnav">
-                    <li style="opacity: 0;"><a class="noborder" href="index.html" title="">Work</a></li>
-                    <li style="opacity: 0;" class="current"><a class="noborder" href="about.html" title="">About</a></li>
+                    <li style="opacity:0;"><a class="noborder" href="index.html" title="">Work</a></li>
+                    <li style="opacity:0;" class="current"><a class="noborder" href="about.html" title="">About</a></li>
                     <li style="opacity:0"><a class="noborder" href="./Research.html" title="">Formal</a></li>
-                    <li style="opacity: 0;" class="has-children">
+                    <li style="opacity:0"><a class="noborder" target="_blank" href="https://arpitjainds.github.io/art/" title="">Art →</a></li>
+                    <li style="opacity:0"><a class="noborder" target="_blank" href="./CV_.pdf" title="">CV →</a></li>
+                    <!-- <li style="opacity: 0;" class="has-children">
                         <a href="#0" class="noborder" title="">Other</a>
                         <ul class="sub-menu">
                             <li><a target="_blank" href="./CV_.pdf">CV</a></li>
                             <li><a target="_blank" href="https://medium.com/@arpitjainds">Medium Blog</a></li>
                             <li><a href="https://arpitjainds.github.io/art/">Art + Photo</a></li>
                         </ul>
-                    </li>
+                    </li> -->
                 </ul>
                 <!-- end header__nav -->
 
@@ -216,7 +218,7 @@
                             </div>
                         </div>
                         <div class="large-3 medium-3 tab-full mobile-full hideonsmalldisplays">
-                            <a href="#aboutmetext" class="noborder green" style="margin-top:80px; font-size: 7em; font-family:Bold">
+                            <a href="#aboutmetext" class="noborder green" style="margin-top:80px; font-size: 9em; font-family:Bold">
                                 ↓
                                 <!-- <h1>
                                     <svg version="1.1" id="svg-arrow-down" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-2 -2 26 40" style="enable-background:new -2 -2 26 35;" xml:space="preserve">
@@ -374,13 +376,16 @@
                 $('#headnav li:eq(2)').delay(2100).animate({
                     opacity: 1
                 }, 500);
-                $('#headnav > li:last').delay(2300).animate({
+                $('#headnav li:eq(3)').delay(2300).animate({
                     opacity: 1
                 }, 500);
-                $('#headsocial').delay(2500).animate({
+                $('#headnav > li:last').delay(2500).animate({
                     opacity: 1
                 }, 500);
-                $('#sharebar').delay(2500).animate({
+                $('#headsocial').delay(2700).animate({
+                    opacity: 1
+                }, 500);
+                $('#sharebar').delay(2900).animate({
                     opacity: 1
                 }, 500);
             });

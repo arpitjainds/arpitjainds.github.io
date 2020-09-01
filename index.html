@@ -46,16 +46,8 @@
         
         tr.tablerow:hover {
             background-color: rgba(64, 106, 146, 0.04);
-            box-shadow: 0px 5px 40px rgb(64, 106, 146, 0.45);
-            border-radius: 20px;
             padding: 10px;
             transition-duration: 300ms;
-            border: none;
-        }
-        
-        tr.tablerow:hover td.tabledatecell {
-            transition-duration: 300ms;
-            padding-left: 25px;
         }
         
         tr.tablerow:hover td.tabletitlecell {
@@ -164,14 +156,8 @@
                             <li class="current" style="opacity:0"><a class="noborder" href="./index.html" title="">Work</a></li>
                             <li style="opacity:0"><a class="noborder" href="./about.html" title="">About</a></li>
                             <li style="opacity:0"><a class="noborder" href="./Research.html" title="">Formal</a></li>
-                            <li class="has-children" style="opacity:0">
-                                <a href="#0" class="noborder" title="">Other</a>
-                                <ul class="sub-menu">
-                                    <li><a target="_blank" href="./CV_.pdf">CV</a></li>
-                                    <li><a target="_blank" href="https://medium.com/@arpitjainds">Medium Blog</a></li>
-                                    <li><a href="https://arpitjainds.github.io/art/">Art + Photo</a></li>
-                                </ul>
-                            </li>
+                            <li style="opacity:0"><a class="noborder" target="_blank" href="https://arpitjainds.github.io/art/" title="">Art →</a></li>
+                            <li style="opacity:0"><a class="noborder" target="_blank" href="./CV_.pdf" title="">CV →</a></li>
                         </ul>
                         <!-- end header__nav -->
 
@@ -269,26 +255,36 @@
                             <div class="row">
                                 <!-- <div class="spacer hideonlargedisplays"></div> -->
                                 <strong>
-                                <div class="hideonsmalldisplays">
+                                <div class="hideonsmalldisplays large-10 medium-12 tab-12 mon-12">
                                     <p class="iamarpit" style="opacity:0;">
                                         Hi, I am <a class="content__text-link blue" data-img="images/old/space8.jpg" data-fx="2">Arpit.</a>
                                     <p>
                                     <span class="subtextmain" style="opacity:0;"><br>“A creator interested in <br>crafting intelligent experiences”.
                                         <br><br>
                                     </span>
+                                    <center>
                                     <span class="subtextmain" id="arrow" style="opacity:0;">
-                                        <a class="blue" href="mailto:arpit.jain@iiitdmj.ac.in">Say hello!</a><br><br>
-                                        <a style="font-size:2em" href="#selectedwork" class="noborder blue"><br>&nbsp;↓<br><span style="font-family:ExtraBold;font-size:0.15em;letter-spacing: -1.25px;">&nbsp;&nbsp;Selected Work&nbsp;&nbsp;</span></a>
+                                        <br><br>
+                                        <!-- <a class="blue" href="mailto:arpit.jain@iiitdmj.ac.in">Say hello!</a><br><br> -->
+                                        <a style="font-size:2em" href="#selectedwork" class="noborder blue"><br>↓<br><br></a>
                                     </span>
+                                </center>
                                 </div>
+
                                 <div class="hideonlargedisplays">
                                     <p class="iamarpit">
                                         <a class="blue" data-img="images/old/space8.jpg" data-fx="2" style="font-size:2.5em;letter-spacing:-5px; border:none; line-height:0.86">Hi, I am <br>Arpit.</a>
                                         <br><br>
                                         “A creator interested in crafting intelligent experiences”.
-                                        <br><br><a class="blue" href="mailto:arpit.jain@iiitdmj.ac.in">Say hello.</a>
+                                        <!-- <br><br><a class="blue" href="mailto:arpit.jain@iiitdmj.ac.in">Say hello.</a> -->
                                         <br><br>
-                                        <a style="font-size:3em" href="#selectedwork" class="noborder blue"><br>&nbsp;↓<br><span style="font-family:ExtraBold;font-size:0.15em;letter-spacing: -1.25px;">&nbsp;&nbsp;&nbsp;&nbsp;Selected Work&nbsp;&nbsp;&nbsp;&nbsp;</span></a>
+                                        <center>
+                                            <span class="subtextmain" id="arrow" style="opacity:0;">
+                                                <br>
+                                                <!-- <a class="blue" href="mailto:arpit.jain@iiitdmj.ac.in">Say hello!</a><br><br> -->
+                                                <a style="font-size:2em" href="#selectedwork" class="noborder blue"><br>↓<br><br></a>
+                                            </span>
+                                        </center>                                    
                                     </p>
                                 </div>
                             </strong>
@@ -393,7 +389,7 @@
                                                 </div>
                                                 <div class="large-6 medium-6 tab-12 mob-12" style="padding:10px;">
                                                     <a class="nobefore noborder" style="display:block;cursor: ne-resize" href="./projects/Social/Transit Healthy.html" data-aos="fade" data-aos-anchor-placement="center-center" data-aos-duration="450">
-                                                        <blockquote class="tile projecttile roundborderimage" style="--tilebackgroundimage:url('../images/old/projects/TransitHealthyTile1.jpg');
+                                                        <blockquote class="tile projecttile roundborderimage" style="--tilebackgroundimage:url('../images/old/projects/TransitHealthyTile3.png');
                                                         --textcolor:rgba(64,106,164,0.6);"></blockquote>
                                                         <p class="subheadings">
                                                             Transit Healthy →
@@ -628,13 +624,16 @@
                 $('#headnav li:eq(2)').delay(2100).animate({
                     opacity: 1
                 }, 500);
-                $('#headnav > li:last').delay(2300).animate({
+                $('#headnav li:eq(3)').delay(2300).animate({
                     opacity: 1
                 }, 500);
-                $('#headsocial').delay(2500).animate({
+                $('#headnav > li:last').delay(2500).animate({
                     opacity: 1
                 }, 500);
-                $('#sharebar').delay(2500).animate({
+                $('#headsocial').delay(2700).animate({
+                    opacity: 1
+                }, 500);
+                $('#sharebar').delay(2900).animate({
                     opacity: 1
                 }, 500);
             });
