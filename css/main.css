@@ -5414,7 +5414,7 @@ a.content__text-link[data-fx="14"]:hover::after {
 }
 
 .footer__right a {
-    color: rgba(0, 0, 0, 0.35);
+    color: rgba(0, 0, 0, 0.6);
     font-size: 0.9em;
     font-family: Regular;
     display: inline-block;
@@ -5463,7 +5463,7 @@ a.content__text-link[data-fx="14"]:hover::after {
         display: none;
     }
     .footer__right a {
-        color: rgba(0, 0, 0, 0.2);
+        color: rgba(0, 0, 0, 0.6);
         font-size: 0.9em;
         line-height: 2;
         text-align: left;
