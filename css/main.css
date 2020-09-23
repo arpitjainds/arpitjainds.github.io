@@ -186,7 +186,7 @@ a:active {
 }
 
 a {
-    color: #33998a;
+    color: rgb(64, 106, 146);
     text-decoration: none;
     border-bottom: 1px dotted rgb(64, 106, 146);
     display: inline-block;
