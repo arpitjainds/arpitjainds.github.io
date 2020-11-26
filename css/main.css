@@ -2886,6 +2886,10 @@ input::-moz-focus-inner {
     background-image: url(../images/icons/social/298822-512.png);
 }
 
+.header__social .ss-email a::after {
+    background-image: url(../images/icons/social/email.png);
+}
+
 .header__social .ss-medium a::after {
     background-image: url(../images/icons/social/3721675-512.png);
 }
