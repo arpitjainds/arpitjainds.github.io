@@ -5088,7 +5088,7 @@ h1 svg .arrow {
     /* background-image: var(--tilebackgroundimagedefault); */
     background-image: var(--tilebackgroundimage);
     transition: background-image 300ms;
-    min-height: 380px;
+    min-height: 320px;
     overflow: hidden;
     background-position: center center;
     background-size: cover;
