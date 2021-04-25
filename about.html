@@ -76,7 +76,6 @@
                 <ul class="header__nav" id="headnav">
                     <li style="opacity:0;"><a class="noborder" href="index.html" title="">Work</a></li>
                     <li style="opacity:0;" class="current"><a class="noborder" href="about.html" title="">About</a></li>
-                    <li style="opacity:0"><a class="noborder" href="./Research.html" title="">Formal</a></li>
                     <li style="opacity:0"><a class="noborder" target="_blank" href="https://arpitjainds.github.io/art/" title="">Art →</a></li>
                     <li style="opacity:0"><a class="noborder" target="_blank" href="./CV_.pdf" title="">CV →</a></li>
                     <!-- <li style="opacity: 0;" class="has-children">
@@ -240,10 +239,9 @@
 
                     <div class="footer__column">
                         <a href="./index.html"> • Work</a>
-                        <a href="./Research.html"> • Formal</a>
+                        <a href="CV_.pdf"> • Curriculum Vitae</a>
                     </div>
                     <div class="footer__column">
-                        <a href="CV_.pdf"> • Curriculum Vitae</a>
                         <a href="https://arpitjainds.github.io/art/"> • Art + Photography</a>
                     </div>
                     <div class="footer__column">
@@ -369,16 +367,13 @@
                 $('#headnav li:eq(2)').delay(2100).animate({
                     opacity: 1
                 }, 500);
-                $('#headnav li:eq(3)').delay(2300).animate({
+                $('#headnav > li:last').delay(2300).animate({
                     opacity: 1
                 }, 500);
-                $('#headnav > li:last').delay(2500).animate({
+                $('#headsocial').delay(2500).animate({
                     opacity: 1
                 }, 500);
-                $('#headsocial').delay(2700).animate({
-                    opacity: 1
-                }, 500);
-                $('#sharebar').delay(2900).animate({
+                $('#sharebar').delay(2700).animate({
                     opacity: 1
                 }, 500);
             });
