@@ -55,7 +55,7 @@
             requestAnimationFrame(() => {
                 anime({
                     targets: [this.DOM.img, this.DOM.title],
-                    duration: 1500,
+                    duration: 1000,
                     easing: 'easeOutElastic',
                     elasticity: 400,
                     translateX: 0,
