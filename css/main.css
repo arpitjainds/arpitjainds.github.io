@@ -188,7 +188,7 @@ a:active {
 a {
     color: rgb(64, 106, 146);
     text-decoration: none;
-    border-bottom: 1px dotted rgb(64, 106, 146);
+    border-bottom: 1.5px dashed rgb(64, 106, 146);
     display: inline-block;
     position: relative;
     transition: all 250ms;
@@ -2658,6 +2658,7 @@ input::-moz-focus-inner {
 .header__nav li.current>a {
     color: rgba(0, 0, 0, 0.95);
     cursor: not-allowed;
+    z-index: 0;
     font-family: Bold;
 }
 
@@ -5134,7 +5135,7 @@ h1 svg .arrow {
     /* background-image: var(--tilebackgroundimagedefault); */
     background-image: var(--tilebackgroundimage);
     transition: background-image 300ms;
-    min-height: 350px;
+    min-height: 300px;
     overflow: hidden;
     background-position: center center;
     background-size: cover;
@@ -5142,7 +5143,7 @@ h1 svg .arrow {
 
 @media (max-width:500px) {
     .tile {
-        min-height: 250px;
+        min-height: 150px;
         padding: 0px;
     }
     .tile.projecttile {

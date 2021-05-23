@@ -213,11 +213,11 @@
                                 }
                                 
                                 .subheadings {
-                                    font-size: 1.5em;
+                                    font-size: 1.7em;
                                     font-family: Bold;
                                     color: rgba(64, 106, 146, 0.9);
                                     line-height: 100%;
-                                    padding-top: 20px;
+                                    padding-top: 10px;
                                     padding-left: 10px;
                                     margin-bottom: 2.5px;
                                     letter-spacing: -0.5px;
@@ -242,13 +242,16 @@
                                         letter-spacing: -4.25px;
                                     }
                                     .subheadings {
-                                        font-size: 2.5rem;
+                                        font-size: 1.2em;
                                         letter-spacing: -0.5px;
                                     }
                                     .subtextmain {
                                         font-size: 0.7em;
                                         letter-spacing: -1px;
                                         line-height: 0%;
+                                    }
+                                    .paratext {
+                                        font-size: 1.2em;
                                     }
                                 }
                             </style>
@@ -302,16 +305,17 @@
                                         .my_btn {
                                             display: inline-block;
                                             line-height: inherit;
+                                            letter-spacing: 3.5px;
                                             color: rgb(64, 106, 146);
                                             font-size: 0.85em;
                                             border-radius: 20px;
-                                            font-family: Regular;
+                                            font-family: Bold;
                                             font-weight: normal;
                                             background: rgb(64, 106, 146, 0.05);
-                                            border: 1px dotted rgb(64, 106, 146);
+                                            border: 1px dashed rgb(64, 106, 146);
                                             margin-right: 6px;
                                             margin-bottom: 6px;
-                                            padding: 6px 14px;
+                                            padding: 0px 12px 0px 16px;
                                             cursor: pointer;
                                         }
                                         
@@ -332,9 +336,10 @@
                                             border-radius: 30px;
                                             font-family: Regular;
                                             font-size: 1.6em;
+                                            color: rgb(64, 106, 146);
                                             background-color: rgb(64, 106, 146, 0.05);
                                             padding: 10px 20px 10px 20px;
-                                            border: 1px dotted rgb(64, 106, 146);
+                                            border: 1px dashed rgb(64, 106, 146);
                                             margin-bottom: 0px;
                                         }
                                         
@@ -365,9 +370,9 @@
 
                                                     <div id="myBtnContainer">
                                                         <button class="my_btn active" onclick="filterSelection('all')"> Show all</button>
-                                                        <button class="my_btn" onclick="filterSelection('nature')"> Nature</button>
-                                                        <button class="my_btn" onclick="filterSelection('cars')"> Cars</button>
-                                                        <button class="my_btn" onclick="filterSelection('people')"> People</button>
+                                                        <button class="my_btn" onclick="filterSelection('project')"> Projects</button>
+                                                        <button class="my_btn" onclick="filterSelection('blog')"> Blogs</button>
+                                                        <button class="my_btn" onclick="filterSelection('creation')"> Creations</button>
                                                     </div>
                                                 </div>
 
@@ -384,89 +389,89 @@
 
 
                                             <div class="row" id="myUL" style="margin-top: 20px;">
-                                                <div class="large-4 medium-6 tab-12 mob-12 content nature griditem" style="padding:10px;" data-default="Mountains" data-title="Nature" data-date="11-02-2020">
+                                                <div class="large-4 medium-6 tab-6 mob-6 content project griditem" style="padding:10px;" data-default="Mountains" data-title="Nature" data-date="01-07-2019">
                                                     <a class="nobefore noborder" style="display:block;cursor: ne-resize" href="./projects/HCI/MOOC Feedback Visualization.html">
-                                                        <blockquote class="tile projecttile roundborderimage" style="--tilebackgroundimage:url('../images/old/projects/MOOCFeedbackProjectTile1.jpg');      
+                                                        <blockquote class="tile projecttile roundborderimage" style="--tilebackgroundimage:url('../images/old/projects/MOOCFeedbackProjectTile2.png');      
                                                                 --textcolor:rgba(64,106,164,0.6);">
                                                         </blockquote>
                                                         <p class="subheadings">
-                                                            MOOC Feedback <br>Visualization →
+                                                            <span style="font-family:Regular; font-size:0.5em; text-transform: uppercase; letter-spacing:2px;">Projects / 2020<br></span><br> MOOC Feedback <br>Visualization →
                                                         </p>
-                                                        <p class="paratext">Course improvement using feedback Visualization. <span style="font-family:Bold"><br><br><u>Accepted in INDIAHCI 2020.</u></span></p>
+                                                        <p class="paratext">Course improvement using feedback Visualization.</p>
                                                     </a>
                                                 </div>
 
-                                                <div class="large-4 medium-6 tab-12 mob-12 content people griditem" style="padding:10px;" data-default="Lights" data-title="Nature" data-date="12-04-2020">
+                                                <div class="large-4 medium-6 tab-6 mob-6 content creation griditem" style="padding:10px;" data-default="Lights" data-title="Nature" data-date="01-07-2020">
                                                     <a class="nobefore noborder" style="display:block;cursor: ne-resize" href="./IntelligentInteractions/IntelligentInteractions.html">
-                                                        <blockquote class="tile projecttile roundborderimage" style="--tilebackgroundimage:url('../images/old/projects/IntelligentInteractionsTile2.png');
+                                                        <blockquote class="tile projecttile roundborderimage" style="--tilebackgroundimage:url('../images/old/projects/IntelligentInteractionsTile1.png');
                                                                 --textcolor:rgba(64,106,164,0.6);">
                                                         </blockquote>
                                                         <p class="subheadings">
-                                                            Intelligent <br>Interactions →
+                                                            <span style="font-family:Regular; font-size:0.5em; text-transform: uppercase; letter-spacing:2px;">Creations / 2020<br></span><br> Intelligent <br>Interactions →
                                                         </p>
                                                         <p class="paratext">A five phased interaction system between any two entitites.</p>
                                                     </a>
                                                 </div>
-                                                <div class="large-4 medium-6 tab-12 mob-12 content nature griditem" style="padding:10px;" data-default="Forest" data-title="Nature" data-date="13-02-2020">
+                                                <div class="large-4 medium-6 tab-6 mob-6 content project griditem" style="padding:10px;" data-default="Forest" data-title="Nature" data-date="01-01-2019">
                                                     <a class="nobefore noborder" style="display:block;cursor: ne-resize" href="./projects/AI/AVL Tree Tutor.html">
-                                                        <blockquote class="tile projecttile roundborderimage" style="--tilebackgroundimage:url('../images/old/projects/AVLTreeTile3.png');
+                                                        <blockquote class="tile projecttile roundborderimage" style="--tilebackgroundimage:url('../images/old/projects/AVLTreeTile2.png');
                                                                 --textcolor:rgba(64,106,164,0.6);">
                                                         </blockquote>
                                                         <p class="subheadings">
-                                                            AVL Tree Tutoring <br>Application →
+                                                            <span style="font-family:Regular; font-size:0.5em; text-transform: uppercase; letter-spacing:2px;">Projects / 2019<br></span><br> AVL Tree Tutoring <br>Application →
                                                         </p>
-                                                        <p class="paratext">Tutoring System to teach AVL trees.<span style="font-family:Bold"><br><br><u>Best abstract in ACM COMPUTE '19</u></span></p>
+                                                        <p class="paratext">Tutoring System to teach AVL trees.</p>
                                                     </a>
                                                 </div>
 
-                                                <div class="large-4 medium-6 tab-12 mob-12 content cars griditem" style="padding:10px;" data-default="Girl" data-title="Cars" data-date="22-02-2020">
+                                                <div class="large-4 medium-6 tab-6 mob-6 content project griditem" style="padding:10px;" data-default="Girl" data-title="Cars" data-date="01-03-2019">
                                                     <a class="nobefore noborder" style="display:block;cursor: ne-resize" href="./projects/AI/Intellistudy.html">
-                                                        <blockquote class="tile projecttile roundborderimage" style="--tilebackgroundimage:url('../images/old/projects/IntellistudyTile3.png');
+                                                        <blockquote class="tile projecttile roundborderimage" style="--tilebackgroundimage:url('../images/old/projects/IntellistudyTile2.png');
                                                         --textcolor:rgba(64,106,164,0.6);"></blockquote>
                                                         <p class="subheadings">
-                                                            Intellistudy <br>Platform →
+                                                            <span style="font-family:Regular; font-size:0.5em; text-transform: uppercase; letter-spacing:2px;">Projects / 2018<br></span><br> Intellistudy <br>Platform →
                                                         </p>
-                                                        <p class="paratext">A personalised E-Learning Platform.<span style="font-family:Bold"><br><br><u>Top-10 in Smart India Hackathon '18</u></span></p>
+                                                        <p class="paratext">A personalised E-Learning Platform.</p>
                                                     </a>
                                                 </div>
-                                                <div class="large-4 medium-6 tab-12 mob-12 content cars griditem" style="padding:10px;" data-default="Man" data-title="Cars" data-date="24-02-2020">
+                                                <div class="large-4 medium-6 tab-6 mob-6 content project griditem" style="padding:10px;" data-default="Man" data-title="Cars" data-date="01-10-2019">
                                                     <a class="nobefore noborder" style="display:block;cursor: ne-resize" href="./projects/Social/Transit Healthy.html">
-                                                        <blockquote class="tile projecttile roundborderimage" style="--tilebackgroundimage:url('../images/old/projects/TransitHealthyTile3.png');
+                                                        <blockquote class="tile projecttile roundborderimage" style="--tilebackgroundimage:url('../images/old/projects/TransitHealthyTile2.png');
                                                         --textcolor:rgba(64,106,164,0.6);"></blockquote>
                                                         <p class="subheadings">
-                                                            Transit Healthy →
+                                                            <span style="font-family:Regular; font-size:0.5em; text-transform: uppercase; letter-spacing:2px;">Projects / 2018<br></span><br> Transit Healthy →
                                                         </p>
-                                                        <p class="paratext">A Healthy Smart-City Transit system. Idea submitted for Schneider Electric's Go Green</p>
+                                                        <p class="paratext">A Healthy Smart-City Transit system.</p>
                                                     </a>
                                                 </div>
-                                                <div class="large-4 medium-6 tab-12 mob-12 content people griditem" style="padding:10px;" data-default="Woman" data-title="People" data-date="26-02-2020">
+                                                <div class="large-4 medium-6 tab-6 mob-6 content creation griditem" style="padding:10px;" data-default="Woman" data-title="People" data-date="01-03-2017">
                                                     <a class="nobefore noborder" style="display:block;cursor: ne-resize" href="https://github.com/arpitjainds/Fragments">
                                                         <blockquote class="tile projecttile roundborderimage" style="--tilebackgroundimage:url('../images/old/projects/fragmentstile.png');
                                                         --textcolor:rgba(64,106,164,0.6);"></blockquote>
                                                         <p class="subheadings">
-                                                            Fragments →
+                                                            <span style="font-family:Regular; font-size:0.5em; text-transform: uppercase; letter-spacing:2px;">Creations / 2017<br></span><br> Fragments →
                                                         </p>
-                                                        <p class="paratext">3D Platformer game based on optical illusions and perspectives.<span style="font-family:Bold"><br><br><u>Best Project, IIITDMJ Computer Graphics Lab 2017.</u></span></p>
+                                                        <p class="paratext">3D Platformer game based on optical illusions and perspectives.</p>
                                                     </a>
                                                 </div>
 
-                                                <div class="large-4 medium-4 tab-12 mob-12 content people griditem" style="padding:10px;" data-default="Woman" data-title="People" data-date="26-02-2020">
+                                                <div class="large-4 medium-6 tab-6 mob-6 content project griditem" style="padding:10px;" data-default="Woman" data-title="People" data-date="01-07-2019">
                                                     <a class="nobefore noborder" style="display:block;cursor: ne-resize" href="./projects/HCI/Zenbo Class.html">
-                                                        <blockquote class="tile projecttile roundborderimage" style="--tilebackgroundimage:url('../images/old/projects/ZenboClassroomTile1.jpg');
+                                                        <blockquote class="tile projecttile roundborderimage" style="--tilebackgroundimage:url('../images/old/projects/ZenboClassroomTile2.png');
                                                         --textcolor:rgba(64,106,164,0.6);"></blockquote>
                                                         <p class="subheadings">
-                                                            Zenbo Class →
+                                                            <span style="font-family:Regular; font-size:0.5em; text-transform: uppercase; letter-spacing:2px;">Projects / 2019<br></span><br> Zenbo Class →
                                                         </p>
                                                         <p class="paratext">Smart classroom application for Asus Zenbo Robot.</p>
                                                     </a>
                                                 </div>
 
-                                                <div class="large-4 medium-4 tab-12 mob-12 content people griditem" style="padding:10px;" data-default="Woman" data-title="People" data-date="26-02-2020">
+                                                <div class="large-4 medium-6 tab-6 mob-6 content project griditem" style="padding:10px;" data-default="Woman" data-title="People" data-date="01-07-2019">
                                                     <a class="nobefore noborder" style="display:block;cursor: ne-resize" href="./projects/HCI/Gazinteract.html">
-                                                        <blockquote class="tile projecttile roundborderimage" style="--tilebackgroundimage:url('../images/old/projects/GazinteractTile2.png');
+                                                        <blockquote class="tile projecttile roundborderimage" style="--tilebackgroundimage:url('../images/old/projects/GazinteractTile1.png');
                                                         --textcolor:rgba(64,106,164,0.6);"></blockquote>
                                                         <p class="subheadings">
-                                                            Gazinteract →
+                                                            <span style="font-family:Regular; font-size:0.5em; text-transform: uppercase; letter-spacing:2px;">Projects / 2020<br></span><br> Gazinteract →
                                                         </p>
                                                         <p class="paratext">A non-tangible eyegaze based screen interaction.</p>
                                                     </a>
