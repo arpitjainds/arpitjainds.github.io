@@ -2604,8 +2604,8 @@ input::-moz-focus-inner {
 
 .header__nav li a {
     display: block;
-    font-family: Light;
-    font-size: 0.8em;
+    font-family: Bold;
+    font-size: 0.85em;
     color: #b0b0b0;
     line-height: 2.25rem;
     text-transform: uppercase;
@@ -2658,7 +2658,7 @@ input::-moz-focus-inner {
 .header__nav li.current>a {
     color: rgba(0, 0, 0, 0.95);
     cursor: not-allowed;
-    font-family: Regular;
+    font-family: Bold;
 }
 
 .header__nav li ul {
@@ -2936,8 +2936,9 @@ input::-moz-focus-inner {
 
 .header__search-trigger::after {
     content: "Share";
-    font-family: Light, sans-serif;
-    font-size: 11px;
+    font-family: Bold, sans-serif;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1em;
     line-height: 1.6rem;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -3357,8 +3358,8 @@ body.search-is-visible {
 
 .s-content,
 .s-footer {
-    padding-left: 240px;
-    padding-right: 100px;
+    padding-left: 170px;
+    padding-right: 170px;
     max-width: 2140px;
 }
 
@@ -3417,7 +3418,7 @@ body.search-is-visible {
     font-size: 1.75em;
     font-family: Light;
     letter-spacing: -1px;
-    color: #8bc2b7;
+    color: #33998a;
 }
 
 .footer__copyright span::after {
@@ -5426,11 +5427,11 @@ a.content__text-link[data-fx="14"]:hover::after {
 }
 
 .footer__right a {
-    color: rgba(0, 0, 0, 0.6);
+    color: #33998a;
     font-size: 0.9em;
-    font-family: Regular;
+    font-family: Bold;
     display: inline-block;
-    line-height: 2;
+    line-height: 2.6;
     letter-spacing: 4px;
     text-transform: uppercase;
     border-bottom: none;
@@ -5442,7 +5443,7 @@ a.content__text-link[data-fx="14"]:hover::after {
 
 .footer__right a:hover {
     color: var(--color-textlink);
-    color: rgba(0, 0, 0, 0.9);
+    color: #1d5a51;
 }
 
 .footer__column {
@@ -5475,7 +5476,7 @@ a.content__text-link[data-fx="14"]:hover::after {
         display: none;
     }
     .footer__right a {
-        color: rgba(0, 0, 0, 0.6);
+        color: #33998a;
         font-size: 0.9em;
         line-height: 2;
         text-align: left;
@@ -5486,7 +5487,8 @@ a.content__text-link[data-fx="14"]:hover::after {
         margin-bottom: 10px;
     }
     .footer__right .footer__column:nth-child(3) {
-        display: none;
+        margin-top: -10px;
+        margin-bottom: 10px;
     }
 }
 
