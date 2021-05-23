@@ -186,7 +186,7 @@
                             <div data-pop-media="arpitvinyl" class="pop-media pop-media--circle pop-media--audio" style="background-image: url(images/old/vinyl.svg);"></div>
 
                             <span id="namastesound" mediapop="true" effect-fx="10" class="pop-text" data-pop-media="namastevinyl" sound-clip="Sounds/namaste.m4a"><img id="namaste" src="./images/namaste.png" width=70% style="opacity: 0;cursor:wait" /></span>
-                            <br><span class="HoverMessage">&nbsp;&nbsp;&nbsp;( Hover to know the pronounciation )</span>
+                            <br><span class="HoverMessage" style="opacity:0">&nbsp;&nbsp;&nbsp;( Hover to know the pronounciation )</span>
                             <br><span class="HoverMessageSmall">&nbsp;&nbsp;&nbsp;&nbsp;(Touch to know the pronounciation)</span>
 
                             <div>
@@ -355,6 +355,9 @@
                     opacity: 1
                 }, 500);
                 $('#namaste').delay(1300).animate({
+                    opacity: 1
+                }, 500);
+                $('.HoverMessage').delay(1400).animate({
                     opacity: 1
                 }, 500);
                 $('#info').delay(1500).animate({

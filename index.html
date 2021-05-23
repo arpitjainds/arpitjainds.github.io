@@ -286,13 +286,108 @@
                             <div class="entry__content">
                                 <div id="page-sections" style="opacity:0">
 
+                                    <style>
+                                        .griditem {
+                                            float: left;
+                                            display: none;
+                                            /* Hide all elements by default */
+                                        }
+                                        /* The "show" class is added to the filtered elements */
+                                        
+                                        .show {
+                                            display: block;
+                                        }
+                                        /* Style the buttons */
+                                        
+                                        .my_btn {
+                                            display: inline-block;
+                                            line-height: inherit;
+                                            color: rgb(64, 106, 146);
+                                            font-size: 0.85em;
+                                            border-radius: 20px;
+                                            font-family: Regular;
+                                            font-weight: normal;
+                                            background: rgb(64, 106, 146, 0.05);
+                                            border: 1px dotted rgb(64, 106, 146);
+                                            margin-right: 6px;
+                                            margin-bottom: 6px;
+                                            padding: 6px 14px;
+                                            cursor: pointer;
+                                        }
+                                        
+                                        .my_btn:hover {
+                                            background-color: rgb(64, 106, 146);
+                                            border-color: rgb(64, 106, 146);
+                                            color: #ffffff;
+                                        }
+                                        
+                                        .my_btn.active {
+                                            background-color: rgb(64, 106, 146);
+                                            border-color: rgb(64, 106, 146);
+                                            color: #ffffff;
+                                        }
+                                        
+                                        #myInput {
+                                            width: 100%;
+                                            border-radius: 30px;
+                                            font-family: Regular;
+                                            font-size: 1.6em;
+                                            background-color: rgb(64, 106, 146, 0.05);
+                                            padding: 10px 20px 10px 20px;
+                                            border: 1px dotted rgb(64, 106, 146);
+                                            margin-bottom: 0px;
+                                        }
+                                        
+                                        #myInput:active {
+                                            border: 2px dotted rgb(64, 106, 146);
+                                        }
+                                        
+                                        #myInput:hover {
+                                            border: 2px dotted rgb(64, 106, 146);
+                                        }
+                                        
+                                        #myInput:focus {
+                                            border: 2px dotted rgb(64, 106, 146);
+                                        }
+                                    </style>
+
                                     <section>
-                                        <div class="section-inner">
-                                            <div class="row" style="margin-bottom:30px;">
-                                                <div class="large-4 medium-6 tab-12 mob-12" style="padding:10px;">
+                                        <div class="main">
+
+                                            <div class="row" style="padding:1.5%">
+                                                <input type="text" id="myInput" onkeyup="search()" placeholder="Search" title="Type in a name">
+                                            </div>
+
+                                            <div class="row" style="padding:1.5%">
+
+                                                <div class="large-8 medium-6 mob-12" style="padding:0.5%">
+                                                    <h3 class="midlineheadtwosided">Filter by</h3><br>
+
+                                                    <div id="myBtnContainer">
+                                                        <button class="my_btn active" onclick="filterSelection('all')"> Show all</button>
+                                                        <button class="my_btn" onclick="filterSelection('nature')"> Nature</button>
+                                                        <button class="my_btn" onclick="filterSelection('cars')"> Cars</button>
+                                                        <button class="my_btn" onclick="filterSelection('people')"> People</button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="large-4 medium-6 mob-12" style="padding:0.5%">
+                                                    <h3 class="midlineheadtwosided">Sort by</h3><br>
+
+                                                    <div id="myBtnContainer1">
+                                                        <button class="my_btn active" onclick="filterSelection('all')"> Default</button>
+                                                        <button class="my_btn" onclick="sortList();"> Title</button>
+                                                        <button class="my_btn" onclick="chat_order();"> Date</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="row" id="myUL" style="margin-top: 20px;">
+                                                <div class="large-4 medium-6 tab-12 mob-12 content nature griditem" style="padding:10px;" data-default="Mountains" data-title="Nature" data-date="11-02-2020">
                                                     <a class="nobefore noborder" style="display:block;cursor: ne-resize" href="./projects/HCI/MOOC Feedback Visualization.html">
                                                         <blockquote class="tile projecttile roundborderimage" style="--tilebackgroundimage:url('../images/old/projects/MOOCFeedbackProjectTile1.jpg');      
-                                                        --textcolor:rgba(64,106,164,0.6);">
+                                                                --textcolor:rgba(64,106,164,0.6);">
                                                         </blockquote>
                                                         <p class="subheadings">
                                                             MOOC Feedback <br>Visualization →
@@ -300,10 +395,11 @@
                                                         <p class="paratext">Course improvement using feedback Visualization. <span style="font-family:Bold"><br><br><u>Accepted in INDIAHCI 2020.</u></span></p>
                                                     </a>
                                                 </div>
-                                                <div class="large-4 medium-6 tab-12 mob-12" style="padding:10px;">
+
+                                                <div class="large-4 medium-6 tab-12 mob-12 content people griditem" style="padding:10px;" data-default="Lights" data-title="Nature" data-date="12-04-2020">
                                                     <a class="nobefore noborder" style="display:block;cursor: ne-resize" href="./IntelligentInteractions/IntelligentInteractions.html">
                                                         <blockquote class="tile projecttile roundborderimage" style="--tilebackgroundimage:url('../images/old/projects/IntelligentInteractionsTile2.png');
-                                                        --textcolor:rgba(64,106,164,0.6);">
+                                                                --textcolor:rgba(64,106,164,0.6);">
                                                         </blockquote>
                                                         <p class="subheadings">
                                                             Intelligent <br>Interactions →
@@ -311,10 +407,10 @@
                                                         <p class="paratext">A five phased interaction system between any two entitites.</p>
                                                     </a>
                                                 </div>
-                                                <div class="large-4 medium-6 tab-12 mob-12" style="padding:10px;">
+                                                <div class="large-4 medium-6 tab-12 mob-12 content nature griditem" style="padding:10px;" data-default="Forest" data-title="Nature" data-date="13-02-2020">
                                                     <a class="nobefore noborder" style="display:block;cursor: ne-resize" href="./projects/AI/AVL Tree Tutor.html">
                                                         <blockquote class="tile projecttile roundborderimage" style="--tilebackgroundimage:url('../images/old/projects/AVLTreeTile3.png');
-                                                        --textcolor:rgba(64,106,164,0.6);">
+                                                                --textcolor:rgba(64,106,164,0.6);">
                                                         </blockquote>
                                                         <p class="subheadings">
                                                             AVL Tree Tutoring <br>Application →
@@ -322,8 +418,9 @@
                                                         <p class="paratext">Tutoring System to teach AVL trees.<span style="font-family:Bold"><br><br><u>Best abstract in ACM COMPUTE '19</u></span></p>
                                                     </a>
                                                 </div>
-                                                <div class="large-4 medium-6 tab-12 mob-12" style="padding:10px;">
-                                                    <a class="nobefore noborder" style="display:block;cursor: ne-resize" href="./projects/AI/Intellistudy.html" data-aos="fade" data-aos-anchor-placement="center-center" data-aos-duration="450">
+
+                                                <div class="large-4 medium-6 tab-12 mob-12 content cars griditem" style="padding:10px;" data-default="Girl" data-title="Cars" data-date="22-02-2020">
+                                                    <a class="nobefore noborder" style="display:block;cursor: ne-resize" href="./projects/AI/Intellistudy.html">
                                                         <blockquote class="tile projecttile roundborderimage" style="--tilebackgroundimage:url('../images/old/projects/IntellistudyTile3.png');
                                                         --textcolor:rgba(64,106,164,0.6);"></blockquote>
                                                         <p class="subheadings">
@@ -332,8 +429,8 @@
                                                         <p class="paratext">A personalised E-Learning Platform.<span style="font-family:Bold"><br><br><u>Top-10 in Smart India Hackathon '18</u></span></p>
                                                     </a>
                                                 </div>
-                                                <div class="large-4 medium-6 tab-12 mob-12" style="padding:10px;">
-                                                    <a class="nobefore noborder" style="display:block;cursor: ne-resize" href="./projects/Social/Transit Healthy.html" data-aos="fade" data-aos-anchor-placement="center-center" data-aos-duration="450">
+                                                <div class="large-4 medium-6 tab-12 mob-12 content cars griditem" style="padding:10px;" data-default="Man" data-title="Cars" data-date="24-02-2020">
+                                                    <a class="nobefore noborder" style="display:block;cursor: ne-resize" href="./projects/Social/Transit Healthy.html">
                                                         <blockquote class="tile projecttile roundborderimage" style="--tilebackgroundimage:url('../images/old/projects/TransitHealthyTile3.png');
                                                         --textcolor:rgba(64,106,164,0.6);"></blockquote>
                                                         <p class="subheadings">
@@ -342,8 +439,8 @@
                                                         <p class="paratext">A Healthy Smart-City Transit system. Idea submitted for Schneider Electric's Go Green</p>
                                                     </a>
                                                 </div>
-                                                <div class="large-4 medium-6 tab-12 mob-12" style="padding:10px;">
-                                                    <a class="nobefore noborder" style="display:block;cursor: ne-resize" href="https://github.com/arpitjainds/Fragments" data-aos="fade" data-aos-anchor-placement="center-center" data-aos-duration="450">
+                                                <div class="large-4 medium-6 tab-12 mob-12 content people griditem" style="padding:10px;" data-default="Woman" data-title="People" data-date="26-02-2020">
+                                                    <a class="nobefore noborder" style="display:block;cursor: ne-resize" href="https://github.com/arpitjainds/Fragments">
                                                         <blockquote class="tile projecttile roundborderimage" style="--tilebackgroundimage:url('../images/old/projects/fragmentstile.png');
                                                         --textcolor:rgba(64,106,164,0.6);"></blockquote>
                                                         <p class="subheadings">
@@ -353,8 +450,8 @@
                                                     </a>
                                                 </div>
 
-                                                <div class="large-4 medium-4 tab-12 mob-12" style="padding:10px;">
-                                                    <a class="nobefore noborder" style="display:block;cursor: ne-resize" href="./projects/HCI/Zenbo Class.html" data-aos="fade" data-aos-anchor-placement="center-center" data-aos-duration="450">
+                                                <div class="large-4 medium-4 tab-12 mob-12 content people griditem" style="padding:10px;" data-default="Woman" data-title="People" data-date="26-02-2020">
+                                                    <a class="nobefore noborder" style="display:block;cursor: ne-resize" href="./projects/HCI/Zenbo Class.html">
                                                         <blockquote class="tile projecttile roundborderimage" style="--tilebackgroundimage:url('../images/old/projects/ZenboClassroomTile1.jpg');
                                                         --textcolor:rgba(64,106,164,0.6);"></blockquote>
                                                         <p class="subheadings">
@@ -364,8 +461,8 @@
                                                     </a>
                                                 </div>
 
-                                                <div class="large-4 medium-4 tab-12 mob-12" style="padding:10px;">
-                                                    <a class="nobefore noborder" style="display:block;cursor: ne-resize" href="./projects/HCI/Gazinteract.html" data-aos="fade" data-aos-anchor-placement="center-center" data-aos-duration="450">
+                                                <div class="large-4 medium-4 tab-12 mob-12 content people griditem" style="padding:10px;" data-default="Woman" data-title="People" data-date="26-02-2020">
+                                                    <a class="nobefore noborder" style="display:block;cursor: ne-resize" href="./projects/HCI/Gazinteract.html">
                                                         <blockquote class="tile projecttile roundborderimage" style="--tilebackgroundimage:url('../images/old/projects/GazinteractTile2.png');
                                                         --textcolor:rgba(64,106,164,0.6);"></blockquote>
                                                         <p class="subheadings">
@@ -374,6 +471,14 @@
                                                         <p class="paratext">A non-tangible eyegaze based screen interaction.</p>
                                                     </a>
                                                 </div>
+                                            </div>
+                                            <div class="not-found" style="display:none">Not Found</div>
+                                        </div>
+                                    </section>
+
+                                    <section>
+                                        <div class="section-inner">
+                                            <div class="row" style="margin-bottom:30px;">
 
                                                 <!-- <h3 data-aos="fade" data-aos-anchor-placement="center-center" data-aos-duration="450" class="midlinehead" style="margin-top:50px;margin-bottom:35px">Ongoing Project Studies</h3>
 
@@ -561,6 +666,129 @@
     <script src="js/charming.min.js"></script>
     <script src="js/TweenMax.min.js"></script>
     <script src="js/hoverImage.js"></script>
+
+    <script>
+        filterSelection("all");
+
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("griditem");
+            if (c == "all") c = "";
+            for (i = 0; i < x.length; i++) {
+                RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) AddClass(x[i], "show");
+            }
+        }
+
+        function AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                    element.className += " " + arr2[i];
+                }
+            }
+        }
+
+        function RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("my_btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+        // Search Script
+        function search() {
+            var input, filter, ul, li, a, i, p, h4, h5, h6, txtValue;
+            input = document.getElementById("myInput");
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByClassName("griditem");
+            for (i = 0; i < li.length; i++) {
+                txtValue = li[i].textContent || li[i].innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+
+        function chat_order() {
+            var container = $("#myUL");
+            var items = $(".griditem");
+
+            items.each(function() {
+                // Convert the string in 'data-event-date' attribute to a more
+                // standardized date format
+                var BCDate = $(this).attr("data-date");
+                /*console.log(BCDate);
+                   var standardDate = BCDate[1]+" "+BCDate[0]+" "+BCDate[2];*/
+                var standartDate = new Date(BCDate).getTime();
+                $(this).attr("data-date", standartDate);
+                console.log(standartDate);
+            });
+
+            items
+                .sort(function(a, b) {
+                    a = parseFloat($(a).attr("data-date"));
+                    b = parseFloat($(b).attr("data-date"));
+                    return a > b ? -1 : a < b ? 1 : 0;
+                })
+                .each(function() {
+                    container.prepend(this);
+                });
+
+            var btnContainer = document.getElementById("myBtnContainer1");
+            var btns = btnContainer.getElementsByClassName("my_btn");
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function() {
+                    var current = document.getElementsByClassName("active");
+                    current[0].className = current[0].className.replace(" active", "");
+                    this.className += " active";
+                });
+            }
+        }
+
+        function reloadPage() {
+            location.reload(true);
+        }
+
+        function sortList() {
+            var list, i, switching, b, shouldSwitch;
+            list = document.getElementById("myUL");
+            switching = true;
+            while (switching) {
+                switching = true;
+                b = list.getElementsByClassName("griditem");
+                for (i = 0; i < b.length - 1; i++) {
+                    shouldSwitch = true;
+                    if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+                        shouldSwitch = true;
+                        break;
+                    }
+                }
+                if (shouldSwitch) {
+                    b[i].parentNode.insertBefore(b[i + 1], b[i]);
+                    switching = true;
+                }
+            }
+        }
+    </script>
 
     <script>
         fetch("./ReusableComponents/header__search.html")

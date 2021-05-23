@@ -4143,6 +4143,43 @@ body.search-is-visible {
     margin: 10px 0px 10px;
 }
 
+.midlineheadtwosided::after {
+    content: "";
+    display: flex;
+    height: 1px;
+    width: 100%;
+    background-color: #d3d3d3;
+    position: relative;
+    top: 0px;
+    margin-left: 15px;
+}
+
+.midlineheadtwosided::before {
+    content: "";
+    display: flex;
+    height: 1px;
+    width: 100%;
+    background-color: #d3d3d3;
+    position: relative;
+    top: 0px;
+    margin-right: 15px;
+}
+
+.midlineheadtwosided {
+    position: relative;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: #1a1a1a;
+    font-size: 12px;
+    letter-spacing: 2.8px;
+    font-weight: 100;
+    margin: 10px 0px 10px;
+}
+
 
 /*Owl Carousel*/
 
