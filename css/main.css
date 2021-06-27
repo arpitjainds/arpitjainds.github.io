@@ -6188,7 +6188,7 @@ blockquote.tile.projecthead.project {
 .cursor-dot-outline {
     z-index: 2000;
     pointer-events: none;
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     border-radius: 50%;

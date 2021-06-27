@@ -428,8 +428,8 @@
                 self.toggleCursorVisibility();
 
                 // Position the dot
-                self.endX = e.pageX;
-                self.endY = e.pageY;
+                self.endX = e.clientX;
+                self.endY = e.clientY;
                 self.$dot.style.top = self.endY + 'px';
                 self.$dot.style.left = self.endX + 'px';
             });
