@@ -4309,7 +4309,6 @@ body.search-is-visible {
 }
 
 #page-sections section {
-    background-color: #f6f7f8;
     background-position: center center;
     background-size: cover;
     transition: 0.5s;
