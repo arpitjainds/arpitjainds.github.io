@@ -6208,3 +6208,15 @@ blockquote.tile.projecthead.project {
     height: 63px;
     background-color: #50978a34;
 }
+
+.cursor-dot-outline.notallowed {
+    mix-blend-mode: difference;
+}
+
+.cursor-dot.notallowed {
+    mix-blend-mode: difference;
+}
+
+.notallowed {
+    cursor: not-allowed;
+}

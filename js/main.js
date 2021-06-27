@@ -411,6 +411,33 @@
                 });
             });
 
+            // Not Allowed Elements hovering
+            document.querySelectorAll('.notallowed').forEach(function(el) {
+                el.addEventListener('mouseover', function() {
+                    self.cursorOutlineVisible = false;
+                    self.toggleCursorOutline();
+                    self.toggleNotAllowed();
+                });
+                el.addEventListener('mouseout', function() {
+                    self.cursorOutlineVisible = true;
+                    self.toggleCursorOutline();
+                    self.toggleNotAllowed();
+                });
+            });
+            // Not Allowed Current Nav Item hovering
+            document.querySelectorAll('.header__nav li.current > a').forEach(function(el) {
+                el.addEventListener('mouseover', function() {
+                    self.cursorOutlineVisible = false;
+                    self.toggleCursorOutline();
+                    self.toggleNotAllowed();
+                });
+                el.addEventListener('mouseout', function() {
+                    self.cursorOutlineVisible = true;
+                    self.toggleCursorOutline();
+                    self.toggleNotAllowed();
+                });
+            });
+
             // Click events
             document.addEventListener('mousedown', function() {
                 self.cursorEnlarged = true;
@@ -492,6 +519,21 @@
                 self.$outline.style.opacity = 0;
             } else {
                 self.$outline.style.opacity = 1;
+            }
+        },
+
+        toggleNotAllowed: function() {
+            var self = this;
+
+            if (self.$dot.classList.contains('notallowed')) {
+                self.$dot.classList.remove('notallowed');
+            } else {
+                self.$dot.classList.add('notallowed');
+            }
+            if (self.$outline.classList.contains('notallowed')) {
+                self.$outline.classList.remove('notallowed');
+            } else {
+                self.$outline.classList.add('notallowed');
             }
         }
 
