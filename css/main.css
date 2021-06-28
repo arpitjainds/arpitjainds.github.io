@@ -2659,7 +2659,7 @@ input::-moz-focus-inner {
 
 .header__nav li.current>a {
     color: rgba(0, 0, 0, 0.95);
-    cursor: not-allowed;
+    cursor: url("../images/notallowedcursor.min2.png"), auto;
     z-index: 0;
     font-family: Bold;
 }
@@ -6210,13 +6210,13 @@ blockquote.tile.projecthead.project {
 }
 
 .cursor-dot-outline.notallowed {
-    mix-blend-mode: difference;
+    background-color: #c7373734;
 }
 
 .cursor-dot.notallowed {
-    mix-blend-mode: difference;
+    background-color: #c7373700;
 }
 
 .notallowed {
-    cursor: not-allowed;
+    cursor: url("../images/notallowedcursor.min2.png"), auto;
 }
