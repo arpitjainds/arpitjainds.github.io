@@ -1,3 +1,3 @@
 # Find Me
 
-This is the 5th and probably the final (Probably not, LOL) iteration of my portfolio site.
+This is the 5th iteration of my portfolio site.
